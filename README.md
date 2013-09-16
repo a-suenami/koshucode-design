@@ -25,8 +25,8 @@
 [関係を使ったデータの検証][validation-using-relation]
 
 
-[read-judge-literals]: read-judge-literals
-[run-relmap-using-relation-directly]: run-relmap-using-relation-directly
-[some-and-none]: some-and-none
-[validation-using-relation]: validation-using-relation
+[read-judge-literals]: note/read-judge-literals
+[run-relmap-using-relation-directly]: note/run-relmap-using-relation-directly
+[some-and-none]: note/some-and-none
+[validation-using-relation]: note/validation-using-relation
 
