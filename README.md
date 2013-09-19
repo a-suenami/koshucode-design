@@ -16,15 +16,19 @@
 
 ## もくじ
 
-[判断リテラルの読み込み方][read-judge-literals]
+[関係化写像の種類][kind-of-relfiers] — ver 0.38
 
-[関係写像の実行][run-relmap-using-relation-directly]
+[判断リテラルの読み込み方][read-judge-literals] — ver 0.37
 
-[関係写像による関係の制限][some-and-none]
+[関係写像の実行][run-relmap-using-relation-directly] — ver 0.37
 
-[関係を使ったデータの検証][validation-using-relation]
+[関係写像による関係の制限][some-and-none] — ver 0.37
+
+[関係を使ったデータの検証][validation-using-relation] — ver 0.37
 
 
+
+[kind-of-relfiers]: note/kind-of-relfiers
 [read-judge-literals]: note/read-judge-literals
 [run-relmap-using-relation-directly]: note/run-relmap-using-relation-directly
 [some-and-none]: note/some-and-none
