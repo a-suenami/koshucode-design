@@ -1,6 +1,7 @@
 # 甲州記法の設計ノート
 
 
+
 このリポジトリは、甲州記法の設計の背景、
 アイデア、試験的な実装などを記録したノートを集めたものです。
 メモとしての性格が強いため、大部分は雑な記述になっています。
@@ -15,9 +16,12 @@
   改行コードは CRLF です。
 
 
+
 ## もくじ
 
 [キー項目の重複][duplicate-keys] — ver 0.38
+
+[無項関係との結び][join-with-reldum] — ver 0.38
 
 [関係化写像の種類][kind-of-relfiers] — ver 0.38
 
@@ -32,6 +36,7 @@
 
 
 [duplicate-keys]: note/duplicate-keys
+[join-with-reldum]: note/join-with-reldum
 [kind-of-relfiers]: note/kind-of-relfiers
 [read-judge-literals]: note/read-judge-literals
 [run-relmap-using-relation-directly]: note/run-relmap-using-relation-directly
