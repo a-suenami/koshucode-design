@@ -19,6 +19,8 @@
 
 ## もくじ
 
+[略号][abbreviated-signs] — ver 0.38
+
 [キー項目の重複][duplicate-keys] — ver 0.38
 
 [無項関係との結び][join-with-reldum] — ver 0.38
@@ -26,6 +28,8 @@
 [関係化写像の種類][kind-of-relfiers] — ver 0.38
 
 [判断リテラルの読み込み方][read-judge-literals] — ver 0.37
+
+[関係写像の外部参照][relmap-in-outer-section] — ver 0.38
 
 [関係写像の実行][run-relmap-using-relation-directly] — ver 0.37
 
@@ -35,10 +39,12 @@
 
 
 
+[abbreviated-signs]: note/abbreviated-signs
 [duplicate-keys]: note/duplicate-keys
 [join-with-reldum]: note/join-with-reldum
 [kind-of-relfiers]: note/kind-of-relfiers
 [read-judge-literals]: note/read-judge-literals
+[relmap-in-outer-section]: note/relmap-in-outer-section
 [run-relmap-using-relation-directly]: note/run-relmap-using-relation-directly
 [some-and-none]: note/some-and-none
 [validation-using-relation]: note/validation-using-relation
