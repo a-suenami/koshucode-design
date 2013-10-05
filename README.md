@@ -19,7 +19,7 @@
 
 ## もくじ
 
-[略号][abbreviated-signs] — ver 0.38
+[略号][short-signs] — ver 0.38
 
 [キー項目の重複][duplicate-keys] — ver 0.38
 
@@ -39,7 +39,7 @@
 
 
 
-[abbreviated-signs]: note/abbreviated-signs
+[short-signs]: note/short-signs
 [duplicate-keys]: note/duplicate-keys
 [join-with-reldum]: note/join-with-reldum
 [kind-of-relfiers]: note/kind-of-relfiers

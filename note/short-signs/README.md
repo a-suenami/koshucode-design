@@ -16,7 +16,7 @@
 
 
 
-### abbr キーワード
+### short キーワード
 
 長い記号は、その途中を省略することで、短く書けます。
 たとえば、`abcdefg` を `a.g` と書けば短くなります。
@@ -24,11 +24,11 @@
 `a.g` から、もとの記号 `abcdefg` を復元できます。
 
 いま、`a.` が `abcdef` の省略であることを、
-`abbr` (abbreviation) というキーワードを使って、
+`short` というキーワードを使って、
 つぎのように書けるとしましょう。
 
 ``` text
-abbr a abcdef
+short a abcdef
 ```
 
 この略号の定義があると、つぎのような判断
@@ -54,8 +54,8 @@ abbr a abcdef
 同じ記号をあらわします。
 
 ``` text
-abbr a abcdef
-abbr b abcde
+short a abcdef
+short b abcde
 
 |-- A  /text a.g
 |-- A  /text b.fg
@@ -68,15 +68,15 @@ abbr b abcde
 
 ### 有効範囲
 
-`abbr` で定義された略号の有効範囲は、
+`short` で定義された略号の有効範囲は、
 通常は、その節の範囲内に限定されます。
 しかし、複数の節で、略号を共有するための
 仕組みがあってもよいかもしれません。
-たとえば、`import` に対して `-abbr`
+たとえば、`import` に対して `-short`
 オプションをつけるなどが考えられます。
 
 ``` text
-import -abbr foo/abbr
+import -short foo/short
 ```
 
 
@@ -92,11 +92,11 @@ import -abbr foo/abbr
 ### 略号つきの import
 
 節を `import` すると同時に略号をつけたいことがあります。
-つぎの `import` と `abbr` の組み合わせ
+つぎの `import` と `short` の組み合わせ
 
 ``` text
 import foo/bar
-abbr a foo/bar/
+short a foo/bar/
 ```
 
 を同時に行うために、`-with` オプション
