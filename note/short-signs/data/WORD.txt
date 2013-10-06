@@ -1,0 +1,7 @@
+xxx
+foo.xxx
+foo.bar.xxx
+foo.baz.xxx
+bar.foo.xxx
+fooxxx
+foofooxxx

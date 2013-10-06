@@ -1,0 +1,49 @@
+	Sun Oct  6 12:02 2013 Time and Allocation Profiling Report  (Final)
+
+	   short-tree +RTS -p -RTS
+
+	total time  =        1.71 secs   (1713 ticks @ 1000 us, 1 processor)
+	total alloc = 2,439,621,080 bytes  (excludes profiling overheads)
+
+COST CENTRE MODULE  %time %alloc
+
+main        Main     72.4   86.2
+short.find  Main     20.3   13.1
+short       Main      5.9    0.0
+
+
+                                                                individual     inherited
+COST CENTRE           MODULE                  no.     entries  %time %alloc   %time %alloc
+
+MAIN                  MAIN                     42           0    0.0    0.0   100.0  100.0
+ main                 Main                     85           0   72.4   86.2    99.9  100.0
+  short               Main                     86      130000    5.9    0.0    27.6   13.8
+   short.find         Main                     87     5850000   20.3   13.1    21.7   13.8
+    short.select      Main                    109      130000    0.9    0.4     0.9    0.4
+    short.find.prev2  Main                    107      130000    0.2    0.0     0.5    0.2
+     short.updatePrev Main                    108      130000    0.2    0.2     0.2    0.2
+ CAF                  Main                     83           0    0.0    0.0     0.1    0.0
+  main                Main                     84           1    0.0    0.0     0.1    0.0
+   main.hs            Main                     95           1    0.0    0.0     0.0    0.0
+   short              Main                     88           0    0.0    0.0     0.1    0.0
+    tree.empty        Main                     92           1    0.0    0.0     0.0    0.0
+    tree              Main                     91         353    0.0    0.0     0.1    0.0
+     tree.nonEmpty    Main                     99         353    0.0    0.0     0.0    0.0
+     tree.subTrees    Main                     96         353    0.1    0.0     0.1    0.0
+      mapToSnd.g      Main                    103         352    0.0    0.0     0.0    0.0
+       tree.empty     Main                    106         352    0.0    0.0     0.0    0.0
+       tree.(...)     Main                    105         352    0.0    0.0     0.0    0.0
+       divide         Main                    104         352    0.0    0.0     0.0    0.0
+      group.g         Main                    102        1501    0.0    0.0     0.0    0.0
+      tree.first      Main                    101        1148    0.0    0.0     0.0    0.0
+      group           Main                     98         353    0.0    0.0     0.0    0.0
+      mapToSnd        Main                     97         353    0.0    0.0     0.0    0.0
+     tree.(...)       Main                     93           0    0.0    0.0     0.0    0.0
+      divide          Main                     94           0    0.0    0.0     0.0    0.0
+       divide.q       Main                    100         353    0.0    0.0     0.0    0.0
+    tree.(...)        Main                     90           1    0.0    0.0     0.0    0.0
+    divide            Main                     89           1    0.0    0.0     0.0    0.0
+ CAF                  GHC.Conc.Signal          82           0    0.0    0.0     0.0    0.0
+ CAF                  GHC.IO.Encoding          75           0    0.0    0.0     0.0    0.0
+ CAF                  GHC.IO.Encoding.Iconv    73           0    0.0    0.0     0.0    0.0
+ CAF                  GHC.IO.Handle.FD         66           0    0.0    0.0     0.0    0.0

@@ -1,0 +1,34 @@
+	Sun Oct  6 12:02 2013 Time and Allocation Profiling Report  (Final)
+
+	   short-simple +RTS -p -RTS
+
+	total time  =        2.73 secs   (2729 ticks @ 1000 us, 1 processor)
+	total alloc = 2,115,516,656 bytes  (excludes profiling overheads)
+
+COST CENTRE MODULE  %time %alloc
+
+short.find  Main     53.6    0.6
+main        Main     46.2   99.4
+
+
+                                                             individual     inherited
+COST CENTRE        MODULE                  no.     entries  %time %alloc   %time %alloc
+
+MAIN               MAIN                     40           0    0.0    0.0   100.0  100.0
+ main              Main                     81           0   46.2   99.4   100.0  100.0
+  short            Main                     84           0    0.2    0.0    53.8    0.6
+   short.find      Main                     85     1755000   53.6    0.6    53.6    0.6
+ CAF               Main                     79           0    0.0    0.0     0.0    0.0
+  short            Main                     82           1    0.0    0.0     0.0    0.0
+   sortHeads       Main                     86           1    0.0    0.0     0.0    0.0
+  main             Main                     80           1    0.0    0.0     0.0    0.0
+   main.hs         Main                     88           1    0.0    0.0     0.0    0.0
+   short           Main                     83           0    0.0    0.0     0.0    0.0
+    sortHeads      Main                     87           0    0.0    0.0     0.0    0.0
+     sortHeads.ord Main                     89          56    0.0    0.0     0.0    0.0
+      lengthDesc   Main                     90          56    0.0    0.0     0.0    0.0
+       lengthAsc   Main                     91          56    0.0    0.0     0.0    0.0
+ CAF               GHC.Conc.Signal          78           0    0.0    0.0     0.0    0.0
+ CAF               GHC.IO.Encoding          71           0    0.0    0.0     0.0    0.0
+ CAF               GHC.IO.Encoding.Iconv    69           0    0.0    0.0     0.0    0.0
+ CAF               GHC.IO.Handle.FD         62           0    0.0    0.0     0.0    0.0
