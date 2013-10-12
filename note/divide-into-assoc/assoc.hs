@@ -42,12 +42,14 @@ data ArgAbort
 
 type ArgAbortable = Either ArgAbort
 
+
+
 -- ----------------------  Argument associator
 
 argAssoc :: TrunkAssoc -> [Name] -> String -> ArgAbortable NamedArg
-argAssoc dc names line =
+argAssoc ta names line =
     do let arg1 = B.assocBy isName "" $ words line 
-       arg2 <- applyTrunkAssoc dc arg1
+       arg2 <- applyTrunkAssoc ta arg1
        checkDuplicate arg2
        checkUnknown names (map fst arg2)
        return arg2
@@ -74,38 +76,38 @@ checkUnknown knowns arg
 -- ----------------------  Trunk associator
 
 applyTrunkAssoc :: TrunkAssoc -> NamedArg -> ArgAbortable NamedArg
-applyTrunkAssoc (ks, dc) args =
+applyTrunkAssoc (ks, ass) arg =
     case maybeTrunk of
-      Just a  -> Right $ a ++ args
+      Just a  -> Right $ a ++ arg
       Nothing -> Left  $ ArgMalformed ks
     where
       maybeTrunk
-          | any (`B.assocExist` args) ks = Just []
-          | otherwise = case lookup "" args of
-                          Nothing -> Nothing
-                          Just ls -> dc ls
+          | any (`B.assocExist` arg) ks = Just []
+          | otherwise = case lookup "" arg of
+                          Nothing    -> Nothing
+                          Just trunk -> ass trunk
 
 makeTrunkAssoc :: [String] -> (Arg -> Maybe NamedArg) -> TrunkAssoc
 makeTrunkAssoc = (,)
 
-trunkElems :: TrunkAssoc1
-trunkElems k = makeTrunkAssoc [k] assoc where
-    assoc xs = Just [(k, xs)]
+trunkElems         :: TrunkAssoc1
+trunkElems k       =  makeTrunkAssoc [k] assoc where
+    assoc xs       =  Just [(k, xs)]
 
-trunkUncons :: TrunkAssoc2
-trunkUncons kh kt = makeTrunkAssoc [kh, kt] assoc where
-    assoc (h:t) = Just [(kh, [h]), (kt, t)]
-    assoc _     = Nothing
+trunkUncons        :: TrunkAssoc2
+trunkUncons kh kt  =  makeTrunkAssoc [kh, kt] assoc where
+    assoc (h:t)    =  Just [(kh, [h]), (kt, t)]
+    assoc _        =  Nothing
 
-trunkUnary :: TrunkAssoc1
-trunkUnary k = makeTrunkAssoc [k] assoc where
-    assoc [x] = Just [(k, [x])]
-    assoc _   = Nothing
+trunkUnary         :: TrunkAssoc1
+trunkUnary k       =  makeTrunkAssoc [k] assoc where
+    assoc [x]      =  Just [(k, [x])]
+    assoc _        =  Nothing
 
-trunkBinary :: TrunkAssoc2
-trunkBinary kx ky = makeTrunkAssoc [kx, ky] assoc where
-    assoc [x, y] = Just [(kx, [x]), (ky, [y])]
-    assoc _      = Nothing
+trunkBinary        :: TrunkAssoc2
+trunkBinary kx ky  =  makeTrunkAssoc [kx, ky] assoc where
+    assoc [x, y]   =  Just [(kx, [x]), (ky, [y])]
+    assoc _        =  Nothing
 
 
 
@@ -140,7 +142,7 @@ main =
             Right res -> "  " ++ show res
             Left (ArgMalformed ns) -> leftText "MALFORMED" ns
             Left (ArgDuplicate ns) -> leftText "DUPLICATE" ns
-            Left (ArgUnknown   ns) -> leftText "UNKNOWN" ns
+            Left (ArgUnknown   ns) -> leftText "UNKNOWN"   ns
 
       leftText tag ns =
           "  ** " ++ tag ++ " " ++ unwords ns
