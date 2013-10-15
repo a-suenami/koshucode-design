@@ -19,6 +19,8 @@
 
 ## もくじ
 
+[関係写像の構成][construct-relmap] — ver 0.39
+
 [連想リストへの分割][divide-into-assoc] — ver 0.38
 
 [キー項目の重複][duplicate-keys] — ver 0.38
@@ -41,6 +43,7 @@
 
 
 
+[construct-relmap]: note/construct-relmap
 [divide-into-assoc]: note/divide-into-assoc
 [duplicate-keys]: note/duplicate-keys
 [join-with-reldum]: note/join-with-reldum
