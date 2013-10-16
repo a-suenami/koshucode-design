@@ -4,8 +4,9 @@
 
 | 演算子   | 概要 |
 |------------------|---|
+| [cut][cut]       | 項目の除去 |
+| [pick][pick]     | 項目の抜き出し |
 | [source][source] | 関係の読み出し |
-| [pick][pick] | 項目の抜き出し |
 
 
 各演算子の文書は、以下の節に分けて説明されています。
@@ -35,6 +36,7 @@
   — 既知のバグや未実装の機能などを記述します。
 
 
+[cut]:    minimal/cut
+[pick]:   minimal/pick
 [source]: minimal/source
-[pick]: minimal/pick
 
