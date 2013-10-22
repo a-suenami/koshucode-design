@@ -25,6 +25,8 @@
 
 [キー項目の重複][duplicate-keys] — ver 0.38
 
+[終了ステータス][exit-status] — ver 0.39
+
 [無項関係との結び][join-with-reldum] — ver 0.38
 
 [関係化写像の種類][kind-of-relfiers] — ver 0.38
@@ -46,6 +48,7 @@
 [construct-relmap]: note/construct-relmap
 [divide-into-assoc]: note/divide-into-assoc
 [duplicate-keys]: note/duplicate-keys
+[exit-status]: note/exit-status
 [join-with-reldum]: note/join-with-reldum
 [kind-of-relfiers]: note/kind-of-relfiers
 [read-judge-literals]: note/read-judge-literals
