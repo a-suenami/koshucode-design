@@ -1,10 +1,23 @@
 ;;; koshu mode
 
+(defgroup koshu nil
+  "Major mode for editing Koshucode."
+  :group 'languages
+  :prefix "koshu-")
+
+;; prog-mode
 (define-derived-mode koshu-mode text-mode "Koshu"
   "A Mode for editing Koshucode."
   :syntax-table koshu-mode-syntax-table
-  (setq font-lock-defaults koshu-mode-font-lock))
-;; prog-mode
+
+  ;; comment
+  (set (make-local-variable 'comment-start)   "**")
+  (set (make-local-variable 'comment-padding) 2)
+  (set (make-local-variable 'comment-end)     "")
+
+  ;; font-lock
+  (set (make-local-variable 'font-lock-defaults)
+       koshu-mode-font-lock))
 
 (defvar koshu-mode-syntax-table
   (let ((table (make-syntax-table text-mode-syntax-table)))
@@ -24,13 +37,17 @@
       (2 font-lock-comment-face))
 
      ;; assertion
-     ("^\\(|\\)\\([-xX]+\\) +\\(\\w+\\)"
-      (1 font-lock-builtin-face)
-      (2 font-lock-function-name-face)
-      (3 font-lock-function-name-face))
      ("^\\(|[=xX]+\\) +\\(\\w+\\)"
       (1 font-lock-builtin-face)
       (2 font-lock-function-name-face))
+     ("^\\(|\\)\\([=vV]+\\) +\\(\\w+\\)"
+      (1 font-lock-builtin-face)
+      (2 font-lock-warning-face)
+      (3 font-lock-function-name-face))
+     ("^\\(|\\)\\([-vVxX]+\\) +\\(\\w+\\)"
+      (1 font-lock-builtin-face)
+      (2 font-lock-function-name-face)
+      (3 font-lock-function-name-face))
 
      ;; shebang
      ("^\\(#!\\)\\(.*\\)"
