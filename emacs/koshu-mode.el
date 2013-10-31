@@ -5,8 +5,10 @@
   :group 'languages
   :prefix "koshu-")
 
-;; prog-mode
-(define-derived-mode koshu-mode text-mode "Koshu"
+(unless (fboundp 'prog-mode)
+  (defalias 'prog-mode 'fundamental-mode))
+
+(define-derived-mode koshu-mode prog-mode "Koshu"
   "A Mode for editing Koshucode."
   :syntax-table koshu-mode-syntax-table
 
