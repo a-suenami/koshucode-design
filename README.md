@@ -37,6 +37,8 @@
 
 [関係写像の実行][run-relmap-using-relation-directly] — ver 0.37
 
+[甲州計算機の処理の流れ][section-level-process] — ver 0.40
+
 [略号][short-signs] — ver 0.38
 
 [関係写像による関係の制限][some-and-none] — ver 0.37
@@ -54,6 +56,7 @@
 [read-judge-literals]: note/read-judge-literals
 [relmap-in-outer-section]: note/relmap-in-outer-section
 [run-relmap-using-relation-directly]: note/run-relmap-using-relation-directly
+[section-level-process]: note/section-level-process
 [short-signs]: note/short-signs
 [some-and-none]: note/some-and-none
 [validation-using-relation]: note/validation-using-relation
