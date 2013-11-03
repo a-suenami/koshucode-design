@@ -19,6 +19,8 @@
 
 ## もくじ
 
+[近くのお店][boyce-codd-normal-form] (ボイス・コッド正規形) — ver 0.40
+
 [関係写像の構成][construct-relmap] — ver 0.39
 
 [連想リストへの分割][divide-into-assoc] — ver 0.38
@@ -47,6 +49,7 @@
 
 
 
+[boyce-codd-normal-form]: note/boyce-codd-normal-form
 [construct-relmap]: note/construct-relmap
 [divide-into-assoc]: note/divide-into-assoc
 [duplicate-keys]: note/duplicate-keys

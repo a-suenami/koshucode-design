@@ -1,4 +1,4 @@
-# [近くのお店][README]
+# 近くのお店
 
 
 ボイス・コッド正規形 (BCNF: Boyce-Codd normal form)、
@@ -85,8 +85,7 @@ BCNF に変換可能な [第 3 正規形][3NF] の典型的な例として知ら
 
 
 
-[Wikipedia]: http://en.wikipedia.org/wiki/Boyce-Codd_normal_form
-[README]: README.md
-[3NF]: 3NF.md
-[BCNF]: BCNF.md
+[Wikipedia]:     http://en.wikipedia.org/wiki/Boyce-Codd_normal_form
+[3NF]:           3NF.md
+[BCNF]:          BCNF.md
 
