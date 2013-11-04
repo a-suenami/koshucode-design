@@ -145,8 +145,8 @@
 
 
 
-[top]:            .
-[3NF]:            3NF.md
+[top]:            ..
+[3NF]:            ../3NF
 [BCNF]:           BCNF.md
 [BCNF-DATA]:      BCNF-DATA.k
 [BCNF-VIOLATED]:  BCNF-VIOLATED.k

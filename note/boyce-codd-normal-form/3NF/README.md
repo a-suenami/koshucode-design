@@ -15,23 +15,23 @@
 
 
 
-## データの定義
+## データの定義: NEAREST-SHOP
 
 近くのお店をあらわすデータを、その判断 (判断種と項目)、
 データ解釈、制約条件に分けて記述すると、つぎのようになります。
 
 
-### 判断
+#### 判断
 
 `NEAREST-SHOP` --
 `/person` `/shop-type` `/nearest-shop`
 
-### データ解釈
+#### データ解釈
 
 `/person` さんの家から一番近い `/shop-type` の種類のお店は
 `/nearest-shop` である。
 
-### 制約条件
+#### 制約条件
 
 人とお店の種類が決まれば、一番近いお店がひとつ決まるので、
 `/person` `shop-type` → `/nearest-shop` という関数従属性が成り立ちます。
@@ -126,17 +126,15 @@
 
 に違反する、つまり、この関係が空関係ではないため、
 `/nearest-shop "Doughy's"` という店に、`/shop-type` として
-`'Hairdresser` と `'Bakery` の両方が割り当てられている
-というデータが出力され、ステータス 1 で終了します。
+`'Hairdresser` と `'Bakery` の両方が割り当てられているというデータが出力され、
+制約違反をあらわすステータス 1 で終了します。
 
     |-- FD-OF-SHOP-TYPE  /nearest-shop "Doughy" #q "s"  /shop-type 'Hairdresser
     |-- FD-OF-SHOP-TYPE  /nearest-shop "Doughy" #q "s"  /shop-type 'Bakery
 
 
 
-[Wikipedia]:     http://en.wikipedia.org/wiki/Boyce-Codd_normal_form
-[top]:           .
-[3NF]:           3NF.md
+[top]:           ..
 [3NF-DATA]:      3NF-DATA.k
 [3NF-VIOLATED]:  3NF-VIOLATED.k
 [3nf-output]:    3nf-output.k
