@@ -28,10 +28,11 @@ co-star-side : co-star-both | hold /cast-1 < /cast-2
 
 ** 共演をあらわすほかの方法として、キャストをグループ化します。
 co-star-group :
-  co-star-both
+  star-cast
     | pick /title
-    | group /r ( co-star-both | cut /cast-2 )
-    | add /casts ( /r/cast-1 )
+    | group /r star-cast
+    | add /casts ( /r/cast )
+    | hold length /casts >= 2
     | cut /r
 
 ** 関係を判断集合として書き出し。
