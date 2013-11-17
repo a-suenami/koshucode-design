@@ -45,6 +45,8 @@
 
 [関係写像による関係の制限][some-and-none] — ver 0.37
 
+[部分関係][subrelation] — ver 0.40
+
 [関係を使ったデータの検証][validation-using-relation] — ver 0.37
 
 [関係モデル -- 判断することの計算体系][prezi-relational-model]
@@ -64,6 +66,7 @@
 [section-level-process]: note/section-level-process
 [short-signs]: note/short-signs
 [some-and-none]: note/some-and-none
+[subrelation]: note/subrelation
 [validation-using-relation]: note/validation-using-relation
 
 [prezi-relational-model]: note/prezi-relational-model
