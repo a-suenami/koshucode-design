@@ -370,6 +370,6 @@ SQL データベースのテーブルの行をみたら、
 (6 分 + 3 分、合計目安時間 59 分 + 24 分)
 
 
-[Prezi]: http://prezi.com/s6wwdlz9vr1t/presentation/
+[Prezi]: http://prezi.com/j8puepcv358e/presentation/
 [関係モデル]: http://ja.wikipedia.org/wiki/関係モデル#SQL.E6.A8.99.E6.BA.96
 
