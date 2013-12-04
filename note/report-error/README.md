@@ -5,9 +5,10 @@
 できるようになっていません。
 
 
+
 ## 分類
 
-甲州計算機のエラーは、大きく、つぎの 4 種類に分けられるでしょう。
+甲州計算機のエラーは、大きく、つぎの 5 種類に分けられるでしょう。
 
  * **入出力不可能** (I/O ERROR) --
    ファイルなどの資源がみつからない、
@@ -25,6 +26,15 @@
  * **そのほかのエラー** (OTHER ERROR) --
    上記のどれにも該当しないエラー。
 
+この 5 種類のエラーをあらす記号 `/class` とその説明 `/class-desc` は、
+日本語の場合、つぎのようになります。
+
+    |-- ERROR-CLASS  /class 'IO-ERROR        /lang 'ja  /class-desc '入出力エラー
+    |-- ERROR-CLASS  /class 'SYNTAX-ERROR    /lang 'ja  /class-desc '文法エラー
+    |-- ERROR-CLASS  /class 'ANALISYS-ERROR  /lang 'ja  /class-desc '解析エラー
+    |-- ERROR-CLASS  /class 'CALC-ERROR      /lang 'ja  /class-desc '計算不可能
+    |-- ERROR-CLASS  /class 'OTHER-ERROR     /lang 'ja  /class-desc 'そのほかのエラー
+
 
 
 ## エラー種
@@ -34,7 +44,7 @@
 項目 `/type` の内容に、その記号が入るとすると、
 自然言語の説明 `/desc` が対応します。
 
- * `/type` のエラーは言語 `/lang` では `/desc` という説明に対応する。
+ * `/type` のエラーは言語 `/lang` では `/type-desc` という説明に対応する。
 
 ファイルなどの資源 `/resource` は節 `/clause` に分割されます。
 節の実体は行の並びです。エラーが生じたとき、
@@ -73,15 +83,27 @@
 ## 報告例
 
 たとえば、コードを解析した結果、関係写像 `pick /x /y` への入力関係に
-項目 `/y` がないことがわかったら、つぎのようなエラーが報告されます。
+項目 `/y` がないことがわかったら、つぎのようなエラーが報告され、
+ステータス 2 で甲州計算機が終了します。
 
-    **  処理が中断されました
     **
-    **  分類        ANALISYS ERROR / 解析エラー
+    **  処理を中断しました
+    **
+    **  分類        ANALISYS-ERROR / 解析エラー
     **  種類        TermNotExist / 項目が存在しない
-    **  資源        foo.k
-    **  行番号      14
-    **  節          a2 : a | pick /x /y
-    **  関係写像    pick /x /y
     **  理由        項目 /y が存在しない
+    **  関係写像     pick /x /y
+    **  その位置     8 / foo.k
+    **  節          |== B : a2
+    **  その位置     14 / foo.k
+    **
 
+この内容は、判断としても表現できます。
+自動化されたバッチ処理のときは、
+このようなエラー報告が独立したファイルに 1 行だけ書き出される方が便利です。
+
+    |-- ERROR  /class 'ANALISYS-ERROR
+        /type 'TermNotExist  /reason "項目 /y が存在しない"
+        /relmap "pick /x /y"  /relmap-line 8  /relmap-resource 'foo.k
+        /clause "|== B : a2"  /clause-line 14  /clause-resource 'foo.k
+               
