@@ -1,0 +1,8 @@
+> | a | bb | ccc | dddd
+< > | a b | cc d | e ff
+< - > | a bbb cc | p q r | xxx yy z
+- - - - - | a bb ccc dddd eeeee | hhhhh iiii jjj kk l
+
+<< | english english | ελληνικά greek | русский-язык russian | español spanish | 日本語 japanese
+<< | 名称 ねこ | 材料 想像力 | 内容量 軽い | 賞味期限 どこかに記載 | 保存方法 常温
+
