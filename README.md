@@ -39,6 +39,8 @@
 
 [関係写像の外部参照][relmap-in-outer-section] — ver 0.38
 
+[エラーの報告][report-error] — ver 0.40
+
 [関係写像の実行][run-relmap-using-relation-directly] — ver 0.37
 
 [甲州計算機の処理の流れ][section-level-process] — ver 0.40
@@ -67,6 +69,7 @@
 [kind-of-relfiers]: note/kind-of-relfiers
 [read-judge-literals]: note/read-judge-literals
 [relmap-in-outer-section]: note/relmap-in-outer-section
+[report-error]: note/report-error
 [run-relmap-using-relation-directly]: note/run-relmap-using-relation-directly
 [section-level-process]: note/section-level-process
 [short-signs]: note/short-signs
@@ -76,3 +79,4 @@
 [validation-using-relation]: note/validation-using-relation
 
 [prezi-relational-model]: note/prezi-relational-model
+

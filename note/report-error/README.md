@@ -10,21 +10,14 @@
 
 甲州計算機のエラーは、大きく、つぎの 5 種類に分けられるでしょう。
 
- * **入出力不可能** (I/O ERROR) --
-   ファイルなどの資源がみつからない、
-   文字 (バイト) を読み書きできないなどの状況。
 
- * **文法間違い** (SYNTAX ERROR) --
-   判断の読み込み、計算式の読み込みでの文法間違いなど。
-
- * **解析エラー** (ANALISYS ERROR) --
-   関係式を解析した結果、計算不可能な状況が分かったとき。
-
- * **計算不可能** (CALC ERROR) --
-   関係式の計算を実行する過程で、計算を進められない状況。
-
- * **そのほかのエラー** (OTHER ERROR) --
-   上記のどれにも該当しないエラー。
+| CLASS          | 分類             | 内容          |
+|----------------|------------------|---------------|
+| I/O ERROR      | 入出力不可能     | ファイルなどの資源がみつからない、文字 (バイト) を読み書きできないなどの状況。 |
+| SYNTAX ERROR   | 文法間違い       | 判断の読み込み、計算式の読み込みでの文法間違いなど。 |
+| ANALISYS ERROR | 解析エラー       | 関係式を解析した結果、計算不可能な状況が分かったとき。 |
+| CALC ERROR     | 計算不可能       | 関係式の計算を実行する過程で、計算を進められない状況。 |
+| OTHER ERROR    | そのほかのエラー | 上記のどれにも該当しないエラー。 |
 
 この 5 種類のエラーをあらす記号 `/class` とその説明 `/class-desc` は、
 日本語の場合、つぎのようになります。
@@ -37,14 +30,13 @@
 
 
 
-## エラー種
+## 中断理由
 
-エラー型のコンストラクタの名前を、
-エラーの種類をあらわす記号として使います。
-項目 `/type` の内容に、その記号が入るとすると、
-自然言語の説明 `/desc` が対応します。
+コンストラクタの名前を、中断理由をあらわす記号として使います。
+項目 `/reason` の内容に、その記号が入るとすると、
+自然言語の説明 `/reason-desc` が対応します。
 
- * `/type` のエラーは言語 `/lang` では `/type-desc` という説明に対応する。
+ * `/reason` のエラーは言語 `/lang` では `/reason-desc` という説明に対応する。
 
 ファイルなどの資源 `/resource` は節 `/clause` に分割されます。
 節の実体は行の並びです。エラーが生じたとき、
@@ -52,12 +44,12 @@
 つぎの意味の情報が出力されます。
 
  * `/resource` のなかの節 `/clause` を処理する過程で
-   `/type` のエラーが発生した。
+   `/reason` という理由で処理を中断した。
 
 節が特定できないときは、つぎのパターンになります。
-たとえば、ファイルが見つからないなど
+たとえば、ファイルが見つからないなど。
 
- * `/resource` を処理する過程で `/type` のエラーが発生した。
+ * `/resource` を処理する過程で `/reason` という理由で処理を中断した。
 
 
 
@@ -65,18 +57,19 @@
 
 関係写像の計算でエラーが生じたときは、
 関係写像の位置 `/resource` `/line-number` `/relmap` と
-詳細情報 `/reason` が報告されます。
+詳細情報 `/detail` が報告されます。
 
  * 資源 `/resource` の行番号 `/line-number` にある
-   関係写像 `/relmap` で `/reason` という原因による
-   `/type` のエラーが発生した。
+   関係写像 `/relmap` で `/detail` という詳細理由による
+   `/reason` という理由で処理を中断した。
 
 項目計算式を含む関係写像の場合は、
 エラーに関係する部分式 `/term-expr` も報告されます。
 
  * 資源 `/resource` の行番号 `/line-number` にある
    関係写像 `/relmap` のなかの項目計算式 `/term-expr` で
-   `/reason` という原因による `/type` のエラーが発生した。
+   `/detail` という詳細理由による
+   `/reason` という理由で処理を中断した。
 
 
 
@@ -87,15 +80,17 @@
 ステータス 2 で甲州計算機が終了します。
 
     **
-    **  処理を中断しました
+    **  ABORTED
+    **  --------- ----------------------------
+    **  Class     ANALISYS-ERROR
+    **  Reason    TermNotExist
+    **  Detail    Input does not have term /y
+    **  Relmap    8 foo.k
+    **            pick /x /y
+    **  Clause    14 foo.k
+    **            |== B : a2
     **
-    **  分類        ANALISYS-ERROR / 解析エラー
-    **  種類        TermNotExist / 項目が存在しない
-    **  理由        項目 /y が存在しない
-    **  関係写像     pick /x /y
-    **  その位置     8 / foo.k
-    **  節          |== B : a2
-    **  その位置     14 / foo.k
+    **  Exit with status 2
     **
 
 この内容は、判断としても表現できます。
@@ -103,7 +98,7 @@
 このようなエラー報告が独立したファイルに 1 行だけ書き出される方が便利です。
 
     |-- ERROR  /class 'ANALISYS-ERROR
-        /type 'TermNotExist  /reason "項目 /y が存在しない"
-        /relmap "pick /x /y"  /relmap-line 8  /relmap-resource 'foo.k
-        /clause "|== B : a2"  /clause-line 14  /clause-resource 'foo.k
+        /reason 'TermNotExist  /detail "Input does not have term /y"
+        /relmap "pick /x /y"  /relmap-line 8   /relmap-resource "foo.k"
+        /clause "|== B : a2"  /clause-line 14  /clause-resource "foo.k"
                
