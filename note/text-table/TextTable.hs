@@ -40,13 +40,15 @@ data Position
     = Front | Middle | Rear
       deriving (Show, Eq, Ord)
 
+type Measure a = [a] -> Int
+
 textPos :: String -> [Position]
 textPos = map p where
     p c | c `elem` "<^" = Front
         | c `elem` ">v" = Rear
         | otherwise     = Middle
 
-position :: ([a] -> Int) -> a -> Position -> Int -> [a] -> [a]
+position :: Measure a -> a -> Position -> Int -> [a] -> [a]
 position measure x pos size xs = p pos where
     p Front  =         xs ++ pad
     p Middle = left ++ xs ++ right
@@ -57,11 +59,11 @@ position measure x pos size xs = p pos where
     left     = replicate l x
     right    = replicate r x
 
-padding :: ([a] -> Int) -> a -> Int -> [a] -> [a]
+padding :: Measure a -> a -> Int -> [a] -> [a]
 padding measure x size xs = replicate n x where
     n = paddingSize measure size xs
 
-paddingSize :: ([a] -> Int) -> Int -> [a] -> Int
+paddingSize :: Measure a -> Int -> [a] -> Int
 paddingSize measure size xs = max 0 $ size - measure xs
 
 divideBy2 :: Int -> (Int, Int)
@@ -169,7 +171,7 @@ transposable pad tab = map p tab where
     p = position length pad Front n
     n = maximum $ map length tab
 
-displaySize :: String -> Int
+displaySize :: Measure Char
 displaySize = sum . map displaySizeChar      
 
 displaySizeChar :: Char -> Int

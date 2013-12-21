@@ -49,6 +49,8 @@
 
 [部分関係][subrelation] — ver 0.40
 
+[テキストを使った表の描画][text-table] — ver 0.40
+
 [関係を使ったデータの検証][validation-using-relation] — ver 0.37
 
 [関係モデル -- 判断することの計算体系][prezi-relational-model]
@@ -70,6 +72,7 @@
 [short-signs]: note/short-signs
 [some-and-none]: note/some-and-none
 [subrelation]: note/subrelation
+[text-table]: note/text-table
 [validation-using-relation]: note/validation-using-relation
 
 [prezi-relational-model]: note/prezi-relational-model

@@ -14,7 +14,7 @@ Haskell のデータ型でいうと、表の要素が `String` 型で、
     p   |  q  |  r
     xxx | yy  |  z
 
-この表は、[TextTable.hs] で定義された機能を使って、
+この表は、[`TextTable.hs`][TextTable.hs] で定義された機能を使って、
 つぎのような式でつくれます。
 
     putStr $ unlines $ renderTable " | " $ alignTable $ textTable (textPos "<->")
