@@ -55,8 +55,10 @@
 
 [関係を使ったデータの検証][validation-using-relation] — ver 0.37
 
+
 [関係モデル -- 判断することの計算体系][prezi-relational-model]
 
+[実行計画のためのコスト計算式][rdbms-cost-formula]
 
 
 [boyce-codd-normal-form]: note/boyce-codd-normal-form
@@ -79,4 +81,5 @@
 [validation-using-relation]: note/validation-using-relation
 
 [prezi-relational-model]: note/prezi-relational-model
+[rdbms-cost-formula]: note/rdbms-cost-formula
 
