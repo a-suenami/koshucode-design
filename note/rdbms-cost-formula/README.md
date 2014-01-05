@@ -2,7 +2,8 @@
 
 関係データベース管理システム (RDBMS) は、問い合わせを実行するとき、計算式の同値変形、
 内部演算の導入、アルゴリズムの選択などの最適化を行い、
-その結果を実行計画として提示します。[この資料][PDF] (PDF) は、
+その結果を実行計画として提示します。
+この資料 [(PDF をダウンロード)][PDF download] は、
 そのときの性能予測の評価材料であるコストの計算方法を、
 初学者向けに説明しています。
 
@@ -13,6 +14,7 @@
 
 ![PDF]
 
+[PDF download]: rdbms-cost-formula.pdf?raw=true
 [PDF]: rdbms-cost-formula.pdf
 [CBO]: http://www.centrexcc.com/A%20Look%20under%20the%20Hood%20of%20CBO%20-%20the%2010053%20Event.pdf
 [Wolfgang Breitling]: http://www.centrexcc.com
