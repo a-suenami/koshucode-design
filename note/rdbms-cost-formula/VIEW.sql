@@ -10,7 +10,7 @@ TAB as (
  select
   table_name,
   num_rows,
-  blocks,
+  blocks as data_blocks,
   last_analyzed as table_analyzed
  from USER_TABLES
 ),
