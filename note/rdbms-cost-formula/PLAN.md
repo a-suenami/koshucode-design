@@ -286,9 +286,9 @@ ff × clustering_factor = 0.0026 × 139 = 0.36 なので、
 
 
 
-[TABLE.sql]: TABLE.sql
-[DATA.sql]: DATA.sql
-[VIEW.sql]: VIEW.sql
+[TABLE.sql]: sql/TABLE.sql
+[DATA.sql] : sql/DATA.sql
+[VIEW.sql]:  sql/VIEW.sql
 [readv]: http://pubs.opengroup.org/onlinepubs/009695399/functions/readv.html
 [ベクトル I/O]: http://en.wikipedia.org/wiki/Vectored_I/O
 
