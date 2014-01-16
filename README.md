@@ -31,6 +31,8 @@
 
 [外部キー][foreign-key] — ver 0.40
 
+[中置記法から前置記法への変換][infix-notation] — ver 0.41
+
 [無項関係との結び][join-with-reldum] — ver 0.38
 
 [関係化写像の種類][kind-of-relfiers] — ver 0.38
@@ -67,6 +69,7 @@
 [duplicate-keys]: note/duplicate-keys
 [exit-status]: note/exit-status
 [foreign-key]: note/foreign-key
+[infix-notation]: note/infix-notation
 [join-with-reldum]: note/join-with-reldum
 [kind-of-relfiers]: note/kind-of-relfiers
 [read-judge-literals]: note/read-judge-literals
