@@ -60,6 +60,8 @@
 
 [関係モデル -- 判断することの計算体系][prezi-relational-model]
 
+[LMCP 方式][lmcp-method]
+
 [実行計画のためのコスト計算式][rdbms-cost-formula]
 
 
@@ -84,5 +86,6 @@
 [validation-using-relation]: note/validation-using-relation
 
 [prezi-relational-model]: note/prezi-relational-model
+[lmcp-method]: note/lmcp-method
 [rdbms-cost-formula]: note/rdbms-cost-formula
 
