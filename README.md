@@ -23,6 +23,8 @@
 
 [関係写像の構成][construct-relmap] — ver 0.39
 
+[データ構成行列][data-component-matrix] — ver 0.42
+
 [連想リストへの分割][divide-into-assoc] — ver 0.38
 
 [キー項目の重複][duplicate-keys] — ver 0.38
@@ -67,6 +69,7 @@
 
 [boyce-codd-normal-form]: note/boyce-codd-normal-form
 [construct-relmap]: note/construct-relmap
+[data-component-matrix]: note/data-component-matrix
 [divide-into-assoc]: note/divide-into-assoc
 [duplicate-keys]: note/duplicate-keys
 [exit-status]: note/exit-status
