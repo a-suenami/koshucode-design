@@ -66,6 +66,8 @@
 
 [実行計画のためのコスト計算式][rdbms-cost-formula]
 
+[全称矛盾命題][universal-contradiction]
+
 
 [boyce-codd-normal-form]: note/boyce-codd-normal-form
 [construct-relmap]: note/construct-relmap
@@ -86,6 +88,7 @@
 [some-and-none]: note/some-and-none
 [subrelation]: note/subrelation
 [text-table]: note/text-table
+[universal-contradiction]: note/universal-contradiction
 [validation-using-relation]: note/validation-using-relation
 
 [prezi-relational-model]: note/prezi-relational-model
