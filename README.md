@@ -60,13 +60,17 @@
 [関係を使ったデータの検証][validation-using-relation] — ver 0.37
 
 
-[関係モデル -- 判断することの計算体系][prezi-relational-model]
 
 [LMCP 方式][lmcp-method]
 
+[関係モデル -- 判断することの計算体系][prezi-relational-model]
+
 [実行計画のためのコスト計算式][rdbms-cost-formula]
 
+[関係型データ交換][rdi]
+
 [全称矛盾命題][universal-contradiction]
+
 
 
 [boyce-codd-normal-form]: note/boyce-codd-normal-form
@@ -88,10 +92,11 @@
 [some-and-none]: note/some-and-none
 [subrelation]: note/subrelation
 [text-table]: note/text-table
-[universal-contradiction]: note/universal-contradiction
 [validation-using-relation]: note/validation-using-relation
 
-[prezi-relational-model]: note/prezi-relational-model
 [lmcp-method]: note/lmcp-method
+[prezi-relational-model]: note/prezi-relational-model
 [rdbms-cost-formula]: note/rdbms-cost-formula
+[rdi]: note/rdi
+[universal-contradiction]: note/universal-contradiction
 
