@@ -43,6 +43,8 @@
 
 [関係写像の外部参照][relmap-in-outer-section] — ver 0.38
 
+[関係写像演算子の引数][relmap-operand] — ver 0.42
+
 [エラーの報告][report-error] — ver 0.40
 
 [関係写像の実行][run-relmap-using-relation-directly] — ver 0.37
@@ -85,6 +87,7 @@
 [kind-of-relfiers]: note/kind-of-relfiers
 [read-judge-literals]: note/read-judge-literals
 [relmap-in-outer-section]: note/relmap-in-outer-section
+[relmap-operand]: note/relmap-operand
 [report-error]: note/report-error
 [run-relmap-using-relation-directly]: note/run-relmap-using-relation-directly
 [section-level-process]: note/section-level-process
