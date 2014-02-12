@@ -1,0 +1,13 @@
+@Caption,Sample data
+@Language,en
+
+@@Title
+pattern,zero,one,two
+
+basic,000,111,222
+spaced, 000, 111  ,   222 
+quoted,"000","111","222"
+quoted & spaced, "000",  "111"  , "222"
+doubly double quote, "000""000", """111", """",
+empty,, , "",
+

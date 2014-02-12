@@ -39,6 +39,8 @@
 
 [関係化写像の種類][kind-of-relfiers] — ver 0.38
 
+[メタデータつき CSV][koshu-xsv] — ver 0.43
+
 [判断リテラルの読み込み方][read-judge-literals] — ver 0.37
 
 [関係写像の外部参照][relmap-in-outer-section] — ver 0.38
@@ -85,6 +87,7 @@
 [infix-notation]: note/infix-notation
 [join-with-reldum]: note/join-with-reldum
 [kind-of-relfiers]: note/kind-of-relfiers
+[koshu-xsv]: note/koshu-xsv
 [read-judge-literals]: note/read-judge-literals
 [relmap-in-outer-section]: note/relmap-in-outer-section
 [relmap-operand]: note/relmap-operand

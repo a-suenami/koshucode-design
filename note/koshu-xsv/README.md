@@ -88,17 +88,17 @@ XSV データの見出しと本体を、つぎの 6 つの判断種のデータ�
 [`POPULATION.csv`][POPULATION.csv] を対象として、
 甲州記法への変換コマンド
 
-    koshu-xsv POPULATION.csv > POPULATION.k
+    koshu-env.sh ./unxsv.hs POPULATION.csv > POPULATION.k
 
-を実行すると、つぎの内容のファイル `POPULATION.k` に出力されます。
+を実行すると、つぎような内容のファイル `POPULATION.k` に出力されます。
 
     |-- XSV-DOC       /caption '都道府県別人口と人口増加率
                       /creator '総務省統計局
                       /date '2010-10-01
                       /language 'ja
 
-    |-- XSV-TERM      /pos 0  /term '都道府県
-    |-- XSV-TERM      /pos 1  /term '2000年の人口
+    |-- XSV-TERM      /pos 1  /term '都道府県
+    |-- XSV-TERM      /pos 2  /term '2000年の人口
     ...
 
     |-- XSV-DATATYPE  /term '都道府県  /datatype 'string
