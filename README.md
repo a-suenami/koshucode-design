@@ -41,6 +41,8 @@
 
 [メタデータつき CSV][koshu-xsv] — ver 0.43
 
+[複数の関係を出力する演算子][multiple-output] — ver 0.43
+
 [判断リテラルの読み込み方][read-judge-literals] — ver 0.37
 
 [関係写像の外部参照][relmap-in-outer-section] — ver 0.38
@@ -88,6 +90,7 @@
 [join-with-reldum]: note/join-with-reldum
 [kind-of-relfiers]: note/kind-of-relfiers
 [koshu-xsv]: note/koshu-xsv
+[multiple-output]: note/multiple-output
 [read-judge-literals]: note/read-judge-literals
 [relmap-in-outer-section]: note/relmap-in-outer-section
 [relmap-operand]: note/relmap-operand
