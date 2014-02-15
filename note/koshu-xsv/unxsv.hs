@@ -42,7 +42,8 @@ module Main
   XsvHead (..),
 ) where
 
-import qualified Text.ParserCombinators.Parsec as P
+import qualified Text.Parsec             as P
+import qualified Text.Parsec.String      as P
 import qualified Koshucode.Baala.Base    as B
 import qualified Koshucode.Baala.Core    as C
 import qualified Koshucode.Baala.Vanilla as R
@@ -52,6 +53,9 @@ import qualified Koshucode.Baala.Vanilla as R
 -- ----------------------  Main
 
 type JudgeV = B.Judge R.VContent
+
+xsvSeperators :: String
+xsvSeperators = ",|\t;"
 
 main :: IO ()
 main =
@@ -189,7 +193,7 @@ parseHead :: P.Parser (Maybe Char, XsvHeadRaw)
 parseHead =
     do _     <- P.char '@'
        name  <- P.many1 P.alphaNum
-       sep   <- P.optionMaybe $ P.oneOf ",|\t"
+       sep   <- P.optionMaybe $ P.oneOf xsvSeperators
        first <- parseLineMaybe sep
        return (sep, ('@' : name, (first, [])))
 
