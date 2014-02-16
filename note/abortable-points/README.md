@@ -33,7 +33,7 @@
 [run]:        abort/abort-run.k
 [calc]:       abort/abort-calc.k
 
-[Builtin.Get]:           https://github.com/seinokatsuhiro/koshucode/blob/master/baala/core/Koshucode/Baala/Core/Builtin/Get.hs
+[Builtin.Get]:           https://github.com/seinokatsuhiro/koshucode/blob/master/baala/operator/Koshucode/Baala/Builtin/Get.hs
 [Core.Assert.Run]:       https://github.com/seinokatsuhiro/koshucode/blob/master/baala/core/Koshucode/Baala/Core/Assert/Run.hs
 [Core.Content.Cox]:      https://github.com/seinokatsuhiro/koshucode/blob/master/baala/core/Koshucode/Baala/Core/Content/Cox.hs
 [Core.Relmap.Construct]: https://github.com/seinokatsuhiro/koshucode/blob/master/baala/core/Koshucode/Baala/Core/Relmap/Construct.hs
