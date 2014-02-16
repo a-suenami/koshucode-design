@@ -19,6 +19,8 @@
 
 ## もくじ
 
+[計算の中断を補足する場所][abortable-points] — ver 0.43
+
 [近くのお店][boyce-codd-normal-form] (ボイス・コッド正規形) — ver 0.40
 
 [関係写像の構成][construct-relmap] — ver 0.39
@@ -79,33 +81,34 @@
 
 
 
-[boyce-codd-normal-form]: note/boyce-codd-normal-form
-[construct-relmap]: note/construct-relmap
-[data-component-matrix]: note/data-component-matrix
-[divide-into-assoc]: note/divide-into-assoc
-[duplicate-keys]: note/duplicate-keys
-[exit-status]: note/exit-status
-[foreign-key]: note/foreign-key
-[infix-notation]: note/infix-notation
-[join-with-reldum]: note/join-with-reldum
-[kind-of-relfiers]: note/kind-of-relfiers
-[koshu-xsv]: note/koshu-xsv
-[multiple-output]: note/multiple-output
-[read-judge-literals]: note/read-judge-literals
-[relmap-in-outer-section]: note/relmap-in-outer-section
-[relmap-operand]: note/relmap-operand
-[report-error]: note/report-error
+[abortable-points]:                   note/abortable-points
+[boyce-codd-normal-form]:             note/boyce-codd-normal-form
+[construct-relmap]:                   note/construct-relmap
+[data-component-matrix]:              note/data-component-matrix
+[divide-into-assoc]:                  note/divide-into-assoc
+[duplicate-keys]:                     note/duplicate-keys
+[exit-status]:                        note/exit-status
+[foreign-key]:                        note/foreign-key
+[infix-notation]:                     note/infix-notation
+[join-with-reldum]:                   note/join-with-reldum
+[kind-of-relfiers]:                   note/kind-of-relfiers
+[koshu-xsv]:                          note/koshu-xsv
+[multiple-output]:                    note/multiple-output
+[read-judge-literals]:                note/read-judge-literals
+[relmap-in-outer-section]:            note/relmap-in-outer-section
+[relmap-operand]:                     note/relmap-operand
+[report-error]:                       note/report-error
 [run-relmap-using-relation-directly]: note/run-relmap-using-relation-directly
-[section-level-process]: note/section-level-process
-[short-signs]: note/short-signs
-[some-and-none]: note/some-and-none
-[subrelation]: note/subrelation
-[text-table]: note/text-table
-[validation-using-relation]: note/validation-using-relation
+[section-level-process]:              note/section-level-process
+[short-signs]:                        note/short-signs
+[some-and-none]:                      note/some-and-none
+[subrelation]:                        note/subrelation
+[text-table]:                         note/text-table
+[validation-using-relation]:          note/validation-using-relation
 
-[lmcp-method]: note/lmcp-method
-[prezi-relational-model]: note/prezi-relational-model
-[rdbms-cost-formula]: note/rdbms-cost-formula
-[rdi]: note/rdi
-[universal-contradiction]: note/universal-contradiction
+[lmcp-method]:                        note/lmcp-method
+[prezi-relational-model]:             note/prezi-relational-model
+[rdbms-cost-formula]:                 note/rdbms-cost-formula
+[rdi]:                                note/rdi
+[universal-contradiction]:            note/universal-contradiction
 
