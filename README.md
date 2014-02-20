@@ -25,6 +25,8 @@
 
 [関係写像の構成][construct-relmap] — ver 0.39
 
+[項目演算子 if][cop-if] — ver 0.44
+
 [項目演算子 range][cop-range] — ver 0.44
 
 [データ構成行列][data-component-matrix] — ver 0.42
@@ -86,6 +88,7 @@
 [abortable-points]:                   note/abortable-points
 [boyce-codd-normal-form]:             note/boyce-codd-normal-form
 [construct-relmap]:                   note/construct-relmap
+[cop-if]:                             note/cop-if
 [cop-range]:                          note/cop-range
 [data-component-matrix]:              note/data-component-matrix
 [divide-into-assoc]:                  note/divide-into-assoc
