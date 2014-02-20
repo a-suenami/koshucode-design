@@ -57,7 +57,7 @@
 
 [甲州計算機の処理の流れ][section-level-process] — ver 0.40
 
-[略号][short-signs] — ver 0.38
+[短縮記号][short-signs] — ver 0.44
 
 [関係写像による関係の制限][some-and-none] — ver 0.37
 
