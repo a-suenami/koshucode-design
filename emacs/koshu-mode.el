@@ -72,6 +72,10 @@
      ;; punctuation
      ("[]:|(){}#[]" . font-lock-builtin-face)
 
+     ;; arrows
+     (,(regexp-opt '("<-" "->" "<<" ">>") t)
+      . font-lock-builtin-face)
+
      ;; option
      (" -\\([-a-z]\\)+\\>" . font-lock-keyword-face)
 
@@ -85,15 +89,14 @@
       (1 font-lock-keyword-face)
       (2 font-lock-function-name-face))
 
-     ;; relation-mapping operators
+     ;; operators (rop or syntactic cop)
      (,(concat
         " " ;; space before operators
         (regexp-opt
-         '("add" "cut" "duplicate" "empty" "enclose" "full"
-           "group" "hold" "id" "join" "maybe" "meet" "member"
-           "none" "pick" "prefix" "prefix-change" "range"
-           "rank" "reldee" "reldum" "rename" "size" "some"
-           "typename" "unprefix") t)
+         '("add" "check-term" "cut" "duplicate" "empty" "enclose"
+           "full" "group" "hold" "id" "if" "join" "maybe" "meet" "member"
+           "none" "pick" "prefix" "prefix-change" "range" "rank" "reldee"
+           "reldum" "rename" "size" "some" "typename" "unprefix") t)
         "\\>")
       . font-lock-keyword-face)
      )))
