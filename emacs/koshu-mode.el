@@ -51,23 +51,25 @@
       (2 font-lock-function-name-face)
       (3 font-lock-function-name-face))
 
-     ;; shebang
-     ("^\\(#!\\)\\(.*\\)"
+     ;; quotation mark
+     ("\\('\\)\\([\\w]+\\)"
       (1 font-lock-keyword-face)
       (2 font-lock-string-face))
+
+     ;; double-quoted text
+     ("\\(\"\\)\\([^\"\n]*\\)\\(\"\\)"
+      (1 font-lock-keyword-face)
+      (2 font-lock-string-face)
+      (3 font-lock-keyword-face))
 
      ;; term name
      ("\\(/\\)\\(\\w+\\)"
       (1 font-lock-builtin-face)
       (2 font-lock-variable-name-face))
 
-     ;; quotation
-     ("'" . font-lock-string-face)
-
-     ;; double-quoted text
-     ("\\(\"\\)[^\"]*\\(\"\\)"
-      (1 font-lock-string-face)
-      (2 font-lock-string-face))
+     ;; variables of function abstruction
+     ("(|\\(\\( *\\w\\)+\\)"
+      (1 font-lock-variable-name-face))
 
      ;; punctuation
      ("[]:|(){}#[]" . font-lock-builtin-face)
@@ -88,6 +90,11 @@
      ("\\<\\(source\\) +\\(\\w+\\)"
       (1 font-lock-keyword-face)
       (2 font-lock-function-name-face))
+
+     ;; shebang
+     ("^\\(#!\\)\\(.*\\)"
+      (1 font-lock-keyword-face)
+      (2 font-lock-string-face))
 
      ;; operators (rop or syntactic cop)
      (,(concat
