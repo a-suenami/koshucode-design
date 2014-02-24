@@ -47,6 +47,8 @@
 
 [メタデータつき CSV][koshu-xsv] — ver 0.43
 
+[甲州記法のためのラムダ算法][lambda-calculus] — ver 0.45
+
 [複数の関係を出力する演算子][multiple-output] — ver 0.43
 
 [判断リテラルの読み込み方][read-judge-literals] — ver 0.37
@@ -99,6 +101,7 @@
 [join-with-reldum]:                   note/join-with-reldum
 [kind-of-relfiers]:                   note/kind-of-relfiers
 [koshu-xsv]:                          note/koshu-xsv
+[lambda-calculus]:                    note/lambda-calculus
 [multiple-output]:                    note/multiple-output
 [read-judge-literals]:                note/read-judge-literals
 [relmap-in-outer-section]:            note/relmap-in-outer-section
