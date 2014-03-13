@@ -6,18 +6,36 @@
 アイデア、試験的な実装などを記録したノートを集めたものです。
 メモとしての性格が強いため、大部分は雑な記述になっています。
 
-- ひとつのノートは、ひとつのディレクトリを単位とし、
-  `README.md` と関連するソース・ファイルなどから構成されます。
+ - ひとつのノートは、ひとつのディレクトリを単位とし、
+   `README.md` と関連するソース・ファイルなどから構成されます。
 
-- ディレクトリの名前は、原則として、小文字の英単語を
-  ハイフンでつなぎ、やや、説明的な名前をつけます。
+ - ディレクトリの名前は、原則として、小文字の英単語を
+   ハイフンでつなぎ、やや、説明的な名前をつけます。
 
-- `README.md` の文字コードは UTF-8 で、
-  改行コードは CRLF です。
+ - `README.md` の文字コードは UTF-8 で、
+   改行コードは CRLF です。
 
 
 
-## もくじ
+バージョンに依存しないノート
+------------------------------------------------------------------
+
+[Wikipedia Infobox][infobox]
+
+[LMCP 方式][lmcp-method]
+
+[関係モデル -- 判断することの計算体系][prezi-relational-model]
+
+[実行計画のためのコスト計算式][rdbms-cost-formula]
+
+[関係型データ交換][rdi]
+
+[全称矛盾命題][universal-contradiction]
+
+
+
+バージョンに依存するノート
+------------------------------------------------------------------
 
 [計算の中断を補足する場所][abortable-points] — ver 0.43
 
@@ -75,17 +93,11 @@
 
 
 
-[LMCP 方式][lmcp-method]
-
-[関係モデル -- 判断することの計算体系][prezi-relational-model]
-
-[実行計画のためのコスト計算式][rdbms-cost-formula]
-
-[関係型データ交換][rdi]
-
-[全称矛盾命題][universal-contradiction]
-
-
+[lmcp-method]:                        note/lmcp-method
+[prezi-relational-model]:             note/prezi-relational-model
+[rdbms-cost-formula]:                 note/rdbms-cost-formula
+[rdi]:                                note/rdi
+[universal-contradiction]:            note/universal-contradiction
 
 [abortable-points]:                   note/abortable-points
 [boyce-codd-normal-form]:             note/boyce-codd-normal-form
@@ -98,6 +110,7 @@
 [exit-status]:                        note/exit-status
 [foreign-key]:                        note/foreign-key
 [infix-notation]:                     note/infix-notation
+[infobox]:                            note/infobox
 [join-with-reldum]:                   note/join-with-reldum
 [kind-of-relfiers]:                   note/kind-of-relfiers
 [koshu-xsv]:                          note/koshu-xsv
@@ -114,10 +127,4 @@
 [subrelation]:                        note/subrelation
 [text-table]:                         note/text-table
 [validation-using-relation]:          note/validation-using-relation
-
-[lmcp-method]:                        note/lmcp-method
-[prezi-relational-model]:             note/prezi-relational-model
-[rdbms-cost-formula]:                 note/rdbms-cost-formula
-[rdi]:                                note/rdi
-[universal-contradiction]:            note/universal-contradiction
 
