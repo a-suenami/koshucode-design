@@ -49,6 +49,8 @@
 
 [データ構成行列][data-component-matrix] — ver 0.42
 
+[デッドロックの検出][deadlock-detection] — ver 0.49
+
 [連想リストへの分割][divide-into-assoc] — ver 0.38
 
 [キー項目の重複][duplicate-keys] — ver 0.38
@@ -105,6 +107,7 @@
 [cop-if]:                             note/cop-if
 [cop-range]:                          note/cop-range
 [data-component-matrix]:              note/data-component-matrix
+[deadlock-detection]:                 note/deadlock-detection
 [divide-into-assoc]:                  note/divide-into-assoc
 [duplicate-keys]:                     note/duplicate-keys
 [exit-status]:                        note/exit-status
