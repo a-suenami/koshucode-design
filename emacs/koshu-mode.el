@@ -100,10 +100,14 @@
      (,(concat
         " " ;; space before operators
         (regexp-opt
-         '("add" "check-term" "cut" "duplicate" "empty" "enclose"
-           "full" "group" "hold" "id" "if" "join" "maybe" "meet" "member"
-           "none" "pick" "prefix" "prefix-change" "range" "rank" "reldee"
-           "reldum" "rename" "size" "some" "typename" "unprefix") t)
+         '("add" "check-term" "compose" "contents"
+           "cut" "cut-term" "duplicate" "empty"
+           "enclose" "fix" "fix-join" "full" "group"
+           "id" "if" "join" "keep" "maybe" "meet"
+           "member" "none" "number" "omit" "pick" "pick-term"
+           "prefix" "prefix-change" "range" "rank" "reldee"
+           "reldum" "rename" "repeat" "size" "some" "subst"
+           "typename" "unless" "unprefix" "when") t)
         "\\>")
       . font-lock-keyword-face)
      )))
