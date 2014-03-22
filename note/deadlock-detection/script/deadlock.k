@@ -10,11 +10,15 @@
 
 ** **********************  出力
 
+**  判断
+**    NODE-SET
 **  解釈
 **    /node-set はデッドロック関係にある処理単位の集合である。
 
 |== NODE-SET : nodes
 
+**  判断
+**    NODE
 **  解釈
 **    /node はデットロックしている処理単位である。
 
@@ -22,6 +26,11 @@
 
 
 ** **********************  計算
+
+**  判断
+**    WAIT
+**  解釈
+**    処理単位 /after は処理単位 /before の終了を待っている。
 
 wait    : source WAIT /before /after
 wait-ma : wait | rename /medium /before    ** /medium /after
