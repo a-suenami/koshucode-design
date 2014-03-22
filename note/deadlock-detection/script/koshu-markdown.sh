@@ -4,15 +4,53 @@
 #    Generate markdown document for koshu scripts.
 #
 #  USAGE
-#    koshu-markdown.sh *.k > README.md
+#    koshu-markdown.sh deadlock.k *.k > README.md
 #
 
-calc=deadlock.k
+usage () {
+    echo "DESCRIPTION"
+    echo "  Generate markdown document for koshu script"
+    echo
+    echo "USAGE"
+    echo "  $0 CALC.k DATA.k ... > README.md"
+    echo
+
+    exit 1
+}
+
+error () {
+    echo "$*" 1>&2
+}
 
 subhead () {
     echo
-    echo "## $1"
+    echo "## [$1]($1)"
     echo
+}
+
+contents () {
+    echo
+    echo "- [$calc]`link $calc`"
+
+    for k in "$@"; do
+        if [ "$k" != "$calc" ]; then
+            echo "- koshu $calc [$k]`link $k`"
+        fi
+    done
+}
+
+link () {
+    echo "(#$1)" | tr -d '.'
+}
+
+io () {
+    input "$1"
+    koshu "$calc" "$1" | output $? "$1"
+}
+
+input () {
+    subhead "$1"
+    list    "$1"
 }
 
 list () {
@@ -21,21 +59,35 @@ list () {
     echo '```'
 }
 
-io () {
-    subhead "$1"
-    list "$1"
+output () {
+    error "[$1] koshu $calc $2"
 
-    echo "Command \`koshu $calc $1\` produces:"
+    if [ "$1" = 0 ]; then
+        echo "Command \`koshu $calc $2\` produces:"
+    else
+        echo "Command \`koshu $calc $2\` exits at $1 and produces:"
+    fi
+
     echo
     echo '```'
-    koshu "$calc" "$1"
+    cat -
     echo '```'
 }
 
+# --------------------------------------------
+
+calc="$1"
+shift
+
+if [ ! -e "$calc" ]; then
+    usage
+fi
+
 echo "# Koshu I/O Listing"
 
-subhead "$calc"
-list "$calc"
+contents "$@"
+
+input "$calc"
 
 for k in "$@"; do
     if [ "$k" != "$calc" ]; then

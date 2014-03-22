@@ -1,6 +1,11 @@
 # Koshu I/O Listing
 
-## deadlock.k
+- [deadlock.k](#deadlockk)
+- koshu deadlock.k [fine.k](#finek)
+- koshu deadlock.k [many.k](#manyk)
+- koshu deadlock.k [one.k](#onek)
+
+## [deadlock.k](deadlock.k)
 
 ```
 ** -*- koshu -*-
@@ -15,11 +20,15 @@
 
 ** **********************  出力
 
+**  判断
+**    NODE-SET
 **  解釈
 **    /node-set はデッドロック関係にある処理単位の集合である。
 
 |== NODE-SET : nodes
 
+**  判断
+**    NODE
 **  解釈
 **    /node はデットロックしている処理単位である。
 
@@ -27,6 +36,11 @@
 
 
 ** **********************  計算
+
+**  判断
+**    WAIT
+**  解釈
+**    処理単位 /after は処理単位 /before の終了を待っている。
 
 wait    : source WAIT /before /after
 wait-ma : wait | rename /medium /before    ** /medium /after
@@ -48,7 +62,7 @@ nodes : closure
   | pick /node-set
 ```
 
-## fine.k
+## [fine.k](fine.k)
 
 ```
 ** -*- koshu -*-
@@ -82,7 +96,7 @@ Command `koshu deadlock.k fine.k` produces:
 **
 ```
 
-## many.k
+## [many.k](many.k)
 
 ```
 ** -*- koshu -*-
@@ -126,7 +140,7 @@ Command `koshu deadlock.k many.k` produces:
 **
 ```
 
-## one.k
+## [one.k](one.k)
 
 ```
 ** -*- koshu -*-
