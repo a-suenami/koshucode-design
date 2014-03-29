@@ -51,6 +51,8 @@
 
 [デッドロックの検出][deadlock-detection] — ver 0.49
 
+[関係写像による計算の図解][diagram-of-relmap-calculation] — ver 0.50
+
 [連想リストへの分割][divide-into-assoc] — ver 0.38
 
 [キー項目の重複][duplicate-keys] — ver 0.38
@@ -110,6 +112,7 @@
 [cop-range]:                          note/cop-range
 [data-component-matrix]:              note/data-component-matrix
 [deadlock-detection]:                 note/deadlock-detection
+[diagram-of-relmap-calculation]:      note/diagram-of-relmap-calculation
 [divide-into-assoc]:                  note/divide-into-assoc
 [duplicate-keys]:                     note/duplicate-keys
 [exit-status]:                        note/exit-status
