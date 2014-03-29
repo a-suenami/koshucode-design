@@ -19,7 +19,11 @@
 
   ;; font-lock
   (set (make-local-variable 'font-lock-defaults)
-       koshu-mode-font-lock))
+       koshu-mode-font-lock)
+  (make-local-variable 'font-lock-extend-region-functions)
+  (add-hook 'font-lock-extend-region-functions
+            'koshu-font-lock-extend-region)
+  )
 
 (defvar koshu-mode-syntax-table
   (let ((table (make-syntax-table text-mode-syntax-table)))
@@ -29,12 +33,23 @@
     table)
   "Syntax table used in Koshu mode.")
 
+(defun koshu-font-lock-extend-region ()
+  (save-excursion
+    (goto-char font-lock-beg)
+    (when (re-search-backward "^[*][*][*][*]" nil t)
+      (goto-char font-lock-end)
+      (when (re-search-forward "^[^ \t]" nil t)
+        (beginning-of-line)
+        (setq font-lock-end (point))))))
+
 (defvar koshu-mode-font-lock
-  `(( ;; clause comment
-     ("^ *\\*\\*\\*\\*" . font-lock-comment-face)
+  `(( ;; clause comment (from "****" to beginning of next clause)
+     ("^\\([*][*][*][*]\\)\\(.*\n\\(\n\\|[ \t].*\n\\)*\\)"
+      (1 font-lock-comment-delimiter-face)
+      (2 font-lock-comment-face))
 
      ;; line comment
-     ("\\(\\*\\*\\)\\(.*\\)"
+     ("\\([*][*]\\)\\(.*\\)"
       (1 font-lock-comment-delimiter-face)
       (2 font-lock-comment-face))
 
