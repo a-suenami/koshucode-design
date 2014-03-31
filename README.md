@@ -73,6 +73,8 @@
 
 [複数の関係を出力する演算子][multiple-output] — ver 0.43
 
+[関係系としての入れ子関係][nested-relations-as-relational-system] — ver 0.50
+
 [判断リテラルの読み込み方][read-judge-literals] — ver 0.37
 
 [関係写像の外部参照][relmap-in-outer-section] — ver 0.38
@@ -99,41 +101,42 @@
 
 
 
-[lmcp-method]:                        note/lmcp-method
-[prezi-relational-model]:             note/prezi-relational-model
-[rdbms-cost-formula]:                 note/rdbms-cost-formula
-[rdi]:                                note/rdi
-[universal-contradiction]:            note/universal-contradiction
+[lmcp-method]:                            note/lmcp-method
+[prezi-relational-model]:                 note/prezi-relational-model
+[rdbms-cost-formula]:                     note/rdbms-cost-formula
+[rdi]:                                    note/rdi
+[universal-contradiction]:                note/universal-contradiction
 
-[abortable-points]:                   note/abortable-points
-[boyce-codd-normal-form]:             note/boyce-codd-normal-form
-[construct-relmap]:                   note/construct-relmap
-[cop-if]:                             note/cop-if
-[cop-range]:                          note/cop-range
-[data-component-matrix]:              note/data-component-matrix
-[deadlock-detection]:                 note/deadlock-detection
-[diagram-of-relmap-calculation]:      note/diagram-of-relmap-calculation
-[divide-into-assoc]:                  note/divide-into-assoc
-[duplicate-keys]:                     note/duplicate-keys
-[exit-status]:                        note/exit-status
-[foreign-key]:                        note/foreign-key
-[infix-notation]:                     note/infix-notation
-[infobox]:                            note/infobox
-[join-with-reldum]:                   note/join-with-reldum
-[kind-of-relfiers]:                   note/kind-of-relfiers
-[koshu-xsv]:                          note/koshu-xsv
-[lambda-calculus]:                    note/lambda-calculus
-[multiple-output]:                    note/multiple-output
-[read-judge-literals]:                note/read-judge-literals
-[relmap-in-outer-section]:            note/relmap-in-outer-section
-[relmap-operand]:                     note/relmap-operand
-[report-error]:                       note/report-error
-[run-relmap-using-relation-directly]: note/run-relmap-using-relation-directly
-[section-level-process]:              note/section-level-process
-[short-signs]:                        note/short-signs
-[snip]:                               note/snip
-[some-and-none]:                      note/some-and-none
-[subrelation]:                        note/subrelation
-[text-table]:                         note/text-table
-[validation-using-relation]:          note/validation-using-relation
+[abortable-points]:                       note/abortable-points
+[boyce-codd-normal-form]:                 note/boyce-codd-normal-form
+[construct-relmap]:                       note/construct-relmap
+[cop-if]:                                 note/cop-if
+[cop-range]:                              note/cop-range
+[data-component-matrix]:                  note/data-component-matrix
+[deadlock-detection]:                     note/deadlock-detection
+[diagram-of-relmap-calculation]:          note/diagram-of-relmap-calculation
+[divide-into-assoc]:                      note/divide-into-assoc
+[duplicate-keys]:                         note/duplicate-keys
+[exit-status]:                            note/exit-status
+[foreign-key]:                            note/foreign-key
+[infix-notation]:                         note/infix-notation
+[infobox]:                                note/infobox
+[join-with-reldum]:                       note/join-with-reldum
+[kind-of-relfiers]:                       note/kind-of-relfiers
+[koshu-xsv]:                              note/koshu-xsv
+[lambda-calculus]:                        note/lambda-calculus
+[nested-relations-as-relational-system]:  note/nested-relations-as-relational-system
+[multiple-output]:                        note/multiple-output
+[read-judge-literals]:                    note/read-judge-literals
+[relmap-in-outer-section]:                note/relmap-in-outer-section
+[relmap-operand]:                         note/relmap-operand
+[report-error]:                           note/report-error
+[run-relmap-using-relation-directly]:     note/run-relmap-using-relation-directly
+[section-level-process]:                  note/section-level-process
+[short-signs]:                            note/short-signs
+[snip]:                                   note/snip
+[some-and-none]:                          note/some-and-none
+[subrelation]:                            note/subrelation
+[text-table]:                             note/text-table
+[validation-using-relation]:              note/validation-using-relation
 
