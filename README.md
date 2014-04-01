@@ -59,6 +59,8 @@
 
 [終了ステータス][exit-status] — ver 0.39
 
+[見出しの平面表示][explain-heading] — ver 0.50
+
 [外部キー][foreign-key] — ver 0.40
 
 [中置記法から前置記法への変換][infix-notation] — ver 0.41
@@ -118,6 +120,7 @@
 [divide-into-assoc]:                      note/divide-into-assoc
 [duplicate-keys]:                         note/duplicate-keys
 [exit-status]:                            note/exit-status
+[explain-heading]:                        note/explain-heading
 [foreign-key]:                            note/foreign-key
 [infix-notation]:                         note/infix-notation
 [infobox]:                                note/infobox
