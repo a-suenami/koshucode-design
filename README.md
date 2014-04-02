@@ -91,6 +91,8 @@
 
 [短縮記号][short-signs] — ver 0.44
 
+[関係のうす切り][slices-of-relation] — ver 0.50
+
 [Snip][snip] — ver 0.49
 
 [関係写像による関係の制限][some-and-none] — ver 0.37
@@ -137,6 +139,7 @@
 [run-relmap-using-relation-directly]:     note/run-relmap-using-relation-directly
 [section-level-process]:                  note/section-level-process
 [short-signs]:                            note/short-signs
+[slices-of-relation]:                     note/slices-of-relation
 [snip]:                                   note/snip
 [some-and-none]:                          note/some-and-none
 [subrelation]:                            note/subrelation
