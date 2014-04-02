@@ -1,7 +1,7 @@
 ** -*- koshu -*-
 **
 **  概要
-**    rel を使って、group を実装する。
+**    slice を使って、group を実装する。
 **
 **  使用例
 **    koshu slice.k
@@ -20,8 +20,8 @@ q : source Q /b /c
 |== GROUP -fore /a /b :
     p | group /g q
 
-|== REL -fore /a /b : 
-    p | rel /r ( meet q | pick-term q )
+|== GROUP2 -fore /a /b : 
+    p | slice /r ( meet q | pick-term q )
 
 |== SLICE -fore /a /b : 
-    p | rel /r id
+    p | slice /r id
