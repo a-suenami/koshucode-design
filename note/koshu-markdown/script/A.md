@@ -1,8 +1,8 @@
 # I/O list of koshu
 
-- koshu  [calc.k](#calck)
-- koshu  [A.k](#Ak)
-- koshu  [output](#output)
+- [calc.k](#calck)
+- [A.k](#ak)
+- [output](#output)
 
 
 

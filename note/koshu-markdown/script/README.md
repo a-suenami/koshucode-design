@@ -1,9 +1,9 @@
 # I/O list of koshu
 
 - [calc.k](#calck)
-- koshu calc.k [A.k](#Ak)
-- koshu calc.k [B.k](#Bk)
-- koshu calc.k [C.k](#Ck)
+- koshu calc.k [A.k](#ak)
+- koshu calc.k [B.k](#bk)
+- koshu calc.k [C.k](#ck)
 
 
 
