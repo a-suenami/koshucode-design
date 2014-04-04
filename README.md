@@ -69,6 +69,8 @@
 
 [関係化写像の種類][kind-of-relfiers] — ver 0.38
 
+[入出力リスト][koshu-markdown] — ver 0.50
+
 [メタデータつき CSV][koshu-xsv] — ver 0.43
 
 [甲州記法のためのラムダ算法][lambda-calculus] — ver 0.45
@@ -128,6 +130,7 @@
 [infobox]:                                note/infobox
 [join-with-reldum]:                       note/join-with-reldum
 [kind-of-relfiers]:                       note/kind-of-relfiers
+[koshu-markdown]:                         note/koshu-markdown
 [koshu-xsv]:                              note/koshu-xsv
 [lambda-calculus]:                        note/lambda-calculus
 [nested-relations-as-relational-system]:  note/nested-relations-as-relational-system
