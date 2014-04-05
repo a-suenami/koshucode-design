@@ -57,6 +57,8 @@
 
 [キー項目の重複][duplicate-keys] — ver 0.38
 
+[包括演算子の別定義][equivalent-for-down] — ver 0.50
+
 [終了ステータス][exit-status] — ver 0.39
 
 [見出しの平面表示][explain-heading] — ver 0.50
@@ -123,6 +125,7 @@
 [diagram-of-relmap-calculation]:          note/diagram-of-relmap-calculation
 [divide-into-assoc]:                      note/divide-into-assoc
 [duplicate-keys]:                         note/duplicate-keys
+[equivalent-for-down]:                    note/equivalent-for-down
 [exit-status]:                            note/exit-status
 [explain-heading]:                        note/explain-heading
 [foreign-key]:                            note/foreign-key
