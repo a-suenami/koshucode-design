@@ -61,5 +61,5 @@ Command `koshu calc.k A.k` produces:
 This document is produced by the command:
 
 ```
-koshu-markdown.sh calc.k A.k
+koshu-markdown.sh -o A.md calc.k A.k
 ```

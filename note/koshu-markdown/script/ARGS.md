@@ -4,7 +4,7 @@
 - koshu calc.k [A.k](#ak)
 - koshu calc.k [B.k](#bk)
 - koshu calc.k [C.k](#ck)
-- koshu calc.k [B.k C.k](#bkck)
+- koshu calc.k [B.k C.k](#bk-ck)
 
 
 
@@ -162,5 +162,5 @@ Command `koshu calc.k B.k C.k` produces:
 This document is produced by the command:
 
 ```
-koshu-markdown.sh -f ARGS calc.k
+koshu-markdown.sh -o ARGS.md -f ARGS calc.k
 ```
