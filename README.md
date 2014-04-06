@@ -88,7 +88,9 @@
 
 [外部キー][foreign-key] — ver 0.40
 
-[包括演算子の別定義][equivalent-for-down] — ver 0.50
+[包括演算子の等価定義][equivalent-for-down] — ver 0.50
+
+[両結びの等価定義][equivalent-for-both] — ver 0.50
 
 [無項関係との結び][join-with-reldum] — ver 0.38
 
@@ -125,6 +127,7 @@
 [divide-into-assoc]:                      note/divide-into-assoc
 [duplicate-keys]:                         note/duplicate-keys
 [equivalent-for-down]:                    note/equivalent-for-down
+[equivalent-for-both]:                    note/equivalent-for-both
 [exit-status]:                            note/exit-status
 [explain-heading]:                        note/explain-heading
 [foreign-key]:                            note/foreign-key
