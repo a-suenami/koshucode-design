@@ -24,6 +24,8 @@
 
 [LMCP 方式][lmcp-method]
 
+[入出力リスト][koshu-markdown]
+
 [関係モデル -- 判断することの計算体系][prezi-relational-model]
 
 [実行計画のためのコスト計算式][rdbms-cost-formula]
@@ -41,8 +43,6 @@
 
 [近くのお店][boyce-codd-normal-form] (ボイス・コッド正規形) — ver 0.40
 
-[関係写像の構成][construct-relmap] — ver 0.39
-
 [項目演算子 if][cop-if] — ver 0.44
 
 [項目演算子 range][cop-range] — ver 0.44
@@ -51,69 +51,68 @@
 
 [デッドロックの検出][deadlock-detection] — ver 0.49
 
-[関係写像による計算の図解][diagram-of-relmap-calculation] — ver 0.50
-
 [連想リストへの分割][divide-into-assoc] — ver 0.38
-
-[キー項目の重複][duplicate-keys] — ver 0.38
-
-[包括演算子の別定義][equivalent-for-down] — ver 0.50
 
 [終了ステータス][exit-status] — ver 0.39
 
 [見出しの平面表示][explain-heading] — ver 0.50
 
-[外部キー][foreign-key] — ver 0.40
-
 [中置記法から前置記法への変換][infix-notation] — ver 0.41
-
-[無項関係との結び][join-with-reldum] — ver 0.38
-
-[関係化写像の種類][kind-of-relfiers] — ver 0.38
-
-[入出力リスト][koshu-markdown] — ver 0.50
 
 [メタデータつき CSV][koshu-xsv] — ver 0.43
 
 [甲州記法のためのラムダ算法][lambda-calculus] — ver 0.45
 
-[複数の関係を出力する演算子][multiple-output] — ver 0.43
-
-[関係系としての入れ子関係][nested-relations-as-relational-system] — ver 0.50
-
 [判断リテラルの読み込み方][read-judge-literals] — ver 0.37
 
-[関係写像の外部参照][relmap-in-outer-section] — ver 0.38
-
-[関係写像演算子の引数][relmap-operand] — ver 0.42
-
 [エラーの報告][report-error] — ver 0.40
-
-[関係写像の実行][run-relmap-using-relation-directly] — ver 0.37
 
 [甲州計算機の処理の流れ][section-level-process] — ver 0.40
 
 [短縮記号][short-signs] — ver 0.44
 
-[関係のうす切り][slices-of-relation] — ver 0.50
-
 [Snip][snip] — ver 0.49
+
+[テキストを使った表の描画][text-table] — ver 0.40
+
+
+
+関係に関するノート
+------------------------------------------------------------------
+
+[関係写像の構成][construct-relmap] — ver 0.39
+
+[関係写像による計算の図解][diagram-of-relmap-calculation] — ver 0.50
+
+[キー項目の重複][duplicate-keys] — ver 0.38
+
+[外部キー][foreign-key] — ver 0.40
+
+[包括演算子の別定義][equivalent-for-down] — ver 0.50
+
+[無項関係との結び][join-with-reldum] — ver 0.38
+
+[関係化写像の種類][kind-of-relfiers] — ver 0.38
+
+[複数の関係を出力する演算子][multiple-output] — ver 0.43
+
+[関係系としての入れ子関係][nested-relations-as-relational-system] — ver 0.50
+
+[関係写像の外部参照][relmap-in-outer-section] — ver 0.38
+
+[関係写像演算子の引数][relmap-operand] — ver 0.42
+
+[関係写像の実行][run-relmap-using-relation-directly] — ver 0.37
+
+[関係のうす切り][slices-of-relation] — ver 0.50
 
 [関係写像による関係の制限][some-and-none] — ver 0.37
 
 [部分関係][subrelation] — ver 0.40
 
-[テキストを使った表の描画][text-table] — ver 0.40
-
 [関係を使ったデータの検証][validation-using-relation] — ver 0.37
 
 
-
-[lmcp-method]:                            note/lmcp-method
-[prezi-relational-model]:                 note/prezi-relational-model
-[rdbms-cost-formula]:                     note/rdbms-cost-formula
-[rdi]:                                    note/rdi
-[universal-contradiction]:                note/universal-contradiction
 
 [abortable-points]:                       note/abortable-points
 [boyce-codd-normal-form]:                 note/boyce-codd-normal-form
@@ -136,8 +135,12 @@
 [koshu-markdown]:                         note/koshu-markdown
 [koshu-xsv]:                              note/koshu-xsv
 [lambda-calculus]:                        note/lambda-calculus
-[nested-relations-as-relational-system]:  note/nested-relations-as-relational-system
+[lmcp-method]:                            note/lmcp-method
 [multiple-output]:                        note/multiple-output
+[nested-relations-as-relational-system]:  note/nested-relations-as-relational-system
+[prezi-relational-model]:                 note/prezi-relational-model
+[rdbms-cost-formula]:                     note/rdbms-cost-formula
+[rdi]:                                    note/rdi
 [read-judge-literals]:                    note/read-judge-literals
 [relmap-in-outer-section]:                note/relmap-in-outer-section
 [relmap-operand]:                         note/relmap-operand
@@ -150,5 +153,6 @@
 [some-and-none]:                          note/some-and-none
 [subrelation]:                            note/subrelation
 [text-table]:                             note/text-table
+[universal-contradiction]:                note/universal-contradiction
 [validation-using-relation]:              note/validation-using-relation
 
