@@ -11,3 +11,4 @@ This summary is produced by the command `koshu-regress.sh`
 - OK – [A.md](note/koshu-markdown/script/A.md) in note / koshu-markdown / script
 - OK – [README.md](note/koshu-markdown/script/README.md) in note / koshu-markdown / script
 - OK – [ARGS.md](note/koshu-markdown/script/ARGS.md) in note / koshu-markdown / script
+- OK – [INOUT.md](note/text-table-for-relation/INOUT.md) in note / text-table-for-relation

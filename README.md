@@ -39,6 +39,11 @@
 バージョンに依存するノート
 ------------------------------------------------------------------
 
+ノートが甲州記法の使用例を含んでいるとき、その入出力結果へのリンクが
+[入出力リストの要約][INOUT-SUMMARY.md] に一覧されています。
+この要約は、入出力の使用例を分かりやすく提示すると同時に、
+退行テストの内容とすることを兼ねています。
+
 [計算の中断を補足する場所][abortable-points] — ver 0.43
 
 [近くのお店][boyce-codd-normal-form] (ボイス・コッド正規形) — ver 0.40
@@ -74,6 +79,8 @@
 [Snip][snip] — ver 0.49
 
 [テキストを使った表の描画][text-table] — ver 0.40
+
+[表形式での関係の表示][text-table-for-relation] — ver 0.51
 
 
 
@@ -116,6 +123,8 @@
 
 
 
+[INOUT-SUMMARY.md]:                       INOUT-SUMMARY.md
+
 [abortable-points]:                       note/abortable-points
 [boyce-codd-normal-form]:                 note/boyce-codd-normal-form
 [construct-relmap]:                       note/construct-relmap
@@ -156,6 +165,6 @@
 [some-and-none]:                          note/some-and-none
 [subrelation]:                            note/subrelation
 [text-table]:                             note/text-table
+[text-table-for-relation]:                note/text-table-for-relation
 [universal-contradiction]:                note/universal-contradiction
 [validation-using-relation]:              note/validation-using-relation
-
