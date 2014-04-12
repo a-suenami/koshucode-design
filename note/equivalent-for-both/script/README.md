@@ -199,5 +199,5 @@ Command `koshu DATA.k both.k` produces:
 This document is produced by the command:
 
 ```
-koshu-markdown.sh -r -f CALC DATA.k
+koshu-inout.sh -r -f CALC DATA.k
 ```

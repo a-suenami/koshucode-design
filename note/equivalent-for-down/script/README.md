@@ -44,7 +44,9 @@ Command `koshu copy.k` produces:
 **
 
 |-- DOWN-1  /r {| /a : /b | 10 : 40 | 10 : 50 | 20 : 60 |}
+
 |-- DOWN-2  /r {| /a : /b | 10 : 40 | 10 : 50 | 20 : 60 |}
+
 |-- DOWN-3  /r {| /a : /b | 10 : 40 | 10 : 50 | 20 : 60 |}  /a 10  /b 40
 |-- DOWN-3  /r {| /a : /b | 10 : 40 | 10 : 50 | 20 : 60 |}  /a 10  /b 50
 |-- DOWN-3  /r {| /a : /b | 10 : 40 | 10 : 50 | 20 : 60 |}  /a 20  /b 60
@@ -68,5 +70,5 @@ Command `koshu copy.k` produces:
 This document is produced by the command:
 
 ```
-koshu-markdown.sh -r copy.k
+koshu-inout.sh -r copy.k
 ```

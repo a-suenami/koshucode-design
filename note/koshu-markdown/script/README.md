@@ -124,5 +124,5 @@ Command `koshu calc.k C.k` produces:
 This document is produced by the command:
 
 ```
-koshu-markdown.sh -r -g calc.k
+koshu-inout.sh -r -g calc.k
 ```

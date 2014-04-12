@@ -176,5 +176,5 @@ Command `koshu calc.k B.k C.k` produces:
 This document is produced by the command:
 
 ```
-koshu-markdown.sh -o ARGS.md -f ARGS calc.k
+koshu-inout.sh -o ARGS.md -f ARGS calc.k
 ```
