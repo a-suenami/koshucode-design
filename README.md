@@ -64,6 +64,8 @@
 
 [中置記法から前置記法への変換][infix-notation] — ver 0.41
 
+[関係写像演算子の一覧][koshu-rop] — ver 0.52
+
 [メタデータつき CSV][koshu-xsv] — ver 0.43
 
 [甲州記法のためのラムダ算法][lambda-calculus] — ver 0.45
@@ -145,6 +147,7 @@
 [join-with-reldum]:                       note/join-with-reldum
 [kind-of-relfiers]:                       note/kind-of-relfiers
 [koshu-markdown]:                         note/koshu-markdown
+[koshu-rop]:                              note/koshu-rop
 [koshu-xsv]:                              note/koshu-xsv
 [lambda-calculus]:                        note/lambda-calculus
 [lmcp-method]:                            note/lmcp-method
