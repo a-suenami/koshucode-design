@@ -7,8 +7,6 @@
 **    koshu rop.k
 **
 
-|== VERSION : koshu-version /ver
-
 |== ROP -with-table -fore /n /group
     : koshu-rop -group /group
                 -name  /name
