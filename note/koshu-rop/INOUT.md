@@ -43,6 +43,8 @@ Command `koshu rop.k` produces:
 |-- ROP  /n 4  /group 'nest  /rop {| /n : /name : /usage | 1 : 'copy : "copy N R" | 2 : 'down : "down /N" | 3 : 'for : "for /N R [ -with /N ... ]" | 4 : 'group : "group /N R" | 5 : 'group-by : "group-by /N R" | 6 : 'join-up : "join-up /P ..." | 7 : 'nest : "nest /P ... -to /N" | 8 : 'slice : "slice /N [R] [ -with /N ... ]" | 9 : 'slice-up : "slice-up R [ -with /N ... ]" | 10 : 'split : "split /N E ..." | 11 : 'unnest : "unnest /P" | 12 : 'up : "up /N" |}
 |-- ROP  /n 5  /group 'vanilla  /rop {| /n : /name : /usage | 1 : 'add : "add /N E ..." | 2 : 'both : "both R" | 3 : 'check-term : "check-term [ -just /N ... | -has /N ... | -but /N ... ]" | 4 : 'compose : "compose R" | 5 : 'const : "const R" | 6 : 'dump : 'dump | 7 : 'duplicate : "duplicate /N ..." | 8 : 'fix : "fix R" | 9 : 'fix-join : "fix-join R" | 10 : 'hold : "hold E" | 11 : 'if : "if R ..." | 12 : 'keep : "keep E" | 13 : 'maybe : "maybe R" | 14 : 'member : "member /N /N" | 15 : 'number : "number /N -order /N ..." | 16 : 'omit : "omit E" | 17 : 'prefix : "prefix /P /N ..." | 18 : 'prefix-change : "prefix-change /P /Q" | 19 : 'range : "range /N -from E -to E" | 20 : 'rank : "rank /N -order /N ..." | 21 : 'rdf : "rdf P /S /O" | 22 : 'repeat : "repeat N R" | 23 : 'size : "size /N" | 24 : 'subst : "subst /N E ..." | 25 : 'typename : "typename /N /P ..." | 26 : 'unless : "unless R R" | 27 : 'unprefix : "unprefix /P" | 28 : 'when : "when R R" |}
 
+*** 5 judges
+
 **  TABLE : ROP
 **
 **    /n  /group     /rop

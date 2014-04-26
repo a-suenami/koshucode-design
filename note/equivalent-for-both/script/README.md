@@ -61,6 +61,8 @@ Command `koshu DATA.k maybe.k` produces:
 |-- MAYBE  /a 20  /b 50  /c 80
 |-- MAYBE  /a ()  /b 60  /c 90
 
+*** 4 judges
+
 **
 **  SUMMARY
 **       4 judges on MAYBE
@@ -91,6 +93,8 @@ Command `koshu DATA.k maybe-liner.k` produces:
 |-- MAYBE-LINER  /a 10  /b 50  /c 80
 |-- MAYBE-LINER  /a 20  /b 50  /c 80
 |-- MAYBE-LINER  /a ()  /b 60  /c 90
+
+*** 4 judges
 
 **
 **  SUMMARY
@@ -123,6 +127,8 @@ Command `koshu DATA.k copy-maybe.k` produces:
 |-- COPY-MAYBE  /a 20  /b 50  /c 80
 |-- COPY-MAYBE  /a ()  /b 60  /c 90
 
+*** 4 judges
+
 **
 **  SUMMARY
 **       4 judges on COPY-MAYBE
@@ -154,6 +160,8 @@ Command `koshu DATA.k once.k` produces:
 |-- ONCE  /a 20  /b 50  /c 80
 |-- ONCE  /a ()  /b 60  /c 90
 
+*** 4 judges
+
 **
 **  SUMMARY
 **       4 judges on ONCE
@@ -184,6 +192,8 @@ Command `koshu DATA.k both.k` produces:
 |-- BOTH  /a 10  /b 50  /c 80
 |-- BOTH  /a 20  /b 50  /c 80
 |-- BOTH  /a ()  /b 60  /c 90
+
+*** 4 judges
 
 **
 **  SUMMARY

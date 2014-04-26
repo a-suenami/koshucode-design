@@ -44,6 +44,8 @@ Command `koshu calc.k A.k` produces:
 
 |-- R  /c 80  /a 10  /b 40
 
+*** 1 judge 
+
 **
 **  SUMMARY
 **       1 judge  on R
@@ -82,6 +84,8 @@ Command `koshu calc.k B.k` produces:
 |-- R  /c 80  /a 10  /b 50
 |-- R  /c 80  /a 20  /b 50
 
+*** 3 judges
+
 **
 **  SUMMARY
 **       3 judges on R
@@ -111,6 +115,8 @@ Command `koshu calc.k C.k` produces:
 **    calc.k
 **    C.k
 **
+
+*** no judges
 
 **
 **  SUMMARY
@@ -161,6 +167,8 @@ Command `koshu calc.k B.k C.k` produces:
 |-- R  /c 80  /a 30  /b 50
 
 |-- R  /c 80  /a 40  /b 50
+
+*** 6 judges
 
 **
 **  SUMMARY

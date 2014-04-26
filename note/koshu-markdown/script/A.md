@@ -47,6 +47,8 @@ Command `koshu calc.k A.k` produces:
 
 |-- R  /c 80  /a 10  /b 40
 
+*** 1 judge 
+
 **
 **  SUMMARY
 **       1 judge  on R
