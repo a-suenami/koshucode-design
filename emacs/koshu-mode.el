@@ -82,6 +82,11 @@
       (1 font-lock-builtin-face)
       (2 font-lock-variable-name-face))
 
+     ;; slot name
+     ("\\(@+\\)\\(['*]*\\w*\\)"
+      (1 font-lock-builtin-face)
+      (2 font-lock-variable-name-face))
+
      ;; variables of function abstruction
      ("(|\\(\\( *\\w\\)+\\)"
       (1 font-lock-variable-name-face))
