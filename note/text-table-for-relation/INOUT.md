@@ -1,4 +1,4 @@
-# I/O list of koshu
+# I/O List
 
 - [DATA.k](#datak)
 - koshu DATA.k [client.k](#clientk)
@@ -198,5 +198,5 @@ Command `koshu DATA.k stock.k` produces:
 This document is produced by the command:
 
 ```
-koshu-inout.sh -s -g DATA.k
+koshu-inout.sh -s -g koshu DATA.k
 ```

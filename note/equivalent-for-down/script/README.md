@@ -1,4 +1,4 @@
-# I/O list of koshu
+# I/O List
 
 - [copy.k](#copyk)
 - [output](#output)
@@ -78,5 +78,5 @@ Command `koshu copy.k` produces:
 This document is produced by the command:
 
 ```
-koshu-inout.sh -r copy.k
+koshu-inout.sh -r koshu copy.k
 ```

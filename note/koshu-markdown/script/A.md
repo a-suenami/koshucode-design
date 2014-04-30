@@ -1,4 +1,4 @@
-# I/O list of koshu
+# I/O List
 
 - [calc.k](#calck)
 - [A.k](#ak)
@@ -63,5 +63,5 @@ Command `koshu calc.k A.k` produces:
 This document is produced by the command:
 
 ```
-koshu-inout.sh -o A.md calc.k A.k
+koshu-inout.sh -o A.md koshu calc.k A.k
 ```

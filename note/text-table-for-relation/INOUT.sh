@@ -1,2 +1,2 @@
 #!/bin/sh
-koshu-inout.sh $* -s -g DATA.k
+koshu-inout.sh $* -s -g koshu DATA.k

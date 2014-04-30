@@ -1,4 +1,4 @@
-# I/O list of koshu
+# I/O List
 
 - [DATA.k](#datak)
 - koshu DATA.k [maybe.k](#maybek)
@@ -209,5 +209,5 @@ Command `koshu DATA.k both.k` produces:
 This document is produced by the command:
 
 ```
-koshu-inout.sh -r -f CALC DATA.k
+koshu-inout.sh -r -f CALC koshu DATA.k
 ```

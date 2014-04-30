@@ -1,2 +1,2 @@
 #!/bin/sh
-koshu-inout.sh $* -r copy.k
+koshu-inout.sh $* -r koshu copy.k

@@ -1,2 +1,2 @@
 #!/bin/sh
-koshu-inout.sh $* -r -f CALC DATA.k
+koshu-inout.sh $* -r -f CALC koshu DATA.k
