@@ -1,6 +1,6 @@
 # I/O List
 
-- [./temp.sh](#/tempsh)
+- [./temp.sh](#tempsh)
 - [output](#output)
 
 

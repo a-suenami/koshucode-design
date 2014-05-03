@@ -1,6 +1,6 @@
 # I/O List
 
-- [./markdown.sh](#/markdownsh)
+- [./markdown.sh](#markdownsh)
 - [output](#output)
 
 
