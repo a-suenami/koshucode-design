@@ -1,14 +1,25 @@
-# Report on I/O lists
+# Summary of I/O Lists
 
 This is a summary of I/O lists.
 Each entry consists of a result of regression test,
 a markdown file, and its directory.
 Results of regression tests are recorded in OK or DIFF.
-This summary is produced by the command `koshu-inout-summary.sh`
+This summary is produced by the command `koshu-inout-summary.sh`.
 
+* OK – [INOUT.md](note/count-judgements/INOUT.md) in note / count-judgements
 * OK – [INOUT.md](note/derived-relmap/INOUT.md) in note / derived-relmap
 * OK – [README.md](note/equivalent-for-both/script/README.md) in note / equivalent-for-both / script
 * OK – [README.md](note/equivalent-for-down/script/README.md) in note / equivalent-for-down / script
+* OK – [OD.md](note/koshu-inout/glob/OD.md) in note / koshu-inout / glob
+* OK – [KOSHU.md](note/koshu-inout/glob/KOSHU.md) in note / koshu-inout / glob
+* OK – [TEXT.md](note/koshu-inout/glob/TEXT.md) in note / koshu-inout / glob
+* OK – [INOUT.md](note/koshu-inout/info/INOUT.md) in note / koshu-inout / info
+* OK – [INOUT.md](note/koshu-inout/output/INOUT.md) in note / koshu-inout / output
+* OK – [A.md](note/koshu-inout/output/A.md) in note / koshu-inout / output
+* OK – [B.md](note/koshu-inout/output/B.md) in note / koshu-inout / output
+* OK – [A.md](note/koshu-inout/temp/A.md) in note / koshu-inout / temp
+* OK – [B.md](note/koshu-inout/temp/B.md) in note / koshu-inout / temp
+* OK – [C.md](note/koshu-inout/temp/C.md) in note / koshu-inout / temp
 * OK – [A.md](note/koshu-markdown/script/A.md) in note / koshu-markdown / script
 * OK – [README.md](note/koshu-markdown/script/README.md) in note / koshu-markdown / script
 * OK – [ARGS.md](note/koshu-markdown/script/ARGS.md) in note / koshu-markdown / script

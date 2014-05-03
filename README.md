@@ -34,6 +34,7 @@
 
 [全称矛盾命題][universal-contradiction]
 
+[入出力リスト][koshu-inout]
 
 
 バージョンに依存するノート
@@ -51,6 +52,8 @@
 [項目演算子 if][cop-if] — ver 0.44
 
 [項目演算子 range][cop-range] — ver 0.44
+
+[判断の件数][count-judgements] — ver 0.54
 
 [データ構成行列][data-component-matrix] — ver 0.42
 
@@ -134,6 +137,7 @@
 [construct-relmap]:                       note/construct-relmap
 [cop-if]:                                 note/cop-if
 [cop-range]:                              note/cop-range
+[count-judgements]:                       note/count-judgements
 [data-component-matrix]:                  note/data-component-matrix
 [deadlock-detection]:                     note/deadlock-detection
 [derived-relmap]:                         note/derived-relmap
@@ -149,6 +153,7 @@
 [infobox]:                                note/infobox
 [join-with-reldum]:                       note/join-with-reldum
 [kind-of-relfiers]:                       note/kind-of-relfiers
+[koshu-inout]:                            note/koshu-inout
 [koshu-markdown]:                         note/koshu-markdown
 [koshu-rop]:                              note/koshu-rop
 [koshu-xsv]:                              note/koshu-xsv
