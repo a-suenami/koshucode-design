@@ -26,6 +26,8 @@
 
 [入出力リスト][koshu-markdown]
 
+[入出力リスト][koshu-inout]
+
 [関係モデル -- 判断することの計算体系][prezi-relational-model]
 
 [実行計画のためのコスト計算式][rdbms-cost-formula]
@@ -34,7 +36,6 @@
 
 [全称矛盾命題][universal-contradiction]
 
-[入出力リスト][koshu-inout]
 
 
 バージョンに依存するノート
@@ -67,8 +68,6 @@
 
 [中置記法から前置記法への変換][infix-notation] — ver 0.41
 
-[関係写像演算子の一覧][koshu-rop] — ver 0.52
-
 [メタデータつき CSV][koshu-xsv] — ver 0.43
 
 [甲州記法のためのラムダ算法][lambda-calculus] — ver 0.45
@@ -98,13 +97,7 @@
 
 [関係写像による計算の図解][diagram-of-relmap-calculation] — ver 0.50
 
-[キー項目の重複][duplicate-keys] — ver 0.38
-
 [外部キー][foreign-key] — ver 0.40
-
-[包括演算子の等価定義][equivalent-for-down] — ver 0.50
-
-[両結びの等価定義][equivalent-for-both] — ver 0.50
 
 [無項関係との結び][join-with-reldum] — ver 0.38
 
@@ -120,13 +113,26 @@
 
 [関係写像の実行][run-relmap-using-relation-directly] — ver 0.37
 
-[関係のうす切り][slices-of-relation] — ver 0.50
-
-[関係写像による関係の制限][some-and-none] — ver 0.37
-
-[部分関係][subrelation] — ver 0.40
-
 [関係を使ったデータの検証][validation-using-relation] — ver 0.37
+
+
+
+演算子の説明
+------------------------------------------------------------------
+
+both — [両結びの等価定義][equivalent-for-both]
+
+down — [包括演算子の等価定義][equivalent-for-down]
+
+duplicate — [キー項目の重複][duplicate-keys]
+
+koshu-rop — [関係写像演算子の一覧][koshu-rop]
+
+slice — [関係のうす切り][slices-of-relation]
+
+some none — [関係写像による関係の制限][some-and-none]
+
+sub — [部分関係][subrelation]
 
 
 
