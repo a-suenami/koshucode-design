@@ -29,16 +29,15 @@ USAGE
   koshu-inout.sh [OPTION ...] koshu FILE.k ...
 
 OPTION
-  -d          show differences from last document
-  -f FILE     take input files from FILE
+  -d          show all differences against last I/O list
+  -f FILE     take command lines from FILE
   -g          glob input files by *.k
   -h          print help message
-  -l          link to I/O list when -d specified
+  -l          link to I/O list
   -o FILE.md  save document to FILE.md
   -r          save document to README.md
   -s          save document to INOUT.md
   -t          do not delete temporary files
-  -u          update I/O list interactively
   -x EXT      use EXTension instead of *.k
 
 EXAMPLE
