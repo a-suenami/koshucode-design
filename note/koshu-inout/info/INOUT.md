@@ -11,7 +11,7 @@
 Command `koshu-inout.sh -V` produces:
 
 ```
-koshu-inout-0.54
+koshu-inout-0.55
 ```
 
 
@@ -38,6 +38,7 @@ OPTION
   -r          save document to README.md
   -s          save document to INOUT.md
   -t          do not delete temporary files
+  -u          update I/O list interactively
   -x EXT      use EXTension instead of *.k
 
 EXAMPLE

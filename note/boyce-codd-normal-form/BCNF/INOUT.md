@@ -213,8 +213,6 @@ Command `koshu bcnf-output.k BCNF-DATA.k BCNF-VIOLATED.k` exits with 1 and produ
 
 *** 2 judges
 
-*** no judges
-
 **
 **  SUMMARY (VIOLATED)
 **       2 judges on FD-OF-NEAREST-SHOP

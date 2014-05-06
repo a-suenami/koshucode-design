@@ -143,8 +143,6 @@ Command `koshu 3nf-output.k 3NF-VIOLATED.k` exits with 1 and produces:
 **    3NF-VIOLATED.k
 **
 
-*** no judges
-
 |-- FD-OF-SHOP-TYPE  /shop "Doughy" #q "s"  /shop-type 'Hairdresser
 |-- FD-OF-SHOP-TYPE  /shop "Doughy" #q "s"  /shop-type 'Bakery
 
