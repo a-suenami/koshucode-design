@@ -1,23 +1,23 @@
-	Sun Oct  6 12:02 2013 Time and Allocation Profiling Report  (Final)
+	Tue May  6 11:32 2014 Time and Allocation Profiling Report  (Final)
 
 	   short-simple +RTS -p -RTS
 
-	total time  =        2.73 secs   (2729 ticks @ 1000 us, 1 processor)
+	total time  =        1.89 secs   (1892 ticks @ 1000 us, 1 processor)
 	total alloc = 2,115,516,656 bytes  (excludes profiling overheads)
 
 COST CENTRE MODULE  %time %alloc
 
-short.find  Main     53.6    0.6
-main        Main     46.2   99.4
+short.find  Main     55.6    0.6
+main        Main     44.3   99.4
 
 
                                                              individual     inherited
 COST CENTRE        MODULE                  no.     entries  %time %alloc   %time %alloc
 
 MAIN               MAIN                     40           0    0.0    0.0   100.0  100.0
- main              Main                     81           0   46.2   99.4   100.0  100.0
-  short            Main                     84           0    0.2    0.0    53.8    0.6
-   short.find      Main                     85     1755000   53.6    0.6    53.6    0.6
+ main              Main                     81           0   44.3   99.4   100.0  100.0
+  short            Main                     84           0    0.1    0.0    55.7    0.6
+   short.find      Main                     85     1755000   55.6    0.6    55.6    0.6
  CAF               Main                     79           0    0.0    0.0     0.0    0.0
   short            Main                     82           1    0.0    0.0     0.0    0.0
    sortHeads       Main                     86           1    0.0    0.0     0.0    0.0

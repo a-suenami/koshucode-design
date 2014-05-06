@@ -1,35 +1,35 @@
-	Sun Oct  6 12:02 2013 Time and Allocation Profiling Report  (Final)
+	Tue May  6 11:32 2014 Time and Allocation Profiling Report  (Final)
 
 	   short-tree +RTS -p -RTS
 
-	total time  =        1.71 secs   (1713 ticks @ 1000 us, 1 processor)
+	total time  =        1.16 secs   (1159 ticks @ 1000 us, 1 processor)
 	total alloc = 2,439,621,080 bytes  (excludes profiling overheads)
 
 COST CENTRE MODULE  %time %alloc
 
-main        Main     72.4   86.2
-short.find  Main     20.3   13.1
-short       Main      5.9    0.0
+main        Main     75.9   86.2
+short.find  Main     19.0   13.1
+short       Main      3.8    0.0
 
 
                                                                 individual     inherited
 COST CENTRE           MODULE                  no.     entries  %time %alloc   %time %alloc
 
 MAIN                  MAIN                     42           0    0.0    0.0   100.0  100.0
- main                 Main                     85           0   72.4   86.2    99.9  100.0
-  short               Main                     86      130000    5.9    0.0    27.6   13.8
-   short.find         Main                     87     5850000   20.3   13.1    21.7   13.8
-    short.select      Main                    109      130000    0.9    0.4     0.9    0.4
-    short.find.prev2  Main                    107      130000    0.2    0.0     0.5    0.2
-     short.updatePrev Main                    108      130000    0.2    0.2     0.2    0.2
- CAF                  Main                     83           0    0.0    0.0     0.1    0.0
-  main                Main                     84           1    0.0    0.0     0.1    0.0
+ main                 Main                     85           0   75.9   86.2   100.0  100.0
+  short               Main                     86      130000    3.8    0.0    24.1   13.8
+   short.find         Main                     87     5850000   19.0   13.1    20.3   13.8
+    short.select      Main                    109      130000    0.7    0.4     0.7    0.4
+    short.find.prev2  Main                    107      130000    0.3    0.0     0.6    0.2
+     short.updatePrev Main                    108      130000    0.3    0.2     0.3    0.2
+ CAF                  Main                     83           0    0.0    0.0     0.0    0.0
+  main                Main                     84           1    0.0    0.0     0.0    0.0
    main.hs            Main                     95           1    0.0    0.0     0.0    0.0
-   short              Main                     88           0    0.0    0.0     0.1    0.0
+   short              Main                     88           0    0.0    0.0     0.0    0.0
     tree.empty        Main                     92           1    0.0    0.0     0.0    0.0
-    tree              Main                     91         353    0.0    0.0     0.1    0.0
+    tree              Main                     91         353    0.0    0.0     0.0    0.0
      tree.nonEmpty    Main                     99         353    0.0    0.0     0.0    0.0
-     tree.subTrees    Main                     96         353    0.1    0.0     0.1    0.0
+     tree.subTrees    Main                     96         353    0.0    0.0     0.0    0.0
       mapToSnd.g      Main                    103         352    0.0    0.0     0.0    0.0
        tree.empty     Main                    106         352    0.0    0.0     0.0    0.0
        tree.(...)     Main                    105         352    0.0    0.0     0.0    0.0

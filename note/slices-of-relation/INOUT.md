@@ -1,4 +1,4 @@
-# Koshu I/O Listing
+# I/O List
 
 - koshu [slice.k](#slicek)
 
@@ -35,6 +35,7 @@ q : source Q /b /c
 |== SLICE -fore /a /b : 
     p | slice /r id
 ```
+
 Command `koshu slice.k` produces:
 
 ```
@@ -46,11 +47,18 @@ Command `koshu slice.k` produces:
 
 |-- GROUP  /a 10  /b 40  /g {| /b : /c | 40 : 80 | 40 : 70 |}
 |-- GROUP  /a 10  /b 50  /g {| /b : /c | 50 : 90 |}
+
+*** 2 judges
+
 |-- GROUP2  /a 10  /b 40  /r {| /b : /c | 40 : 80 | 40 : 70 |}
 |-- GROUP2  /a 10  /b 50  /r {| /b : /c | 50 : 90 |}
-|-- SLICE  /a 10  /b 40  /r {| /a : /b | 10 : 40 |}
 
+*** 2 judges
+
+|-- SLICE  /a 10  /b 40  /r {| /a : /b | 10 : 40 |}
 |-- SLICE  /a 10  /b 50  /r {| /a : /b | 10 : 50 |}
+
+*** 2 judges
 
 **
 **  SUMMARY
@@ -59,4 +67,14 @@ Command `koshu slice.k` produces:
 **       2 judges on SLICE
 **       6 judges in total
 **
+```
+
+
+
+## command
+
+This document is produced by the command:
+
+```
+koshu-inout.sh -s -g koshu
 ```

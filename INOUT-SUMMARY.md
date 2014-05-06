@@ -6,6 +6,8 @@ a markdown file, and its directory.
 Results of regression tests are recorded in OK or DIFF.
 This summary is produced by the command `koshu-inout-summary.sh`.
 
+* OK – [INOUT.md](note/boyce-codd-normal-form/3NF/INOUT.md) in note / boyce-codd-normal-form / 3NF
+* OK – [INOUT.md](note/boyce-codd-normal-form/BCNF/INOUT.md) in note / boyce-codd-normal-form / BCNF
 * OK – [INOUT.md](note/count-judgements/INOUT.md) in note / count-judgements
 * OK – [INOUT.md](note/derived-relmap/INOUT.md) in note / derived-relmap
 * OK – [README.md](note/equivalent-for-both/script/README.md) in note / equivalent-for-both / script
@@ -24,4 +26,7 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 * OK – [README.md](note/koshu-markdown/script/README.md) in note / koshu-markdown / script
 * OK – [ARGS.md](note/koshu-markdown/script/ARGS.md) in note / koshu-markdown / script
 * OK – [INOUT.md](note/koshu-rop/INOUT.md) in note / koshu-rop
+* OK – [INOUT.md](note/short-signs/INOUT.md) in note / short-signs
+* OK – [INOUT.md](note/slices-of-relation/INOUT.md) in note / slices-of-relation
+* OK – [INOUT.md](note/subrelation/INOUT.md) in note / subrelation
 * OK – [INOUT.md](note/text-table-for-relation/INOUT.md) in note / text-table-for-relation
