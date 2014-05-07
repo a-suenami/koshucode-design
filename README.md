@@ -8,7 +8,7 @@
 
  * 甲州記法の使用例は [入出力リストの総要約][grand-summary] からたどれます。
 
-* ひとつのノートは、ひとつのディレクトリを単位とし、
+ * ひとつのノートは、ひとつのディレクトリを単位とし、
    `README.md` と関連するソース・ファイルなどから構成されます。
 
  * ディレクトリの名前は、原則として、小文字の英単語を
@@ -48,45 +48,49 @@
 この要約は、入出力の使用例を分かりやすく提示すると同時に、
 退行テストの内容とすることを兼ねています。
 
-[計算の中断を補足する場所][abortable-points] — ver 0.43
+### 例題
 
 [近くのお店][boyce-codd-normal-form] (ボイス・コッド正規形) — ver 0.40
 
-[項目演算子 if][cop-if] — ver 0.44
-
-[項目演算子 range][cop-range] — ver 0.44
-
-[判断の件数][count-judgements] — ver 0.54
-
-[データ構成行列][data-component-matrix] — ver 0.42
-
 [デッドロックの検出][deadlock-detection] — ver 0.49
-
-[連想リストへの分割][divide-into-assoc] — ver 0.38
-
-[終了ステータス][exit-status] — ver 0.39
-
-[見出しの平面表示][explain-heading] — ver 0.50
-
-[中置記法から前置記法への変換][infix-notation] — ver 0.41
 
 [メタデータつき CSV][koshu-xsv] — ver 0.43
 
+### 計算方式
+
+[計算の中断を補足する場所][abortable-points] — ver 0.43
+
+[終了ステータス][exit-status] — ver 0.39
+
+[中置記法から前置記法への変換][infix-notation] — ver 0.41
+
 [甲州記法のためのラムダ算法][lambda-calculus] — ver 0.45
-
-[判断リテラルの読み込み方][read-judge-literals] — ver 0.37
-
-[エラーの報告][report-error] — ver 0.40
 
 [甲州計算機の処理の流れ][section-level-process] — ver 0.40
 
-[短縮記号][short-signs] — ver 0.44
+### 表示方法
 
-[Snip][snip] — ver 0.49
+[判断の件数][count-judgements] — ver 0.54
+
+[見出しの平面表示][explain-heading] — ver 0.50
+
+[エラーの報告][report-error] — ver 0.40
 
 [テキストを使った表の描画][text-table] — ver 0.40
 
 [表形式での関係の表示][text-table-for-relation] — ver 0.51
+
+### そのほか
+
+[データ構成行列][data-component-matrix] — ver 0.42
+
+[連想リストへの分割][divide-into-assoc] — ver 0.38
+
+[判断リテラルの読み込み方][read-judge-literals] — ver 0.37
+
+[短縮記号][short-signs] — ver 0.44
+
+[Snip][snip] — ver 0.49
 
 
 
@@ -107,7 +111,7 @@
 
 [複数の関係を出力する演算子][multiple-output] — ver 0.43
 
-[関係系としての入れ子関係][nested-relations-as-relational-system] — ver 0.50
+[関係系としての重関係][nested-relations-as-relational-system] — ver 0.50
 
 [関係写像の外部参照][relmap-in-outer-section] — ver 0.38
 
@@ -124,8 +128,11 @@
 
 特定の関係写像演算子を題材にしたノートです。
 関係写像演算子は、関係を関係に変換する演算子です。
-これらのノートは、演算子のひとつの側面に注目して説明したもので、
+これらのノートは、演算子のひとつの側面に注目して説明したり、
+演算子の案を説明しているもので、
 より体系的な説明は [関係写像演算子の説明書][rop] にあります。
+
+### 関係写像演算子
 
 both — [両結びの等価定義][equivalent-for-both]
 
@@ -141,6 +148,11 @@ some none — [関係写像による関係の制限][some-and-none]
 
 sub — [部分関係][subrelation]
 
+### 項目演算子
+
+if — [条件分岐][cop-if]
+
+range — [範囲判定][cop-range]
 
 
 [grand-summary]:                          INOUT-GRAND-SUMMARY.md
