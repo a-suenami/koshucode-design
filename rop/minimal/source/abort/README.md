@@ -29,10 +29,10 @@ Command `koshu source-a1.k` exits with 2 and produces:
 
 **
 **  ABORTED  Unexpected operand
-**  -------- ---------------------- -----------
+**  -------- ---------------------- ----------
 **  Detail   Require one word
 **  Source   6 15 source-a1.k
-**           > /x /y                .. @operand
+**           > /x /y                .. operand
 **           6 8 source-a1.k
 **           > source /x /y         .. relmap
 **           6 0 source-a1.k
@@ -68,9 +68,9 @@ Command `koshu source-a2.k` exits with 2 and produces:
 
 **
 **  ABORTED  Require term name
-**  -------- -------------------------- -----------
+**  -------- -------------------------- ----------
 **  Source   6 17 source-a2.k
-**           > P /x /y                  .. @operand
+**           > P /x /y                  .. operand
 **           6 8 source-a2.k
 **           > source P P /x /y         .. relmap
 **           6 0 source-a2.k
@@ -106,9 +106,9 @@ Command `koshu source-a3.k` exits with 2 and produces:
 
 **
 **  ABORTED  Require term name
-**  -------- -------------------------- -----------
+**  -------- -------------------------- ----------
 **  Source   6 17 source-a3.k
-**           > /x /y/z                  .. @operand
+**           > /x /y/z                  .. operand
 **           6 8 source-a3.k
 **           > source P /x /y/z         .. relmap
 **           6 0 source-a3.k
@@ -144,9 +144,9 @@ Command `koshu source-a4.k` exits with 2 and produces:
 
 **
 **  ABORTED  Require term name
-**  -------- ---------------------------- -----------
+**  -------- ---------------------------- ----------
 **  Source   6 17 source-a4.k
-**           > /x 0 /y 1                  .. @operand
+**           > /x 0 /y 1                  .. operand
 **           6 8 source-a4.k
 **           > source P /x 0 /y 1         .. relmap
 **           6 0 source-a4.k
