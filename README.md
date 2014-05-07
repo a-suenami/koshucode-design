@@ -7,6 +7,7 @@
 メモとしての性格が強いため、大部分は雑な記述になっています。
 
  * 甲州記法の使用例は [入出力リストの総要約][grand-summary] からたどれます。
+   甲州記法を初めて学ぶ方は、[甲州記法の ABC][abc] をご覧ください。
 
  * ひとつのノートは、ひとつのディレクトリを単位とし、
    `README.md` と関連するソース・ファイルなどから構成されます。
@@ -154,6 +155,8 @@ if — [条件分岐][cop-if]
 
 range — [範囲判定][cop-range]
 
+
+[abc]:                                     https://github.com/seinokatsuhiro/abc-of-koshucode/blob/master/draft/japanese/README.md
 
 [grand-summary]:                          INOUT-GRAND-SUMMARY.md
 [summary-of-notes]:                       note/INOUT-SUMMARY.md
