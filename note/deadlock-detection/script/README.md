@@ -1,9 +1,11 @@
-# Koshu I/O Listing
+# I/O List
 
 - [deadlock.k](#deadlockk)
 - koshu deadlock.k [fine.k](#finek)
 - koshu deadlock.k [many.k](#manyk)
 - koshu deadlock.k [one.k](#onek)
+
+
 
 ## [deadlock.k](deadlock.k)
 
@@ -62,6 +64,8 @@ nodes : closure
   | pick /node-set
 ```
 
+
+
 ## [fine.k](fine.k)
 
 ```
@@ -80,6 +84,7 @@ nodes : closure
 |-- WAIT  /before 'C  /after 'D
 |-- WAIT  /before 'D  /after 'E
 ```
+
 Command `koshu deadlock.k fine.k` produces:
 
 ```
@@ -90,11 +95,17 @@ Command `koshu deadlock.k fine.k` produces:
 **    fine.k
 **
 
+*** no judges
+
+*** no judges
+
 **
 **  SUMMARY
 **      no judges in total
 **
 ```
+
+
 
 ## [many.k](many.k)
 
@@ -113,6 +124,7 @@ Command `koshu deadlock.k fine.k` produces:
 
 |-- WAIT  /before 'D  /after 'A
 ```
+
 Command `koshu deadlock.k many.k` produces:
 
 ```
@@ -126,11 +138,15 @@ Command `koshu deadlock.k many.k` produces:
 |-- NODE-SET  /node-set { 'A : 'D : 'B }
 |-- NODE-SET  /node-set { 'A : 'D : 'C }
 |-- NODE-SET  /node-set { 'A : 'D : 'C : 'B }
+
+*** 3 judges
+
 |-- NODE  /node 'A
 |-- NODE  /node 'D
-
 |-- NODE  /node 'B
 |-- NODE  /node 'C
+
+*** 4 judges
 
 **
 **  SUMMARY
@@ -139,6 +155,8 @@ Command `koshu deadlock.k many.k` produces:
 **       7 judges in total
 **
 ```
+
+
 
 ## [one.k](one.k)
 
@@ -156,6 +174,7 @@ Command `koshu deadlock.k many.k` produces:
 
 |-- WAIT  /before 'E  /after 'B
 ```
+
 Command `koshu deadlock.k one.k` produces:
 
 ```
@@ -167,9 +186,14 @@ Command `koshu deadlock.k one.k` produces:
 **
 
 |-- NODE-SET  /node-set { 'B : 'E : 'D }
+
+*** 1 judge 
+
 |-- NODE  /node 'B
 |-- NODE  /node 'E
 |-- NODE  /node 'D
+
+*** 3 judges
 
 **
 **  SUMMARY
@@ -177,4 +201,14 @@ Command `koshu deadlock.k one.k` produces:
 **       1 judge  on NODE-SET
 **       4 judges in total
 **
+```
+
+
+
+## command
+
+This document is produced by the command:
+
+```
+koshu-inout.sh -r -g koshu deadlock.k
 ```

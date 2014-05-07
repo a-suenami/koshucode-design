@@ -9,6 +9,7 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 * OK – [INOUT.md](boyce-codd-normal-form/3NF/INOUT.md) in boyce-codd-normal-form / 3NF
 * OK – [INOUT.md](boyce-codd-normal-form/BCNF/INOUT.md) in boyce-codd-normal-form / BCNF
 * OK – [INOUT.md](count-judgements/INOUT.md) in count-judgements
+* OK – [README.md](deadlock-detection/script/README.md) in deadlock-detection / script
 * OK – [INOUT.md](derived-relmap/INOUT.md) in derived-relmap
 * OK – [README.md](equivalent-for-both/script/README.md) in equivalent-for-both / script
 * OK – [README.md](equivalent-for-down/script/README.md) in equivalent-for-down / script
