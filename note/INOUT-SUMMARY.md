@@ -29,6 +29,7 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 * OK – [INOUT.md](koshu-rop/INOUT.md) in koshu-rop
 * OK – [INOUT.md](nested-relations-as-relational-system/INOUT.md) in nested-relations-as-relational-system
 * OK – [INOUT.md](short-signs/INOUT.md) in short-signs
+* OK – [README.md](slice-up/script/README.md) in slice-up / script
 * OK – [INOUT.md](slices-of-relation/INOUT.md) in slices-of-relation
 * OK – [INOUT.md](subrelation/INOUT.md) in subrelation
 * OK – [INOUT.md](text-table-for-relation/INOUT.md) in text-table-for-relation

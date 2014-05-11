@@ -143,6 +143,8 @@ duplicate — [キー項目の重複][duplicate-keys]
 
 koshu-rop — [関係写像演算子の一覧][koshu-rop]
 
+slice up nest unnest — [重関係の基礎演算子][slices-up]
+
 slice — [関係のうす切り][slices-of-relation]
 
 some none — [関係写像による関係の制限][some-and-none]
@@ -202,6 +204,7 @@ range — [範囲判定][cop-range]
 [section-level-process]:                  note/section-level-process
 [short-signs]:                            note/short-signs
 [slices-of-relation]:                     note/slices-of-relation
+[slices-up]:                              note/slice-up
 [snip]:                                   note/snip
 [some-and-none]:                          note/some-and-none
 [subrelation]:                            note/subrelation
