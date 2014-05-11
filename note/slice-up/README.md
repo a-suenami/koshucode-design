@@ -7,7 +7,7 @@
 基礎的な演算子とは、組ごとの重関係をつくる `slice` と
 その重関係を引き上げる演算子 `up` です。
 
-入出力リスト [INOUT.md] に、このノートの使用例が一覧されています。
+入出力リスト [README.md] に、このノートの使用例が一覧されています。
 
 
 slice と up
@@ -141,7 +141,7 @@ unnest
 
 
 
-[INOUT.md]:  script/INOUT.md
+[README.md]: script/README.md
 [DATA.k]:    script/DATA.k
 [slice.k]:   script/slice.k
 [nest.k]:    script/nest.k
