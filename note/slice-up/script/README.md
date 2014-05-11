@@ -99,7 +99,6 @@ s : p | slice /r
 
 |== SLICE-1 -with-table : s
 |== SLICE-2 : s | up /r
-
 ```
 
 Command `koshu DATA.k slice.k` produces:
@@ -164,7 +163,6 @@ n : p | nest /b /c -to /g
 |== R3 : n | my-unnest /g
 
 my-unnest : slice-up ( cut @'1 | meet n ) -with /g n
-
 ```
 
 Command `koshu DATA.k unnest.k` produces:
