@@ -7,9 +7,10 @@
 中断理由が表示され、ステータス 2 で終了します。
 このノートは、中断時にソースコード情報を補足する場所を一覧します。
 それぞれの場所にはタグがつけられており、
-[このように][README.md] ソースコードの各行といっしょに表示されます。
+[このように][INOUT] ソースコードの各行といっしょに表示されます。
 
-甲州計算機のバージョン 0.48 を対象とします。
+甲州計算機のバージョン 0.56 を対象としたとき、
+[ABORTABLE.k] に記載されているタグが用意されています。
 
 
 ### 関係計算式にまつわるエラータグ
@@ -40,18 +41,19 @@
 |  3 | [calc]       | [Core.Content.Cox]      | 項目計算式の実行                   |
 
 
-[README.md]:   abort/README.md
+[INOUT]:        abort/README.md
+[ABORTABLE.k]:  ABORTABLE.k
 
-[assert]:      abort/abort-assert.k
-[calc]:        abort/abort-calc.k
-[clause]:      abort/abort-clause.k
-[lexmap]:      abort/abort-lexmap.k
-[operand]:     abort/abort-operand.k
-[position]:    abort/abort-position.k
-[relmap]:      abort/abort-relmap.k
-[run]:         abort/abort-run.k
-[specialize]:  abort/abort-specialize.k
-[syntax]:      abort/abort-syntax.k
+[assert]:       abort/abort-assert.k
+[calc]:         abort/abort-calc.k
+[clause]:       abort/abort-clause.k
+[lexmap]:       abort/abort-lexmap.k
+[operand]:      abort/abort-operand.k
+[position]:     abort/abort-position.k
+[relmap]:       abort/abort-relmap.k
+[run]:          abort/abort-run.k
+[specialize]:   abort/abort-specialize.k
+[syntax]:       abort/abort-syntax.k
 
 [Core.Assert.Run]:        https://github.com/seinokatsuhiro/koshucode/blob/master/baala/core/Koshucode/Baala/Core/Assert/Run.hs
 [Core.Content.Cox]:       https://github.com/seinokatsuhiro/koshucode/blob/master/baala/core/Koshucode/Baala/Core/Content/Cox.hs

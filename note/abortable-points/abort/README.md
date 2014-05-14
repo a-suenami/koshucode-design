@@ -1,8 +1,19 @@
-# Koshu I/O Listing
+# I/O List
 
-## abort-assert.k
+- koshu [abort-assert.k](#abort-assertk)
+- koshu [abort-calc.k](#abort-calck)
+- koshu [abort-clause.k](#abort-clausek)
+- koshu [abort-lexmap.k](#abort-lexmapk)
+- koshu [abort-operand.k](#abort-operandk)
+- koshu [abort-position.k](#abort-positionk)
+- koshu [abort-relmap.k](#abort-relmapk)
+- koshu [abort-run.k](#abort-runk)
+- koshu [abort-specialize.k](#abort-specializek)
+- koshu [abort-syntax.k](#abort-syntaxk)
 
-Input
+
+
+## [abort-assert.k](abort-assert.k)
 
 ```
 ** -*- koshu -*-
@@ -10,7 +21,8 @@ Input
 |== A -unknown : id
 
 ```
-Output
+
+Command `koshu abort-assert.k` exits with 2 and produces:
 
 ```
 ** -*- koshu -*-
@@ -32,9 +44,9 @@ Output
 **
 ```
 
-## abort-calc.k
 
-Input
+
+## [abort-calc.k](abort-calc.k)
 
 ```
 ** -*- koshu -*-
@@ -43,7 +55,8 @@ Input
                  ( #false or 0 ))
 
 ```
-Output
+
+Command `koshu abort-calc.k` exits with 2 and produces:
 
 ```
 ** -*- koshu -*-
@@ -71,9 +84,9 @@ Output
 **
 ```
 
-## abort-clause.k
 
-Input
+
+## [abort-clause.k](abort-clause.k)
 
 ```
 ** -*- koshu -*-
@@ -81,7 +94,8 @@ Input
 | A : add /x 0
 
 ```
-Output
+
+Command `koshu abort-clause.k` exits with 2 and produces:
 
 ```
 ** -*- koshu -*-
@@ -102,9 +116,9 @@ Output
 **
 ```
 
-## abort-lexmap.k
 
-Input
+
+## [abort-lexmap.k](abort-lexmap.k)
 
 ```
 ** -*- koshu -*-
@@ -112,7 +126,8 @@ Input
 |== A : meet (a | meet)
 
 ```
-Output
+
+Command `koshu abort-lexmap.k` exits with 2 and produces:
 
 ```
 ** -*- koshu -*-
@@ -123,16 +138,18 @@ Output
 
 **
 **  ABORTED  Unexpected operand
-**  -------- ------------------- ---------
+**  -------- ------------------------- ---------
 **  Detail   Require one operand
 **  Source   3 18 abort-lexmap.k
-**           > meet)             .. lexmap
+**           > meet)                   .. lexmap
 **           3 14 abort-lexmap.k
-**           > a | meet)         .. lexmap
+**           > a | meet)               .. lexmap
 **           3 13 abort-lexmap.k
-**           > (a | meet)        .. lexmap
+**           > (a | meet)              .. lexmap
 **           3 8 abort-lexmap.k
-**           > meet (a | meet)   .. lexmap
+**           > meet (a | meet)         .. lexmap
+**           3 0 abort-lexmap.k
+**           > |== A : meet (a | meet) .. assert
 **  Command  koshu
 **           abort-lexmap.k
 **
@@ -140,9 +157,9 @@ Output
 **
 ```
 
-## abort-operand.k
 
-Input
+
+## [abort-operand.k](abort-operand.k)
 
 ```
 ** -*- koshu -*-
@@ -150,7 +167,8 @@ Input
 |== A : source /x /y
 
 ```
-Output
+
+Command `koshu abort-operand.k` exits with 2 and produces:
 
 ```
 ** -*- koshu -*-
@@ -168,7 +186,7 @@ Output
 **           3 8 abort-operand.k
 **           > source /x /y         .. relmap
 **           3 0 abort-operand.k
-**           > |== A : source /x /y .. clause
+**           > |== A : source /x /y .. assert
 **  Command  koshu
 **           abort-operand.k
 **
@@ -176,9 +194,9 @@ Output
 **
 ```
 
-## abort-position.k
 
-Input
+
+## [abort-position.k](abort-position.k)
 
 ```
 ** -*- koshu -*-
@@ -186,7 +204,8 @@ Input
 |== A : add /x ( /y )
 
 ```
-Output
+
+Command `koshu abort-position.k` exits with 2 and produces:
 
 ```
 ** -*- koshu -*-
@@ -196,9 +215,11 @@ Output
 **
 
 **
-**  ABORTED  No term in relation
+**  ABORTED  Unknown term name
 **  -------- ----------------------- -----------
-**  Detail   /y
+**  Detail   Unknown
+**             //y
+**           Relation
 **  Source   3 17 abort-position.k
 **           > /y )                  .. position
 **           3 8 abort-position.k
@@ -212,9 +233,9 @@ Output
 **
 ```
 
-## abort-relmap.k
 
-Input
+
+## [abort-relmap.k](abort-relmap.k)
 
 ```
 ** -*- koshu -*-
@@ -223,7 +244,8 @@ Input
       | check-term -has /x -but /z
 
 ```
-Output
+
+Command `koshu abort-relmap.k` exits with 2 and produces:
 
 ```
 ** -*- koshu -*-
@@ -239,7 +261,7 @@ Output
 **  Source   4 8 abort-relmap.k
 **           > check-term -has /x -but /z       .. relmap
 **           3 0 abort-relmap.k
-**           > |== A : source R /x /y           .. clause
+**           > |== A : source R /x /y           .. assert
 **  Command  koshu
 **           abort-relmap.k
 **
@@ -247,9 +269,9 @@ Output
 **
 ```
 
-## abort-run.k
 
-Input
+
+## [abort-run.k](abort-run.k)
 
 ```
 ** -*- koshu -*-
@@ -257,7 +279,8 @@ Input
 |== A : hold 1
 
 ```
-Output
+
+Command `koshu abort-run.k` exits with 2 and produces:
 
 ```
 ** -*- koshu -*-
@@ -267,12 +290,13 @@ Output
 **
 
 **
-**  ABORTED  Require Boolean
-**  -------- ---------------- ---------
+**  ABORTED  Unknown relmap operator
+**  -------- ----------------------- -------------
+**  Detail   hold
 **  Source   3 8 abort-run.k
-**           > hold 1         .. run
+**           > hold 1                .. specialize
 **           3 0 abort-run.k
-**           > |== A : hold 1 .. assert
+**           > |== A : hold 1        .. assert
 **  Command  koshu
 **           abort-run.k
 **
@@ -280,9 +304,9 @@ Output
 **
 ```
 
-## abort-specialize.k
 
-Input
+
+## [abort-specialize.k](abort-specialize.k)
 
 ```
 ** -*- koshu -*-
@@ -291,7 +315,8 @@ Input
       | rename /x /a /y /b
 
 ```
-Output
+
+Command `koshu abort-specialize.k` exits with 2 and produces:
 
 ```
 ** -*- koshu -*-
@@ -303,8 +328,12 @@ Output
 **
 **  ABORTED  Require new term names
 **  -------- ------------------------ -------------
-**  Detail   /x
-**           /y
+**  Detail   Known
+**             /x
+**             /y
+**           Relation
+**             /x
+**             /y
 **  Source   4 8 abort-specialize.k
 **           > rename /x /a /y /b     .. specialize
 **           3 0 abort-specialize.k
@@ -316,9 +345,9 @@ Output
 **
 ```
 
-## abort-syntax.k
 
-Input
+
+## [abort-syntax.k](abort-syntax.k)
 
 ```
 ** -*- koshu -*-
@@ -328,7 +357,8 @@ Input
                  ( if 1 -> 2 -> 3 ))
 
 ```
-Output
+
+Command `koshu abort-syntax.k` exits with 2 and produces:
 
 ```
 ** -*- koshu -*-
@@ -350,10 +380,20 @@ Output
 **           4 8 abort-syntax.k
 **           > add /y ( if /x = 0 -> .. relmap
 **           3 0 abort-syntax.k
-**           > |== A : add /x 0      .. clause
+**           > |== A : add /x 0      .. assert
 **  Command  koshu
 **           abort-syntax.k
 **
 **  Exit with status 2
 **
+```
+
+
+
+## command
+
+This document is produced by the command:
+
+```
+koshu-inout.sh -r -g koshu
 ```

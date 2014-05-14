@@ -6,6 +6,7 @@ a markdown file, and its directory.
 Results of regression tests are recorded in OK or DIFF.
 This summary is produced by the command `koshu-inout-summary.sh`.
 
+* OK – [README.md](abortable-points/abort/README.md) in abortable-points / abort
 * OK – [INOUT.md](boyce-codd-normal-form/3NF/INOUT.md) in boyce-codd-normal-form / 3NF
 * OK – [INOUT.md](boyce-codd-normal-form/BCNF/INOUT.md) in boyce-codd-normal-form / BCNF
 * OK – [INOUT.md](count-judgements/INOUT.md) in count-judgements
