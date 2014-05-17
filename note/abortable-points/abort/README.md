@@ -137,9 +137,9 @@ Command `koshu abort-lexmap.k` exits with 2 and produces:
 **
 
 **
-**  ABORTED  Unexpected operand
+**  ABORTED  Unexpected attribute
 **  -------- ------------------------- ---------
-**  Detail   Require one operand
+**  Detail   Require one attribute
 **  Source   3 18 abort-lexmap.k
 **           > meet)                   .. lexmap
 **           3 14 abort-lexmap.k
@@ -178,11 +178,11 @@ Command `koshu abort-operand.k` exits with 2 and produces:
 **
 
 **
-**  ABORTED  Unexpected operand
-**  -------- ---------------------- ----------
+**  ABORTED  Unexpected attribute
+**  -------- ---------------------- ---------
 **  Detail   Require one word
 **  Source   3 15 abort-operand.k
-**           > /x /y                .. operand
+**           > /x /y                .. attr
 **           3 8 abort-operand.k
 **           > source /x /y         .. relmap
 **           3 0 abort-operand.k
@@ -255,7 +255,7 @@ Command `koshu abort-relmap.k` exits with 2 and produces:
 **
 
 **
-**  ABORTED  Unexpected operand
+**  ABORTED  Unexpected attribute
 **  -------- ---------------------------------- ---------
 **  Detail   require one of -just / -has / -but
 **  Source   4 8 abort-relmap.k
@@ -368,7 +368,7 @@ Command `koshu abort-syntax.k` exits with 2 and produces:
 **
 
 **
-**  ABORTED  Unexpected operand
+**  ABORTED  Unexpected attribute
 **  -------- ----------------------- ---------
 **  Detail   Expect E -> E
 **  Source   5 22 abort-syntax.k
