@@ -98,6 +98,8 @@
 関係に関するノート
 ------------------------------------------------------------------
 
+[演算属性の編集][attribute-editor] — ver 0.57
+
 [関係写像の構成][construct-relmap] — ver 0.39
 
 [導出関係写像][derived-relmap] — ver 0.53
@@ -165,6 +167,7 @@ range — [範囲判定][cop-range]
 [rop]:                                    rop/README.md
 
 [abortable-points]:                       note/abortable-points
+[attribute-editor]:                       note/attribute-editor
 [boyce-codd-normal-form]:                 note/boyce-codd-normal-form
 [construct-relmap]:                       note/construct-relmap
 [cop-if]:                                 note/cop-if
