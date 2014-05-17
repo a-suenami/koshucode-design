@@ -92,7 +92,7 @@
       (1 font-lock-variable-name-face))
 
      ;; punctuation
-     ("[]:|(){}#[]" . font-lock-builtin-face)
+     ("[]:|(){}#[]\\|---" . font-lock-builtin-face)
 
      ;; arrows
      (,(regexp-opt '("<-" "->" "<<" ">>") t)
@@ -120,14 +120,19 @@
      (,(concat
         " " ;; space before operators
         (regexp-opt
-         '("add" "check-term" "compose" "contents"
-           "cut" "cut-term" "duplicate" "empty"
-           "enclose" "fix" "fix-join" "full" "group"
-           "id" "if" "join" "keep" "maybe" "meet"
-           "member" "none" "number" "omit" "pick" "pick-term"
-           "prefix" "prefix-change" "range" "rank" "reldee"
-           "reldum" "rename" "repeat" "size" "some" "subst"
-           "typename" "unless" "unprefix" "when") t)
+         '("koshu-cop" "koshu-cop-infix" "koshu-rop" "koshu-version"
+           "add" "check-term" "compose" "const" "dump" "duplicate"
+           "fix" "fix-join" "both" "if" "keep" "maybe" "member"
+           "number" "omit" "prefix" "prefix-change" "range" "rank"
+           "rdf" "repeat" "size" "subst" "typename" "unless"
+           "unprefix" "when" "contents" "cut" "cut-term" "dee" "dum"
+           "empty" "equal" "id" "join" "meet" "none" "pick"
+           "pick-term" "rename" "move" "some" "source" "source-term"
+           "sub" "append" "copy" "down" "for" "group" "group-by"
+           "join-up" "nest" "unnest" "slice" "slice-up" "split" "up"
+           ;; attribute editor
+           "fill" "opt"
+           ) t)
         "\\>")
       . font-lock-keyword-face)
      )))
