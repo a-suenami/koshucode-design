@@ -1,11 +1,11 @@
 # N-Triples と Turtle に似た出力形式
 
 
-[RDF] (Resource Description Framework) のシリアライズ形式はいつくかあります。
+[RDF][RDF] (Resource Description Framework) のシリアライズ形式はいつくかあります。
 ここでは、[Turtle] と [N-Triples] に着目し、
 これらと似た形式で、甲州データを書き出してみましょう。
 
-このノートの使用例は [Linded Data] (Web をグルーバルなデータ空間にする仕組み)
+このノートの使用例は [Web をグルーバルなデータ空間にする仕組み — Linked Data][Linked Data]
 の 2.4.2「RDF のシリアル化形式」の例を借りたもので、
 甲州計算機の実行例は [入出力リスト][INOUT.md] に一覧されています。
 
@@ -76,9 +76,13 @@ N-Triples に似た形式
 N-Triples に似た形式で出力するには、
 短縮設定のない形で、`/s` `/p` `/o` の判断を出力します。
 
+計算式
+
 ```
 |== N-TRIPLES : source RDF /s /p /o
 ```
+
+出力結果
 
 ```
 |-- N-TRIPLES  /s "http://biglynx.co.uk/people/dave-smith"
@@ -97,6 +101,8 @@ Turtle に似た形式で出力するには、
 述語 `/p` と目的語 `/o` を入れ子にします。
 Big Lynx の URI にも接頭辞をつけてみましょう。
 
+計算式
+
 ```
 short
   rdf     "http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -106,6 +112,8 @@ short
 |== TURTLE -with-table -fore /s :
   source RDF /s /p /o | nest /p /o -to /po
 ```
+
+出力結果
 
 ```
 short
@@ -135,5 +143,5 @@ biglynx."people/dave-smith"   /p          /o
 [Turtle]:      http://www.w3.org/TR/turtle/
 [N-Triples]:   http://www.w3.org/TR/n-triples/
 [INOUT.md]:    INOUT.md
-[Linded Data]: http://www.kindaikagaku.co.jp/information/kd0427.htm
+[Linked Data]: http://www.kindaikagaku.co.jp/information/kd0427.htm
 
