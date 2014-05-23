@@ -57,6 +57,8 @@
 
 [メタデータつき CSV][koshu-xsv] — ver 0.43
 
+[N-Triples と Turtle に似た出力形式][serialize-rdf] — ver 0.59
+
 ### 計算方式
 
 [計算の中断を補足する場所][abortable-points] — ver 0.43
@@ -205,6 +207,7 @@ range — [範囲判定][cop-range]
 [report-error]:                           note/report-error
 [run-relmap-using-relation-directly]:     note/run-relmap-using-relation-directly
 [section-level-process]:                  note/section-level-process
+[serialize-rdf]:                          note/serialize-rdf
 [short-signs]:                            note/short-signs
 [slices-of-relation]:                     note/slices-of-relation
 [slices-up]:                              note/slice-up
