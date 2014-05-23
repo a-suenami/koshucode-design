@@ -111,6 +111,10 @@
       (1 font-lock-keyword-face)
       (2 font-lock-function-name-face))
 
+     ;; keyword
+     ("^short"
+      . font-lock-keyword-face)
+
      ;; shebang
      ("^\\(#!\\)\\(.*\\)"
       (1 font-lock-keyword-face)
