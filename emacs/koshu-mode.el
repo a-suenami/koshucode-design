@@ -42,6 +42,20 @@
         (beginning-of-line)
         (setq font-lock-end (point))))))
 
+(defvar koshu-insert-bracket-prev nil
+  "Previous input for bracket keyword.")
+
+(defun koshu-insert-bracket (keyword)
+  "Insert bracket keyword."
+  (interactive "sBracket keyword: ")
+  (setq koshu-insert-bracket-prev
+        (if (string-equal keyword "")
+            koshu-insert-bracket-prev
+          keyword))
+  (insert-pair nil ?< ?>)
+  (insert koshu-insert-bracket-prev)
+  (re-search-forward "> ?" (+ 2 (point)) t))
+
 (defvar koshu-mode-font-lock
   `(( ;; clause comment (from "****" to beginning of next clause)
      ("^\\([*][*][*][*]\\)\\(.*\n\\(\n\\|[ \t].*\n\\)*\\)"
@@ -76,6 +90,10 @@
       (1 font-lock-keyword-face)
       (2 font-lock-string-face)
       (3 font-lock-keyword-face))
+
+     ;; bracket keyword
+     ("<1>" . font-lock-builtin-face)
+     ("\\(<\\)\\(\\w+\\)\\(>\\)" . font-lock-keyword-face)
 
      ;; term name
      ("\\(/\\)\\(\\w+\\)"
