@@ -1,5 +1,5 @@
 ** -*- koshu -*-
 
-|== A : add /x ( #true and
-                 ( #false or 0 ))
+|== A : add /x ( <1> and
+               ( <0> or 0 ))
 

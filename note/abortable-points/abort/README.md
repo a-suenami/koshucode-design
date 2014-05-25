@@ -51,8 +51,8 @@ Command `koshu abort-assert.k` exits with 2 and produces:
 ```
 ** -*- koshu -*-
 
-|== A : add /x ( #true and
-                 ( #false or 0 ))
+|== A : add /x ( <1> and
+               ( <0> or 0 ))
 
 ```
 
@@ -67,16 +67,16 @@ Command `koshu abort-calc.k` exits with 2 and produces:
 
 **
 **  ABORTED  Type unmatch
-**  -------- ---------------------------- ---------
+**  -------- -------------------------- ---------
 **  Detail   decimal
-**  Source   4 17 abort-calc.k
-**           > ( #false or 0 ))           .. calc
+**  Source   4 15 abort-calc.k
+**           > ( <0> or 0 ))            .. calc
 **           3 15 abort-calc.k
-**           > ( #true and                .. calc
+**           > ( <1> and                .. calc
 **           3 8 abort-calc.k
-**           > add /x ( #true and         .. run
+**           > add /x ( <1> and         .. run
 **           3 0 abort-calc.k
-**           > |== A : add /x ( #true and .. assert
+**           > |== A : add /x ( <1> and .. assert
 **  Command  koshu
 **           abort-calc.k
 **

@@ -106,9 +106,9 @@ Command `koshu bcnf-output.k BCNF-DATA.k` produces:
 |-- NEAREST-SHOP  /person 'Davidson  /shop-type 'Optician  /nearest-shop "Eagle Eye"
 |-- NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop 'Snippets
 |-- NEAREST-SHOP  /person 'Wright  /shop-type 'Bookshop  /nearest-shop "Merlin Books"
-|-- NEAREST-SHOP  /person 'Fuller  /shop-type 'Bakery  /nearest-shop "Doughy" #q "s"
+|-- NEAREST-SHOP  /person 'Fuller  /shop-type 'Bakery  /nearest-shop "Doughy's"
 
-|-- NEAREST-SHOP  /person 'Fuller  /shop-type 'Hairdresser  /nearest-shop "Sweeney Todd" #q "s"
+|-- NEAREST-SHOP  /person 'Fuller  /shop-type 'Hairdresser  /nearest-shop "Sweeney Todd's"
 
 *** 6 judges
 
@@ -208,7 +208,7 @@ Command `koshu bcnf-output.k BCNF-DATA.k BCNF-VIOLATED.k` exits with 1 and produ
 **    BCNF-VIOLATED.k
 **
 
-|-- FD-OF-NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop "Sweeney Todd" #q "s"
+|-- FD-OF-NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop "Sweeney Todd's"
 |-- FD-OF-NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop 'Snippets
 
 *** 2 judges

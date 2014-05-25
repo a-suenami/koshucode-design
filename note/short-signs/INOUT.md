@@ -36,8 +36,8 @@ short
   a "abcdef"
   b "abcde"
 
-|-- B  /n 7  /q #true  /text 'abcdefg
-|-- B  /n 6  /q #false  /text 'abcdef
+|-- B  /n 7  /q <1>  /text a.g
+|-- B  /n 6  /q <0>  /text a.
 
 *** 2 judges
 

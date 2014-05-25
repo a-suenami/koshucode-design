@@ -85,8 +85,8 @@ Command `koshu 3nf-output.k 3NF-DATA.k` produces:
 |-- SHOP-NEAR-PERSON  /person 'Davidson  /nearest-shop "Eagle Eye"
 |-- SHOP-NEAR-PERSON  /person 'Davidson  /nearest-shop 'Snippets
 |-- SHOP-NEAR-PERSON  /person 'Wright  /nearest-shop "Merlin Books"
-|-- SHOP-NEAR-PERSON  /person 'Fuller  /nearest-shop "Doughy" #q "s"
-|-- SHOP-NEAR-PERSON  /person 'Fuller  /nearest-shop "Sweeney Todd" #q "s"
+|-- SHOP-NEAR-PERSON  /person 'Fuller  /nearest-shop "Doughy's"
+|-- SHOP-NEAR-PERSON  /person 'Fuller  /nearest-shop "Sweeney Todd's"
 
 |-- SHOP-NEAR-PERSON  /person 'Fuller  /nearest-shop "Eagle Eye"
 
@@ -95,8 +95,8 @@ Command `koshu 3nf-output.k 3NF-DATA.k` produces:
 |-- SHOP-TYPE  /shop "Eagle Eye"  /shop-type 'Optician
 |-- SHOP-TYPE  /shop 'Snippets  /shop-type 'Hairdresser
 |-- SHOP-TYPE  /shop "Merlin Books"  /shop-type 'Bookshop
-|-- SHOP-TYPE  /shop "Doughy" #q "s"  /shop-type 'Bakery
-|-- SHOP-TYPE  /shop "Sweeney Todd" #q "s"  /shop-type 'Hairdresser
+|-- SHOP-TYPE  /shop "Doughy's"  /shop-type 'Bakery
+|-- SHOP-TYPE  /shop "Sweeney Todd's"  /shop-type 'Hairdresser
 
 *** 5 judges
 
@@ -143,8 +143,8 @@ Command `koshu 3nf-output.k 3NF-VIOLATED.k` exits with 1 and produces:
 **    3NF-VIOLATED.k
 **
 
-|-- FD-OF-SHOP-TYPE  /shop "Doughy" #q "s"  /shop-type 'Hairdresser
-|-- FD-OF-SHOP-TYPE  /shop "Doughy" #q "s"  /shop-type 'Bakery
+|-- FD-OF-SHOP-TYPE  /shop "Doughy's"  /shop-type 'Hairdresser
+|-- FD-OF-SHOP-TYPE  /shop "Doughy's"  /shop-type 'Bakery
 
 *** 2 judges
 
