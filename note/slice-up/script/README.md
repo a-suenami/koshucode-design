@@ -26,8 +26,8 @@ p : source P /a /b /c
 ```
 ** -*- koshu -*-
 
-|== Q1 -with-table : p | nest /b /c -to /g
-|== Q2 -with-table : p | my-nest /b /c -to /g
+|== Q1 -table : p | nest /b /c -to /g
+|== Q2 -table : p | my-nest /b /c -to /g
 
 my-nest : copy r ( cut @'all | slice @to ( meet r | pick @'all ))
 ```
@@ -97,7 +97,7 @@ Command `koshu DATA.k nest.k` produces:
 
 s : p | slice /r
 
-|== SLICE-1 -with-table : s
+|== SLICE-1 -table : s
 |== SLICE-2 : s | up /r
 ```
 
@@ -157,7 +157,7 @@ Command `koshu DATA.k slice.k` produces:
 
 n : p | nest /b /c -to /g
 
-|== R0 -with-table : n
+|== R0 -table : n
 |== R1 : n | unnest /g
 |== R2 : n | slice /r ( cut /g | meet g ) -with /g | up /r
 |== R3 : n | my-unnest /g

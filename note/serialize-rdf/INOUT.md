@@ -122,7 +122,7 @@ short
   foaf    "http://xmlns.com/foaf/0.1/"
   biglynx "http://biglynx.co.uk/"
 
-|== TURTLE -with-table -fore /s :
+|== TURTLE -table -fore /s :
   source RDF /s /p /o | nest /p /o -to /po
 ```
 

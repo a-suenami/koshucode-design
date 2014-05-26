@@ -4,7 +4,7 @@
 **    Nested relations as embedded relational system
 **
 
-|== S -with-table : s
+|== S -table : s
 |== T : s | up /nr
 
 r : p | meet q

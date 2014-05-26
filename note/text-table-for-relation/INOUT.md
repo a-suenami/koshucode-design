@@ -55,7 +55,7 @@
 ```
 ** -*- koshu -*-
 
-|== CLIENT-ADDRESS -with-table -fore /name /address
+|== CLIENT-ADDRESS -table -fore /name /address
   : client
   | meet address
   | nest /company /purchase-price /date /no -to /investments
@@ -127,7 +127,7 @@ Command `koshu DATA.k client.k` produces:
 ```
 ** -*- koshu -*-
 
-|== STOCK-EXCHANGE -with-table -fore /company /current-price
+|== STOCK-EXCHANGE -table -fore /company /current-price
   : stock
   | meet exchange
   | nest /exchanges -to /exchanges-traded

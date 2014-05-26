@@ -7,7 +7,7 @@
 **    koshu rop.k
 **
 
-|== ROP -with-table -fore /n /group
+|== ROP -table -fore /n /group
     : koshu-rop -group /group
                 -name  /name
                 -usage /usage
