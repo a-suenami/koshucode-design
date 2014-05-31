@@ -51,6 +51,8 @@
 
 ### 例題
 
+[ASCII コード][ascii-table] — ver 0.60
+
 [近くのお店][boyce-codd-normal-form] (ボイス・コッド正規形) — ver 0.40
 
 [デッドロックの検出][deadlock-detection] — ver 0.49
@@ -169,6 +171,7 @@ range — [範囲判定][cop-range]
 [rop]:                                    rop/README.md
 
 [abortable-points]:                       note/abortable-points
+[ascii-table]:                            note/ascii-table
 [attribute-editor]:                       note/attribute-editor
 [boyce-codd-normal-form]:                 note/boyce-codd-normal-form
 [construct-relmap]:                       note/construct-relmap
