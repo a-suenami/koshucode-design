@@ -23,6 +23,8 @@
 バージョンに依存しないノート
 ------------------------------------------------------------------
 
+[データモデルの解釈構造比][i-s-ratio]
+
 [Wikipedia Infobox][infobox]
 
 [LMCP 方式][lmcp-method]
@@ -191,6 +193,7 @@ range — [範囲判定][cop-range]
 [foreign-key]:                            note/foreign-key
 [infix-notation]:                         note/infix-notation
 [infobox]:                                note/infobox
+[i-s-ratio]:                              note/i-s-ratio
 [join-with-reldum]:                       note/join-with-reldum
 [kind-of-relfiers]:                       note/kind-of-relfiers
 [koshu-inout]:                            note/koshu-inout
