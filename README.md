@@ -59,6 +59,8 @@
 
 [デッドロックの検出][deadlock-detection] — ver 0.49
 
+[トークン列の出力][koshu-syntax] — ver 0.62
+
 [メタデータつき CSV][koshu-xsv] — ver 0.43
 
 [N-Triples と Turtle に似た出力形式][serialize-rdf] — ver 0.59
@@ -199,6 +201,7 @@ range — [範囲判定][cop-range]
 [koshu-inout]:                            note/koshu-inout
 [koshu-markdown]:                         note/koshu-markdown
 [koshu-rop]:                              note/koshu-rop
+[koshu-syntax]:                           note/koshu-syntax
 [koshu-xsv]:                              note/koshu-xsv
 [lambda-calculus]:                        note/lambda-calculus
 [lmcp-method]:                            note/lmcp-method
