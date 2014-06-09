@@ -201,7 +201,6 @@ range — [範囲判定][cop-range]
 [koshu-inout]:                            note/koshu-inout
 [koshu-markdown]:                         note/koshu-markdown
 [koshu-rop]:                              note/koshu-rop
-[koshu-syntax]:                           note/koshu-syntax
 [koshu-xsv]:                              note/koshu-xsv
 [lambda-calculus]:                        note/lambda-calculus
 [lmcp-method]:                            note/lmcp-method
@@ -227,3 +226,6 @@ range — [範囲判定][cop-range]
 [text-table-for-relation]:                note/text-table-for-relation
 [universal-contradiction]:                note/universal-contradiction
 [validation-using-relation]:              note/validation-using-relation
+
+[koshu-syntax]:                           toolkit/koshu-syntax
+
