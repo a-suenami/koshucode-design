@@ -59,11 +59,11 @@
 
 [デッドロックの検出][deadlock-detection] — ver 0.49
 
+[N-Triples と Turtle に似た出力形式][serialize-rdf] — ver 0.59
+
 [トークン列の出力][koshu-syntax] — ver 0.62
 
 [メタデータつき CSV][koshu-xsv] — ver 0.43
-
-[N-Triples と Turtle に似た出力形式][serialize-rdf] — ver 0.59
 
 ### 計算方式
 
@@ -215,7 +215,6 @@ range — [範囲判定][cop-range]
 [report-error]:                           note/report-error
 [run-relmap-using-relation-directly]:     note/run-relmap-using-relation-directly
 [section-level-process]:                  note/section-level-process
-[serialize-rdf]:                          note/serialize-rdf
 [short-signs]:                            note/short-signs
 [slices-of-relation]:                     note/slices-of-relation
 [slices-up]:                              note/slice-up
@@ -227,5 +226,6 @@ range — [範囲判定][cop-range]
 [universal-contradiction]:                note/universal-contradiction
 [validation-using-relation]:              note/validation-using-relation
 
+[serialize-rdf]:                          toolkit/koshu-rdf/serialize-rdf
 [koshu-syntax]:                           toolkit/koshu-syntax
 

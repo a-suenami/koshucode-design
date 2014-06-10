@@ -35,8 +35,8 @@ RDF トリプルの基本形とみなせるでしょう。
 上の 2 つのトリプルは、Turtle で、つぎのように書けます。
 
 ```
-@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#>
-@prefix foaf: <http://xmlns.com/foaf/0.1/>
+@prefix rdf:  <http://www.w3.org/1999/02/22-rdf-syntax-ns#> . 
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
 
 <http://biglynx.co.uk/people/dave-smith>
   rdf:type  foaf:Person ;
