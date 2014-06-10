@@ -1,0 +1,20 @@
+# Quoted literals
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix show: <http://example.org/vocab/show/> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+show:a218 rdfs:label "That Seventies Show"^^xsd:string .            # literal with XML Schema string datatype
+show:a218 rdfs:label "That Seventies Show"^^<http://www.w3.org/2001/XMLSchema#string> . # same as above
+show:a218 rdfs:label "That Seventies Show" .                                            # same again
+show:a218 show:localName "That Seventies Show"@en .                 # literal with a language tag
+
+# Not supported: literal delimited by single quote
+# show:a218 show:localName 'Cette Série des Années Soixante-dix'@fr .
+
+# literal with a region subtag
+show:a218 show:localName "Cette Série des Années Septante"@fr-be .
+
+# literal with embedded new lines and quotes
+show:a218 show:blurb """This is a multi-line
+literal with many quotes (''''')
+and up to two sequential apostrophes ('').""" .
