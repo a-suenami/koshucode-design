@@ -31,8 +31,6 @@
 
 [入出力リスト][koshu-markdown]
 
-[入出力リスト][koshu-inout]
-
 [関係モデル -- 判断することの計算体系][prezi-relational-model]
 
 [実行計画のためのコスト計算式][rdbms-cost-formula]
@@ -58,6 +56,8 @@
 [近くのお店][boyce-codd-normal-form] (ボイス・コッド正規形) — ver 0.40
 
 [デッドロックの検出][deadlock-detection] — ver 0.49
+
+[入出力リスト][koshu-inout]
 
 [N-Triples と Turtle に似た出力形式][serialize-rdf] — ver 0.59
 
@@ -200,7 +200,6 @@ range — [範囲判定][cop-range]
 [i-s-ratio]:                              note/i-s-ratio
 [join-with-reldum]:                       note/join-with-reldum
 [kind-of-relfiers]:                       note/kind-of-relfiers
-[koshu-inout]:                            note/koshu-inout
 [koshu-markdown]:                         note/koshu-markdown
 [koshu-rop]:                              note/koshu-rop
 [koshu-xsv]:                              note/koshu-xsv
@@ -228,6 +227,7 @@ range — [範囲判定][cop-range]
 [universal-contradiction]:                note/universal-contradiction
 [validation-using-relation]:              note/validation-using-relation
 
+[koshu-inout]:                            toolkit/koshu-inout
 [serialize-rdf]:                          toolkit/koshu-rdf/serialize-rdf
 [turtle]:                                 toolkit/koshu-rdf/turtle
 [koshu-syntax]:                           toolkit/koshu-syntax
