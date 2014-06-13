@@ -57,6 +57,8 @@
 
 [デッドロックの検出][deadlock-detection] — ver 0.49
 
+[判断集合の差分][koshu-change] — ver 0.62
+
 [入出力リスト][koshu-inout]
 
 [N-Triples と Turtle に似た出力形式][serialize-rdf] — ver 0.59
@@ -227,8 +229,8 @@ range — [範囲判定][cop-range]
 [universal-contradiction]:                note/universal-contradiction
 [validation-using-relation]:              note/validation-using-relation
 
+[koshu-change]:                           toolkit/koshu-change
 [koshu-inout]:                            toolkit/koshu-inout
 [serialize-rdf]:                          toolkit/koshu-rdf/serialize-rdf
 [turtle]:                                 toolkit/koshu-rdf/turtle
 [koshu-syntax]:                           toolkit/koshu-syntax
-
