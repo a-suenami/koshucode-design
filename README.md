@@ -39,6 +39,8 @@
 
 [関係型データ交換][rdi]
 
+[表形式による判断集合の表示][tabular-form]
+
 [全称矛盾命題][universal-contradiction]
 
 
@@ -227,6 +229,7 @@ range — [範囲判定][cop-range]
 [snip]:                                   note/snip
 [some-and-none]:                          note/some-and-none
 [subrelation]:                            note/subrelation
+[tabular-form]:                           note/tabular-form
 [text-table]:                             note/text-table
 [text-table-for-relation]:                note/text-table-for-relation
 [universal-contradiction]:                note/universal-contradiction
