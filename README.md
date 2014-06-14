@@ -23,6 +23,8 @@
 バージョンに依存しないノート
 ------------------------------------------------------------------
 
+[変更判断][alterative-judgement]
+
 [データモデルの解釈構造比][i-s-ratio]
 
 [Wikipedia Infobox][infobox]
@@ -178,6 +180,7 @@ range — [範囲判定][cop-range]
 [summary-of-notes]:                       note/INOUT-SUMMARY.md
 [rop]:                                    rop/README.md
 
+[alterative-judgement]:                   note/alterative-judgement
 [abortable-points]:                       note/abortable-points
 [ascii-table]:                            note/ascii-table
 [attribute-editor]:                       note/attribute-editor
