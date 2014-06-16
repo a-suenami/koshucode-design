@@ -23,7 +23,8 @@
 バージョンに依存しないノート
 ------------------------------------------------------------------
 
-[変更判断][alterative-judgement]
+[変更判断][alterative-judgement] と
+[制約外判断][violating-judgement]
 
 [データモデルの解釈構造比][i-s-ratio]
 
@@ -234,6 +235,7 @@ range — [範囲判定][cop-range]
 [text-table-for-relation]:                note/text-table-for-relation
 [universal-contradiction]:                note/universal-contradiction
 [validation-using-relation]:              note/validation-using-relation
+[violating-judgement]:                    note/violating-judgement
 
 [koshu-change]:                           toolkit/koshu-change
 [koshu-inout]:                            toolkit/koshu-inout
