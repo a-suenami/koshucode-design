@@ -208,8 +208,8 @@ Command `koshu bcnf-output.k BCNF-DATA.k BCNF-VIOLATED.k` exits with 1 and produ
 **    BCNF-VIOLATED.k
 **
 
-|-- FD-OF-NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop "Sweeney Todd's"
-|-- FD-OF-NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop 'Snippets
+|-V FD-OF-NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop "Sweeney Todd's"
+|-V FD-OF-NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop 'Snippets
 
 *** 2 judges
 

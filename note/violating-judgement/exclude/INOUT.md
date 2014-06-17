@@ -43,17 +43,17 @@ Command `koshu exclude.k` exits with 1 and produces:
 **    exclude.k
 **
 
-|-- P-EXCLUDE-X  /x 1  /y 10
-|-- P-EXCLUDE-X  /x 1  /y 20
-|-- P-EXCLUDE-X  /x 2  /y 30
-|-- P-EXCLUDE-X  /x 3  /y 40
+|-V P-EXCLUDE-X  /x 1  /y 10
+|-V P-EXCLUDE-X  /x 1  /y 20
+|-V P-EXCLUDE-X  /x 2  /y 30
+|-V P-EXCLUDE-X  /x 3  /y 40
 
 *** 4 judges
 
-|-- P-EXCLUDE-Y  /x 1  /y 10
-|-- P-EXCLUDE-Y  /x 1  /y 20
-|-- P-EXCLUDE-Y  /x 2  /y 30
-|-- P-EXCLUDE-Y  /x 3  /y 40
+|-V P-EXCLUDE-Y  /x 1  /y 10
+|-V P-EXCLUDE-Y  /x 1  /y 20
+|-V P-EXCLUDE-Y  /x 2  /y 30
+|-V P-EXCLUDE-Y  /x 3  /y 40
 
 *** 4 judges
 
@@ -118,7 +118,7 @@ Command `koshu exclude.k XY.k` exits with 1 and produces:
 **    XY.k
 **
 
-|-- P-EXCLUDE-Y  /x 3  /y 40
+|-V P-EXCLUDE-Y  /x 3  /y 40
 
 *** 1 judge 
 
