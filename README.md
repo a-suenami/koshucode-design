@@ -36,6 +36,8 @@
 
 [関係モデル -- 判断することの計算体系][prezi-relational-model]
 
+[命題関数とはなにか][propositional-function]
+
 [実行計画のためのコスト計算式][rdbms-cost-formula]
 
 [関係型データ交換][rdi]
@@ -216,6 +218,7 @@ range — [範囲判定][cop-range]
 [multiple-output]:                        note/multiple-output
 [nested-relations-as-relational-system]:  note/nested-relations-as-relational-system
 [prezi-relational-model]:                 note/prezi-relational-model
+[propositional-function]:                 note/propositional-function
 [rdbms-cost-formula]:                     note/rdbms-cost-formula
 [rdi]:                                    note/rdi
 [read-judge-literals]:                    note/read-judge-literals
