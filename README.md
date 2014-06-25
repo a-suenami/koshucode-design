@@ -162,8 +162,6 @@ down — [包括演算子の等価定義][equivalent-for-down]
 
 duplicate — [キー項目の重複][duplicate-keys]
 
-koshu-rop — [関係写像演算子の一覧][koshu-rop]
-
 slice up nest unnest — [重関係の基礎演算子][slices-up]
 
 slice — [関係のうす切り][slices-of-relation]
@@ -211,7 +209,6 @@ range — [範囲判定][cop-range]
 [join-with-reldum]:                       note/join-with-reldum
 [kind-of-relfiers]:                       note/kind-of-relfiers
 [koshu-markdown]:                         note/koshu-markdown
-[koshu-rop]:                              note/koshu-rop
 [koshu-xsv]:                              note/koshu-xsv
 [lambda-calculus]:                        note/lambda-calculus
 [lmcp-method]:                            note/lmcp-method
