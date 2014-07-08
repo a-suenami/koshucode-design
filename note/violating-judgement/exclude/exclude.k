@@ -19,5 +19,8 @@ x : source X /x
 y : source Y /y
 p : source P /x /y
 
-|=V P-EXCLUDE-X : p | my-exclude /x -from x
-|=V P-EXCLUDE-Y : p | my-exclude /y -from y
+|=V P-EXCLUDE-X : p | exclude /x -from x
+|=V P-EXCLUDE-Y : p | exclude /y -from y
+
+|=V MY-P-EXCLUDE-X : p | my-exclude /x -from x
+|=V MY-P-EXCLUDE-Y : p | my-exclude /y -from y

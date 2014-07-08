@@ -30,8 +30,11 @@ x : source X /x
 y : source Y /y
 p : source P /x /y
 
-|=V P-EXCLUDE-X : p | my-exclude /x -from x
-|=V P-EXCLUDE-Y : p | my-exclude /y -from y
+|=V P-EXCLUDE-X : p | exclude /x -from x
+|=V P-EXCLUDE-Y : p | exclude /y -from y
+
+|=V MY-P-EXCLUDE-X : p | my-exclude /x -from x
+|=V MY-P-EXCLUDE-Y : p | my-exclude /y -from y
 ```
 
 Command `koshu exclude.k` exits with 1 and produces:
@@ -57,11 +60,27 @@ Command `koshu exclude.k` exits with 1 and produces:
 
 *** 4 judges
 
+|-V MY-P-EXCLUDE-X  /x 1  /y 10
+|-V MY-P-EXCLUDE-X  /x 1  /y 20
+|-V MY-P-EXCLUDE-X  /x 2  /y 30
+|-V MY-P-EXCLUDE-X  /x 3  /y 40
+
+*** 4 judges
+
+|-V MY-P-EXCLUDE-Y  /x 1  /y 10
+|-V MY-P-EXCLUDE-Y  /x 1  /y 20
+|-V MY-P-EXCLUDE-Y  /x 2  /y 30
+|-V MY-P-EXCLUDE-Y  /x 3  /y 40
+
+*** 4 judges
+
 **
 **  SUMMARY (VIOLATED)
+**       4 judges on MY-P-EXCLUDE-X
+**       4 judges on MY-P-EXCLUDE-Y
 **       4 judges on P-EXCLUDE-X
 **       4 judges on P-EXCLUDE-Y
-**       8 judges in total
+**      16 judges in total
 **
 ```
 
@@ -91,8 +110,11 @@ x : source X /x
 y : source Y /y
 p : source P /x /y
 
-|=V P-EXCLUDE-X : p | my-exclude /x -from x
-|=V P-EXCLUDE-Y : p | my-exclude /y -from y
+|=V P-EXCLUDE-X : p | exclude /x -from x
+|=V P-EXCLUDE-Y : p | exclude /y -from y
+
+|=V MY-P-EXCLUDE-X : p | my-exclude /x -from x
+|=V MY-P-EXCLUDE-Y : p | my-exclude /y -from y
 ```
 ```
 ** -*- koshu -*-
@@ -122,10 +144,15 @@ Command `koshu exclude.k XY.k` exits with 1 and produces:
 
 *** 1 judge 
 
+|-V MY-P-EXCLUDE-Y  /x 3  /y 40
+
+*** 1 judge 
+
 **
 **  SUMMARY (VIOLATED)
+**       1 judge  on MY-P-EXCLUDE-Y
 **       1 judge  on P-EXCLUDE-Y
-**       1 judge  in total
+**       2 judges in total
 **
 ```
 
@@ -155,8 +182,11 @@ x : source X /x
 y : source Y /y
 p : source P /x /y
 
-|=V P-EXCLUDE-X : p | my-exclude /x -from x
-|=V P-EXCLUDE-Y : p | my-exclude /y -from y
+|=V P-EXCLUDE-X : p | exclude /x -from x
+|=V P-EXCLUDE-Y : p | exclude /y -from y
+
+|=V MY-P-EXCLUDE-X : p | my-exclude /x -from x
+|=V MY-P-EXCLUDE-Y : p | my-exclude /y -from y
 ```
 ```
 ** -*- koshu -*-
