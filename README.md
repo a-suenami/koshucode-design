@@ -42,6 +42,8 @@
 
 [関係型データ交換][rdi]
 
+[記号空間の範囲][signscope]
+
 [表形式による判断集合の表示][tabular-form]
 
 [全称矛盾命題][universal-contradiction]
@@ -225,6 +227,7 @@ range — [範囲判定][cop-range]
 [run-relmap-using-relation-directly]:     note/run-relmap-using-relation-directly
 [section-level-process]:                  note/section-level-process
 [short-signs]:                            note/short-signs
+[signscope]:                              note/signscope
 [slices-of-relation]:                     note/slices-of-relation
 [slices-up]:                              note/slice-up
 [snip]:                                   note/snip
