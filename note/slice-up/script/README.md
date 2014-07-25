@@ -194,20 +194,20 @@ Command `koshu DATA.k unnest.k` produces:
 **    60   70   
 **              
 
-|-- R1  /b 40  /c 80  /a 10
 |-- R1  /b 50  /c 90  /a 10
+|-- R1  /b 40  /c 80  /a 10
 |-- R1  /b 60  /c 70  /a 20
 
 *** 3 judges
 
-|-- R2  /b 40  /c 80  /a 10
 |-- R2  /b 50  /c 90  /a 10
+|-- R2  /b 40  /c 80  /a 10
 |-- R2  /b 60  /c 70  /a 20
 
 *** 3 judges
 
-|-- R3  /b 40  /c 80  /a 10
 |-- R3  /b 50  /c 90  /a 10
+|-- R3  /b 40  /c 80  /a 10
 |-- R3  /b 60  /c 70  /a 20
 
 *** 3 judges
