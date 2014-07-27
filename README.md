@@ -82,6 +82,8 @@
 
 [計算の中断を補足する場所][abortable-points] — ver 0.43
 
+[空番][empty-filler] — ver 0.65
+
 [終了ステータス][exit-status] — ver 0.39
 
 [中置記法から前置記法への変換][infix-notation] — ver 0.41
@@ -200,6 +202,7 @@ range — [範囲判定][cop-range]
 [diagram-of-relmap-calculation]:          note/diagram-of-relmap-calculation
 [divide-into-assoc]:                      note/divide-into-assoc
 [duplicate-keys]:                         note/duplicate-keys
+[empty-filler]:                           note/empty-filler
 [equivalent-for-down]:                    note/equivalent-for-down
 [equivalent-for-both]:                    note/equivalent-for-both
 [exit-status]:                            note/exit-status
