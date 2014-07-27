@@ -56,10 +56,10 @@ Command `koshu DATA.k maybe.k` produces:
 **    maybe.k
 **
 
-|-- MAYBE  /a 10  /b 40  /c ()
+|-- MAYBE  /a 10  /b 40
 |-- MAYBE  /a 10  /b 50  /c 80
 |-- MAYBE  /a 20  /b 50  /c 80
-|-- MAYBE  /a ()  /b 60  /c 90
+|-- MAYBE  /b 60  /c 90
 
 *** 4 judges
 
@@ -89,10 +89,10 @@ Command `koshu DATA.k maybe-liner.k` produces:
 **    maybe-liner.k
 **
 
-|-- MAYBE-LINER  /a 10  /b 40  /c ()
+|-- MAYBE-LINER  /a 10  /b 40
 |-- MAYBE-LINER  /a 10  /b 50  /c 80
 |-- MAYBE-LINER  /a 20  /b 50  /c 80
-|-- MAYBE-LINER  /a ()  /b 60  /c 90
+|-- MAYBE-LINER  /b 60  /c 90
 
 *** 4 judges
 
@@ -122,10 +122,10 @@ Command `koshu DATA.k copy-maybe.k` produces:
 **    copy-maybe.k
 **
 
-|-- COPY-MAYBE  /a 10  /b 40  /c ()
+|-- COPY-MAYBE  /a 10  /b 40
 |-- COPY-MAYBE  /a 10  /b 50  /c 80
 |-- COPY-MAYBE  /a 20  /b 50  /c 80
-|-- COPY-MAYBE  /a ()  /b 60  /c 90
+|-- COPY-MAYBE  /b 60  /c 90
 
 *** 4 judges
 
@@ -155,10 +155,10 @@ Command `koshu DATA.k once.k` produces:
 **    once.k
 **
 
-|-- ONCE  /a 10  /b 40  /c ()
+|-- ONCE  /a 10  /b 40
 |-- ONCE  /a 10  /b 50  /c 80
 |-- ONCE  /a 20  /b 50  /c 80
-|-- ONCE  /a ()  /b 60  /c 90
+|-- ONCE  /b 60  /c 90
 
 *** 4 judges
 
@@ -188,10 +188,10 @@ Command `koshu DATA.k both.k` produces:
 **    both.k
 **
 
-|-- BOTH  /a 10  /b 40  /c ()
+|-- BOTH  /a 10  /b 40
 |-- BOTH  /a 10  /b 50  /c 80
 |-- BOTH  /a 20  /b 50  /c 80
-|-- BOTH  /a ()  /b 60  /c 90
+|-- BOTH  /b 60  /c 90
 
 *** 4 judges
 
