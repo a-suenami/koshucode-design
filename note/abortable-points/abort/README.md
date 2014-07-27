@@ -326,11 +326,11 @@ Command `koshu abort-specialize.k` exits with 2 and produces:
 **
 
 **
-**  ABORTED  Require new term names
+**  ABORTED  Unknown term name
 **  -------- ------------------------ -------------
-**  Detail   Known
-**             /x
-**             /y
+**  Detail   Unknown
+**             /a
+**             /b
 **           Relation
 **             /x
 **             /y
