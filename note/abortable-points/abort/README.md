@@ -69,11 +69,7 @@ Command `koshu abort-calc.k` exits with 2 and produces:
 **  ABORTED  Type unmatch
 **  -------- -------------------------- ---------
 **  Detail   decimal
-**  Source   4 15 abort-calc.k
-**           > ( <0> or 0 ))            .. calc
-**           3 15 abort-calc.k
-**           > ( <1> and                .. calc
-**           3 8 abort-calc.k
+**  Source   3 8 abort-calc.k
 **           > add /x ( <1> and         .. run
 **           3 0 abort-calc.k
 **           > |== A : add /x ( <1> and .. assert
@@ -216,12 +212,12 @@ Command `koshu abort-position.k` exits with 2 and produces:
 
 **
 **  ABORTED  Unknown term name
-**  -------- ----------------------- -----------
+**  -------- ----------------------- ---------------
 **  Detail   Unknown
 **             //y
 **           Relation
 **  Source   3 17 abort-position.k
-**           > /y )                  .. position
+**           > /y )                  .. cox-position
 **           3 8 abort-position.k
 **           > add /x ( /y )         .. run
 **           3 0 abort-position.k
@@ -369,14 +365,14 @@ Command `koshu abort-syntax.k` exits with 2 and produces:
 
 **
 **  ABORTED  Unexpected attribute
-**  -------- ----------------------- ---------
+**  -------- ----------------------- -------------
 **  Detail   Expect E -> E
 **  Source   5 22 abort-syntax.k
 **           > 1 -> 2 -> 3 ))        .. if
 **           5 17 abort-syntax.k
-**           > ( if 1 -> 2 -> 3 ))   .. syntax
+**           > ( if 1 -> 2 -> 3 ))   .. cox-syntax
 **           4 15 abort-syntax.k
-**           > ( if /x = 0 ->        .. syntax
+**           > ( if /x = 0 ->        .. cox-syntax
 **           4 8 abort-syntax.k
 **           > add /y ( if /x = 0 -> .. relmap
 **           3 0 abort-syntax.k
