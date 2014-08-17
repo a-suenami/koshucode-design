@@ -106,11 +106,15 @@
       (2 font-lock-variable-name-face))
 
      ;; variables of function abstruction
-     ("(|\\(\\( *\\w\\)+\\)"
-      (1 font-lock-variable-name-face))
+     ("\\((\\)\\(| *\\(\\w *\\)*|\\)"
+      (1 font-lock-variable-name-face)
+      (2 font-lock-variable-name-face))
+     ("\\(|\\)\\()\\)"
+      (1 font-lock-variable-name-face)
+      (2 font-lock-variable-name-face))
 
      ;; punctuation
-     ("[]:|(){}#[]\\|---" . font-lock-builtin-face)
+     ("[]:=|(){}#[]\\|---" . font-lock-builtin-face)
 
      ;; arrows
      (,(regexp-opt '("<-" "->" "<<" ">>") t)
