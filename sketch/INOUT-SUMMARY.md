@@ -8,3 +8,4 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 
 * OK – [README.md](church-boolean/README.md) in church-boolean
 * OK – [README.md](factorial/README.md) in factorial
+* OK – [README.md](foo/README.md) in foo
