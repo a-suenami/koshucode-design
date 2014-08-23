@@ -1,6 +1,7 @@
 # I/O List
 
 - koshu [number.k](#numberk)
+- koshu [rank.k](#rankk)
 
 
 
@@ -61,6 +62,66 @@ Command `koshu number.k` produces:
 **       5 judges on PX
 **       5 judges on PY
 **      15 judges in total
+**
+```
+
+
+
+## [rank.k](rank.k)
+
+```
+** -*- koshu -*-
+
+|-- P  /x 1  /y 0
+|-- P  /x 1  /y 1
+|-- P  /x 2  /y 0
+|-- P  /x 3  /y 1
+|-- P  /x 3  /y 0
+|-- P  /x 4  /y 0
+|-- P  /x 5  /y 0
+
+p : source P /y /x
+
+|== GAP-RANK   -fore /n /x : p | rank /n -order /x -from 1
+|== DENSE-RANK -fore /n /x : p | rank /n -order /x -from 1 -dense
+```
+
+Command `koshu rank.k` produces:
+
+```
+** -*- koshu -*-
+**
+**  INPUT
+**    rank.k
+**
+
+|-- GAP-RANK  /n 1  /x 1  /y 0
+|-- GAP-RANK  /n 1  /x 1  /y 1
+|-- GAP-RANK  /n 3  /x 2  /y 0
+|-- GAP-RANK  /n 4  /x 3  /y 0
+|-- GAP-RANK  /n 4  /x 3  /y 1
+
+|-- GAP-RANK  /n 6  /x 4  /y 0
+|-- GAP-RANK  /n 7  /x 5  /y 0
+
+*** 7 judges
+
+|-- DENSE-RANK  /n 1  /x 1  /y 0
+|-- DENSE-RANK  /n 1  /x 1  /y 1
+|-- DENSE-RANK  /n 2  /x 2  /y 0
+|-- DENSE-RANK  /n 3  /x 3  /y 0
+|-- DENSE-RANK  /n 3  /x 3  /y 1
+
+|-- DENSE-RANK  /n 4  /x 4  /y 0
+|-- DENSE-RANK  /n 5  /x 5  /y 0
+
+*** 7 judges
+
+**
+**  SUMMARY
+**       7 judges on DENSE-RANK
+**       7 judges on GAP-RANK
+**      14 judges in total
 **
 ```
 

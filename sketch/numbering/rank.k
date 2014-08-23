@@ -1,0 +1,14 @@
+** -*- koshu -*-
+
+|-- P  /x 1  /y 0
+|-- P  /x 1  /y 1
+|-- P  /x 2  /y 0
+|-- P  /x 3  /y 1
+|-- P  /x 3  /y 0
+|-- P  /x 4  /y 0
+|-- P  /x 5  /y 0
+
+p : source P /y /x
+
+|== GAP-RANK   -fore /n /x : p | rank /n -order /x -from 1
+|== DENSE-RANK -fore /n /x : p | rank /n -order /x -from 1 -dense
