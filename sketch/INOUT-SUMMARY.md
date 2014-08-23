@@ -12,3 +12,4 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 * OK – [README.md](factorial/README.md) in factorial
 * OK – [README.md](foo/README.md) in foo
 * OK – [README.md](numbering/README.md) in numbering
+* OK – [README.md](refill/README.md) in refill
