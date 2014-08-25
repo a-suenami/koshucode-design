@@ -24,19 +24,19 @@ Command `koshu dump-cox.k` exits with 2 and produces:
 
 **
 **  ABORTED  Dump content expression
-**  -------- -------------------------------- ---------
+**  -------- ---------------------------------- ---------
 **  Detail   >> (| x | >> global g
-**                        - >> global in::*
+**                        - >> global * (infix)
 **                             - /y
 **                             - local x/1 |)
 **              - global f
-**              - >> global in::+
+**              - >> global + (infix)
 **                   - /x
 **                   - lit 1
 **  Source   3 11 dump-cox.k
-**           > dump-cox                       .. relmap
+**           > dump-cox                         .. relmap
 **           3 0 dump-cox.k
-**           > |== DUMP : dump-cox            .. assert
+**           > |== DUMP : dump-cox              .. assert
 **  Command  koshu
 **           dump-cox.k
 **
