@@ -13,5 +13,6 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 * OK – [README.md](foo/README.md) in foo
 * OK – [README.md](rop/dump-cox/README.md) in rop / dump-cox
 * OK – [README.md](rop/numbering/README.md) in rop / numbering
+* OK – [README.md](rop/term-name/README.md) in rop / term-name
 * OK – [README.md](tree/bracket/README.md) in tree / bracket
 * OK – [README.md](tree/simple/README.md) in tree / simple
