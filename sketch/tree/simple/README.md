@@ -40,16 +40,16 @@ Command `koshu basic.k` exits with 2 and produces:
 
 **
 **  ABORTED  Dump token trees
-**  -------- --------------------------------------------------- ---------
+**  -------- ----------------------------------------------------- ---------
 **  Detail   TreeL : 17.21 TText 0 "a"
 **           TreeL : 17.23 TText 0 "b"
-**           TreeB ParenGroup : 17.25 TOpen "(" 17.31 TClose ")"
+**           TreeB BracketGroup : 17.25 TOpen "(" 17.31 TClose ")"
 **             TreeL : 17.27 TText 0 "c"
 **             TreeL : 17.29 TText 0 "d"
 **  Source   17 11 basic.k
-**           > dump-tree a b ( c d )                             .. relmap
+**           > dump-tree a b ( c d )                               .. relmap
 **           17 0 basic.k
-**           > |== TREE : dump-tree a b ( c d )                  .. assert
+**           > |== TREE : dump-tree a b ( c d )                    .. assert
 **  Command  koshu
 **           basic.k
 **
@@ -89,24 +89,24 @@ Command `koshu slot.k` exits with 2 and produces:
 
 **
 **  ABORTED  Dump token trees
-**  -------- ---------------------------------------------------- ---------
-**  Detail   TreeB ParenGroup : 10.4 TOpen "(" 10.16 TClose ")"
-**             TreeL : 10.6 TTerm ["x"]
+**  -------- ------------------------------------------------------ ---------
+**  Detail   TreeB BracketGroup : 10.4 TOpen "(" 10.16 TClose ")"
+**             TreeL : 10.6 TTerm 0 ["x"]
 **             TreeL : 10.9 TText 0 "+"
-**             TreeL : 13.5 TTerm ["y"]
+**             TreeL : 13.5 TTerm 0 ["y"]
 **             TreeL : 13.8 TText 0 "+"
-**             TreeL : 13.10 TTerm ["z"]
-**           TreeB ParenGroup : 11.4 TOpen "(" 11.17 TClose ")"
-**             TreeL : 11.6 TTerm ["x"]
+**             TreeL : 13.10 TTerm 0 ["z"]
+**           TreeB BracketGroup : 11.4 TOpen "(" 11.17 TClose ")"
+**             TreeL : 11.6 TTerm 0 ["x"]
 **             TreeL : 11.9 TText 0 "+"
-**             TreeB ParenGroup : 14.6 TOpen "(" 14.16 TClose ")"
-**               TreeL : 14.8 TTerm ["y"]
+**             TreeB BracketGroup : 14.6 TOpen "(" 14.16 TClose ")"
+**               TreeL : 14.8 TTerm 0 ["y"]
 **               TreeL : 14.11 TText 0 "+"
-**               TreeL : 14.13 TTerm ["z"]
+**               TreeL : 14.13 TTerm 0 ["z"]
 **  Source   8 11 slot.k
-**           > dump-tree                                          .. relmap
+**           > dump-tree                                            .. relmap
 **           8 0 slot.k
-**           > |== TREE : dump-tree                               .. assert
+**           > |== TREE : dump-tree                                 .. assert
 **  Command  koshu
 **           slot.k
 **
@@ -147,19 +147,19 @@ Command `koshu term.k` exits with 2 and produces:
 
 **
 **  ABORTED  Dump token trees
-**  -------- -------------------------------------------------- ---------
-**  Detail   TreeL : 11.4 TTerm ["a"]
-**           TreeL : 12.4 TTerm ["b","c"]
-**           TreeL : 13.4 TTerm ["d","e","f"]
-**           TreeL : 15.4 TTerm ["z"]
-**           TreeB ParenGroup : 15.7 TOpen "(" 15.17 TClose ")"
-**             TreeL : 15.9 TTerm ["x"]
+**  -------- ---------------------------------------------------- ---------
+**  Detail   TreeL : 11.4 TTerm 0 ["a"]
+**           TreeL : 12.4 TTerm 0 ["b","c"]
+**           TreeL : 13.4 TTerm 0 ["d","e","f"]
+**           TreeL : 15.4 TTerm 0 ["z"]
+**           TreeB BracketGroup : 15.7 TOpen "(" 15.17 TClose ")"
+**             TreeL : 15.9 TTerm 0 ["x"]
 **             TreeL : 15.12 TText 0 "+"
-**             TreeL : 15.14 TTerm ["y"]
+**             TreeL : 15.14 TTerm 0 ["y"]
 **  Source   9 11 term.k
-**           > dump-tree                                        .. relmap
+**           > dump-tree                                          .. relmap
 **           9 0 term.k
-**           > |== TREE : dump-tree                             .. assert
+**           > |== TREE : dump-tree                               .. assert
 **  Command  koshu
 **           term.k
 **
@@ -200,32 +200,32 @@ Command `koshu text.k` exits with 2 and produces:
 
 **
 **  ABORTED  Dump token trees
-**  -------- -------------------------------------------------- ---------
-**  Detail   TreeB ParenGroup : 6.4 TOpen "(" 6.22 TClose ")"
+**  -------- ---------------------------------------------------- ---------
+**  Detail   TreeB BracketGroup : 6.4 TOpen "(" 6.22 TClose ")"
 **             TreeL : 6.6 TText 0 "a"
 **             TreeL : 6.8 TText 0 ":"
 **             TreeL : 6.10 TText 1 "bb"
 **             TreeL : 6.14 TText 0 ":"
 **             TreeL : 6.16 TText 2 "ccc"
-**           TreeB ParenGroup : 9.4 TOpen "(" 9.22 TClose ")"
+**           TreeB BracketGroup : 9.4 TOpen "(" 9.22 TClose ")"
 **             TreeL : 9.6 TText 0 "0"
 **             TreeL : 9.8 TText 0 "."
 **             TreeL : 9.10 TText 0 "-02"
 **             TreeL : 9.14 TText 0 "."
 **             TreeL : 9.16 TText 0 "12.34"
-**           TreeB ParenGroup : 12.4 TOpen "(" 12.27 TClose ")"
+**           TreeB BracketGroup : 12.4 TOpen "(" 12.27 TClose ")"
 **             TreeL : 12.6 TText 3 "\t"
 **             TreeL : 12.12 TText 0 "|"
 **             TreeL : 12.14 TText 3 "\r\n"
 **             TreeL : 12.21 TText 0 "|"
 **             TreeL : 12.23 TText -1 "0"
-**           TreeB ParenGroup : 15.4 TOpen "(" 15.19 TClose ")"
+**           TreeB BracketGroup : 15.4 TOpen "(" 15.19 TClose ")"
 **             TreeL : 15.6 TShort "a" "xxx"
 **             TreeL : 15.12 TShort "bb" "yyy"
 **  Source   3 11 text.k
-**           > dump-tree                                        .. relmap
+**           > dump-tree                                          .. relmap
 **           3 0 text.k
-**           > |== TREE : dump-tree                             .. assert
+**           > |== TREE : dump-tree                               .. assert
 **  Command  koshu
 **           text.k
 **
