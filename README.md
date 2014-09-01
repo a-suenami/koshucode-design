@@ -60,6 +60,8 @@
 
 ### 例題
 
+[版数][VERSION] — 甲州計算機の版数
+
 [ASCII コード][ascii-table] — ver 0.60
 
 [近くのお店][boyce-codd-normal-form] (ボイス・コッド正規形) — ver 0.40
@@ -183,6 +185,7 @@ range — [範囲判定][cop-range]
 
 [abc]:                                     https://github.com/seinokatsuhiro/abc-of-koshucode/blob/master/draft/japanese/README.md
 
+[VERSION]:                                VERSION.k
 [grand-summary]:                          INOUT-GRAND-SUMMARY.md
 [summary-of-notes]:                       note/INOUT-SUMMARY.md
 [rop]:                                    rop/README.md
