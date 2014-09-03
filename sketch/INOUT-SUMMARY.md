@@ -17,3 +17,4 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 * OK – [README.md](syntax/bracket/README.md) in syntax / bracket
 * OK – [README.md](syntax/decimal/README.md) in syntax / decimal
 * OK – [README.md](syntax/simple/README.md) in syntax / simple
+* OK – [README.md](syntax/text-row/README.md) in syntax / text-row
