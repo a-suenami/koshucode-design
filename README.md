@@ -30,9 +30,11 @@
 
 [Wikipedia Infobox][infobox]
 
-[LMCP 方式][lmcp-method]
+[関係モデルはどのような種類の理論か][kind-of-theory]
 
 [入出力リスト][koshu-markdown]
+
+[LMCP 方式][lmcp-method]
 
 [関係モデル -- 判断することの計算体系][prezi-relational-model]
 
@@ -60,7 +62,7 @@
 
 ### 例題
 
-[版数][VERSION] — 甲州計算機の版数
+[甲州計算機の版数][VERSION]
 
 [ASCII コード][ascii-table] — ver 0.60
 
@@ -215,6 +217,7 @@ range — [範囲判定][cop-range]
 [infobox]:                                note/infobox
 [i-s-ratio]:                              note/i-s-ratio
 [join-with-reldum]:                       note/join-with-reldum
+[kind-of-theory]:                         note/kind-of-theory
 [kind-of-relfiers]:                       note/kind-of-relfiers
 [koshu-markdown]:                         note/koshu-markdown
 [koshu-xsv]:                              note/koshu-xsv
