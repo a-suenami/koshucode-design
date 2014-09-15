@@ -45,3 +45,7 @@
 q : p | add /y ( /x * 2 )  ** Single asterisks are text tokens.
 r : p | add /y ( /x + 2 )  ** Double asterisk begins line comment.
 p : source P /x            *** Triple asterisk also begins line comment.
+
+**
+****
+*******
