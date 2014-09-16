@@ -202,7 +202,7 @@ Command `koshu token-table.k TOKEN.k` produces:
 
 |-- TOKEN  /clause 1  /clause-type 'relmap  /line {| /line : /token | 7 : {| /col : /type : /cont | 0 : 'text : 'clause | 7 : 'text : ":" | 9 : 'text : 'source | 16 : 'text : 'CLAUSE | 23 : 'term : "/clause" | 31 : 'term : "/clause-type" |} |}
 |-- TOKEN  /clause 2  /clause-type 'relmap  /line {| /line : /token | 8 : {| /col : /type : /cont | 0 : 'text : 'token | 7 : 'text : ":" | 9 : 'text : 'source | 16 : 'text : 'TOKEN | 22 : 'term : "/clause" | 30 : 'term : "/line" | 36 : 'term : "/col" | 41 : 'term : "/type" | 47 : 'term : "/cont" |} |}
-|-- TOKEN  /clause 3  /clause-type 'assert  /line {| /line : /token | 10 : {| /col : /type : /cont | 0 : 'text : "|" | 1 : 'text : '== | 4 : 'text : 'TOKEN | 10 : 'text : '-order | 17 : 'text : '-table | 24 : 'text : '-fore | 30 : 'term : "/clause" | 38 : 'term : "/clause-type" |} | 11 : {| /col : /type : /cont | 2 : 'text : ":" | 4 : 'text : 'token |} | 12 : {| /col : /type : /cont | 2 : 'text : "|" | 4 : 'text : 'omit | 9 : 'term : "/type" | 15 : 'text : '= | 17 : 'text : 'space |} | 13 : {| /col : /type : /cont | 2 : 'text : "|" | 4 : 'text : 'meet | 9 : 'text : 'clause |} | 14 : {| /col : /type : /cont | 2 : 'text : "|" | 4 : 'text : 'nest | 9 : 'text : "~" | 11 : 'term : "/clause" | 19 : 'term : "/clause-type" | 32 : 'text : '-to | 36 : 'term : "/line" |} | 15 : {| /col : /type : /cont | 2 : 'text : "|" | 4 : 'text : 'for | 8 : 'term : "/line" | 14 : 'open : "(" | 16 : 'text : 'nest | 21 : 'text : "~" | 23 : 'term : "/line" | 29 : 'text : '-to | 33 : 'term : "/token" | 40 : 'text : "|" | 42 : 'text : 'fore-line | 52 : 'close : ")" |} |}
+|-- TOKEN  /clause 3  /clause-type 'assert  /line {| /line : /token | 10 : {| /col : /type : /cont | 0 : 'text : "|" | 1 : 'text : '== | 4 : 'text : 'TOKEN | 10 : 'text : '-order | 17 : 'text : '-table | 24 : 'text : '-fore | 30 : 'term : "/clause" | 38 : 'term : "/clause-type" |} | 11 : {| /col : /type : /cont | 2 : 'text : ":" | 4 : 'text : 'token |} | 12 : {| /col : /type : /cont | 2 : 'text : "|" | 4 : 'text : 'omit | 9 : 'term : "/type" | 15 : 'text : '= | 17 : 'text : 'space |} | 13 : {| /col : /type : /cont | 2 : 'text : "|" | 4 : 'text : 'meet | 9 : 'text : 'clause |} | 14 : {| /col : /type : /cont | 2 : 'text : "|" | 4 : 'text : 'nest | 9 : 'text : '~ | 11 : 'term : "/clause" | 19 : 'term : "/clause-type" | 32 : 'text : '-to | 36 : 'term : "/line" |} | 15 : {| /col : /type : /cont | 2 : 'text : "|" | 4 : 'text : 'for | 8 : 'term : "/line" | 14 : 'open : "(" | 16 : 'text : 'nest | 21 : 'text : '~ | 23 : 'term : "/line" | 29 : 'text : '-to | 33 : 'term : "/token" | 40 : 'text : "|" | 42 : 'text : 'fore-line | 52 : 'close : ")" |} |}
 |-- TOKEN  /clause 4  /clause-type 'relmap  /line {| /line : /token | 17 : {| /col : /type : /cont | 0 : 'text : 'fore-line | 10 : 'text : ":" | 12 : 'text : 'pick | 17 : 'term : "/line" | 23 : 'term : "/token" |} |}
 
 *** 4 judges
@@ -272,7 +272,7 @@ Command `koshu token-table.k TOKEN.k` produces:
 **                               ---- -------- ----------------
 **                               2    'text    "|"
 **                               4    'text    'nest
-**                               9    'text    "~"
+**                               9    'text    '~
 **                               11   'term    "/clause"
 **                               19   'term    "/clause-type"
 **                               32   'text    '-to
@@ -285,7 +285,7 @@ Command `koshu token-table.k TOKEN.k` produces:
 **                               8    'term    "/line"
 **                               14   'open    "("
 **                               16   'text    'nest
-**                               21   'text    "~"
+**                               21   'text    '~
 **                               23   'term    "/line"
 **                               29   'text    '-to
 **                               33   'term    "/token"
