@@ -81,4 +81,5 @@
 |-- VERSION  /major 0  /minor 71  /date <<2014-09-05>>  /summary "リテラル計算式を実装"
 |-- VERSION  /major 0  /minor 72  /date <<2014-09-07>>  /summary "演算子セットをひとつのデータ型でとりまとめ"
 |-- VERSION  /major 0  /minor 73  /date <<2014-09-14>>  /summary "データ解釈リテラルを導入"
+|-- VERSION  /major 0  /minor 74  /date <<2014-09-20>>  /summary "トークン化処理を整理"
 
