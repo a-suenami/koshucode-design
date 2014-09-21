@@ -9,6 +9,7 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 * OK – [README.md](cop/between/README.md) in cop / between
 * OK – [README.md](cop/church-boolean/README.md) in cop / church-boolean
 * OK – [README.md](cop/factorial/README.md) in cop / factorial
+* OK – [README.md](cop/koshu-angle-text/README.md) in cop / koshu-angle-text
 * OK – [README.md](cop/refill/README.md) in cop / refill
 * OK – [README.md](cop/term-set/README.md) in cop / term-set
 * OK – [README.md](foo/README.md) in foo
