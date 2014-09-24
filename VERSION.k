@@ -82,4 +82,5 @@
 |-- VERSION  /major 0  /minor 72  /date <<2014-09-07>>  /summary "演算子セットをひとつのデータ型でとりまとめ"
 |-- VERSION  /major 0  /minor 73  /date <<2014-09-14>>  /summary "データ解釈リテラルを導入"
 |-- VERSION  /major 0  /minor 74  /date <<2014-09-20>>  /summary "トークン化処理を整理"
+|-- VERSION  /major 0  /minor 75  /date <<2014-09-24>>  /summary "データ解釈による見出し検査を実装"
 
