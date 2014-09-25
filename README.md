@@ -26,6 +26,8 @@
 [変更判断][alterative-judgement] と
 [制約外判断][violating-judgement]
 
+[データ解釈の書き方][data-interpretation]
+
 [データモデルの解釈構造比][i-s-ratio]
 
 [Wikipedia Infobox][infobox]
@@ -202,6 +204,7 @@ range — [範囲判定][cop-range]
 [cop-range]:                              note/cop-range
 [count-judgements]:                       note/count-judgements
 [data-component-matrix]:                  note/data-component-matrix
+[data-interpretation]:                    note/data-interpretation
 [deadlock-detection]:                     note/deadlock-detection
 [derived-relmap]:                         note/derived-relmap
 [diagram-of-relmap-calculation]:          note/diagram-of-relmap-calculation
