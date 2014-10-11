@@ -38,6 +38,8 @@
 
 [LMCP 方式][lmcp-method]
 
+[関係モデルの理解をゆがめる 2 大要因][misunderstanding]
+
 [関係モデル -- 判断することの計算体系][prezi-relational-model]
 
 [命題関数とはなにか][propositional-function]
@@ -226,6 +228,7 @@ range — [範囲判定][cop-range]
 [koshu-xsv]:                              note/koshu-xsv
 [lambda-calculus]:                        note/lambda-calculus
 [lmcp-method]:                            note/lmcp-method
+[misunderstanding]:                       note/misunderstanding
 [multiple-output]:                        note/multiple-output
 [nested-relations-as-relational-system]:  note/nested-relations-as-relational-system
 [prezi-relational-model]:                 note/prezi-relational-model
