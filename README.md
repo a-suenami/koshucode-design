@@ -26,6 +26,8 @@
 [変更判断][alterative-judgement] と
 [制約外判断][violating-judgement]
 
+[関係の属性という語法はなぜ避けるべきか][attribute-of-relation]
+
 [データ解釈の書き方][data-interpretation]
 
 [データモデルの解釈構造比][i-s-ratio]
@@ -196,10 +198,11 @@ range — [範囲判定][cop-range]
 [summary-of-notes]:                       note/INOUT-SUMMARY.md
 [rop]:                                    rop/README.md
 
-[alterative-judgement]:                   note/alterative-judgement
 [abortable-points]:                       note/abortable-points
+[alterative-judgement]:                   note/alterative-judgement
 [ascii-table]:                            note/ascii-table
 [attribute-editor]:                       note/attribute-editor
+[attribute-of-relation]:                  note/attribute-of-relation
 [boyce-codd-normal-form]:                 note/boyce-codd-normal-form
 [construct-relmap]:                       note/construct-relmap
 [cop-if]:                                 note/cop-if
@@ -213,8 +216,8 @@ range — [範囲判定][cop-range]
 [divide-into-assoc]:                      note/divide-into-assoc
 [duplicate-keys]:                         note/duplicate-keys
 [empty-filler]:                           note/empty-filler
-[equivalent-for-down]:                    note/equivalent-for-down
 [equivalent-for-both]:                    note/equivalent-for-both
+[equivalent-for-down]:                    note/equivalent-for-down
 [exit-status]:                            note/exit-status
 [explain-heading]:                        note/explain-heading
 [foreign-key]:                            note/foreign-key
