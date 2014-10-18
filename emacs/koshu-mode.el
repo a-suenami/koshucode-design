@@ -27,9 +27,10 @@
 
 (defvar koshu-mode-syntax-table
   (let ((table (make-syntax-table text-mode-syntax-table)))
-    (modify-syntax-entry ?_ "w" table)
     (modify-syntax-entry ?- "w" table)
+    (modify-syntax-entry ?= "w" table)
     (modify-syntax-entry ?+ "w" table)
+    (modify-syntax-entry ?_ "w" table)
     table)
   "Syntax table used in Koshu mode.")
 
