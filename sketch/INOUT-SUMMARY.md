@@ -14,6 +14,13 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 * OK – [README.md](cop/term-set/README.md) in cop / term-set
 * OK – [README.md](foo/README.md) in foo
 * OK – [README.md](rop/dump-cox/README.md) in rop / dump-cox
+* OK – [README.md](rop/koshu-resource/README.md) in rop / koshu-resource
+* OK – [permutation/KFB.md](rop/koshu-resource/permutation/KFB.md) in rop / koshu-resource
+* OK – [permutation/KBF.md](rop/koshu-resource/permutation/KBF.md) in rop / koshu-resource
+* OK – [permutation/FKB.md](rop/koshu-resource/permutation/FKB.md) in rop / koshu-resource
+* OK – [permutation/FBK.md](rop/koshu-resource/permutation/FBK.md) in rop / koshu-resource
+* OK – [permutation/BKF.md](rop/koshu-resource/permutation/BKF.md) in rop / koshu-resource
+* OK – [permutation/BFK.md](rop/koshu-resource/permutation/BFK.md) in rop / koshu-resource
 * OK – [README.md](rop/numbering/README.md) in rop / numbering
 * OK – [README.md](rop/term-name/README.md) in rop / term-name
 * OK – [README.md](syntax/bracket/README.md) in syntax / bracket
