@@ -11,7 +11,7 @@
 Command `koshu-inout.sh -V` produces:
 
 ```
-koshu-inout-0.55
+koshu-inout-0.77
 ```
 
 
@@ -26,7 +26,7 @@ DESCRIPTION
   Generate I/O list
 
 USAGE
-  koshu-inout.sh [OPTION ...] koshu FILE.k ...
+  koshu-inout.sh [OPTION ...] COMMAND ARG ...
 
 OPTION
   -d          show all differences against last I/O list
@@ -38,6 +38,8 @@ OPTION
   -r          save document to README.md
   -s          save document to INOUT.md
   -t          do not delete temporary files
+  -V          print version of this program
+  -u          update differences without prompt
   -x EXT      use EXTension instead of *.k
 
 EXAMPLE
