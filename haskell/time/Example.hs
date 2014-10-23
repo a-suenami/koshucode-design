@@ -1,4 +1,4 @@
-module Example.Utility where
+module Example where
 
 import qualified Data.Time as T
 import qualified Data.Fixed as F

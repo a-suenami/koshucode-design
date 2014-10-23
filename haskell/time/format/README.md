@@ -19,7 +19,7 @@
 --
 
 import qualified Data.Time as T
-import Example.Utility
+import Example
 
 main :: IO ()
 main =
@@ -56,7 +56,7 @@ date   2014-12-02 12/02/14
 --
 
 import qualified Data.Time as T
-import Example.Utility
+import Example
 
 main :: IO ()
 main =
@@ -95,7 +95,7 @@ UNIX   0
 --
 
 import qualified Data.Time as T
-import Example.Utility
+import Example
 
 main :: IO ()
 main =

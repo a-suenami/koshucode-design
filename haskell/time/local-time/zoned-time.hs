@@ -15,7 +15,7 @@
 --
 
 import qualified Data.Time as T
-import Example.Utility
+import Example
 
 main :: IO ()
 main =

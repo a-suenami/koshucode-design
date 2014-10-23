@@ -1,8 +1,8 @@
 # I/O List
 
-- runhaskell -Wall [diff-time.hs](#diff-timehs)
-- runhaskell -Wall [diff-utc.hs](#diff-utchs)
-- runhaskell -Wall [utc.hs](#utchs)
+- runhaskell -Wall -i.. [diff-time.hs](#diff-timehs)
+- runhaskell -Wall -i.. [diff-utc.hs](#diff-utchs)
+- runhaskell -Wall -i.. [utc.hs](#utchs)
 
 
 
@@ -19,7 +19,7 @@ main =
        print $ T.picosecondsToDiffTime $ 1000 * 1000 * 1000
 ```
 
-Command `runhaskell -Wall diff-time.hs` produces:
+Command `runhaskell -Wall -i.. diff-time.hs` produces:
 
 ```
 0s
@@ -34,7 +34,7 @@ Command `runhaskell -Wall diff-time.hs` produces:
 
 ```
 import qualified Data.Time as T
-import Example.Utility
+import Example
 
 main :: IO ()
 main =
@@ -54,7 +54,7 @@ main =
                    in print (u1, u2, T.diffUTCTime u2 u1)
 ```
 
-Command `runhaskell -Wall diff-utc.hs` produces:
+Command `runhaskell -Wall -i.. diff-utc.hs` produces:
 
 ```
 (2014-10-12 00:00:00 UTC,2014-10-12 00:00:00 UTC,0s)
@@ -75,7 +75,7 @@ Command `runhaskell -Wall diff-utc.hs` produces:
 
 ```
 import qualified Data.Time as T
-import Example.Utility
+import Example
 
 main :: IO ()
 main =
@@ -90,7 +90,7 @@ main =
       utc d = print (utcFrom d, d)
 ```
 
-Command `runhaskell -Wall utc.hs` produces:
+Command `runhaskell -Wall -i.. utc.hs` produces:
 
 ```
 (2014-10-12 00:00:00 UTC,(2014,10,12,0,0,0))
@@ -109,5 +109,5 @@ Command `runhaskell -Wall utc.hs` produces:
 This document is produced by the command:
 
 ```
-koshu-inout.sh -r -g -x hs runhaskell -Wall
+koshu-inout.sh -r -g -x hs runhaskell -Wall -i..
 ```

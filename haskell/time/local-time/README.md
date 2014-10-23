@@ -1,10 +1,10 @@
 # I/O List
 
-- runhaskell -Wall [frac.hs](#frachs)
-- runhaskell -Wall [local-time.hs](#local-timehs)
-- runhaskell -Wall [time-zone.hs](#time-zonehs)
-- runhaskell -Wall [time.hs](#timehs)
-- runhaskell -Wall [zoned-time.hs](#zoned-timehs)
+- runhaskell -Wall -i.. [frac.hs](#frachs)
+- runhaskell -Wall -i.. [local-time.hs](#local-timehs)
+- runhaskell -Wall -i.. [time-zone.hs](#time-zonehs)
+- runhaskell -Wall -i.. [time.hs](#timehs)
+- runhaskell -Wall -i.. [zoned-time.hs](#zoned-timehs)
 
 
 
@@ -43,7 +43,7 @@ main =
       toFrac   = print . T.timeOfDayToDayFraction
 ```
 
-Command `runhaskell -Wall frac.hs` produces:
+Command `runhaskell -Wall -i.. frac.hs` produces:
 
 ```
 00:00:01
@@ -64,7 +64,7 @@ Command `runhaskell -Wall frac.hs` produces:
 
 ```
 import qualified Data.Time as T
-import Example.Utility
+import Example
 
 main :: IO ()
 main =
@@ -81,7 +81,7 @@ jst :: T.TimeZone
 jst = T.hoursToTimeZone 9
 ```
 
-Command `runhaskell -Wall local-time.hs` produces:
+Command `runhaskell -Wall -i.. local-time.hs` produces:
 
 ```
 2014-10-12 08:50:00
@@ -114,7 +114,7 @@ main =
                      , T.timeZoneName z)
 ```
 
-Command `runhaskell -Wall time-zone.hs` produces:
+Command `runhaskell -Wall -i.. time-zone.hs` produces:
 
 ```
 (JST,"+0900",540,False,"JST")
@@ -130,7 +130,7 @@ Command `runhaskell -Wall time-zone.hs` produces:
 
 ```
 import qualified Data.Time as T
-import Example.Utility
+import Example
 
 main :: IO ()
 main =
@@ -146,7 +146,7 @@ main =
                      , T.todSec t )
 ```
 
-Command `runhaskell -Wall time.hs` produces:
+Command `runhaskell -Wall -i.. time.hs` produces:
 
 ```
 (00:00:00,0,0,0.000000000000)
@@ -178,7 +178,7 @@ Command `runhaskell -Wall time.hs` produces:
 --
 
 import qualified Data.Time as T
-import Example.Utility
+import Example
 
 main :: IO ()
 main =
@@ -194,7 +194,7 @@ main =
       ut = utcFrom (2014, 10, 12, 8, 50, 00)
 ```
 
-Command `runhaskell -Wall zoned-time.hs` produces:
+Command `runhaskell -Wall -i.. zoned-time.hs` produces:
 
 ```
 2014-10-12 08:50:00 UTC
@@ -210,5 +210,5 @@ Command `runhaskell -Wall zoned-time.hs` produces:
 This document is produced by the command:
 
 ```
-koshu-inout.sh -r -g -x hs runhaskell -Wall
+koshu-inout.sh -r -g -x hs runhaskell -Wall -i..
 ```
