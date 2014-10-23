@@ -85,4 +85,5 @@
 |-- VERSION  /major 0  /minor 75  /date <<2014-09-24>>  /summary "データ解釈による見出し検査を実装"
 |-- VERSION  /major 0  /minor 76  /date <<2014-10-04>>  /summary "型定数を導入"
 |-- VERSION  /major 0  /minor 77  /date <<2014-10-12>>  /summary "型定数を使った見出しに変更"
+|-- VERSION  /major 0  /minor 78  /date <<2014-10-22>>  /summary "作業項目に関する機能を実装"
 
