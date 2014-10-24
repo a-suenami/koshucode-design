@@ -46,6 +46,8 @@
 
 [命題関数とはなにか][propositional-function]
 
+[関係束のふたつの演算][relational-lattice]
+
 [実行計画のためのコスト計算式][rdbms-cost-formula]
 
 [関係型データ交換][rdi]
@@ -239,6 +241,7 @@ range — [範囲判定][cop-range]
 [rdbms-cost-formula]:                     note/rdbms-cost-formula
 [rdi]:                                    note/rdi
 [read-judge-literals]:                    note/read-judge-literals
+[relational-lattice]:                     note/relational-lattice
 [relmap-in-outer-section]:                note/relmap-in-outer-section
 [relmap-operand]:                         note/relmap-operand
 [report-error]:                           note/report-error
