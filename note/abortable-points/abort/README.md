@@ -216,6 +216,7 @@ Command `koshu abort-position.k` exits with 2 and produces:
 **  Detail   Unknown
 **             //y
 **           Relation
+**             rel
 **  Source   3 17 abort-position.k
 **           > /y )                  .. cox-position
 **           3 8 abort-position.k
@@ -328,8 +329,8 @@ Command `koshu abort-specialize.k` exits with 2 and produces:
 **             /a
 **             /b
 **           Relation
-**             /x
-**             /y
+**             rel /x any
+**                 /y any
 **  Source   4 8 abort-specialize.k
 **           > rename /x /a /y /b     .. specialize
 **           3 0 abort-specialize.k
