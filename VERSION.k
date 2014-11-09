@@ -87,4 +87,5 @@
 |-- VERSION  /major 0  /minor 77  /date 2014-10-12  /summary "型定数を使った見出しに変更"
 |-- VERSION  /major 0  /minor 78  /date 2014-10-22  /summary "作業項目に関する機能を実装"
 |-- VERSION  /major 0  /minor 79  /date 2014-10-28  /summary "日付の基本機能を実装"
+|-- VERSION  /major 0  /minor 80  /date 2014-11-02  /summary "経過時間型を実装"
 
