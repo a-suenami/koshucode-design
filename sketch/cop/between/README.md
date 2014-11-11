@@ -8,13 +8,22 @@
 
 ```
 ** -*- koshu -*-
+**
+**  DESCRIPTION
+**    Consider B and C with the following rewriting rules.
+**
+**    /n is F      ->  F /n
+**    between L H  ->  (| x | x >= L and x <= H |)
+**    all F G      ->  (| x | F x and G x |)
+**    >= L         ->  (| x | x >= L |)
+**    <= H         ->  (| x | x <= H |)
+**
 
 n : range /n -from 0 -to 10
 
 |== A : n | keep /n >= 5 and /n <= 8
-|== B : n | keep /n between 5 8
-|== C : n | keep /n is between 5 8
-|== D : n | keep /n is all ( >= 5 )( <= 8 )
+|== B : n | keep /n is between 5 8
+|== C : n | keep /n is all ( >= 5 )( <= 8 )
 ```
 
 Command `koshu between.k` produces:
@@ -47,20 +56,12 @@ Command `koshu between.k` produces:
 
 *** 4 judges
 
-|-- D  /n 5
-|-- D  /n 6
-|-- D  /n 7
-|-- D  /n 8
-
-*** 4 judges
-
 **
 **  SUMMARY
 **       4 judges on A
 **       4 judges on B
 **       4 judges on C
-**       4 judges on D
-**      16 judges in total
+**      12 judges in total
 **
 ```
 
