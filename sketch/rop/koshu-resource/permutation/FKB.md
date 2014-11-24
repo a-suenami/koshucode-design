@@ -1,7 +1,7 @@
 # I/O List
 
 - [foo.k](#fook)
-- [koshu-resource.k](#koshu-resourcek)
+- [koshu-source.k](#koshu-sourcek)
 - [bar.k](#bark)
 - [output](#output)
 
@@ -17,13 +17,13 @@
 
 
 
-## [koshu-resource.k](koshu-resource.k)
+## [koshu-source.k](koshu-source.k)
 
 ```
 ** -*- koshu -*-
 **
-**  The relmap operator "koshu-resource" returns
-**  resource informations, i.e., its number, type, and name.
+**  The relmap operator "koshu-source" returns
+**  source informations, i.e., its number, type, and name.
 **
 
 |-- P  /x 1  /y 10
@@ -31,7 +31,7 @@
 p : source P /x /y
 
 |== P : p
-|== RES : koshu-resource /num -type /type -name /name
+|== RES : koshu-source /num -type /type -name /name
 ```
 
 
@@ -48,14 +48,14 @@ p : source P /x /y
 ## output
 
 
-Command `koshu foo.k koshu-resource.k bar.k` produces:
+Command `koshu foo.k koshu-source.k bar.k` produces:
 
 ```
 ** -*- koshu -*-
 **
 **  INPUT
 **    foo.k
-**    koshu-resource.k
+**    koshu-source.k
 **    bar.k
 **
 
@@ -67,7 +67,7 @@ Command `koshu foo.k koshu-resource.k bar.k` produces:
 *** 4 judges
 
 |-- RES  /num 1  /type 'file  /name 'foo.k
-|-- RES  /num 2  /type 'file  /name 'koshu-resource.k
+|-- RES  /num 2  /type 'file  /name 'koshu-source.k
 |-- RES  /num 3  /type 'file  /name 'bar.k
 
 *** 3 judges
@@ -87,5 +87,5 @@ Command `koshu foo.k koshu-resource.k bar.k` produces:
 This document is produced by the command:
 
 ```
-koshu-inout.sh -o permutation/FKB.md koshu foo.k koshu-resource.k bar.k
+koshu-inout.sh -o permutation/FKB.md koshu foo.k koshu-source.k bar.k
 ```

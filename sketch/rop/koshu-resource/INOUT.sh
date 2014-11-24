@@ -1,6 +1,6 @@
 #!/bin/sh
 
-K=koshu-resource.k
+K=koshu-source.k
 F=foo.k
 B=bar.k
 

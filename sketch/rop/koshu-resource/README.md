@@ -9,7 +9,7 @@
 
 ```
 #!/bin/sh
-cat foo.k bar.k | koshu -i koshu-resource.k
+cat foo.k bar.k | koshu -i koshu-source.k
 ```
 
 
@@ -24,7 +24,7 @@ Command `./stdin.sh` produces:
 **
 **  INPUT
 **    <stdin>
-**    koshu-resource.k
+**    koshu-source.k
 **
 
 |-- P  /x 2  /y 10
@@ -35,7 +35,7 @@ Command `./stdin.sh` produces:
 *** 4 judges
 
 |-- RES  /num 1  /type 'stdin  /name '<stdin>
-|-- RES  /num 2  /type 'file  /name 'koshu-resource.k
+|-- RES  /num 2  /type 'file  /name 'koshu-source.k
 
 *** 2 judges
 
