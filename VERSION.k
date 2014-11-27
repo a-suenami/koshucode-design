@@ -90,4 +90,5 @@
 |-- VERSION  /major 0  /minor 80  /date 2014-11-02  /summary "経過時間型を実装"
 |-- VERSION  /major 0  /minor 81  /date 2014-11-12  /summary "秒までの精度をもつ時刻型を実装"
 |-- VERSION  /major 0  /minor 82  /date 2014-11-18  /summary "年週日と年通日の時刻型を実装"
+|-- VERSION  /major 0  /minor 83  /date 2014-11-25  /summary "区の基本機能を実装"
 
