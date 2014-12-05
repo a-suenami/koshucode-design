@@ -91,4 +91,5 @@
 |-- VERSION  /major 0  /minor 81  /date 2014-11-12  /summary "秒までの精度をもつ時刻型を実装"
 |-- VERSION  /major 0  /minor 82  /date 2014-11-18  /summary "年週日と年通日の時刻型を実装"
 |-- VERSION  /major 0  /minor 83  /date 2014-11-25  /summary "区の基本機能を実装"
+|-- VERSION  /major 0  /minor 84  /date 2014-12-03  /summary "構文ツール koshu-syntax を修正"
 
