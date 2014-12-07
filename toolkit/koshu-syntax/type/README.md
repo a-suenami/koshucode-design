@@ -30,43 +30,44 @@ Command `koshu-syntax -b name.k` produces:
 **    name.k
 **
 **  JUDGES
-**    |-- CLAUSE /clause /clause-type
-**    |-- LINE   /clause /line
-**    |-- TOKEN  /line /column /token-type /cont
+**    |-- CLAUSE  /clause -> /clause-type
+**    |-- LINE    /line -> /clause
+**    |-- TOKEN   /line /column -> /token-type [/token-subtype] /cont
 **
 **    <<< There is a clause numbered /clause on /line .
 **        Type of the clause is /clause-type .
 **        There is a token of content /cont at /line and /column .
-**        Type of the token is /token-type . >>>
+**        Type of the token is /token-type .
+**        Some tokens are classified into /token-subtype . >>>
 **
 
-**  term
-**    /a /a/b
-**    /a/b/c
+*** term
+***   /a /a/b
+***   /a/b/c
 
 |-- CLAUSE  /clause 1  /clause-type 'unknown
-|-- LINE  /clause 1  /line 3
-|-- LINE  /clause 1  /line 4
-|-- LINE  /clause 1  /line 5
+|-- LINE  /line 3  /clause 1
+|-- LINE  /line 4  /clause 1
+|-- LINE  /line 5  /clause 1
 
-|-- TOKEN  /line 3  /column 0  /token-type 'text  /cont 'term
+|-- TOKEN  /line 3  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'term
 
 |-- TOKEN  /line 4  /column 2  /token-type 'term  /cont "/a"
 |-- TOKEN  /line 4  /column 5  /token-type 'term  /cont "/a/b"
 
 |-- TOKEN  /line 5  /column 2  /token-type 'term  /cont "/a/b/c"
 
-**  slot
-**    @a @@a
+*** slot
+***   @a @@a
 
 |-- CLAUSE  /clause 2  /clause-type 'unknown
-|-- LINE  /clause 2  /line 7
-|-- LINE  /clause 2  /line 8
+|-- LINE  /line 7  /clause 2
+|-- LINE  /line 8  /clause 2
 
-|-- TOKEN  /line 7  /column 0  /token-type 'text  /cont 'slot
+|-- TOKEN  /line 7  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'slot
 
-|-- TOKEN  /line 8  /column 2  /token-type 'slot  /cont 'a
-|-- TOKEN  /line 8  /column 5  /token-type 'slot  /cont 'a
+|-- TOKEN  /line 8  /column 2  /token-type 'slot  /token-subtype 'named  /cont 'a
+|-- TOKEN  /line 8  /column 5  /token-type 'slot  /token-subtype 'global  /cont 'a
 
 ```
 
@@ -103,28 +104,29 @@ Command `koshu-syntax -b paren.k` produces:
 **    paren.k
 **
 **  JUDGES
-**    |-- CLAUSE /clause /clause-type
-**    |-- LINE   /clause /line
-**    |-- TOKEN  /line /column /token-type /cont
+**    |-- CLAUSE  /clause -> /clause-type
+**    |-- LINE    /line -> /clause
+**    |-- TOKEN   /line /column -> /token-type [/token-subtype] /cont
 **
 **    <<< There is a clause numbered /clause on /line .
 **        Type of the clause is /clause-type .
 **        There is a token of content /cont at /line and /column .
-**        Type of the token is /token-type . >>>
+**        Type of the token is /token-type .
+**        Some tokens are classified into /token-subtype . >>>
 **
 
-**  one-letter
-**    ()
-**    []
-**    {}
+*** one-letter
+***   ()
+***   []
+***   {}
 
 |-- CLAUSE  /clause 1  /clause-type 'unknown
-|-- LINE  /clause 1  /line 3
-|-- LINE  /clause 1  /line 4
-|-- LINE  /clause 1  /line 5
-|-- LINE  /clause 1  /line 6
+|-- LINE  /line 3  /clause 1
+|-- LINE  /line 4  /clause 1
+|-- LINE  /line 5  /clause 1
+|-- LINE  /line 6  /clause 1
 
-|-- TOKEN  /line 3  /column 0  /token-type 'text  /cont 'one-letter
+|-- TOKEN  /line 3  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'one-letter
 
 |-- TOKEN  /line 4  /column 2  /token-type 'open  /cont "("
 |-- TOKEN  /line 4  /column 3  /token-type 'close  /cont ")"
@@ -135,18 +137,18 @@ Command `koshu-syntax -b paren.k` produces:
 |-- TOKEN  /line 6  /column 2  /token-type 'open  /cont "{"
 |-- TOKEN  /line 6  /column 3  /token-type 'close  /cont "}"
 
-**  two-letters
-**    << >>
-**    (| |)
-**    {| |}
+*** two-letters
+***   << >>
+***   (| |)
+***   {| |}
 
 |-- CLAUSE  /clause 2  /clause-type 'unknown
-|-- LINE  /clause 2  /line 8
-|-- LINE  /clause 2  /line 9
-|-- LINE  /clause 2  /line 10
-|-- LINE  /clause 2  /line 11
+|-- LINE  /line 8  /clause 2
+|-- LINE  /line 9  /clause 2
+|-- LINE  /line 10  /clause 2
+|-- LINE  /line 11  /clause 2
 
-|-- TOKEN  /line 8  /column 0  /token-type 'text  /cont 'two-letters
+|-- TOKEN  /line 8  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'two-letters
 
 |-- TOKEN  /line 9  /column 2  /token-type 'open  /cont '<<
 |-- TOKEN  /line 9  /column 5  /token-type 'close  /cont '>>
@@ -157,16 +159,16 @@ Command `koshu-syntax -b paren.k` produces:
 |-- TOKEN  /line 11  /column 2  /token-type 'open  /cont "{|"
 |-- TOKEN  /line 11  /column 5  /token-type 'close  /cont "|}"
 
-**  knob
-**    (- -)
-**    [- -]
+*** knob
+***   (- -)
+***   [- -]
 
 |-- CLAUSE  /clause 3  /clause-type 'unknown
-|-- LINE  /clause 3  /line 13
-|-- LINE  /clause 3  /line 14
-|-- LINE  /clause 3  /line 15
+|-- LINE  /line 13  /clause 3
+|-- LINE  /line 14  /clause 3
+|-- LINE  /line 15  /clause 3
 
-|-- TOKEN  /line 13  /column 0  /token-type 'text  /cont 'knob
+|-- TOKEN  /line 13  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'knob
 
 |-- TOKEN  /line 14  /column 2  /token-type 'open  /cont "(-"
 |-- TOKEN  /line 14  /column 5  /token-type 'close  /cont "-)"
@@ -205,57 +207,58 @@ Command `koshu-syntax -b text.k` produces:
 **    text.k
 **
 **  JUDGES
-**    |-- CLAUSE /clause /clause-type
-**    |-- LINE   /clause /line
-**    |-- TOKEN  /line /column /token-type /cont
+**    |-- CLAUSE  /clause -> /clause-type
+**    |-- LINE    /line -> /clause
+**    |-- TOKEN   /line /column -> /token-type [/token-subtype] /cont
 **
 **    <<< There is a clause numbered /clause on /line .
 **        Type of the clause is /clause-type .
 **        There is a token of content /cont at /line and /column .
-**        Type of the token is /token-type . >>>
+**        Type of the token is /token-type .
+**        Some tokens are classified into /token-subtype . >>>
 **
 
-**  text
-**    a 'a "a"
-**    "aaa bbb"
-**    34 100.25
-**    |06:30| 2014-10-25
-**    = : |
+*** text
+***   a 'a "a"
+***   "aaa bbb"
+***   34 100.25
+***   |06:30| 2014-10-25
+***   = : |
 
 |-- CLAUSE  /clause 1  /clause-type 'unknown
-|-- LINE  /clause 1  /line 3
-|-- LINE  /clause 1  /line 4
-|-- LINE  /clause 1  /line 5
-|-- LINE  /clause 1  /line 6
-|-- LINE  /clause 1  /line 7
-|-- LINE  /clause 1  /line 8
+|-- LINE  /line 3  /clause 1
+|-- LINE  /line 4  /clause 1
+|-- LINE  /line 5  /clause 1
+|-- LINE  /line 6  /clause 1
+|-- LINE  /line 7  /clause 1
+|-- LINE  /line 8  /clause 1
 
-|-- TOKEN  /line 3  /column 0  /token-type 'text  /cont 'text
+|-- TOKEN  /line 3  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'text
 
-|-- TOKEN  /line 4  /column 2  /token-type 'text  /cont 'a
-|-- TOKEN  /line 4  /column 4  /token-type 'text  /cont 'a
-|-- TOKEN  /line 4  /column 7  /token-type 'text  /cont 'a
+|-- TOKEN  /line 4  /column 2  /token-type 'text  /token-subtype 'raw  /cont 'a
+|-- TOKEN  /line 4  /column 4  /token-type 'text  /token-subtype 'q  /cont 'a
+|-- TOKEN  /line 4  /column 7  /token-type 'text  /token-subtype 'qq  /cont 'a
 
-|-- TOKEN  /line 5  /column 2  /token-type 'text  /cont "aaa bbb"
+|-- TOKEN  /line 5  /column 2  /token-type 'text  /token-subtype 'qq  /cont "aaa bbb"
 
-|-- TOKEN  /line 6  /column 2  /token-type 'text  /cont '34
-|-- TOKEN  /line 6  /column 5  /token-type 'text  /cont '100.25
+|-- TOKEN  /line 6  /column 2  /token-type 'text  /token-subtype 'raw  /cont '34
+|-- TOKEN  /line 6  /column 5  /token-type 'text  /token-subtype 'raw  /cont '100.25
 
-|-- TOKEN  /line 7  /column 2  /token-type 'text  /cont "|06:30|"
-|-- TOKEN  /line 7  /column 10  /token-type 'text  /cont '2014-10-25
+|-- TOKEN  /line 7  /column 2  /token-type 'text  /token-subtype 'bar  /cont "|06:30|"
+|-- TOKEN  /line 7  /column 10  /token-type 'text  /token-subtype 'raw  /cont '2014-10-25
 
-|-- TOKEN  /line 8  /column 2  /token-type 'text  /cont '=
-|-- TOKEN  /line 8  /column 4  /token-type 'text  /cont ":"
-|-- TOKEN  /line 8  /column 6  /token-type 'text  /cont "|"
+|-- TOKEN  /line 8  /column 2  /token-type 'text  /token-subtype 'raw  /cont '=
+|-- TOKEN  /line 8  /column 4  /token-type 'text  /token-subtype 'raw  /cont ":"
+|-- TOKEN  /line 8  /column 6  /token-type 'text  /token-subtype 'raw  /cont "|"
 
-**  short
-**    a.xxx
+*** short
+***   a.xxx
 
 |-- CLAUSE  /clause 2  /clause-type 'unknown
-|-- LINE  /clause 2  /line 10
-|-- LINE  /clause 2  /line 11
+|-- LINE  /line 10  /clause 2
+|-- LINE  /line 11  /clause 2
 
-|-- TOKEN  /line 10  /column 0  /token-type 'text  /cont 'short
+|-- TOKEN  /line 10  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'short
 
 |-- TOKEN  /line 11  /column 2  /token-type 'short  /cont 'a.xxx
 
