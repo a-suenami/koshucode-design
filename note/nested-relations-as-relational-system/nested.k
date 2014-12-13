@@ -13,10 +13,8 @@ r : p | meet q
 
 s : slice /np p
   | slice /nq q
-  | slice /nr ( nr -np np -nq nq )
-     -with /np /nq
+  | slice /nr ( nr -np np -nq nq ) -< /np /nq
 
 nr : @np | meet @nq
          | add /d ( /a + /c )
          | cut /b
-
