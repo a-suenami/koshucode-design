@@ -6,7 +6,7 @@
 
 |-- P  /x 1  /y 10
 
-p : source P /x /y
+p = source P /x /y
 
 |== P : p
-|== RES : koshu-source /num -type /type -name /name
+|== SOURCE : koshu-source /num -type /type -name /name
