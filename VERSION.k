@@ -95,4 +95,6 @@
 |-- VERSION  /major 0  /minor 85  /date 2014-12-09  /summary "重関係参照のインタフェースを見直し"
 |-- VERSION  /major 0  /minor 86  /date 2014-12-18  /summary "GHC 7.8.3 向けに更新"
 |-- VERSION  /major 0  /minor 87  /date 2014-12-22  /summary "区番による有効範囲を実装"
+|-- VERSION  /major 0  /minor 88  /date 2014-12-25  /summary "関係写像にフックを追加"
+|-- VERSION  /major 0  /minor 89  /date 2014-12-26  /summary "関係写像のためのモジュールを整理"
 
