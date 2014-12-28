@@ -58,39 +58,31 @@
   (re-search-forward "> ?" (+ 2 (point)) t))
 
 (defvar koshu-mode-font-lock
-  `(( ;; clause comment (from "****" to beginning of next clause)
+  `((;; assertion
+     ("^\\(|[-=vVxX]+\\) +\\(\\w+\\)"
+      (1 font-lock-keyword-face)
+      (2 font-lock-function-name-face))
+
+     ;; section
+     ("^\\(===\\) *\\(\\w+\\)"
+      (1 font-lock-preprocessor-face)
+      (2 font-lock-keyword-face))
+
+     ;; clause comment (from "****" to beginning of next clause)
      ("^\\([*][*][*][*]\\)\\(.*\n\\(\n\\|[ \t].*\n\\)*\\)"
       (1 font-lock-comment-delimiter-face)
       (2 font-lock-comment-face))
-
+     
      ;; line comment
-     ("\\([*][*]\\)\\(.*\\)"
+     ("\\([*][*]+\\)\\(.*\\)"
       (1 font-lock-comment-delimiter-face)
       (2 font-lock-comment-face))
 
-     ;; assertion
-     ("^\\(|[=xX]+\\) +\\(\\w+\\)"
-      (1 font-lock-builtin-face)
-      (2 font-lock-function-name-face))
-     ("^\\(|\\)\\([=vV]+\\) +\\(\\w+\\)"
-      (1 font-lock-builtin-face)
-      (2 font-lock-warning-face)
-      (3 font-lock-function-name-face))
-     ("^\\(|\\)\\([-vVxX]+\\) +\\(\\w+\\)"
-      (1 font-lock-builtin-face)
-      (2 font-lock-function-name-face)
-      (3 font-lock-function-name-face))
-
      ;; quotation mark
-     ("\\('\\)\\([\\w]+\\)"
-      (1 font-lock-keyword-face)
-      (2 font-lock-string-face))
-
-     ;; double-quoted text
+     ("\\('\\)\\(\\w+\\)"
+      . font-lock-constant-face)
      ("\\(\"\\)\\([^\"\n]*\\)\\(\"\\)"
-      (1 font-lock-keyword-face)
-      (2 font-lock-string-face)
-      (3 font-lock-keyword-face))
+      . font-lock-string-face)
 
      ;; bracket keyword
      ("<1>" . font-lock-builtin-face)
