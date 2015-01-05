@@ -1,6 +1,6 @@
 module Example where
 
-import qualified Data.Time as T
+import qualified Data.Time  as T
 import qualified Data.Fixed as F
 
 timeFrom :: Integer -> Integer -> Integer -> T.DiffTime

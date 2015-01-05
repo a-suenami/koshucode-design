@@ -1,4 +1,3 @@
-import qualified Data.Time as T
 import Example
 
 main :: IO ()

@@ -74,7 +74,6 @@ Command `runhaskell -Wall -i.. diff-utc.hs` produces:
 ## [utc.hs](utc.hs)
 
 ```
-import qualified Data.Time as T
 import Example
 
 main :: IO ()
