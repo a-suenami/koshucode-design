@@ -97,4 +97,5 @@
 |-- VERSION  /major 0  /minor 87  /date 2014-12-22  /summary "区番による有効範囲を実装"
 |-- VERSION  /major 0  /minor 88  /date 2014-12-25  /summary "関係写像にフックを追加"
 |-- VERSION  /major 0  /minor 89  /date 2014-12-26  /summary "関係写像のためのモジュールを整理"
+|-- VERSION  /major 0  /minor 90  /date 2015-01-06  /summary "資源に関する関係写像演算子"
 
