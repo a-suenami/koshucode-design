@@ -1,10 +1,10 @@
 # I/O List
 
 - koshu [abort-assert.k](#abort-assertk)
+- koshu [abort-attr.k](#abort-attrk)
 - koshu [abort-calc.k](#abort-calck)
 - koshu [abort-clause.k](#abort-clausek)
 - koshu [abort-lexmap.k](#abort-lexmapk)
-- koshu [abort-operand.k](#abort-operandk)
 - koshu [abort-position.k](#abort-positionk)
 - koshu [abort-relmap.k](#abort-relmapk)
 - koshu [abort-run.k](#abort-runk)
@@ -39,6 +39,43 @@ Command `koshu abort-assert.k` exits with 2 and produces:
 **           > |== A -unknown : id .. assert
 **  Command  koshu
 **           abort-assert.k
+**
+**  Exit with status 2
+**
+```
+
+
+
+## [abort-attr.k](abort-attr.k)
+
+```
+** -*- koshu -*-
+
+|== A : source /x /y
+
+```
+
+Command `koshu abort-attr.k` exits with 2 and produces:
+
+```
+** -*- koshu -*-
+**
+**  INPUT
+**    abort-attr.k
+**
+
+**
+**  ABORTED  Unexpected attribute
+**  -------- ---------------------- ---------
+**  Detail   Require one word
+**  Source   3 15 abort-attr.k
+**           > /x /y                .. attr
+**           3 8 abort-attr.k
+**           > source /x /y         .. relmap
+**           3 0 abort-attr.k
+**           > |== A : source /x /y .. assert
+**  Command  koshu
+**           abort-attr.k
 **
 **  Exit with status 2
 **
@@ -119,7 +156,7 @@ Command `koshu abort-clause.k` exits with 2 and produces:
 ```
 ** -*- koshu -*-
 
-|== A : meet (a | meet)
+|== A : meet meet
 
 ```
 
@@ -134,57 +171,16 @@ Command `koshu abort-lexmap.k` exits with 2 and produces:
 
 **
 **  ABORTED  Unexpected attribute
-**  -------- ------------------------- ---------
+**  -------- --------------------- ---------
 **  Detail   Require one attribute
-**  Source   3 18 abort-lexmap.k
-**           > meet)                   .. lexmap
-**           3 14 abort-lexmap.k
-**           > a | meet)               .. lexmap
-**           3 13 abort-lexmap.k
-**           > (a | meet)              .. lexmap
+**  Source   3 13 abort-lexmap.k
+**           > meet                .. lexmap
 **           3 8 abort-lexmap.k
-**           > meet (a | meet)         .. lexmap
+**           > meet meet           .. lexmap
 **           3 0 abort-lexmap.k
-**           > |== A : meet (a | meet) .. assert
+**           > |== A : meet meet   .. assert
 **  Command  koshu
 **           abort-lexmap.k
-**
-**  Exit with status 2
-**
-```
-
-
-
-## [abort-operand.k](abort-operand.k)
-
-```
-** -*- koshu -*-
-
-|== A : source /x /y
-
-```
-
-Command `koshu abort-operand.k` exits with 2 and produces:
-
-```
-** -*- koshu -*-
-**
-**  INPUT
-**    abort-operand.k
-**
-
-**
-**  ABORTED  Unexpected attribute
-**  -------- ---------------------- ---------
-**  Detail   Require one word
-**  Source   3 15 abort-operand.k
-**           > /x /y                .. attr
-**           3 8 abort-operand.k
-**           > source /x /y         .. relmap
-**           3 0 abort-operand.k
-**           > |== A : source /x /y .. assert
-**  Command  koshu
-**           abort-operand.k
 **
 **  Exit with status 2
 **
@@ -273,7 +269,7 @@ Command `koshu abort-relmap.k` exits with 2 and produces:
 ```
 ** -*- koshu -*-
 
-|== A : hold 1
+|== A : keep 1
 
 ```
 
@@ -287,13 +283,12 @@ Command `koshu abort-run.k` exits with 2 and produces:
 **
 
 **
-**  ABORTED  Unknown relmap operator
-**  -------- ----------------------- -------------
-**  Detail   hold
+**  ABORTED  Require Boolean
+**  -------- ---------------- ---------
 **  Source   3 8 abort-run.k
-**           > hold 1                .. specialize
+**           > keep 1         .. run
 **           3 0 abort-run.k
-**           > |== A : hold 1        .. assert
+**           > |== A : keep 1 .. assert
 **  Command  koshu
 **           abort-run.k
 **

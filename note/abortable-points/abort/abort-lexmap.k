@@ -1,4 +1,4 @@
 ** -*- koshu -*-
 
-|== A : meet (a | meet)
+|== A : meet meet
 

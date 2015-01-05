@@ -1,4 +1,4 @@
 ** -*- koshu -*-
 
-|== A : hold 1
+|== A : keep 1
 
