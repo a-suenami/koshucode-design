@@ -52,6 +52,8 @@
 
 [関係型データ交換][rdi]
 
+[名前の有効範囲][scope-of-symbols]
+
 [記号空間の範囲][signscope]
 
 [表形式による判断集合の表示][tabular-form]
@@ -246,6 +248,7 @@ range — [範囲判定][cop-range]
 [relmap-operand]:                         note/relmap-operand
 [report-error]:                           note/report-error
 [run-relmap-using-relation-directly]:     note/run-relmap-using-relation-directly
+[scope-of-symbols]:                       note/scope-of-symbols
 [section-level-process]:                  note/section-level-process
 [short-signs]:                            note/short-signs
 [signscope]:                              note/signscope
