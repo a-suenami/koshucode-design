@@ -99,4 +99,5 @@
 |-- VERSION  /major 0  /minor 89  /date 2014-12-26  /summary "関係写像のためのモジュールを整理"
 |-- VERSION  /major 0  /minor 90  /date 2015-01-06  /summary "資源に関する関係写像演算子"
 |-- VERSION  /major 0  /minor 91  /date 2015-01-11  /summary "ウェブ・リソースの読み込み機能を実装"
+|-- VERSION  /major 0  /minor 92  /date 2015-01-18  /summary "大域パラメータを状態として使用"
 
