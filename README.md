@@ -23,7 +23,7 @@
 バージョンに依存しないノート
 ------------------------------------------------------------------
 
-[変更判断][alterative-judgement] と
+[変更判断][corrective-judgement] と
 [制約外判断][violating-judgement]
 
 [関係の属性という語法はなぜ避けるべきか][attribute-of-relation]
@@ -203,7 +203,7 @@ range — [範囲判定][cop-range]
 [rop]:                                    rop/README.md
 
 [abortable-points]:                       note/abortable-points
-[alterative-judgement]:                   note/alterative-judgement
+[corrective-judgement]:                   note/corrective-judgement
 [ascii-table]:                            note/ascii-table
 [attribute-editor]:                       note/attribute-editor
 [attribute-of-relation]:                  note/attribute-of-relation
