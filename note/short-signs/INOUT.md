@@ -1,6 +1,107 @@
 # I/O List
 
+- koshu [group.k](#groupk)
 - koshu [short.k](#shortk)
+
+
+
+## [group.k](group.k)
+
+```
+** -*- koshu -*-
+**
+**  概要
+**    短縮設定のグループ化
+**
+
+xy : source A /x /y | /z 'cocoa-zzz
+
+short
+  a "apple-"
+  b "banana-"
+  c "cocoa-"
+
+|-- A /x a.xxx /y b.yyy
+
+|== B : xy
+|== C : xy
+
+** 最初と同じ短縮設定のため、
+** B と C と D はグループ化されます。
+short
+  a "apple-"
+  b "banana-"
+  c "cocoa-"
+
+|== D : xy
+
+short
+  a "apple-"
+
+|== E : xy
+
+** 最初と同じ短縮設定ですが、
+** 途中に異なる設定があるため、グループ化されません。
+short
+  a "apple-"
+  b "banana-"
+  c "cocoa-"
+
+|== F : xy
+```
+
+Command `koshu group.k` produces:
+
+```
+** -*- koshu -*-
+**
+**  INPUT
+**    group.k
+**
+
+short
+  a "apple-"
+  b "banana-"
+  c "cocoa-"
+
+|-- B  /z c.zzz  /x a.xxx  /y b.yyy
+
+*** 1 judge 
+
+|-- C  /z c.zzz  /x a.xxx  /y b.yyy
+
+*** 1 judge 
+
+|-- D  /z c.zzz  /x a.xxx  /y b.yyy
+
+*** 1 judge 
+
+short
+  a "apple-"
+
+|-- E  /z 'cocoa-zzz  /x a.xxx  /y 'banana-yyy
+
+*** 1 judge 
+
+short
+  a "apple-"
+  b "banana-"
+  c "cocoa-"
+
+|-- F  /z c.zzz  /x a.xxx  /y b.yyy
+
+*** 1 judge 
+
+**
+**  SUMMARY
+**       1 judge  on B
+**       1 judge  on C
+**       1 judge  on D
+**       1 judge  on E
+**       1 judge  on F
+**       5 judges in total
+**
+```
 
 
 
