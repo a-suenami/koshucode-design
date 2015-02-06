@@ -123,7 +123,7 @@ about /major 0
 |-- VERSION  /minor 92  /date 2015-01-18  /summary "大域パラメータを状態として使用"
 |-- VERSION  /minor 93  /date 2015-01-23  /summary "トークン・パラメータ"
 |-- VERSION  /minor 94  /date 2015-02-03  /summary "関係写像演算子の属性を再実装"
-
+|-- VERSION  /minor 95  /date 2015-02-06  /summary "about 節を導入"
 ```
 
 Command `koshu list-version.k VERSION.k` produces:
@@ -251,13 +251,14 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 92  /date 2015-01-18  /summary '大域パラメータを状態として使用
 |-- VERSION  /major 0  /minor 93  /date 2015-01-23  /summary "トークン・パラメータ"
 |-- VERSION  /major 0  /minor 94  /date 2015-02-03  /summary '関係写像演算子の属性を再実装
+|-- VERSION  /major 0  /minor 95  /date 2015-02-06  /summary "about 節を導入"
 
-*** 94 judges
+*** 95 judges
 
 **
 **  SUMMARY
-**      94 judges on VERSION
-**      94 judges in total
+**      95 judges on VERSION
+**      95 judges in total
 **
 ```
 
