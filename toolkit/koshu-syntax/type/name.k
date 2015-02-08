@@ -1,8 +1,8 @@
 ** -*- koshu -*-
 
-term
+term :
   /a /a/b
   /a/b/c
 
-slot
+slot :
   @a @@a

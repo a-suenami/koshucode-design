@@ -11,11 +11,11 @@
 ```
 ** -*- koshu -*-
 
-term
+term :
   /a /a/b
   /a/b/c
 
-slot
+slot :
   @a @@a
 ```
 
@@ -41,30 +41,32 @@ Command `koshu-syntax -b name.k` produces:
 **        Some tokens are classified into /token-subtype . >>>
 **
 
-*** term
+*** term :
 ***   /a /a/b
 ***   /a/b/c
 
-|-- CLAUSE  /clause 1  /clause-type 'unknown
+|-- CLAUSE  /clause 1  /clause-type 'relmap
 |-- LINE  /line 3  /clause 1
 |-- LINE  /line 4  /clause 1
 |-- LINE  /line 5  /clause 1
 
 |-- TOKEN  /line 3  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'term
+|-- TOKEN  /line 3  /column 5  /token-type 'text  /token-subtype 'raw  /cont ":"
 
 |-- TOKEN  /line 4  /column 2  /token-type 'term  /cont "/a"
 |-- TOKEN  /line 4  /column 5  /token-type 'term  /cont "/a/b"
 
 |-- TOKEN  /line 5  /column 2  /token-type 'term  /cont "/a/b/c"
 
-*** slot
+*** slot :
 ***   @a @@a
 
-|-- CLAUSE  /clause 2  /clause-type 'unknown
+|-- CLAUSE  /clause 2  /clause-type 'relmap
 |-- LINE  /line 7  /clause 2
 |-- LINE  /line 8  /clause 2
 
 |-- TOKEN  /line 7  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'slot
+|-- TOKEN  /line 7  /column 5  /token-type 'text  /token-subtype 'raw  /cont ":"
 
 |-- TOKEN  /line 8  /column 2  /token-type 'slot  /token-subtype 'named  /cont 'a
 |-- TOKEN  /line 8  /column 5  /token-type 'slot  /token-subtype 'global  /cont 'a
@@ -78,17 +80,17 @@ Command `koshu-syntax -b name.k` produces:
 ```
 ** -*- koshu -*-
 
-one-letter
+one-letter :
   ()
   []
   {}
 
-two-letters
+two-letters :
   << >>
   (| |)
   {| |}
 
-knob
+knob :
   (- -)
   [- -]
 ```
@@ -115,18 +117,19 @@ Command `koshu-syntax -b paren.k` produces:
 **        Some tokens are classified into /token-subtype . >>>
 **
 
-*** one-letter
+*** one-letter :
 ***   ()
 ***   []
 ***   {}
 
-|-- CLAUSE  /clause 1  /clause-type 'unknown
+|-- CLAUSE  /clause 1  /clause-type 'relmap
 |-- LINE  /line 3  /clause 1
 |-- LINE  /line 4  /clause 1
 |-- LINE  /line 5  /clause 1
 |-- LINE  /line 6  /clause 1
 
 |-- TOKEN  /line 3  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'one-letter
+|-- TOKEN  /line 3  /column 11  /token-type 'text  /token-subtype 'raw  /cont ":"
 
 |-- TOKEN  /line 4  /column 2  /token-type 'open  /cont "("
 |-- TOKEN  /line 4  /column 3  /token-type 'close  /cont ")"
@@ -137,18 +140,19 @@ Command `koshu-syntax -b paren.k` produces:
 |-- TOKEN  /line 6  /column 2  /token-type 'open  /cont "{"
 |-- TOKEN  /line 6  /column 3  /token-type 'close  /cont "}"
 
-*** two-letters
+*** two-letters :
 ***   << >>
 ***   (| |)
 ***   {| |}
 
-|-- CLAUSE  /clause 2  /clause-type 'unknown
+|-- CLAUSE  /clause 2  /clause-type 'relmap
 |-- LINE  /line 8  /clause 2
 |-- LINE  /line 9  /clause 2
 |-- LINE  /line 10  /clause 2
 |-- LINE  /line 11  /clause 2
 
 |-- TOKEN  /line 8  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'two-letters
+|-- TOKEN  /line 8  /column 12  /token-type 'text  /token-subtype 'raw  /cont ":"
 
 |-- TOKEN  /line 9  /column 2  /token-type 'open  /cont '<<
 |-- TOKEN  /line 9  /column 5  /token-type 'close  /cont '>>
@@ -159,16 +163,17 @@ Command `koshu-syntax -b paren.k` produces:
 |-- TOKEN  /line 11  /column 2  /token-type 'open  /cont "{|"
 |-- TOKEN  /line 11  /column 5  /token-type 'close  /cont "|}"
 
-*** knob
+*** knob :
 ***   (- -)
 ***   [- -]
 
-|-- CLAUSE  /clause 3  /clause-type 'unknown
+|-- CLAUSE  /clause 3  /clause-type 'relmap
 |-- LINE  /line 13  /clause 3
 |-- LINE  /line 14  /clause 3
 |-- LINE  /line 15  /clause 3
 
 |-- TOKEN  /line 13  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'knob
+|-- TOKEN  /line 13  /column 5  /token-type 'text  /token-subtype 'raw  /cont ":"
 
 |-- TOKEN  /line 14  /column 2  /token-type 'open  /cont "(-"
 |-- TOKEN  /line 14  /column 5  /token-type 'close  /cont "-)"
@@ -185,14 +190,14 @@ Command `koshu-syntax -b paren.k` produces:
 ```
 ** -*- koshu -*-
 
-text
+text :
   a 'a "a"
   "aaa bbb"
   34 100.25
   |06:30| 2014-10-25
   = : |
 
-short
+short :
   a.xxx
 ```
 
@@ -218,14 +223,14 @@ Command `koshu-syntax -b text.k` produces:
 **        Some tokens are classified into /token-subtype . >>>
 **
 
-*** text
+*** text :
 ***   a 'a "a"
 ***   "aaa bbb"
 ***   34 100.25
 ***   |06:30| 2014-10-25
 ***   = : |
 
-|-- CLAUSE  /clause 1  /clause-type 'unknown
+|-- CLAUSE  /clause 1  /clause-type 'relmap
 |-- LINE  /line 3  /clause 1
 |-- LINE  /line 4  /clause 1
 |-- LINE  /line 5  /clause 1
@@ -234,6 +239,7 @@ Command `koshu-syntax -b text.k` produces:
 |-- LINE  /line 8  /clause 1
 
 |-- TOKEN  /line 3  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'text
+|-- TOKEN  /line 3  /column 5  /token-type 'text  /token-subtype 'raw  /cont ":"
 
 |-- TOKEN  /line 4  /column 2  /token-type 'text  /token-subtype 'raw  /cont 'a
 |-- TOKEN  /line 4  /column 4  /token-type 'text  /token-subtype 'q  /cont 'a
@@ -251,14 +257,15 @@ Command `koshu-syntax -b text.k` produces:
 |-- TOKEN  /line 8  /column 4  /token-type 'text  /token-subtype 'raw  /cont ":"
 |-- TOKEN  /line 8  /column 6  /token-type 'text  /token-subtype 'raw  /cont "|"
 
-*** short
+*** short :
 ***   a.xxx
 
-|-- CLAUSE  /clause 2  /clause-type 'unknown
+|-- CLAUSE  /clause 2  /clause-type 'relmap
 |-- LINE  /line 10  /clause 2
 |-- LINE  /line 11  /clause 2
 
 |-- TOKEN  /line 10  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'short
+|-- TOKEN  /line 10  /column 6  /token-type 'text  /token-subtype 'raw  /cont ":"
 
 |-- TOKEN  /line 11  /column 2  /token-type 'short  /cont 'a.xxx
 

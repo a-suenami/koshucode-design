@@ -1,15 +1,15 @@
 ** -*- koshu -*-
 
-one-letter
+one-letter :
   ()
   []
   {}
 
-two-letters
+two-letters :
   << >>
   (| |)
   {| |}
 
-knob
+knob :
   (- -)
   [- -]
