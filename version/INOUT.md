@@ -124,6 +124,8 @@ about /major 0
 |-- VERSION  /minor 93  /date 2015-01-23  /summary "トークン・パラメータ"
 |-- VERSION  /minor 94  /date 2015-02-03  /summary "関係写像演算子の属性を再実装"
 |-- VERSION  /minor 95  /date 2015-02-06  /summary "about 節を導入"
+|-- VERSION  /minor 96  /date 2015-02-09  /summary "節の構築を失敗可能に変更"
+
 ```
 
 Command `koshu list-version.k VERSION.k` produces:
@@ -253,12 +255,14 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 94  /date 2015-02-03  /summary '関係写像演算子の属性を再実装
 |-- VERSION  /major 0  /minor 95  /date 2015-02-06  /summary "about 節を導入"
 
-*** 95 judges
+|-- VERSION  /major 0  /minor 96  /date 2015-02-09  /summary '節の構築を失敗可能に変更
+
+*** 96 judges
 
 **
 **  SUMMARY
-**      95 judges on VERSION
-**      95 judges in total
+**      96 judges on VERSION
+**      96 judges in total
 **
 ```
 
