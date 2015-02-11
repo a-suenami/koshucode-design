@@ -14,15 +14,19 @@ This summary is produced by the command `koshu-inout-summary.sh`.
 * OK – [INOUT.md](count-judgements/INOUT.md) in count-judgements
 * OK – [README.md](deadlock-detection/script/README.md) in deadlock-detection / script
 * OK – [INOUT.md](derived-relmap/INOUT.md) in derived-relmap
+* OK – [README.md](empty-filler/script/README.md) in empty-filler / script
 * OK – [README.md](equivalent-for-both/script/README.md) in equivalent-for-both / script
 * OK – [README.md](equivalent-for-down/script/README.md) in equivalent-for-down / script
+* OK – [INOUT.md](judgement-relation-system/INOUT.md) in judgement-relation-system
 * OK – [A.md](koshu-markdown/script/A.md) in koshu-markdown / script
 * OK – [README.md](koshu-markdown/script/README.md) in koshu-markdown / script
 * OK – [ARGS.md](koshu-markdown/script/ARGS.md) in koshu-markdown / script
-* OK – [INOUT.md](koshu-rop/INOUT.md) in koshu-rop
 * OK – [INOUT.md](nested-relations-as-relational-system/INOUT.md) in nested-relations-as-relational-system
+* OK – [INOUT.md](propositional-function/INOUT.md) in propositional-function
+* OK – [INOUT.md](relational-lattice/INOUT.md) in relational-lattice
 * OK – [INOUT.md](short-signs/INOUT.md) in short-signs
 * OK – [README.md](slice-up/script/README.md) in slice-up / script
 * OK – [INOUT.md](slices-of-relation/INOUT.md) in slices-of-relation
 * OK – [INOUT.md](subrelation/INOUT.md) in subrelation
 * OK – [INOUT.md](text-table-for-relation/INOUT.md) in text-table-for-relation
+* OK – [INOUT.md](violating-judgement/exclude/INOUT.md) in violating-judgement / exclude
