@@ -32,11 +32,12 @@ Command `koshu abort-assert.k` exits with 2 and produces:
 **
 
 **
-**  ABORTED  Unknown word
-**  -------- --------------------- ---------
-**  Detail   -unknown
+**  ABORTED  Unknown option
+**  -------- ---------------------- ---------
+**  Detail   Unknown parameter name
+**           -unknown
 **  Source   3 0 abort-assert.k
-**           > |== A -unknown : id .. assert
+**           > |== A -unknown : id  .. assert
 **  Command  koshu
 **           abort-assert.k
 **
