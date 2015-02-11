@@ -23,8 +23,9 @@
 「リレーショナルラティス」になるのは考えものです。
 そのため、漢字での表記をおすすめします。
 
+English                      |        | 日本語 | |
 -----------------------------|--------|------------------------|------------------------------
-**RELATION**               | **略語** | **漢字**               | **カタカナ**
+**RELATION**               | **Abbr** | **漢字**               | **カタカナ**
 relation                     |        | 関係                   | リレーション
 relation constant            | relcon | 関係定数               | リレーション定数
 relation type                |        | 関係型                 | リレーション型
@@ -34,8 +35,8 @@ relation-to-relation mapping | relmap | 関係写像               | リレー�
 relmap operator              |        | 関係写像演算子         | レルマップ演算子
 relvar constraint            |        | 関係変数制約           | リレーション変数制約
 relvar predicate             |        | 関係変数述語           | リレーション変数述語
-**RELATIONAL**             | **略語** | **漢字**               | **カタカナ**
-relational                   |        | 関係 (型)              | リレーショナル
+**RELATIONAL**             | **Abbr** | **漢字**               | **カタカナ**
+relational                   |        | 関係、関係型           | リレーショナル
 relational algebra           |        | 関係代数               | リレーショナル代数
 relational assignment        |        | 関係代入               | リレーショナル代入
 relational comparison        |        | 関係比較               | リレーショナル比較
@@ -48,7 +49,7 @@ relational expression        |        | 関係式                 | リレーシ
 relational lattice           |        | 関係束                 | リレーショナルラティス
 relational model             |        | 関係モデル             | リレーショナルモデル
 relational operator          |        | 関係演算子             | リレーショナル演算子
-**ARITY**                  | **略語** | **漢字**               | **カタカナ**
+**ARITY**                  | **Abbr** | **漢字**               | **カタカナ**
 nullary relation             |        | 無項関係               | 無項リレーション
 unary relation               |        | 単項関係               | 単項リレーション
 binary relation              |        | 2 項関係               | 2 項リレーション
