@@ -34,8 +34,8 @@ Command `./stdin.sh` produces:
 
 *** 4 judges
 
-|-- SOURCE  /num 1  /type 'stdin  /name '<stdin>
-|-- SOURCE  /num 2  /type 'file  /name 'koshu-source.k
+|-- SOURCE  /num 2  /type 'stdin  /name '<stdin>
+|-- SOURCE  /num 1  /type 'file  /name 'koshu-source.k
 
 *** 2 judges
 
