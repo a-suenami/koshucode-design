@@ -125,6 +125,7 @@ about /major 0
 |-- VERSION  /minor 94  /date 2015-02-03  /summary "関係写像演算子の属性を再実装"
 |-- VERSION  /minor 95  /date 2015-02-06  /summary "about 節を導入"
 |-- VERSION  /minor 96  /date 2015-02-09  /summary "節の構築を失敗可能に変更"
+|-- VERSION  /minor 97  /date 2015-02-13  /summary "重関係参照の構文を変更"
 
 ```
 
@@ -256,13 +257,14 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 95  /date 2015-02-06  /summary "about 節を導入"
 
 |-- VERSION  /major 0  /minor 96  /date 2015-02-09  /summary '節の構築を失敗可能に変更
+|-- VERSION  /major 0  /minor 97  /date 2015-02-13  /summary '重関係参照の構文を変更
 
-*** 96 judges
+*** 97 judges
 
 **
 **  SUMMARY
-**      96 judges on VERSION
-**      96 judges in total
+**      97 judges on VERSION
+**      97 judges in total
 **
 ```
 

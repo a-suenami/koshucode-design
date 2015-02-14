@@ -106,4 +106,5 @@ about /major 0
 |-- VERSION  /minor 94  /date 2015-02-03  /summary "関係写像演算子の属性を再実装"
 |-- VERSION  /minor 95  /date 2015-02-06  /summary "about 節を導入"
 |-- VERSION  /minor 96  /date 2015-02-09  /summary "節の構築を失敗可能に変更"
+|-- VERSION  /minor 97  /date 2015-02-13  /summary "重関係参照の構文を変更"
 
