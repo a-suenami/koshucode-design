@@ -1,4 +1,6 @@
-** -*- koshu -*-
+-*- koshu -*-
+
+short a "aaa"
 
 text :
   a 'a "a"

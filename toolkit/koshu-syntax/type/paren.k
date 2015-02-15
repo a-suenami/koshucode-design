@@ -1,4 +1,4 @@
-** -*- koshu -*-
+-*- koshu -*-
 
 one-letter :
   ()

@@ -1,4 +1,4 @@
-** -*- koshu -*-
+-*- koshu -*-
 
 term :
   /a /a/b

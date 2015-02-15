@@ -9,7 +9,7 @@
 ## [name.k](name.k)
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
 
 term :
   /a /a/b
@@ -78,7 +78,7 @@ Command `koshu-syntax -b name.k` produces:
 ## [paren.k](paren.k)
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
 
 one-letter :
   ()
@@ -188,7 +188,9 @@ Command `koshu-syntax -b paren.k` produces:
 ## [text.k](text.k)
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
+
+short a "aaa"
 
 text :
   a 'a "a"
@@ -231,43 +233,43 @@ Command `koshu-syntax -b text.k` produces:
 ***   = : |
 
 |-- CLAUSE  /clause 1  /clause-type 'relmap
-|-- LINE  /line 3  /clause 1
-|-- LINE  /line 4  /clause 1
 |-- LINE  /line 5  /clause 1
 |-- LINE  /line 6  /clause 1
 |-- LINE  /line 7  /clause 1
 |-- LINE  /line 8  /clause 1
+|-- LINE  /line 9  /clause 1
+|-- LINE  /line 10  /clause 1
 
-|-- TOKEN  /line 3  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'text
-|-- TOKEN  /line 3  /column 5  /token-type 'text  /token-subtype 'raw  /cont ":"
+|-- TOKEN  /line 5  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'text
+|-- TOKEN  /line 5  /column 5  /token-type 'text  /token-subtype 'raw  /cont ":"
 
-|-- TOKEN  /line 4  /column 2  /token-type 'text  /token-subtype 'raw  /cont 'a
-|-- TOKEN  /line 4  /column 4  /token-type 'text  /token-subtype 'q  /cont 'a
-|-- TOKEN  /line 4  /column 7  /token-type 'text  /token-subtype 'qq  /cont 'a
+|-- TOKEN  /line 6  /column 2  /token-type 'text  /token-subtype 'raw  /cont 'a
+|-- TOKEN  /line 6  /column 4  /token-type 'text  /token-subtype 'q  /cont 'a
+|-- TOKEN  /line 6  /column 7  /token-type 'text  /token-subtype 'qq  /cont 'a
 
-|-- TOKEN  /line 5  /column 2  /token-type 'text  /token-subtype 'qq  /cont "aaa bbb"
+|-- TOKEN  /line 7  /column 2  /token-type 'text  /token-subtype 'qq  /cont "aaa bbb"
 
-|-- TOKEN  /line 6  /column 2  /token-type 'text  /token-subtype 'raw  /cont '34
-|-- TOKEN  /line 6  /column 5  /token-type 'text  /token-subtype 'raw  /cont '100.25
+|-- TOKEN  /line 8  /column 2  /token-type 'text  /token-subtype 'raw  /cont '34
+|-- TOKEN  /line 8  /column 5  /token-type 'text  /token-subtype 'raw  /cont '100.25
 
-|-- TOKEN  /line 7  /column 2  /token-type 'text  /token-subtype 'bar  /cont "|06:30|"
-|-- TOKEN  /line 7  /column 10  /token-type 'text  /token-subtype 'raw  /cont '2014-10-25
+|-- TOKEN  /line 9  /column 2  /token-type 'text  /token-subtype 'bar  /cont "|06:30|"
+|-- TOKEN  /line 9  /column 10  /token-type 'text  /token-subtype 'raw  /cont '2014-10-25
 
-|-- TOKEN  /line 8  /column 2  /token-type 'text  /token-subtype 'raw  /cont '=
-|-- TOKEN  /line 8  /column 4  /token-type 'text  /token-subtype 'raw  /cont ":"
-|-- TOKEN  /line 8  /column 6  /token-type 'text  /token-subtype 'raw  /cont "|"
+|-- TOKEN  /line 10  /column 2  /token-type 'text  /token-subtype 'raw  /cont '=
+|-- TOKEN  /line 10  /column 4  /token-type 'text  /token-subtype 'raw  /cont ":"
+|-- TOKEN  /line 10  /column 6  /token-type 'text  /token-subtype 'raw  /cont "|"
 
 *** short :
 ***   a.xxx
 
 |-- CLAUSE  /clause 2  /clause-type 'relmap
-|-- LINE  /line 10  /clause 2
-|-- LINE  /line 11  /clause 2
+|-- LINE  /line 12  /clause 2
+|-- LINE  /line 13  /clause 2
 
-|-- TOKEN  /line 10  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'short
-|-- TOKEN  /line 10  /column 6  /token-type 'text  /token-subtype 'raw  /cont ":"
+|-- TOKEN  /line 12  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'short
+|-- TOKEN  /line 12  /column 6  /token-type 'text  /token-subtype 'raw  /cont ":"
 
-|-- TOKEN  /line 11  /column 2  /token-type 'short  /cont 'a.xxx
+|-- TOKEN  /line 13  /column 2  /token-type 'short  /cont 'a.xxx
 
 ```
 
