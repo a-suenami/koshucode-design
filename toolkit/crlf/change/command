@@ -1,0 +1,16 @@
+=== Prepare
+./prepare.sh
+od -ta A.txt
+od -ta B.txt
+
+=== LF to CRLF
+crlf.sh *.txt
+crlf.sh -c *.txt
+od -ta A.txt
+od -ta B.txt
+
+=== CRLF to LF
+crlf.sh *.txt
+crlf.sh -b *.txt
+od -ta A.txt
+od -ta B.txt
