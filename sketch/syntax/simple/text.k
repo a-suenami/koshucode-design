@@ -1,4 +1,8 @@
-** -*- koshu -*-
+-*- koshu -*-
+
+short
+  a "apple-"
+  bb "banana-"
 
 |== TREE : dump-tree
 
