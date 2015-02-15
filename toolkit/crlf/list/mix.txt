@@ -1,0 +1,4 @@
+This line ends with LF.
+This line ends with CRLF.
+This line ends with LF.
+This line ends without a newline character.
