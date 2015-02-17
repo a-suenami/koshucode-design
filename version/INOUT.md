@@ -126,6 +126,7 @@ about /major 0
 |-- VERSION  /minor 95  /date 2015-02-06  /summary "about 節を導入"
 |-- VERSION  /minor 96  /date 2015-02-09  /summary "節の構築を失敗可能に変更"
 |-- VERSION  /minor 97  /date 2015-02-13  /summary "重関係参照の構文を変更"
+|-- VERSION  /minor 98  /date 2015-02-17  /summary "演算子属性を再実装"
 
 ```
 
@@ -258,13 +259,14 @@ Command `koshu list-version.k VERSION.k` produces:
 
 |-- VERSION  /major 0  /minor 96  /date 2015-02-09  /summary '節の構築を失敗可能に変更
 |-- VERSION  /major 0  /minor 97  /date 2015-02-13  /summary '重関係参照の構文を変更
+|-- VERSION  /major 0  /minor 98  /date 2015-02-17  /summary '演算子属性を再実装
 
-*** 97 judges
+*** 98 judges
 
 **
 **  SUMMARY
-**      97 judges on VERSION
-**      97 judges in total
+**      98 judges on VERSION
+**      98 judges in total
 **
 ```
 
