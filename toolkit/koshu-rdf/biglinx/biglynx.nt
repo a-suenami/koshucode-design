@@ -1,0 +1,6 @@
+<http://biglynx.co.uk/people/dave-smith>
+  <http://www.w3.org/1999/02/22-rdf-syntax-ns#type>
+  <http://xmlns.com/foaf/0.1/Person> .
+<http://biglynx.co.uk/people/dave-smith>
+  <http://xmlns.com/foaf/0.1/name>
+  "Dave Smith" .
