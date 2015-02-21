@@ -27,13 +27,13 @@
             /interp <<< Supplier /sno ships parts /pno
                         in the amount of /qty . >>>
 
-|== INTERP : interp
+|== INTERP : interpretation
 
-interp : source INTERP /judge /interp
+interpretation : source INTERP /judge /interp
 
 |== TERMS -fore /judge : terms
 |== TERM  -fore /judge : terms | member /term /terms | cut /terms
 
-terms : interp
+terms : interpretation
   | add /terms ( term-set /interp )
   | cut /interp
