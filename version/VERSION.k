@@ -108,4 +108,5 @@ about /major 0
 |-- VERSION  /minor 96  /date 2015-02-09  /summary "節の構築を失敗可能に変更"
 |-- VERSION  /minor 97  /date 2015-02-13  /summary "重関係参照の構文を変更"
 |-- VERSION  /minor 98  /date 2015-02-17  /summary "演算子属性を再実装"
+|-- VERSION  /minor 99  /date 2015-02-22  /summary "文面上の有効範囲をもつ重関係参照"
 
