@@ -1,4 +1,4 @@
-** -*- koshu -*-
+-*- koshu -*-
 
 p : source P /a /b /c
 

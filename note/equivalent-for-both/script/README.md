@@ -38,7 +38,7 @@ q : source Q /b /c
 ## maybe.k
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
 
 pq : p | maybe q
 qp : q | maybe p
@@ -75,7 +75,7 @@ Command `koshu DATA.k maybe.k` produces:
 ## maybe-liner.k
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
 |== MAYBE-LINER : ( p | maybe q ) | join ( q | maybe p )
 ```
 
@@ -108,8 +108,8 @@ Command `koshu DATA.k maybe-liner.k` produces:
 ## copy-maybe.k
 
 ```
-** -*- koshu -*-
-|== COPY-MAYBE : p | copy i ( maybe q | join ( q | maybe i ))
+-*- koshu -*-
+|== COPY-MAYBE : p | copy i ( maybe q | join ( q | maybe ^i ))
 ```
 
 Command `koshu DATA.k copy-maybe.k` produces:
@@ -141,8 +141,8 @@ Command `koshu DATA.k copy-maybe.k` produces:
 ## once.k
 
 ```
-** -*- koshu -*-
-|== ONCE : p | copy i ( q | copy j ( i | maybe j | join ( j | maybe i )))
+-*- koshu -*-
+|== ONCE : p | copy i ( q | copy j ( ^i | maybe ^j | join ( ^j | maybe ^i )))
 ```
 
 Command `koshu DATA.k once.k` produces:
@@ -174,7 +174,7 @@ Command `koshu DATA.k once.k` produces:
 ## both.k
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
 |== BOTH : p | both q
 ```
 

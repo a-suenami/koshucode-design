@@ -1,2 +1,2 @@
-** -*- koshu -*-
+-*- koshu -*-
 |== BOTH : p | both q

@@ -1,4 +1,4 @@
-** -*- koshu -*-
+-*- koshu -*-
 
 pq : p | maybe q
 qp : q | maybe p

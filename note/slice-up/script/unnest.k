@@ -1,4 +1,4 @@
-** -*- koshu -*-
+-*- koshu -*-
 
 n : p | nest /b /c -to /g
 

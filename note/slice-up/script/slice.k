@@ -1,4 +1,4 @@
-** -*- koshu -*-
+-*- koshu -*-
 
 s : p | slice /r
 

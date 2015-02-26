@@ -10,7 +10,7 @@
 ## [DATA.k](DATA.k)
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
 
 p : source P /a /b /c
 
@@ -24,12 +24,12 @@ p : source P /a /b /c
 ## [nest.k](nest.k)
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
 
 |== Q1 -table : p | nest /b /c -to /g
 |== Q2 -table : p | my-nest /b /c -to /g
 
-my-nest : copy r ( cut @'all | slice @to ( meet r | pick @'all ))
+my-nest : copy r ( cut @'all | slice @to ( meet ^r | pick @'all ))
 ```
 
 Command `koshu DATA.k nest.k` produces:
@@ -93,7 +93,7 @@ Command `koshu DATA.k nest.k` produces:
 ## [slice.k](slice.k)
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
 
 s : p | slice /r
 
@@ -153,7 +153,7 @@ Command `koshu DATA.k slice.k` produces:
 ## [unnest.k](unnest.k)
 
 ```
-** -*- koshu -*-
+-*- koshu -*-
 
 n : p | nest /b /c -to /g
 

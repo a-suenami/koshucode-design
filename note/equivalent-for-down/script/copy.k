@@ -15,5 +15,5 @@ p : source P /a /b
 
 |== DOWN-1 : p | down /r
 |== DOWN-2 : slice /r p
-|== DOWN-3 : p | copy r ( slice /r r )
-|== DOWN-4 : p | copy r ( dee | slice /r r )
+|== DOWN-3 : p | copy r ( slice /r ^r )
+|== DOWN-4 : p | copy r ( dee | slice /r ^r )
