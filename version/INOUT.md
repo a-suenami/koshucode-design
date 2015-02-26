@@ -128,6 +128,7 @@ about /major 0
 |-- VERSION  /minor 97  /date 2015-02-13  /summary "重関係参照の構文を変更"
 |-- VERSION  /minor 98  /date 2015-02-17  /summary "演算子属性を再実装"
 |-- VERSION  /minor 99  /date 2015-02-22  /summary "文面上の有効範囲をもつ重関係参照"
+|-- VERSION  /minor 100  /date 2015-02-26  /summary "関係写像の構成方法を見直し"
 
 ```
 
@@ -262,13 +263,14 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 97  /date 2015-02-13  /summary '重関係参照の構文を変更
 |-- VERSION  /major 0  /minor 98  /date 2015-02-17  /summary '演算子属性を再実装
 |-- VERSION  /major 0  /minor 99  /date 2015-02-22  /summary '文面上の有効範囲をもつ重関係参照
+|-- VERSION  /major 0  /minor 100  /date 2015-02-26  /summary '関係写像の構成方法を見直し
 
-*** 99 judges
+*** 100 judges
 
 **
 **  SUMMARY
-**      99 judges on VERSION
-**      99 judges in total
+**     100 judges on VERSION
+**     100 judges in total
 **
 ```
 
