@@ -11,7 +11,7 @@
 Command `koshu-inout.sh -V` produces:
 
 ```
-koshu-inout-0.77
+koshu-inout-0.97
 ```
 
 
