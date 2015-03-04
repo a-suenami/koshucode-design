@@ -161,8 +161,10 @@ n : p | nest /b /c -to /g
 |== R1 : n | unnest /g
 |== R2 : n | slice /r ( cut /g | meet ^/g ) | up /r
 |== R3 : n | my-unnest /g
+|== R4 : n | rename /h /g | my-unnest /h
 
-my-unnest : slice-up ( cut @'1 | meet ^/g )   ** ^@'1
+my-unnest : slice-up ( cut @'1 | meet @g )
+  --attr nest -g @'1
 ```
 
 Command `koshu DATA.k unnest.k` produces:
@@ -212,13 +214,20 @@ Command `koshu DATA.k unnest.k` produces:
 
 *** 3 judges
 
+|-- R4  /b 50  /c 90  /a 10
+|-- R4  /b 40  /c 80  /a 10
+|-- R4  /b 60  /c 70  /a 20
+
+*** 3 judges
+
 **
 **  SUMMARY
 **       2 judges on R0
 **       3 judges on R1
 **       3 judges on R2
 **       3 judges on R3
-**      11 judges in total
+**       3 judges on R4
+**      14 judges in total
 **
 ```
 
