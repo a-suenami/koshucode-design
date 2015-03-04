@@ -4,8 +4,8 @@
 **
 
 key : keep /a = @a and /b = @b
-    --- opt -a 1
-      | opt -b 30
+  --attr opt -a 1
+       | opt -b 30
 
 |== KEY-1 : p | key -a 1 -b 30
 |== KEY-2 : p | key -a 1

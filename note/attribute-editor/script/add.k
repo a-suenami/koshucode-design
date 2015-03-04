@@ -4,7 +4,7 @@
 **
 
 op : keep /a = @a and /b = @b
-   --- add -a 1
-     | add -b 30
+  --attr add -a 1
+       | add -b 30
 
 |== OP-1 : p | op

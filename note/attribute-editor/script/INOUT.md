@@ -20,10 +20,10 @@
 **    koshu DATA.k fill.k
 **
 **  属性編集
-**    N : R --- E   関係写像 R に名前 N をつけ E で属性を編集する
-**    fill E ...    無標属性に E ... を補う
-**    opt -N E      有標属性 -N がないとき E を補う
-**    add -N E      有標属性 -N を、内容を E として追加
+**    N : R --attr E   関係写像 R に名前 N をつけ E で属性を編集する
+**    fill E ...       無標属性に E ... を補う
+**    opt -N E         有標属性 -N がないとき E を補う
+**    add -N E         有標属性 -N を、内容を E として追加
 **
 
 |-- P  /a 1  /b 20  /c 100
@@ -44,8 +44,8 @@ p : source P /a /b /c
 **
 
 op : keep /a = @a and /b = @b
-   --- add -a 1
-     | add -b 30
+  --attr add -a 1
+       | add -b 30
 
 |== OP-1 : p | op
 ```
@@ -82,7 +82,7 @@ Command `koshu DATA.k add.k` produces:
 **
 
 pos : keep /a = @'1 and /b = @'2
-    --- fill 1 30
+  --attr fill 1 30
 
 |== POS-1 : p | pos 1 20
 |== POS-2 : p | pos 2
@@ -131,8 +131,8 @@ Command `koshu DATA.k fill.k` produces:
 **
 
 key : keep /a = @a and /b = @b
-    --- opt -a 1
-      | opt -b 30
+  --attr opt -a 1
+       | opt -b 30
 
 |== KEY-1 : p | key -a 1 -b 30
 |== KEY-2 : p | key -a 1
