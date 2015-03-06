@@ -130,6 +130,7 @@ about /major 0
 |-- VERSION  /minor 99  /date 2015-02-22  /summary "文面上の有効範囲をもつ重関係参照"
 |-- VERSION  /minor 100  /date 2015-02-26  /summary "関係写像の構成方法を見直し"
 |-- VERSION  /minor 101  /date 2015-03-02  /summary "写像中間体を導入"
+|-- VERSION  /minor 102  /date 2015-03-04  /summary "節属性を導入"
 
 ```
 
@@ -268,13 +269,14 @@ Command `koshu list-version.k VERSION.k` produces:
 *** 100
 
 |-- VERSION  /major 0  /minor 101  /date 2015-03-02  /summary '写像中間体を導入
+|-- VERSION  /major 0  /minor 102  /date 2015-03-04  /summary '節属性を導入
 
-*** 101 judges
+*** 102 judges
 
 **
 **  SUMMARY
-**     101 judges on VERSION
-**     101 judges in total
+**     102 judges on VERSION
+**     102 judges in total
 **
 ```
 
