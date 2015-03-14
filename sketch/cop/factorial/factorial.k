@@ -18,43 +18,48 @@
 n : range /n -from 0 -to 8
 
 **  Direct recursion
-|== D -fore /n :
+|== D :
   n | add /fact ( fact /n )
       -where fact n = ( if : n <= 0 -> 1
                            : n * fact ( n - 1 ))
+  --fore /n
 
 **  Y combinator
-|== Y -fore /n :
+|== Y :
   n | add /fact ( g /n )
       -where
        : y f    = yy f ( yy f )
        : yy f x = f ( x x )
        : g      = y f
        : @@fact
+  --fore /n
 
 **  Z combinator
-|== Z -fore /n :
+|== Z :
   n | add /fact ( g /n )
       -where
        : z f = (| x | f (| y | x x y |) |)
                (| x | f (| y | x x y |) |)
        : g = z f
        : @@fact
+  --fore /n
 
 **  Y combinator defined by SK combinators
-|== SK -fore /n :
+|== SK :
   n | add /fact ( g /n )
       -where
        : y = s s k ( s ( k ( s s ( s ( s s k )))) k )
        : g = y f
        : @@sk
        : @@fact
+  --fore /n
 
 **  Hakslel-style fixed point combinator
 **  http://hackage.haskell.org/packages/archive/base/latest/doc/html/Data-Function.html#v:fix
-|== FIX -fore /n :
+|== FIX :
   n | add /fact ( g /n )
       -where
        : fix f = f ( fix f )
        : g     = fix f
        : @@fact
+  --fore /n

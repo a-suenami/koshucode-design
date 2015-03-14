@@ -5,8 +5,7 @@
 **       /start という語句から始まる。>>>
 **
 
-|== SUMMARY -fore /par /sent /start :
-  s | meet p
+|== SUMMARY : s | meet p  --fore /par /sent /start
 
 s : source SENTENCE-COUNT  /par /sent
 p : source PARAGRAPH-START /par /start

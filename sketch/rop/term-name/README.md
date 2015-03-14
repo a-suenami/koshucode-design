@@ -20,8 +20,8 @@
 
 p : source P /x /y /z
 
-|== P    -table : p
-|== TERM -table : p | term-name /term
+|== P    : p  --table
+|== TERM : p | term-name /term  --table
 ```
 
 Command `koshu term-name.k` produces:

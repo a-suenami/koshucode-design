@@ -11,12 +11,13 @@ line    : source LINE /clause /line
 token   : source TOKEN /line /column /token-type /cont
         | omit /token-type = 'space
 
-|== TOKEN -order -table -fore /clause /clause-type
+|== TOKEN
   : clause
   | group /line line
   | for /line ( cut /clause
         | group /token token
         | for /token ( cut /line )
         | fore-line )
+  --order --table --fore /clause /clause-type
 
 fore-line : pick /line /token

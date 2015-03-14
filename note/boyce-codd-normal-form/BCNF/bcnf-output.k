@@ -5,8 +5,9 @@
 **    制約条件を検査した上で、第 3 正規形に変換します。
 **
 
-|=V FD-OF-NEAREST-SHOP -fore /person /shop-type :
+|=V FD-OF-NEAREST-SHOP :
   nearest-shop | duplicate /person /shop-type
+  --fore /person /shop-type
 |=V FD-OF-SHOP-TYPE :
   shop-type | duplicate /shop
 
@@ -16,5 +17,5 @@ nearest-shop     : shop-type
                  | rename /nearest-shop /shop
                  | meet shop-near-person
 
-|== NEAREST-SHOP -fore /person /shop-type : nearest-shop
+|== NEAREST-SHOP : nearest-shop  --fore /person /shop-type
 

@@ -1,4 +1,4 @@
 ** -*- koshu -*-
 
-|== A -unknown : id
+|== A : id --unknown
 

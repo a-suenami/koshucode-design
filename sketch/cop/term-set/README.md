@@ -40,8 +40,8 @@
 
 interpretation : source INTERP /judge /interp
 
-|== TERMS -fore /judge : terms
-|== TERM  -fore /judge : terms | member /term /terms | cut /terms
+|== TERMS : terms  --fore /judge
+|== TERM  : terms | member /term /terms | cut /terms  --fore /judge
 
 terms : interpretation
   | add /terms ( term-set /interp )

@@ -17,11 +17,11 @@
 p : source P /a /b
 q : source Q /b /c
 
-|== GROUP -fore /a /b :
-    p | group /g q
+|== GROUP : p | group /g q
+  --fore /a /b
 
-|== GROUP2 -fore /a /b : 
-    p | slice /r ( meet q | pick-term q )
+|== GROUP2 : p | slice /r ( meet q | pick-term q )
+  --fore /a /b
 
-|== SLICE -fore /a /b : 
-    p | slice /r id
+|== SLICE : p | slice /r id
+  --fore /a /b

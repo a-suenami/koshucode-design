@@ -2,5 +2,5 @@
 
 s : p | slice /r
 
-|== SLICE-1 -table : s
+|== SLICE-1 : s  --table
 |== SLICE-2 : s | up /r

@@ -23,7 +23,7 @@ r : source R /a /c
 s : p | group /g q
       | group /h r
 
-|== S -table -fore /a /b /g /h : s
+|== S : s  --table --fore /a /b /g /h
 
 |== T : s | join-up
 |== U : s | join-up /g

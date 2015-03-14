@@ -22,13 +22,14 @@ line    : source LINE /clause /line
 token   : source TOKEN /line /column /token-type /cont
         | omit /token-type = 'space
 
-|== TOKEN -order -table -fore /clause /clause-type
+|== TOKEN
   : clause
   | group /line line
   | for /line ( cut /clause
         | group /token token
         | for /token ( cut /line )
         | fore-line )
+  --order --table --fore /clause /clause-type
 
 fore-line : pick /line /token
 ```
@@ -125,13 +126,14 @@ fore-line : pick /line /token
 |-- TOKEN  /line 12  /column 28  /token-type 'space  /cont " "
 |-- TOKEN  /line 12  /column 29  /token-type 'text  /token-subtype 'q  /cont 'space
 
-*** |== TOKEN -order -table -fore /clause /clause-type
+*** |== TOKEN
 ***   : clause
 ***   | group /line line
 ***   | for /line ( cut /clause
 ***         | group /token token
 ***         | for /token ( cut /line )
 ***         | fore-line )
+***   --order --table --fore /clause /clause-type
 
 |-- CLAUSE  /clause 4  /clause-type 'assert
 |-- LINE  /line 14  /clause 4
@@ -141,20 +143,11 @@ fore-line : pick /line /token
 |-- LINE  /line 18  /clause 4
 |-- LINE  /line 19  /clause 4
 |-- LINE  /line 20  /clause 4
+|-- LINE  /line 21  /clause 4
 
 |-- TOKEN  /line 14  /column 0  /token-type 'text  /token-subtype 'bar  /cont "|=="
 |-- TOKEN  /line 14  /column 3  /token-type 'space  /cont " "
 |-- TOKEN  /line 14  /column 4  /token-type 'text  /token-subtype 'raw  /cont 'TOKEN
-|-- TOKEN  /line 14  /column 9  /token-type 'space  /cont " "
-|-- TOKEN  /line 14  /column 10  /token-type 'text  /token-subtype 'raw  /cont '-order
-|-- TOKEN  /line 14  /column 16  /token-type 'space  /cont " "
-|-- TOKEN  /line 14  /column 17  /token-type 'text  /token-subtype 'raw  /cont '-table
-|-- TOKEN  /line 14  /column 23  /token-type 'space  /cont " "
-|-- TOKEN  /line 14  /column 24  /token-type 'text  /token-subtype 'raw  /cont '-fore
-|-- TOKEN  /line 14  /column 29  /token-type 'space  /cont " "
-|-- TOKEN  /line 14  /column 30  /token-type 'term  /cont "/clause"
-|-- TOKEN  /line 14  /column 37  /token-type 'space  /cont " "
-|-- TOKEN  /line 14  /column 38  /token-type 'term  /cont "/clause-type"
 
 |-- TOKEN  /line 15  /column 0  /token-type 'space  /cont "  "
 |-- TOKEN  /line 15  /column 2  /token-type 'text  /token-subtype 'raw  /cont ":"
@@ -214,20 +207,31 @@ fore-line : pick /line /token
 |-- TOKEN  /line 20  /column 19  /token-type 'space  /cont " "
 |-- TOKEN  /line 20  /column 20  /token-type 'close  /cont ")"
 
+|-- TOKEN  /line 21  /column 0  /token-type 'space  /cont "  "
+|-- TOKEN  /line 21  /column 2  /token-type 'text  /token-subtype 'raw  /cont '--order
+|-- TOKEN  /line 21  /column 9  /token-type 'space  /cont " "
+|-- TOKEN  /line 21  /column 10  /token-type 'text  /token-subtype 'raw  /cont '--table
+|-- TOKEN  /line 21  /column 17  /token-type 'space  /cont " "
+|-- TOKEN  /line 21  /column 18  /token-type 'text  /token-subtype 'raw  /cont '--fore
+|-- TOKEN  /line 21  /column 24  /token-type 'space  /cont " "
+|-- TOKEN  /line 21  /column 25  /token-type 'term  /cont "/clause"
+|-- TOKEN  /line 21  /column 32  /token-type 'space  /cont " "
+|-- TOKEN  /line 21  /column 33  /token-type 'term  /cont "/clause-type"
+
 *** fore-line : pick /line /token
 
 |-- CLAUSE  /clause 5  /clause-type 'relmap
-|-- LINE  /line 22  /clause 5
+|-- LINE  /line 23  /clause 5
 
-|-- TOKEN  /line 22  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'fore-line
-|-- TOKEN  /line 22  /column 9  /token-type 'space  /cont " "
-|-- TOKEN  /line 22  /column 10  /token-type 'text  /token-subtype 'raw  /cont ":"
-|-- TOKEN  /line 22  /column 11  /token-type 'space  /cont " "
-|-- TOKEN  /line 22  /column 12  /token-type 'text  /token-subtype 'raw  /cont 'pick
-|-- TOKEN  /line 22  /column 16  /token-type 'space  /cont " "
-|-- TOKEN  /line 22  /column 17  /token-type 'term  /cont "/line"
-|-- TOKEN  /line 22  /column 22  /token-type 'space  /cont " "
-|-- TOKEN  /line 22  /column 23  /token-type 'term  /cont "/token"
+|-- TOKEN  /line 23  /column 0  /token-type 'text  /token-subtype 'raw  /cont 'fore-line
+|-- TOKEN  /line 23  /column 9  /token-type 'space  /cont " "
+|-- TOKEN  /line 23  /column 10  /token-type 'text  /token-subtype 'raw  /cont ":"
+|-- TOKEN  /line 23  /column 11  /token-type 'space  /cont " "
+|-- TOKEN  /line 23  /column 12  /token-type 'text  /token-subtype 'raw  /cont 'pick
+|-- TOKEN  /line 23  /column 16  /token-type 'space  /cont " "
+|-- TOKEN  /line 23  /column 17  /token-type 'term  /cont "/line"
+|-- TOKEN  /line 23  /column 22  /token-type 'space  /cont " "
+|-- TOKEN  /line 23  /column 23  /token-type 'term  /cont "/token"
 
 ```
 
@@ -249,8 +253,8 @@ Command `koshu token-table.k TOKEN.k` produces:
 |-- TOKEN  /clause 1  /clause-type 'relmap  /line {| /line : /token | 9 : {| /column : /token-type : /cont | 0 : 'text : 'clause | 8 : 'text : ":" | 10 : 'text : 'source | 17 : 'text : 'CLAUSE | 24 : 'term : "/clause" | 32 : 'term : "/clause-type" |} |}
 |-- TOKEN  /clause 2  /clause-type 'relmap  /line {| /line : /token | 10 : {| /column : /token-type : /cont | 0 : 'text : 'line | 8 : 'text : ":" | 10 : 'text : 'source | 17 : 'text : 'LINE | 22 : 'term : "/clause" | 30 : 'term : "/line" |} |}
 |-- TOKEN  /clause 3  /clause-type 'relmap  /line {| /line : /token | 11 : {| /column : /token-type : /cont | 0 : 'text : 'token | 8 : 'text : ":" | 10 : 'text : 'source | 17 : 'text : 'TOKEN | 23 : 'term : "/line" | 29 : 'term : "/column" | 37 : 'term : "/token-type" | 49 : 'term : "/cont" |} | 12 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'omit | 15 : 'term : "/token-type" | 27 : 'text : '= | 29 : 'text : 'space |} |}
-|-- TOKEN  /clause 4  /clause-type 'assert  /line {| /line : /token | 14 : {| /column : /token-type : /cont | 0 : 'text : "|==" | 4 : 'text : 'TOKEN | 10 : 'text : '-order | 17 : 'text : '-table | 24 : 'text : '-fore | 30 : 'term : "/clause" | 38 : 'term : "/clause-type" |} | 15 : {| /column : /token-type : /cont | 2 : 'text : ":" | 4 : 'text : 'clause |} | 16 : {| /column : /token-type : /cont | 2 : 'text : "|" | 4 : 'text : 'group | 10 : 'term : "/line" | 16 : 'text : 'line |} | 17 : {| /column : /token-type : /cont | 2 : 'text : "|" | 4 : 'text : 'for | 8 : 'term : "/line" | 14 : 'open : "(" | 16 : 'text : 'cut | 20 : 'term : "/clause" |} | 18 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'group | 16 : 'term : "/token" | 23 : 'text : 'token |} | 19 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'for | 14 : 'term : "/token" | 21 : 'open : "(" | 23 : 'text : 'cut | 27 : 'term : "/line" | 33 : 'close : ")" |} | 20 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'fore-line | 20 : 'close : ")" |} |}
-|-- TOKEN  /clause 5  /clause-type 'relmap  /line {| /line : /token | 22 : {| /column : /token-type : /cont | 0 : 'text : 'fore-line | 10 : 'text : ":" | 12 : 'text : 'pick | 17 : 'term : "/line" | 23 : 'term : "/token" |} |}
+|-- TOKEN  /clause 4  /clause-type 'assert  /line {| /line : /token | 14 : {| /column : /token-type : /cont | 0 : 'text : "|==" | 4 : 'text : 'TOKEN |} | 15 : {| /column : /token-type : /cont | 2 : 'text : ":" | 4 : 'text : 'clause |} | 16 : {| /column : /token-type : /cont | 2 : 'text : "|" | 4 : 'text : 'group | 10 : 'term : "/line" | 16 : 'text : 'line |} | 17 : {| /column : /token-type : /cont | 2 : 'text : "|" | 4 : 'text : 'for | 8 : 'term : "/line" | 14 : 'open : "(" | 16 : 'text : 'cut | 20 : 'term : "/clause" |} | 18 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'group | 16 : 'term : "/token" | 23 : 'text : 'token |} | 19 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'for | 14 : 'term : "/token" | 21 : 'open : "(" | 23 : 'text : 'cut | 27 : 'term : "/line" | 33 : 'close : ")" |} | 20 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'fore-line | 20 : 'close : ")" |} | 21 : {| /column : /token-type : /cont | 2 : 'text : '--order | 10 : 'text : '--table | 18 : 'text : '--fore | 25 : 'term : "/clause" | 33 : 'term : "/clause-type" |} |}
+|-- TOKEN  /clause 5  /clause-type 'relmap  /line {| /line : /token | 23 : {| /column : /token-type : /cont | 0 : 'text : 'fore-line | 10 : 'text : ":" | 12 : 'text : 'pick | 17 : 'term : "/line" | 23 : 'term : "/token" |} |}
 
 *** 5 judges
 
@@ -307,11 +311,6 @@ Command `koshu token-table.k TOKEN.k` produces:
 **                               ------- ----------- ----------------
 **                               0       'text       "|=="
 **                               4       'text       'TOKEN
-**                               10      'text       '-order
-**                               17      'text       '-table
-**                               24      'text       '-fore
-**                               30      'term       "/clause"
-**                               38      'term       "/clause-type"
 **                               
 **                         15    /column /token-type /cont
 **                               ------- ----------- ----------------
@@ -356,10 +355,18 @@ Command `koshu token-table.k TOKEN.k` produces:
 **                               8       'text       "|"
 **                               10      'text       'fore-line
 **                               20      'close      ")"
+**                               
+**                         21    /column /token-type /cont
+**                               ------- ----------- ----------------
+**                               2       'text       '--order
+**                               10      'text       '--table
+**                               18      'text       '--fore
+**                               25      'term       "/clause"
+**                               33      'term       "/clause-type"
 **                         
 **    5       'relmap      /line /token
 **                         ----- ------------------------------------
-**                         22    /column /token-type /cont
+**                         23    /column /token-type /cont
 **                               ------- ----------- ----------------
 **                               0       'text       'fore-line
 **                               10      'text       ":"

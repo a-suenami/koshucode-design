@@ -32,8 +32,8 @@ a3 : a | nest /x -to /g
 ```
 -*- koshu -*-
 
-|== A2 -table -fore /x : a2
-|== A3 -table -fore /y : a3
+|== A2 : a2  --table --fore /x 
+|== A3 : a3  --table --fore /y
 ```
 
 Command `koshu lexical.k data.k` produces:
@@ -98,10 +98,11 @@ Command `koshu lexical.k data.k` produces:
 -*- koshu -*-
 ** ^/g は a3 の重関係を参照します。
 
-|== NEST -table -fore /x /g :
+|== NEST :
     a2 | slice /h (
        a3 | slice /h ( ^/g )
           | up /h )
+    --table --fore /x /g
 ```
 
 Command `koshu lexical.k nest.k` produces:
@@ -149,8 +150,8 @@ Command `koshu lexical.k nest.k` produces:
 -*- koshu -*-
 ** @'1 では、a3 の重関係 /g ではなく、a2 の /g を参照します。
 
-|== PASS -table -fore /x /g :
-     a2 | slice /h ( g2 ^/g )
+|== PASS : a2 | slice /h ( g2 ^/g )
+  --table --fore /x /g
 
 g2 : a3
    | slice /h ( @'1 )
@@ -200,8 +201,8 @@ Command `koshu lexical.k pass.k` produces:
 -*- koshu -*-
 ** a3 の重関係 /g を参照します。
 
-|== SEPARATE -table -fore /x /g :
-     a2 | slice /h ( g3 )
+|== SEPARATE : a2 | slice /h ( g3 )
+   --table --fore /x /g
 
 g3 : a3
    | slice /h ( ^/g )

@@ -21,15 +21,17 @@
 
 p : source P /x /y
 
-|== Q -fore /x /y
-    : p | add /=z ( /x + /y )
+|== Q : p | add /=z ( /x + /y )
+  --fore /x /y
 
-|== R -fore /x : r
+|== R : r
+  --fore /x
 
 r : p | nest /y -to /=
       | add /ys ( /=/y )
 
-|== S -fore /x : r | wipe
+|== S : r | wipe
+  --fore /x
 ```
 
 Command `koshu working-term.k` produces:

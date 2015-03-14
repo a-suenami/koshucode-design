@@ -18,9 +18,9 @@
 
 p : source P /y /x
 
-|== PN -fore /n /x /y : p | number /n -from 1
-|== PX -fore /n /x /y : p | number /n -from 1 -order /x /y
-|== PY -fore /n /x /y : p | number /n -from 1 -order /y
+|== PN : p | number /n -from 1                --fore /n /x /y
+|== PX : p | number /n -from 1 -order /x /y   --fore /n /x /y
+|== PY : p | number /n -from 1 -order /y      --fore /n /x /y
 ```
 
 Command `koshu number.k` produces:
@@ -82,8 +82,8 @@ Command `koshu number.k` produces:
 
 p : source P /y /x
 
-|== GAP-RANK   -fore /n /x : p | rank /n -order /x -from 1
-|== DENSE-RANK -fore /n /x : p | rank /n -order /x -from 1 -dense
+|== GAP-RANK   : p | rank /n -order /x -from 1         --fore /n /x
+|== DENSE-RANK : p | rank /n -order /x -from 1 -dense  --fore /n /x
 ```
 
 Command `koshu rank.k` produces:

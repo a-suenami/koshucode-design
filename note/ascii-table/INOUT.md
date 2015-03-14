@@ -27,11 +27,14 @@ ascii-table : range @code -from 0 -to 127
 **    koshu ascii.k group.k
 **
 
-|== GROUP -fore /g -order -table
+|== GROUP
   : ascii-table -code /n -char /c
   | add /g ( char-group-1 /c )
   | nest /n /c -to /nc
   | for /nc ( chunk /0 /1 /2 /3 -order /n )
+  --fore /g
+  --order
+  --table
 ```
 
 Command `koshu ascii.k group.k` produces:
@@ -142,9 +145,11 @@ Command `koshu ascii.k group.k` produces:
 **    koshu ascii.k table.k
 **
 
-|== TABLE -order -table
+|== TABLE
   : ascii-table -code /n -char /c
   | chunk /0 /1 /2 /3 /4 /5 /6 /7 -order /n
+  --order
+  --table
 ```
 
 Command `koshu ascii.k table.k` produces:

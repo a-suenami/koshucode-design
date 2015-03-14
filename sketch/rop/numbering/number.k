@@ -8,6 +8,6 @@
 
 p : source P /y /x
 
-|== PN -fore /n /x /y : p | number /n -from 1
-|== PX -fore /n /x /y : p | number /n -from 1 -order /x /y
-|== PY -fore /n /x /y : p | number /n -from 1 -order /y
+|== PN : p | number /n -from 1                --fore /n /x /y
+|== PX : p | number /n -from 1 -order /x /y   --fore /n /x /y
+|== PY : p | number /n -from 1 -order /y      --fore /n /x /y

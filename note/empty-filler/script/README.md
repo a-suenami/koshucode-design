@@ -17,7 +17,7 @@
 a : source A /x /y
 
 |== B : a
-|== C -empty : a
+|== C : a  --empty
 ```
 
 Command `koshu judge.k` produces:

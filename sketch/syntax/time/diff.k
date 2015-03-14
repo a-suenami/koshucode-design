@@ -29,5 +29,5 @@ x  : source X /x
 y  : source Y /y
 xy : x | meet y
 
-|== POS -fore /x /y : xy | add /z ( /y - /x )
-|== NEG -fore /x /y : xy | add /z ( /x - /y )
+|== POS : xy | add /z ( /y - /x )  --fore /x /y
+|== NEG : xy | add /z ( /x - /y )  --fore /x /y

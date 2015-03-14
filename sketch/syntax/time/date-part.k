@@ -8,7 +8,8 @@
 **    - YYYY-##DDD    yearly format
 **
 
-|== P -fore /monthly /weekly /yearly
-    : range-day /monthly -from 2014-12-15 -to 2015-1-15
-    | add /weekly ( weekly /monthly )
-          /yearly ( yearly /monthly )
+|== P
+  : range-day /monthly -from 2014-12-15 -to 2015-1-15
+  | add /weekly ( weekly /monthly )
+        /yearly ( yearly /monthly )
+  --fore /monthly /weekly /yearly

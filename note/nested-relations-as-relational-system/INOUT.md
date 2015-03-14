@@ -72,7 +72,7 @@ Command `koshu DATA.k flat.k` produces:
 **    Nested relations as embedded relational system
 **
 
-|== S -table : s
+|== S : s  --table
 |== T : s | up /nr
 
 r : p | meet q

@@ -123,10 +123,11 @@ Command `koshu SENTENCE.k count.k` produces:
 **        第 /par 段落を構成要素にもっている。>>>
 **
 
-|== STRUCTURE -table -fore /sect /sect-name :
+|== STRUCTURE :
   sect | maybe sect-name
     | nest /par-set -to /par-start
     | for /par-start par
+  --table --fore /sect /sect-name
 
 sect      : source SECTION-PARAGRAPH /sect /par-set
 sect-name : source SECTION-NAME      /sect /sect-name
@@ -200,8 +201,7 @@ Command `koshu SENTENCE.k structure.k` produces:
 **       /start という語句から始まる。>>>
 **
 
-|== SUMMARY -fore /par /sent /start :
-  s | meet p
+|== SUMMARY : s | meet p  --fore /par /sent /start
 
 s : source SENTENCE-COUNT  /par /sent
 p : source PARAGRAPH-START /par /start

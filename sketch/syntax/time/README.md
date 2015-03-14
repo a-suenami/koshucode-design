@@ -19,10 +19,11 @@
 **    - YYYY-##DDD    yearly format
 **
 
-|== P -fore /monthly /weekly /yearly
-    : range-day /monthly -from 2014-12-15 -to 2015-1-15
-    | add /weekly ( weekly /monthly )
-          /yearly ( yearly /monthly )
+|== P
+  : range-day /monthly -from 2014-12-15 -to 2015-1-15
+  | add /weekly ( weekly /monthly )
+        /yearly ( yearly /monthly )
+  --fore /monthly /weekly /yearly
 ```
 
 Command `koshu date-part.k` produces:
@@ -119,8 +120,8 @@ x  : source X /x
 y  : source Y /y
 xy : x | meet y
 
-|== POS -fore /x /y : xy | add /z ( /y - /x )
-|== NEG -fore /x /y : xy | add /z ( /x - /y )
+|== POS : xy | add /z ( /y - /x )  --fore /x /y
+|== NEG : xy | add /z ( /x - /y )  --fore /x /y
 ```
 
 Command `koshu diff.k` produces:
@@ -218,9 +219,10 @@ Command `koshu diff.k` produces:
 |-- P  /time 2014-##203                  ** YEAR-##DAY
 |-- P  /time 2014-##203 12:45            ** YEAR-##DAY HH:MM
 
-|== Q -table -fore /time
-    : source P /time
-    | add /type ( type /time )
+|== Q
+  : source P /time
+  | add /type ( type /time )
+  --table --fore /time
 ```
 
 Command `koshu notation.k` produces:

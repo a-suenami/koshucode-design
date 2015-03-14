@@ -5,10 +5,11 @@
 **        第 /par 段落を構成要素にもっている。>>>
 **
 
-|== STRUCTURE -table -fore /sect /sect-name :
+|== STRUCTURE :
   sect | maybe sect-name
     | nest /par-set -to /par-start
     | for /par-start par
+  --table --fore /sect /sect-name
 
 sect      : source SECTION-PARAGRAPH /sect /par-set
 sect-name : source SECTION-NAME      /sect /sect-name

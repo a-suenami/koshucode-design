@@ -18,7 +18,7 @@
 ```
 ** -*- koshu -*-
 
-|== A -unknown : id
+|== A : id --unknown
 
 ```
 
@@ -35,9 +35,9 @@ Command `koshu abort-assert.k` exits with 2 and produces:
 **  ABORTED  Unknown option
 **  -------- ---------------------- ---------
 **  Detail   Unknown parameter name
-**           -unknown
+**           unknown
 **  Source   3 0 abort-assert.k
-**           > |== A -unknown : id  .. assert
+**           > |== A : id --unknown .. assert
 **  Command  koshu
 **           abort-assert.k
 **

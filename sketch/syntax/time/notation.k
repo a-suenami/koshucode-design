@@ -37,6 +37,7 @@
 |-- P  /time 2014-##203                  ** YEAR-##DAY
 |-- P  /time 2014-##203 12:45            ** YEAR-##DAY HH:MM
 
-|== Q -table -fore /time
-    : source P /time
-    | add /type ( type /time )
+|== Q
+  : source P /time
+  | add /type ( type /time )
+  --table --fore /time
