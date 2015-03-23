@@ -132,6 +132,7 @@ about /major 0
 |-- VERSION  /minor 101  /date 2015-03-02  /summary "写像中間体を導入"
 |-- VERSION  /minor 102  /date 2015-03-04  /summary "節属性を導入"
 |-- VERSION  /minor 103  /date 2015-03-15  /summary "表明属性を二重ハイフンに変更"
+|-- VERSION  /minor 104  /date 2015-03-23  /summary "資源全体に対するオプションを導入"
 
 ```
 
@@ -272,13 +273,14 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 101  /date 2015-03-02  /summary '写像中間体を導入
 |-- VERSION  /major 0  /minor 102  /date 2015-03-04  /summary '節属性を導入
 |-- VERSION  /major 0  /minor 103  /date 2015-03-15  /summary '表明属性を二重ハイフンに変更
+|-- VERSION  /major 0  /minor 104  /date 2015-03-23  /summary '資源全体に対するオプションを導入
 
-*** 103 judges
+*** 104 judges
 
 **
 **  SUMMARY
-**     103 judges on VERSION
-**     103 judges in total
+**     104 judges on VERSION
+**     104 judges in total
 **
 ```
 
