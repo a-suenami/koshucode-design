@@ -92,7 +92,7 @@
 ***         | group /token token
 ***         | for /token ( cut /line )
 ***         | fore-line )
-***   --order --table --fore /clause /clause-type
+***   --order --table --forward /clause /clause-type
 
 |-- CLAUSE  /clause 4  /clause-type 'assert
 |-- LINE  /line 14  /clause 4
@@ -171,11 +171,11 @@
 |-- TOKEN  /line 21  /column 9  /token-type 'space  /cont " "
 |-- TOKEN  /line 21  /column 10  /token-type 'text  /token-subtype 'raw  /cont '--table
 |-- TOKEN  /line 21  /column 17  /token-type 'space  /cont " "
-|-- TOKEN  /line 21  /column 18  /token-type 'text  /token-subtype 'raw  /cont '--fore
-|-- TOKEN  /line 21  /column 24  /token-type 'space  /cont " "
-|-- TOKEN  /line 21  /column 25  /token-type 'term  /cont "/clause"
-|-- TOKEN  /line 21  /column 32  /token-type 'space  /cont " "
-|-- TOKEN  /line 21  /column 33  /token-type 'term  /cont "/clause-type"
+|-- TOKEN  /line 21  /column 18  /token-type 'text  /token-subtype 'raw  /cont '--forward
+|-- TOKEN  /line 21  /column 27  /token-type 'space  /cont " "
+|-- TOKEN  /line 21  /column 28  /token-type 'term  /cont "/clause"
+|-- TOKEN  /line 21  /column 35  /token-type 'space  /cont " "
+|-- TOKEN  /line 21  /column 36  /token-type 'term  /cont "/clause-type"
 
 *** fore-line : pick /line /token
 

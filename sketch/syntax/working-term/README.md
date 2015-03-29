@@ -22,16 +22,16 @@
 p : source P /x /y
 
 |== Q : p | add /=z ( /x + /y )
-  --fore /x /y
+  --forward /x /y
 
 |== R : r
-  --fore /x
+  --forward /x
 
 r : p | nest /y -to /=
       | add /ys ( /=/y )
 
 |== S : r | wipe
-  --fore /x
+  --forward /x
 ```
 
 Command `koshu working-term.k` produces:

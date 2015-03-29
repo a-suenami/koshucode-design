@@ -27,13 +27,13 @@ p : source P /a /b
 q : source Q /b /c
 
 |== GROUP : p | group /g q
-  --fore /a /b
+  --forward /a /b
 
 |== GROUP2 : p | slice /r ( meet q | pick-term q )
-  --fore /a /b
+  --forward /a /b
 
 |== SLICE : p | slice /r id
-  --fore /a /b
+  --forward /a /b
 ```
 
 Command `koshu slice.k` produces:

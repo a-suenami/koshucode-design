@@ -5,4 +5,4 @@
     a2 | slice /h (
        a3 | slice /h ( ^/g )
           | up /h )
-    --table --fore /x /g
+    --table --forward /x /g

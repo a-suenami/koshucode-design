@@ -22,7 +22,7 @@ n : range /n -from 0 -to 8
   n | add /fact ( fact /n )
       -where fact n = ( if : n <= 0 -> 1
                            : n * fact ( n - 1 ))
-  --fore /n
+  --forward /n
 
 **  Y combinator
 |== Y :
@@ -32,7 +32,7 @@ n : range /n -from 0 -to 8
        : yy f x = f ( x x )
        : g      = y f
        : @@fact
-  --fore /n
+  --forward /n
 
 **  Z combinator
 |== Z :
@@ -42,7 +42,7 @@ n : range /n -from 0 -to 8
                (| x | f (| y | x x y |) |)
        : g = z f
        : @@fact
-  --fore /n
+  --forward /n
 
 **  Y combinator defined by SK combinators
 |== SK :
@@ -52,7 +52,7 @@ n : range /n -from 0 -to 8
        : g = y f
        : @@sk
        : @@fact
-  --fore /n
+  --forward /n
 
 **  Hakslel-style fixed point combinator
 **  http://hackage.haskell.org/packages/archive/base/latest/doc/html/Data-Function.html#v:fix
@@ -62,4 +62,4 @@ n : range /n -from 0 -to 8
        : fix f = f ( fix f )
        : g     = fix f
        : @@fact
-  --fore /n
+  --forward /n

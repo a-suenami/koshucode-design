@@ -29,7 +29,7 @@ token   : source TOKEN /line /column /token-type /cont
         | group /token token
         | for /token ( cut /line )
         | fore-line )
-  --order --table --fore /clause /clause-type
+  --order --table --forward /clause /clause-type
 
 fore-line : pick /line /token
 ```
@@ -133,7 +133,7 @@ fore-line : pick /line /token
 ***         | group /token token
 ***         | for /token ( cut /line )
 ***         | fore-line )
-***   --order --table --fore /clause /clause-type
+***   --order --table --forward /clause /clause-type
 
 |-- CLAUSE  /clause 4  /clause-type 'assert
 |-- LINE  /line 14  /clause 4
@@ -212,11 +212,11 @@ fore-line : pick /line /token
 |-- TOKEN  /line 21  /column 9  /token-type 'space  /cont " "
 |-- TOKEN  /line 21  /column 10  /token-type 'text  /token-subtype 'raw  /cont '--table
 |-- TOKEN  /line 21  /column 17  /token-type 'space  /cont " "
-|-- TOKEN  /line 21  /column 18  /token-type 'text  /token-subtype 'raw  /cont '--fore
-|-- TOKEN  /line 21  /column 24  /token-type 'space  /cont " "
-|-- TOKEN  /line 21  /column 25  /token-type 'term  /cont "/clause"
-|-- TOKEN  /line 21  /column 32  /token-type 'space  /cont " "
-|-- TOKEN  /line 21  /column 33  /token-type 'term  /cont "/clause-type"
+|-- TOKEN  /line 21  /column 18  /token-type 'text  /token-subtype 'raw  /cont '--forward
+|-- TOKEN  /line 21  /column 27  /token-type 'space  /cont " "
+|-- TOKEN  /line 21  /column 28  /token-type 'term  /cont "/clause"
+|-- TOKEN  /line 21  /column 35  /token-type 'space  /cont " "
+|-- TOKEN  /line 21  /column 36  /token-type 'term  /cont "/clause-type"
 
 *** fore-line : pick /line /token
 
@@ -253,7 +253,7 @@ Command `koshu token-table.k TOKEN.k` produces:
 |-- TOKEN  /clause 1  /clause-type 'relmap  /line {| /line : /token | 9 : {| /column : /token-type : /cont | 0 : 'text : 'clause | 8 : 'text : ":" | 10 : 'text : 'source | 17 : 'text : 'CLAUSE | 24 : 'term : "/clause" | 32 : 'term : "/clause-type" |} |}
 |-- TOKEN  /clause 2  /clause-type 'relmap  /line {| /line : /token | 10 : {| /column : /token-type : /cont | 0 : 'text : 'line | 8 : 'text : ":" | 10 : 'text : 'source | 17 : 'text : 'LINE | 22 : 'term : "/clause" | 30 : 'term : "/line" |} |}
 |-- TOKEN  /clause 3  /clause-type 'relmap  /line {| /line : /token | 11 : {| /column : /token-type : /cont | 0 : 'text : 'token | 8 : 'text : ":" | 10 : 'text : 'source | 17 : 'text : 'TOKEN | 23 : 'term : "/line" | 29 : 'term : "/column" | 37 : 'term : "/token-type" | 49 : 'term : "/cont" |} | 12 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'omit | 15 : 'term : "/token-type" | 27 : 'text : '= | 29 : 'text : 'space |} |}
-|-- TOKEN  /clause 4  /clause-type 'assert  /line {| /line : /token | 14 : {| /column : /token-type : /cont | 0 : 'text : "|==" | 4 : 'text : 'TOKEN |} | 15 : {| /column : /token-type : /cont | 2 : 'text : ":" | 4 : 'text : 'clause |} | 16 : {| /column : /token-type : /cont | 2 : 'text : "|" | 4 : 'text : 'group | 10 : 'term : "/line" | 16 : 'text : 'line |} | 17 : {| /column : /token-type : /cont | 2 : 'text : "|" | 4 : 'text : 'for | 8 : 'term : "/line" | 14 : 'open : "(" | 16 : 'text : 'cut | 20 : 'term : "/clause" |} | 18 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'group | 16 : 'term : "/token" | 23 : 'text : 'token |} | 19 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'for | 14 : 'term : "/token" | 21 : 'open : "(" | 23 : 'text : 'cut | 27 : 'term : "/line" | 33 : 'close : ")" |} | 20 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'fore-line | 20 : 'close : ")" |} | 21 : {| /column : /token-type : /cont | 2 : 'text : '--order | 10 : 'text : '--table | 18 : 'text : '--fore | 25 : 'term : "/clause" | 33 : 'term : "/clause-type" |} |}
+|-- TOKEN  /clause 4  /clause-type 'assert  /line {| /line : /token | 14 : {| /column : /token-type : /cont | 0 : 'text : "|==" | 4 : 'text : 'TOKEN |} | 15 : {| /column : /token-type : /cont | 2 : 'text : ":" | 4 : 'text : 'clause |} | 16 : {| /column : /token-type : /cont | 2 : 'text : "|" | 4 : 'text : 'group | 10 : 'term : "/line" | 16 : 'text : 'line |} | 17 : {| /column : /token-type : /cont | 2 : 'text : "|" | 4 : 'text : 'for | 8 : 'term : "/line" | 14 : 'open : "(" | 16 : 'text : 'cut | 20 : 'term : "/clause" |} | 18 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'group | 16 : 'term : "/token" | 23 : 'text : 'token |} | 19 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'for | 14 : 'term : "/token" | 21 : 'open : "(" | 23 : 'text : 'cut | 27 : 'term : "/line" | 33 : 'close : ")" |} | 20 : {| /column : /token-type : /cont | 8 : 'text : "|" | 10 : 'text : 'fore-line | 20 : 'close : ")" |} | 21 : {| /column : /token-type : /cont | 2 : 'text : '--order | 10 : 'text : '--table | 18 : 'text : '--forward | 28 : 'term : "/clause" | 36 : 'term : "/clause-type" |} |}
 |-- TOKEN  /clause 5  /clause-type 'relmap  /line {| /line : /token | 23 : {| /column : /token-type : /cont | 0 : 'text : 'fore-line | 10 : 'text : ":" | 12 : 'text : 'pick | 17 : 'term : "/line" | 23 : 'term : "/token" |} |}
 
 *** 5 judges
@@ -360,9 +360,9 @@ Command `koshu token-table.k TOKEN.k` produces:
 **                               ------- ----------- ----------------
 **                               2       'text       '--order
 **                               10      'text       '--table
-**                               18      'text       '--fore
-**                               25      'term       "/clause"
-**                               33      'term       "/clause-type"
+**                               18      'text       '--forward
+**                               28      'term       "/clause"
+**                               36      'term       "/clause-type"
 **                         
 **    5       'relmap      /line /token
 **                         ----- ------------------------------------

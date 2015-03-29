@@ -18,6 +18,6 @@ token   : source TOKEN /line /column /token-type /cont
         | group /token token
         | for /token ( cut /line )
         | fore-line )
-  --order --table --fore /clause /clause-type
+  --order --table --forward /clause /clause-type
 
 fore-line : pick /line /token

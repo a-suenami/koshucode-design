@@ -127,7 +127,7 @@ Command `koshu SENTENCE.k count.k` produces:
   sect | maybe sect-name
     | nest /par-set -to /par-start
     | for /par-start par
-  --table --fore /sect /sect-name
+  --table --forward /sect /sect-name
 
 sect      : source SECTION-PARAGRAPH /sect /par-set
 sect-name : source SECTION-NAME      /sect /sect-name
@@ -201,7 +201,7 @@ Command `koshu SENTENCE.k structure.k` produces:
 **       /start という語句から始まる。>>>
 **
 
-|== SUMMARY : s | meet p  --fore /par /sent /start
+|== SUMMARY : s | meet p  --forward /par /sent /start
 
 s : source SENTENCE-COUNT  /par /sent
 p : source PARAGRAPH-START /par /start

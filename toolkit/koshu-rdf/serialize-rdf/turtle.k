@@ -11,4 +11,4 @@ short
   biglynx "http://biglynx.co.uk/"
 
 |== TURTLE : source RDF /s /p /o | nest /p /o -to /po
-  --table --fore /s
+  --table --forward /s

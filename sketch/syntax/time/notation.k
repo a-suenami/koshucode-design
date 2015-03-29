@@ -40,4 +40,4 @@
 |== Q
   : source P /time
   | add /type ( type /time )
-  --table --fore /time
+  --table --forward /time

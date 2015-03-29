@@ -9,4 +9,4 @@
 |== ANGLE
   | koshu-angle-text /name /text
   | add /code ( code-list /text )
-  --table --fore /name /text /code
+  --table --forward /name /text /code

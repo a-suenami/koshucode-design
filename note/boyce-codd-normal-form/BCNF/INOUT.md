@@ -18,7 +18,7 @@
 
 |=V FD-OF-NEAREST-SHOP :
   nearest-shop | duplicate /person /shop-type
-  --fore /person /shop-type
+  --forward /person /shop-type
 |=V FD-OF-SHOP-TYPE :
   shop-type | duplicate /shop
 
@@ -28,7 +28,7 @@ nearest-shop     : shop-type
                  | rename /nearest-shop /shop
                  | meet shop-near-person
 
-|== NEAREST-SHOP : nearest-shop  --fore /person /shop-type
+|== NEAREST-SHOP : nearest-shop  --forward /person /shop-type
 
 ```
 

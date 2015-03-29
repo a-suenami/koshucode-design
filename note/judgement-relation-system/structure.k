@@ -9,7 +9,7 @@
   sect | maybe sect-name
     | nest /par-set -to /par-start
     | for /par-start par
-  --table --fore /sect /sect-name
+  --table --forward /sect /sect-name
 
 sect      : source SECTION-PARAGRAPH /sect /par-set
 sect-name : source SECTION-NAME      /sect /sect-name

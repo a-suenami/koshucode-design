@@ -12,4 +12,4 @@
   : range-day /monthly -from 2014-12-15 -to 2015-1-15
   | add /weekly ( weekly /monthly )
         /yearly ( yearly /monthly )
-  --fore /monthly /weekly /yearly
+  --forward /monthly /weekly /yearly

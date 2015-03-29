@@ -23,7 +23,7 @@
   : range-day /monthly -from 2014-12-15 -to 2015-1-15
   | add /weekly ( weekly /monthly )
         /yearly ( yearly /monthly )
-  --fore /monthly /weekly /yearly
+  --forward /monthly /weekly /yearly
 ```
 
 Command `koshu date-part.k` produces:
@@ -120,8 +120,8 @@ x  : source X /x
 y  : source Y /y
 xy : x | meet y
 
-|== POS : xy | add /z ( /y - /x )  --fore /x /y
-|== NEG : xy | add /z ( /x - /y )  --fore /x /y
+|== POS : xy | add /z ( /y - /x )  --forward /x /y
+|== NEG : xy | add /z ( /x - /y )  --forward /x /y
 ```
 
 Command `koshu diff.k` produces:
@@ -222,7 +222,7 @@ Command `koshu diff.k` produces:
 |== Q
   : source P /time
   | add /type ( type /time )
-  --table --fore /time
+  --table --forward /time
 ```
 
 Command `koshu notation.k` produces:

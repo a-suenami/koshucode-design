@@ -10,5 +10,5 @@
 
 p : source P /y /x
 
-|== GAP-RANK   : p | rank /n -order /x -from 1         --fore /n /x
-|== DENSE-RANK : p | rank /n -order /x -from 1 -dense  --fore /n /x
+|== GAP-RANK   : p | rank /n -order /x -from 1         --forward /n /x
+|== DENSE-RANK : p | rank /n -order /x -from 1 -dense  --forward /n /x

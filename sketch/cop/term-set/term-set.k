@@ -31,8 +31,8 @@
 
 interpretation : source INTERP /judge /interp
 
-|== TERMS : terms  --fore /judge
-|== TERM  : terms | member /term /terms | cut /terms  --fore /judge
+|== TERMS : terms  --forward /judge
+|== TERM  : terms | member /term /terms | cut /terms  --forward /judge
 
 terms : interpretation
   | add /terms ( term-set /interp )
