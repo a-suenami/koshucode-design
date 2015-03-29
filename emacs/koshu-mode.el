@@ -107,14 +107,15 @@
       (2 font-lock-variable-name-face))
 
      ;; punctuation
-     ("[]:=|(){}#[]\\|---" . font-lock-builtin-face)
+     ("[]:=|(){}#[]" . font-lock-builtin-face)
 
      ;; arrows
-     (,(regexp-opt '("<-" "->" "<<" ">>") t)
+     (,(regexp-opt '("<-" "->" "<<" ">>" "interp" "<<<" ">>>") t)
       . font-lock-builtin-face)
 
-     ;; option
-     (" -\\([-a-z]\\)+\\>" . font-lock-keyword-face)
+     ;; attribute
+     (" --\\([-a-z0-9]\\)+\\>" . font-lock-builtin-face)
+     (" -\\([-a-z0-9]\\)+\\>"  . font-lock-keyword-face)
 
      ;; prefix
      ("\\<\\([a-zA-Z0-9]+\\)\\(\\.\\)"
@@ -134,6 +135,10 @@
      ("^\\(#!\\)\\(.*\\)"
       (1 font-lock-keyword-face)
       (2 font-lock-string-face))
+
+     ;; emacs mode comment
+     ("^-[*]-.*"
+      . font-lock-comment-face)
 
      ;; operators (rop or syntactic cop)
      (,(concat
