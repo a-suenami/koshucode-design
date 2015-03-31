@@ -145,15 +145,19 @@ short
 
 *** 1 judge 
 
-**  TABLE : TURTLE
-**
-**    /s                            /po
-**    ----------------------------- --------------------------
-**    biglynx."people/dave-smith"   /p          /o
-**                                  ----------- --------------
-**                                  foaf.name   "Dave Smith"
-**                                  rdf.type    foaf.Person
-**                                  
+=== note
+
+TABLE : TURTLE
+
+  /s                            /po
+  ----------------------------- --------------------------
+  biglynx."people/dave-smith"   /p          /o
+                                ----------- --------------
+                                foaf.name   "Dave Smith"
+                                rdf.type    foaf.Person
+                                
+
+=== rel
 
 **
 **  SUMMARY

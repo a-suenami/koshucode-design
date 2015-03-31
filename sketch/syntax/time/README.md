@@ -251,22 +251,26 @@ Command `koshu notation.k` produces:
 
 *** 12 judges
 
-**  TABLE : Q
-**
-**    /time                     /type
-**    ------------------------- ---------------------
-**    2014-07                   [- time month -]
-**    2014-07-20                [- time day -]
-**    2014-07-20 12             [- time hour -]
-**    2014-07-20 12:45          [- time min -]
-**    2014-07-20 12:45:30       [- time sec -]
-**    2014-07-20 12:45 +09:00   [- time min zone -]
-**    2014-07-20 03:45:30 UTC   [- time sec zone -]
-**    2014-#30                  [- time week -]
-**    2014-#30-1                [- time day -]
-**    2014-#30-1 12:45          [- time min -]
-**    2014-##203                [- time day -]
-**    2014-##203 12:45          [- time min -]
+=== note
+
+TABLE : Q
+
+  /time                     /type
+  ------------------------- ---------------------
+  2014-07                   [- time month -]
+  2014-07-20                [- time day -]
+  2014-07-20 12             [- time hour -]
+  2014-07-20 12:45          [- time min -]
+  2014-07-20 12:45:30       [- time sec -]
+  2014-07-20 12:45 +09:00   [- time min zone -]
+  2014-07-20 03:45:30 UTC   [- time sec zone -]
+  2014-#30                  [- time week -]
+  2014-#30-1                [- time day -]
+  2014-#30-1 12:45          [- time min -]
+  2014-##203                [- time day -]
+  2014-##203 12:45          [- time min -]
+
+=== rel
 
 **
 **  SUMMARY

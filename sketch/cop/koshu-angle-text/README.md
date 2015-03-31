@@ -46,21 +46,25 @@ Command `koshu koshu-angle-text.k` produces:
 
 *** 11 judges
 
-**  TABLE : ANGLE
-**
-**    /name          /text    /code
-**    -------------- -------- -------------
-**    '<colon>       ":"      [ 58 ]
-**    '<comma>       ","      [ 44 ]
-**    '<cr>          <cr>     [ 13 ]
-**    '<crlf>        <crlf>   [ 13 : 10 ]
-**    '<dot>         '.       [ 46 ]
-**    '<lf>          <lf>     [ 10 ]
-**    '<q>           "'"      [ 39 ]
-**    '<qq>          <qq>     [ 34 ]
-**    '<semicolon>   ";"      [ 59 ]
-**    '<sp>          " "      [ 32 ]
-**    '<tab>         <tab>    [ 9 ]
+=== note
+
+TABLE : ANGLE
+
+  /name          /text    /code
+  -------------- -------- -------------
+  '<colon>       ":"      [ 58 ]
+  '<comma>       ","      [ 44 ]
+  '<cr>          <cr>     [ 13 ]
+  '<crlf>        <crlf>   [ 13 : 10 ]
+  '<dot>         '.       [ 46 ]
+  '<lf>          <lf>     [ 10 ]
+  '<q>           "'"      [ 39 ]
+  '<qq>          <qq>     [ 34 ]
+  '<semicolon>   ";"      [ 59 ]
+  '<sp>          " "      [ 32 ]
+  '<tab>         <tab>    [ 9 ]
+
+=== rel
 
 **
 **  SUMMARY

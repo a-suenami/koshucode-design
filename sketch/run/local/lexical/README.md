@@ -51,36 +51,44 @@ Command `koshu lexical.k data.k` produces:
 
 *** 2 judges
 
-**  TABLE : A2
-**
-**    /x  /g
-**    --- ----
-**    0   /y
-**        ----
-**        15
-**        
-**    1   /y
-**        ----
-**        20
-**        
+=== note
+
+TABLE : A2
+
+  /x  /g
+  --- ----
+  0   /y
+      ----
+      15
+      
+  1   /y
+      ----
+      20
+      
+
+=== rel
 
 |-- A3  /y 15  /g {| /x | 0 |}
 |-- A3  /y 20  /g {| /x | 1 |}
 
 *** 2 judges
 
-**  TABLE : A3
-**
-**    /y   /g
-**    ---- ---
-**    15   /x
-**         ---
-**         0
-**         
-**    20   /x
-**         ---
-**         1
-**         
+=== note
+
+TABLE : A3
+
+  /y   /g
+  ---- ---
+  15   /x
+       ---
+       0
+       
+  20   /x
+       ---
+       1
+       
+
+=== rel
 
 **
 **  SUMMARY
@@ -120,20 +128,24 @@ Command `koshu lexical.k nest.k` produces:
 
 *** 2 judges
 
-**  TABLE : NEST
-**
-**    /x  /g   /h
-**    --- ---- ---
-**    0   /y   /x
-**        ---- ---
-**        15   0
-**             1
-**             
-**    1   /y   /x
-**        ---- ---
-**        20   0
-**             1
-**             
+=== note
+
+TABLE : NEST
+
+  /x  /g   /h
+  --- ---- ---
+  0   /y   /x
+      ---- ---
+      15   0
+           1
+           
+  1   /y   /x
+      ---- ---
+      20   0
+           1
+           
+
+=== rel
 
 **
 **  SUMMARY
@@ -173,18 +185,22 @@ Command `koshu lexical.k pass.k` produces:
 
 *** 2 judges
 
-**  TABLE : PASS
-**
-**    /x  /g   /h
-**    --- ---- ----
-**    0   /y   /y
-**        ---- ----
-**        15   15
-**             
-**    1   /y   /y
-**        ---- ----
-**        20   20
-**             
+=== note
+
+TABLE : PASS
+
+  /x  /g   /h
+  --- ---- ----
+  0   /y   /y
+      ---- ----
+      15   15
+           
+  1   /y   /y
+      ---- ----
+      20   20
+           
+
+=== rel
 
 **
 **  SUMMARY
@@ -224,20 +240,24 @@ Command `koshu lexical.k seperate.k` produces:
 
 *** 2 judges
 
-**  TABLE : SEPARATE
-**
-**    /x  /g   /h
-**    --- ---- ---
-**    0   /y   /x
-**        ---- ---
-**        15   0
-**             1
-**             
-**    1   /y   /x
-**        ---- ---
-**        20   0
-**             1
-**             
+=== note
+
+TABLE : SEPARATE
+
+  /x  /g   /h
+  --- ---- ---
+  0   /y   /x
+      ---- ---
+      15   0
+           1
+           
+  1   /y   /x
+      ---- ---
+      20   0
+           1
+           
+
+=== rel
 
 **
 **  SUMMARY

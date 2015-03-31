@@ -258,122 +258,126 @@ Command `koshu token-table.k TOKEN.k` produces:
 
 *** 5 judges
 
-**  TABLE : TOKEN
-**
-**    /clause /clause-type /line
-**    ------- ------------ ------------------------------------------
-**    1       'relmap      /line /token
-**                         ----- ------------------------------------
-**                         9     /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               0       'text       'clause
-**                               8       'text       ":"
-**                               10      'text       'source
-**                               17      'text       'CLAUSE
-**                               24      'term       "/clause"
-**                               32      'term       "/clause-type"
-**                         
-**    2       'relmap      /line /token
-**                         ----- ------------------------------------
-**                         10    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               0       'text       'line
-**                               8       'text       ":"
-**                               10      'text       'source
-**                               17      'text       'LINE
-**                               22      'term       "/clause"
-**                               30      'term       "/line"
-**                         
-**    3       'relmap      /line /token
-**                         ----- ------------------------------------
-**                         11    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               0       'text       'token
-**                               8       'text       ":"
-**                               10      'text       'source
-**                               17      'text       'TOKEN
-**                               23      'term       "/line"
-**                               29      'term       "/column"
-**                               37      'term       "/token-type"
-**                               49      'term       "/cont"
-**                               
-**                         12    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               8       'text       "|"
-**                               10      'text       'omit
-**                               15      'term       "/token-type"
-**                               27      'text       '=
-**                               29      'text       'space
-**                         
-**    4       'assert      /line /token
-**                         ----- ------------------------------------
-**                         14    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               0       'text       "|=="
-**                               4       'text       'TOKEN
-**                               
-**                         15    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               2       'text       ":"
-**                               4       'text       'clause
-**                               
-**                         16    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               2       'text       "|"
-**                               4       'text       'group
-**                               10      'term       "/line"
-**                               16      'text       'line
-**                               
-**                         17    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               2       'text       "|"
-**                               4       'text       'for
-**                               8       'term       "/line"
-**                               14      'open       "("
-**                               16      'text       'cut
-**                               20      'term       "/clause"
-**                               
-**                         18    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               8       'text       "|"
-**                               10      'text       'group
-**                               16      'term       "/token"
-**                               23      'text       'token
-**                               
-**                         19    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               8       'text       "|"
-**                               10      'text       'for
-**                               14      'term       "/token"
-**                               21      'open       "("
-**                               23      'text       'cut
-**                               27      'term       "/line"
-**                               33      'close      ")"
-**                               
-**                         20    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               8       'text       "|"
-**                               10      'text       'fore-line
-**                               20      'close      ")"
-**                               
-**                         21    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               2       'text       '--order
-**                               10      'text       '--table
-**                               18      'text       '--forward
-**                               28      'term       "/clause"
-**                               36      'term       "/clause-type"
-**                         
-**    5       'relmap      /line /token
-**                         ----- ------------------------------------
-**                         23    /column /token-type /cont
-**                               ------- ----------- ----------------
-**                               0       'text       'fore-line
-**                               10      'text       ":"
-**                               12      'text       'pick
-**                               17      'term       "/line"
-**                               23      'term       "/token"
-**                         
+=== note
+
+TABLE : TOKEN
+
+  /clause /clause-type /line
+  ------- ------------ ------------------------------------------
+  1       'relmap      /line /token
+                       ----- ------------------------------------
+                       9     /column /token-type /cont
+                             ------- ----------- ----------------
+                             0       'text       'clause
+                             8       'text       ":"
+                             10      'text       'source
+                             17      'text       'CLAUSE
+                             24      'term       "/clause"
+                             32      'term       "/clause-type"
+                       
+  2       'relmap      /line /token
+                       ----- ------------------------------------
+                       10    /column /token-type /cont
+                             ------- ----------- ----------------
+                             0       'text       'line
+                             8       'text       ":"
+                             10      'text       'source
+                             17      'text       'LINE
+                             22      'term       "/clause"
+                             30      'term       "/line"
+                       
+  3       'relmap      /line /token
+                       ----- ------------------------------------
+                       11    /column /token-type /cont
+                             ------- ----------- ----------------
+                             0       'text       'token
+                             8       'text       ":"
+                             10      'text       'source
+                             17      'text       'TOKEN
+                             23      'term       "/line"
+                             29      'term       "/column"
+                             37      'term       "/token-type"
+                             49      'term       "/cont"
+                             
+                       12    /column /token-type /cont
+                             ------- ----------- ----------------
+                             8       'text       "|"
+                             10      'text       'omit
+                             15      'term       "/token-type"
+                             27      'text       '=
+                             29      'text       'space
+                       
+  4       'assert      /line /token
+                       ----- ------------------------------------
+                       14    /column /token-type /cont
+                             ------- ----------- ----------------
+                             0       'text       "|=="
+                             4       'text       'TOKEN
+                             
+                       15    /column /token-type /cont
+                             ------- ----------- ----------------
+                             2       'text       ":"
+                             4       'text       'clause
+                             
+                       16    /column /token-type /cont
+                             ------- ----------- ----------------
+                             2       'text       "|"
+                             4       'text       'group
+                             10      'term       "/line"
+                             16      'text       'line
+                             
+                       17    /column /token-type /cont
+                             ------- ----------- ----------------
+                             2       'text       "|"
+                             4       'text       'for
+                             8       'term       "/line"
+                             14      'open       "("
+                             16      'text       'cut
+                             20      'term       "/clause"
+                             
+                       18    /column /token-type /cont
+                             ------- ----------- ----------------
+                             8       'text       "|"
+                             10      'text       'group
+                             16      'term       "/token"
+                             23      'text       'token
+                             
+                       19    /column /token-type /cont
+                             ------- ----------- ----------------
+                             8       'text       "|"
+                             10      'text       'for
+                             14      'term       "/token"
+                             21      'open       "("
+                             23      'text       'cut
+                             27      'term       "/line"
+                             33      'close      ")"
+                             
+                       20    /column /token-type /cont
+                             ------- ----------- ----------------
+                             8       'text       "|"
+                             10      'text       'fore-line
+                             20      'close      ")"
+                             
+                       21    /column /token-type /cont
+                             ------- ----------- ----------------
+                             2       'text       '--order
+                             10      'text       '--table
+                             18      'text       '--forward
+                             28      'term       "/clause"
+                             36      'term       "/clause-type"
+                       
+  5       'relmap      /line /token
+                       ----- ------------------------------------
+                       23    /column /token-type /cont
+                             ------- ----------- ----------------
+                             0       'text       'fore-line
+                             10      'text       ":"
+                             12      'text       'pick
+                             17      'term       "/line"
+                             23      'term       "/token"
+                       
+
+=== rel
 
 **
 **  SUMMARY

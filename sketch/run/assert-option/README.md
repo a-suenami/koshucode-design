@@ -252,13 +252,17 @@ Command `koshu table.k` produces:
 
 *** 3 judges
 
-**  TABLE : P1
-**
-**    /x  /y   /z
-**    --- ---- ----
-**    0   10   50
-**    1   20   50
-**    2   20   60
+=== note
+
+TABLE : P1
+
+  /x  /y   /z
+  --- ---- ----
+  0   10   50
+  1   20   50
+  2   20   60
+
+=== rel
 
 **
 **  SUMMARY

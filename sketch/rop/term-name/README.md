@@ -38,12 +38,16 @@ Command `koshu term-name.k` produces:
 
 *** 2 judges
 
-**  TABLE : P
-**
-**    /x  /y   /z
-**    --- ---- ----
-**    1   10   50
-**    1   20   ()
+=== note
+
+TABLE : P
+
+  /x  /y   /z
+  --- ---- ----
+  1   10   50
+  1   20   ()
+
+=== rel
 
 |-- TERM  /term '/x
 |-- TERM  /term '/y
@@ -51,13 +55,17 @@ Command `koshu term-name.k` produces:
 
 *** 3 judges
 
-**  TABLE : TERM
-**
-**    /term
-**    -----
-**    '/x
-**    '/y
-**    '/z
+=== note
+
+TABLE : TERM
+
+  /term
+  -----
+  '/x
+  '/y
+  '/z
+
+=== rel
 
 **
 **  SUMMARY

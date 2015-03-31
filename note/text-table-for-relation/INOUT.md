@@ -81,38 +81,42 @@ Command `koshu DATA.k client.k` produces:
 
 *** 2 judges
 
-**  TABLE : CLIENT-ADDRESS
-**
-**    /name          /address                /investments
-**    -------------- ----------------------- -------------------------------------------
-**    "John Smith"   "311 Eash 2nd. St..."   /shares                            /company
-**                                           ---------------------------------- --------
-**                                           /purchase-price /date        /no   'IBM
-**                                           --------------- ------------ ----- 
-**                                           89.75           "06/20/83"   200   
-**                                           96.50           "11/10/84"   100   
-**                                                                              
-**                                           /purchase-price /date        /no   'XEROX
-**                                           --------------- ------------ ----- 
-**                                           64.50           "02/10/83"   100   
-**                                           92.50           "08/10/87"   500   
-**                                           
-**    "Jill Brody"   "41 North Main St..."   /shares                            /company
-**                                           ---------------------------------- --------
-**                                           /purchase-price /date        /no   'SEARS
-**                                           --------------- ------------ ----- 
-**                                           35.75           "12/25/87"   100   
-**                                                                              
-**                                           /purchase-price /date        /no   'FORD
-**                                           --------------- ------------ ----- 
-**                                           35.50           "02/10/83"   200   
-**                                                                              
-**                                           /purchase-price /date        /no   'EXXON
-**                                           --------------- ------------ ----- 
-**                                           35.00           "01/30/81"   100   
-**                                           64.50           "01/30/82"   100   
-**                                           59.50           "02/10/83"   200   
-**                                           
+=== note
+
+TABLE : CLIENT-ADDRESS
+
+  /name          /address                /investments
+  -------------- ----------------------- -------------------------------------------
+  "John Smith"   "311 Eash 2nd. St..."   /shares                            /company
+                                         ---------------------------------- --------
+                                         /purchase-price /date        /no   'IBM
+                                         --------------- ------------ ----- 
+                                         89.75           "06/20/83"   200   
+                                         96.50           "11/10/84"   100   
+                                                                            
+                                         /purchase-price /date        /no   'XEROX
+                                         --------------- ------------ ----- 
+                                         64.50           "02/10/83"   100   
+                                         92.50           "08/10/87"   500   
+                                         
+  "Jill Brody"   "41 North Main St..."   /shares                            /company
+                                         ---------------------------------- --------
+                                         /purchase-price /date        /no   'SEARS
+                                         --------------- ------------ ----- 
+                                         35.75           "12/25/87"   100   
+                                                                            
+                                         /purchase-price /date        /no   'FORD
+                                         --------------- ------------ ----- 
+                                         35.50           "02/10/83"   200   
+                                                                            
+                                         /purchase-price /date        /no   'EXXON
+                                         --------------- ------------ ----- 
+                                         35.00           "01/30/81"   100   
+                                         64.50           "01/30/82"   100   
+                                         59.50           "02/10/83"   200   
+                                         
+
+=== rel
 
 **
 **  SUMMARY
@@ -156,35 +160,39 @@ Command `koshu DATA.k stock.k` produces:
 
 *** 5 judges
 
-**  TABLE : STOCK-EXCHANGE
-**
-**    /company /current-price /exchanges-traded /last-dividend
-**    -------- -------------- ----------------- --------------
-**    'XEROX   52.25          /exchanges        0.44
-**                            -------------     
-**                            "NEW YORK"        
-**                                              
-**    'IBM     97.50          /exchanges        1.25
-**                            -------------     
-**                            "NEW YORK"        
-**                            'LONDON           
-**                            "HONG KONG"       
-**                            'TOKYO            
-**                                              
-**    'EXXON   90.00          /exchanges        0.82
-**                            -------------     
-**                            "NEW YORK"        
-**                            'LONDON           
-**                            'TOKYO            
-**                                              
-**    'FORD    41.75          /exchanges        0.20
-**                            -------------     
-**                            "NEW YORK"        
-**                                              
-**    'SEARS   77.50          /exchanges        0.34
-**                            -------------     
-**                            "NEW YORK"        
-**                                              
+=== note
+
+TABLE : STOCK-EXCHANGE
+
+  /company /current-price /exchanges-traded /last-dividend
+  -------- -------------- ----------------- --------------
+  'XEROX   52.25          /exchanges        0.44
+                          -------------     
+                          "NEW YORK"        
+                                            
+  'IBM     97.50          /exchanges        1.25
+                          -------------     
+                          "NEW YORK"        
+                          'LONDON           
+                          "HONG KONG"       
+                          'TOKYO            
+                                            
+  'EXXON   90.00          /exchanges        0.82
+                          -------------     
+                          "NEW YORK"        
+                          'LONDON           
+                          'TOKYO            
+                                            
+  'FORD    41.75          /exchanges        0.20
+                          -------------     
+                          "NEW YORK"        
+                                            
+  'SEARS   77.50          /exchanges        0.34
+                          -------------     
+                          "NEW YORK"        
+                                            
+
+=== rel
 
 **
 **  SUMMARY
