@@ -16,12 +16,6 @@
 Command `koshu eq.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    eq.k
-**
-
 **
 **  ABORTED  Unexpedted section delimiter
 **  -------- ------------------------------------- --------
@@ -48,12 +42,6 @@ Command `koshu eq.k` exits with 2 and produces:
 Command `koshu eqq.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    eqq.k
-**
-
 **
 **  ABORTED  Unexpedted section delimiter
 **  -------- ------------------------------------- --------
@@ -103,12 +91,6 @@ Command `koshu eqqq.k` produces:
 Command `koshu eqqqq.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    eqqqq.k
-**
-
 **
 **  ABORTED  Unexpedted section delimiter
 **  -------- ------------------------------------- --------

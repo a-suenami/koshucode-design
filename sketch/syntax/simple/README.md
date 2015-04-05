@@ -32,12 +32,6 @@
 Command `koshu basic.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    basic.k
-**
-
 **
 **  ABORTED  Dump token trees
 **  -------- ----------------------------------------------------- ---------
@@ -81,12 +75,6 @@ Command `koshu basic.k` exits with 2 and produces:
 Command `koshu slot.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    slot.k
-**
-
 **
 **  ABORTED  Dump token trees
 **  -------- ------------------------------------------------------ ---------
@@ -139,12 +127,6 @@ Command `koshu slot.k` exits with 2 and produces:
 Command `koshu term.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    term.k
-**
-
 **
 **  ABORTED  Dump token trees
 **  -------- ---------------------------------------------------- ---------
@@ -196,12 +178,6 @@ short
 Command `koshu text.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    text.k
-**
-
 **
 **  ABORTED  Dump token trees
 **  -------- ---------------------------------------------------- ---------

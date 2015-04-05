@@ -28,12 +28,6 @@ p = source P /x /y
 Command `koshu amb-inside.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    amb-inside.k
-**
-
 **
 **  ABORTED  Ambiguous relmaps
 **  -------- ----------------- ---------
@@ -82,12 +76,6 @@ p = source P /x /y
 Command `koshu amb-outside.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    amb-outside.k
-**
-
 **
 **  ABORTED  Ambiguous relmaps
 **  -------- ------------------ ---------

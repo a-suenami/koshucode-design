@@ -14,12 +14,6 @@
 Command `koshu hello.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    hello.k
-**
-
 **
 **  ABORTED  Unexpedted section delimiter
 **  -------- ------------------------------------- --------

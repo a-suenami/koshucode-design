@@ -25,12 +25,6 @@
 Command `koshu abort-assert.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    abort-assert.k
-**
-
 **
 **  ABORTED  Unknown option
 **  -------- ---------------------- ---------
@@ -59,12 +53,6 @@ Command `koshu abort-assert.k` exits with 2 and produces:
 Command `koshu abort-attr.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    abort-attr.k
-**
-
 **
 **  ABORTED  Unexpected attribute
 **  -------- ---------------------- ---------
@@ -97,12 +85,6 @@ Command `koshu abort-attr.k` exits with 2 and produces:
 Command `koshu abort-calc.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    abort-calc.k
-**
-
 **
 **  ABORTED  Type unmatch
 **  -------- -------------------------- ---------
@@ -132,12 +114,6 @@ Command `koshu abort-calc.k` exits with 2 and produces:
 Command `koshu abort-clause.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    abort-clause.k
-**
-
 **
 **  ABORTED  Unknown clause
 **  -------- ------------------ ---------
@@ -164,12 +140,6 @@ Command `koshu abort-clause.k` exits with 2 and produces:
 Command `koshu abort-lexmap.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    abort-lexmap.k
-**
-
 **
 **  ABORTED  Unexpected attribute
 **  -------- --------------------- ---------
@@ -201,12 +171,6 @@ Command `koshu abort-lexmap.k` exits with 2 and produces:
 Command `koshu abort-position.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    abort-position.k
-**
-
 **
 **  ABORTED  Unknown term name
 **  -------- ----------------------- ---------------
@@ -242,12 +206,6 @@ Command `koshu abort-position.k` exits with 2 and produces:
 Command `koshu abort-relmap.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    abort-relmap.k
-**
-
 **
 **  ABORTED  Unexpected attribute
 **  -------- ---------------------------------- ---------
@@ -277,12 +235,6 @@ Command `koshu abort-relmap.k` exits with 2 and produces:
 Command `koshu abort-run.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    abort-run.k
-**
-
 **
 **  ABORTED  Require Boolean
 **  -------- ---------------- ---------
@@ -312,12 +264,6 @@ Command `koshu abort-run.k` exits with 2 and produces:
 Command `koshu abort-specialize.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    abort-specialize.k
-**
-
 **
 **  ABORTED  Unknown term name
 **  -------- ------------------------ -------------
@@ -354,12 +300,6 @@ Command `koshu abort-specialize.k` exits with 2 and produces:
 Command `koshu abort-syntax.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    abort-syntax.k
-**
-
 **
 **  ABORTED  Unexpected attribute
 **  -------- ----------------------- -------------

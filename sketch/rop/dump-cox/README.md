@@ -16,12 +16,6 @@
 Command `koshu dump-cox.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    dump-cox.k
-**
-
 **
 **  ABORTED  Dump content expression
 **  -------- ---------------------------------- ---------

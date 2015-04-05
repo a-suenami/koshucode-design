@@ -21,12 +21,6 @@ short
 Command `koshu dup-prefix.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    dup-prefix.k
-**
-
 **
 **  ABORTED  Duplicate prefix
 **  -------- ---------------- ---------
@@ -53,12 +47,6 @@ short
 Command `koshu dup-replace.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    dup-replace.k
-**
-
 **
 **  ABORTED  Duplicate replacement
 **  -------- --------------------- ---------
@@ -83,12 +71,6 @@ Command `koshu dup-replace.k` exits with 2 and produces:
 Command `koshu unk-clause-frege.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    unk-clause-frege.k
-**
-
 **
 **  ABORTED  Unknown clause
 **  -------- -------------------------------------- ---------
@@ -115,12 +97,6 @@ Command `koshu unk-clause-frege.k` exits with 2 and produces:
 Command `koshu unk-clause-judge.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    unk-clause-judge.k
-**
-
 **
 **  ABORTED  Unknown clause
 **  -------- ------------------------ ---------
@@ -145,12 +121,6 @@ Command `koshu unk-clause-judge.k` exits with 2 and produces:
 Command `koshu unk-clause-pattern.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    unk-clause-pattern.k
-**
-
 **
 **  ABORTED  Unknown clause
 **  -------- ----------------------------- ---------
@@ -175,12 +145,6 @@ xxx
 Command `koshu unk-clause.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    unk-clause.k
-**
-
 **
 **  ABORTED  Unknown clause
 **  -------- ---------------- ---------
@@ -204,12 +168,6 @@ Command `koshu unk-clause.k` exits with 2 and produces:
 Command `koshu unres-prefix.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    unres-prefix.k
-**
-
 **
 **  ABORTED  Unresolved prefix
 **  -------- -------------------------------------- ---------

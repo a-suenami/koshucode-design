@@ -24,12 +24,6 @@
 Command `koshu assn.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    assn.k
-**
-
 **
 **  ABORTED  Dump token trees
 **  -------- --------------------------------------------------- ---------
@@ -75,12 +69,6 @@ Command `koshu assn.k` exits with 2 and produces:
 Command `koshu form.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    form.k
-**
-
 **
 **  ABORTED  Dump token trees
 **  -------- ----------------------------------------------------- ---------
@@ -138,12 +126,6 @@ Command `koshu form.k` exits with 2 and produces:
 Command `koshu group.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    group.k
-**
-
 **
 **  ABORTED  Dump token trees
 **  -------- --------------------------------------------------------- ---------
@@ -192,12 +174,6 @@ Command `koshu group.k` exits with 2 and produces:
 Command `koshu list.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    list.k
-**
-
 **
 **  ABORTED  Dump token trees
 **  -------- ------------------------------------------------------ ---------
@@ -245,12 +221,6 @@ Command `koshu list.k` exits with 2 and produces:
 Command `koshu rel.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    rel.k
-**
-
 **
 **  ABORTED  Dump token trees
 **  -------- ----------------------------------------------------- ---------
@@ -319,12 +289,6 @@ Command `koshu rel.k` exits with 2 and produces:
 Command `koshu set.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    set.k
-**
-
 **
 **  ABORTED  Dump token trees
 **  -------- ------------------------------------------------------ ---------
