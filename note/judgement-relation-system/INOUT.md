@@ -99,6 +99,9 @@ Command `koshu SENTENCE.k count.k` produces:
 **    SENTENCE.k
 **    count.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- COUNT  /sent 5
 
@@ -146,6 +149,9 @@ Command `koshu SENTENCE.k structure.k` produces:
 **  INPUT
 **    SENTENCE.k
 **    structure.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- STRUCTURE  /sect 1  /par-start {| /par : /start | 1 : "関係モデル (リレーショナル・モデル) は、どのような形式で" |}
@@ -219,6 +225,9 @@ Command `koshu SENTENCE.k summary.k` produces:
 **  INPUT
 **    SENTENCE.k
 **    summary.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- SUMMARY  /par 1  /sent 3  /start "関係モデル (リレーショナル・モデル) は、どのような形式で"

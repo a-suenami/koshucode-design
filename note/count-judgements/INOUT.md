@@ -37,6 +37,9 @@ Command `koshu count.k` produces:
 **  INPUT
 **    count.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- C-9  /a 1
 |-- C-9  /a 2

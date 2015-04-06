@@ -57,6 +57,9 @@ Command `koshu sub.k` produces:
 **  INPUT
 **    sub.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- B-SUB-A  /x 'X3
 

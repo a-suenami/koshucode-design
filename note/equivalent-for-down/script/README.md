@@ -42,6 +42,9 @@ Command `koshu copy.k` produces:
 **  INPUT
 **    copy.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- DOWN-1  /r {| /a : /b | 10 : 40 | 10 : 50 | 20 : 60 |}
 

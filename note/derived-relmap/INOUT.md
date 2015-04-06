@@ -62,6 +62,9 @@ Command `koshu derive.k` produces:
 **  INPUT
 **    derive.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /c 31  /a 1  /b 30
 |-- Q  /c 41  /a 1  /b 40

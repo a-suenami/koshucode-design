@@ -42,6 +42,9 @@ Command `koshu working-term.k` produces:
 **  INPUT
 **    working-term.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /x 1  /y 10  /1=z 11
 |-- Q  /x 1  /y 20  /1=z 21

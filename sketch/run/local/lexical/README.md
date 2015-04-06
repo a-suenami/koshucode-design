@@ -45,6 +45,9 @@ Command `koshu lexical.k data.k` produces:
 **    lexical.k
 **    data.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- A2  /x 0  /g {| /y | 15 |}
 |-- A2  /x 1  /g {| /y | 20 |}
@@ -122,6 +125,9 @@ Command `koshu lexical.k nest.k` produces:
 **    lexical.k
 **    nest.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- NEST  /x 0  /g {| /y | 15 |}  /h {| /x | 0 | 1 |}
 |-- NEST  /x 1  /g {| /y | 20 |}  /h {| /x | 0 | 1 |}
@@ -179,6 +185,9 @@ Command `koshu lexical.k pass.k` produces:
 **    lexical.k
 **    pass.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- PASS  /x 0  /g {| /y | 15 |}  /h {| /y | 15 |}
 |-- PASS  /x 1  /g {| /y | 20 |}  /h {| /y | 20 |}
@@ -233,6 +242,9 @@ Command `koshu lexical.k seperate.k` produces:
 **  INPUT
 **    lexical.k
 **    seperate.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- SEPARATE  /x 0  /g {| /y | 15 |}  /h {| /x | 0 | 1 |}

@@ -58,6 +58,9 @@ Command `koshu group.k` produces:
 **  INPUT
 **    group.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 short
   a "apple-"
@@ -131,6 +134,9 @@ Command `koshu short.k` produces:
 **
 **  INPUT
 **    short.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 short

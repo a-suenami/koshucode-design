@@ -249,6 +249,9 @@ Command `koshu token-table.k TOKEN.k` produces:
 **    token-table.k
 **    TOKEN.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- TOKEN  /clause 1  /clause-type 'relmap  /line {| /line : /token | 9 : {| /column : /token-type : /cont | 0 : 'text : 'clause | 8 : 'text : ":" | 10 : 'text : 'source | 17 : 'text : 'CLAUSE | 24 : 'term : "/clause" | 32 : 'term : "/clause-type" |} |}
 |-- TOKEN  /clause 2  /clause-type 'relmap  /line {| /line : /token | 10 : {| /column : /token-type : /cont | 0 : 'text : 'line | 8 : 'text : ":" | 10 : 'text : 'source | 17 : 'text : 'LINE | 22 : 'term : "/clause" | 30 : 'term : "/line" |} |}

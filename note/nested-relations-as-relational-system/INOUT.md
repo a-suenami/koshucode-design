@@ -47,6 +47,9 @@ Command `koshu DATA.k flat.k` produces:
 **    DATA.k
 **    flat.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- R  /d 100  /c 90  /a 10
 |-- R  /d 90  /c 80  /a 10
@@ -96,6 +99,9 @@ Command `koshu DATA.k nested.k` produces:
 **  INPUT
 **    DATA.k
 **    nested.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- S  /nr {| /d : /c : /a | 100 : 90 : 10 | 90 : 80 : 10 | 110 : 90 : 20 |}  /nq {| /b : /c | 40 : 80 | 40 : 90 | 50 : 80 | 60 : 90 |}  /np {| /a : /b | 10 : 40 | 10 : 50 | 20 : 60 |}

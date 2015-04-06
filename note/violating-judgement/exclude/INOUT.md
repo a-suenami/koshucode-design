@@ -45,6 +45,9 @@ Command `koshu exclude.k` exits with 1 and produces:
 **  INPUT
 **    exclude.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-V P-EXCLUDE-X  /x 1  /y 10
 |-V P-EXCLUDE-X  /x 1  /y 20
@@ -139,6 +142,9 @@ Command `koshu exclude.k XY.k` exits with 1 and produces:
 **    exclude.k
 **    XY.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-V P-EXCLUDE-Y  /x 3  /y 40
 
@@ -217,6 +223,9 @@ Command `koshu exclude.k XY.k Y40.k` produces:
 **    exclude.k
 **    XY.k
 **    Y40.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 **

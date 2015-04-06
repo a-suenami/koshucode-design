@@ -34,6 +34,9 @@ Command `koshu date-part.k` produces:
 **  INPUT
 **    date-part.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /monthly 2014-12-15  /weekly 2014-#51-1  /yearly 2014-##349
 |-- P  /monthly 2014-12-16  /weekly 2014-#51-2  /yearly 2014-##350
@@ -131,6 +134,9 @@ Command `koshu diff.k` produces:
 **
 **  INPUT
 **    diff.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- POS  /x 2014-10-01 00:30  /y 2014-10-01 00:30  /z |00:00|
@@ -232,6 +238,9 @@ Command `koshu notation.k` produces:
 **
 **  INPUT
 **    notation.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- Q  /time 2014-07  /type [- time month -]

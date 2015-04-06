@@ -42,6 +42,9 @@ Command `koshu lattice.k` produces:
 **  INPUT
 **    lattice.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- C  /w 20  /x 100
 |-- C  /w 30  /x 100

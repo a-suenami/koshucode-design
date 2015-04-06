@@ -40,6 +40,9 @@ Command `koshu calc.k A.k` produces:
 **    calc.k
 **    A.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- R  /c 80  /a 10  /b 40
 
@@ -78,6 +81,9 @@ Command `koshu calc.k B.k` produces:
 **    calc.k
 **    B.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- R  /c 80  /a 10  /b 40
 |-- R  /c 80  /a 10  /b 50
@@ -113,6 +119,9 @@ Command `koshu calc.k C.k` produces:
 **  INPUT
 **    calc.k
 **    C.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 *** no judges

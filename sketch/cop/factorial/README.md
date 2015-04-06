@@ -82,6 +82,9 @@ Command `koshu factorial.k` produces:
 **  INPUT
 **    factorial.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- D  /n 0  /fact 1
 |-- D  /n 1  /fact 1

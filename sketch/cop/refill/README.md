@@ -33,6 +33,9 @@ Command `koshu refill.k` produces:
 **  INPUT
 **    refill.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /x 21  /y 88
 

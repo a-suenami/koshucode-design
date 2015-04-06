@@ -102,6 +102,9 @@ Command `koshu bcnf-output.k BCNF-DATA.k` produces:
 **    bcnf-output.k
 **    BCNF-DATA.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- NEAREST-SHOP  /person 'Fuller  /shop-type 'Optician  /nearest-shop "Eagle Eye"
 |-- NEAREST-SHOP  /person 'Davidson  /shop-type 'Optician  /nearest-shop "Eagle Eye"
@@ -207,6 +210,9 @@ Command `koshu bcnf-output.k BCNF-DATA.k BCNF-VIOLATED.k` exits with 1 and produ
 **    bcnf-output.k
 **    BCNF-DATA.k
 **    BCNF-VIOLATED.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-V FD-OF-NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop "Sweeney Todd's"

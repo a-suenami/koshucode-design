@@ -32,6 +32,9 @@ Command `koshu term-name.k` produces:
 **  INPUT
 **    term-name.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /x 1  /y 10  /z 50
 |-- P  /x 1  /y 20

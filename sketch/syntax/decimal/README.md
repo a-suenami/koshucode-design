@@ -51,6 +51,9 @@ Command `koshu decimal.k` produces:
 **  INPUT
 **    decimal.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /n 0
 |-- P  /n 1

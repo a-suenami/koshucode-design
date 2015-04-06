@@ -55,6 +55,9 @@ Command `koshu comment.k` produces:
 **  INPUT
 **    comment.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /y 20  /x 10
 |-- Q  /y 40  /x 20

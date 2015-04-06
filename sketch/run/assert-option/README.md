@@ -34,6 +34,9 @@ Command `koshu backward.k` produces:
 **  INPUT
 **    backward.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P1  /x 0  /y 10  /z 50
 |-- P1  /x 1  /y 20  /z 50
@@ -86,6 +89,9 @@ Command `koshu empty.k` produces:
 **  INPUT
 **    empty.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P1  /x 0  /y 10
 |-- P1  /x 1
@@ -134,6 +140,9 @@ Command `koshu forward.k` produces:
 **
 **  INPUT
 **    forward.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- P1  /x 0  /y 10  /z 50
@@ -188,6 +197,9 @@ Command `koshu order.k` produces:
 **
 **  INPUT
 **    order.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- P1  /x 0  /y 10
@@ -244,6 +256,9 @@ Command `koshu table.k` produces:
 **
 **  INPUT
 **    table.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- P1  /x 0  /y 10  /z 50

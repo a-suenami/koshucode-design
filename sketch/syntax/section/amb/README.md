@@ -120,6 +120,9 @@ Command `koshu unused-inside.k` produces:
 **  INPUT
 **    unused-inside.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /x 0  /y 2
 |-- P  /x 1  /y 3
@@ -164,6 +167,9 @@ Command `koshu unused-outside.k` produces:
 **
 **  INPUT
 **    unused-outside.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- P  /x 0  /y 2

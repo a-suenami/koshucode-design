@@ -44,6 +44,9 @@ Command `koshu slice.k` produces:
 **  INPUT
 **    slice.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- GROUP  /a 10  /b 40  /g {| /b : /c | 40 : 80 | 40 : 70 |}
 |-- GROUP  /a 10  /b 50  /g {| /b : /c | 50 : 90 |}

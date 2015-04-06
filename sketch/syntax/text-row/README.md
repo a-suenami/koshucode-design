@@ -40,6 +40,9 @@ Command `koshu text-row.k` produces:
 **  INPUT
 **    text-row.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- ROW  /n 3  /x 'aaa
 |-- ROW  /n 5  /x 'aaabb

@@ -52,6 +52,9 @@ Command `koshu DATA.k n-triples.k` produces:
 **    DATA.k
 **    n-triples.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- N-TRIPLES  /s "http://biglynx.co.uk/people/dave-smith"  /p "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"  /o "http://xmlns.com/foaf/0.1/Person"
 |-- N-TRIPLES  /s "http://biglynx.co.uk/people/dave-smith"  /p "http://xmlns.com/foaf/0.1/name"  /o "Dave Smith"
@@ -87,6 +90,9 @@ Command `koshu DATA.k rdf.k` produces:
 **  INPUT
 **    DATA.k
 **    rdf.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 short
@@ -134,6 +140,9 @@ Command `koshu DATA.k turtle.k` produces:
 **  INPUT
 **    DATA.k
 **    turtle.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 short

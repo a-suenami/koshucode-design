@@ -34,6 +34,9 @@ Command `koshu between.k` produces:
 **  INPUT
 **    between.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- A  /n 5
 |-- A  /n 6

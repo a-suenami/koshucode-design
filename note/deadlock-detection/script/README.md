@@ -94,6 +94,9 @@ Command `koshu deadlock.k fine.k` produces:
 **    deadlock.k
 **    fine.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 *** no judges
 
@@ -133,6 +136,9 @@ Command `koshu deadlock.k many.k` produces:
 **  INPUT
 **    deadlock.k
 **    many.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- NODE-SET  /node-set { 'A : 'D : 'B }
@@ -183,6 +189,9 @@ Command `koshu deadlock.k one.k` produces:
 **  INPUT
 **    deadlock.k
 **    one.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- NODE-SET  /node-set { 'B : 'E : 'D }

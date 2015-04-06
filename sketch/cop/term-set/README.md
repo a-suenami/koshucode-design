@@ -56,6 +56,9 @@ Command `koshu term-set.k` produces:
 **  INPUT
 **    term-set.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- INTERP  /judge 'S  /interp <<< Supplier /sno named /sname is under contract. The supplier has status value /status , and is located in the /city .  >>>
 |-- INTERP  /judge 'P  /interp <<< Parts /pno named /pname are managed. Its color is /color , weight is /weight , and the parts are kept in the /city .  >>>

@@ -31,6 +31,9 @@ Command `koshu number.k` produces:
 **  INPUT
 **    number.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- PN  /n 1  /x 3  /y 10
 |-- PN  /n 2  /x 2  /y 20
@@ -93,6 +96,9 @@ Command `koshu rank.k` produces:
 **
 **  INPUT
 **    rank.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- GAP-RANK  /n 1  /x 1  /y 0

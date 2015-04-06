@@ -41,6 +41,9 @@ Command `koshu DATA.k nest.k` produces:
 **    DATA.k
 **    nest.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q1  /g {| /b : /c | 50 : 90 | 40 : 80 |}  /a 10
 |-- Q1  /g {| /b : /c | 60 : 70 |}  /a 20
@@ -118,6 +121,9 @@ Command `koshu DATA.k slice.k` produces:
 **    DATA.k
 **    slice.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- SLICE-1  /r {| /a : /b : /c | 10 : 40 : 80 |}  /a 10  /b 40  /c 80
 |-- SLICE-1  /r {| /a : /b : /c | 10 : 50 : 90 |}  /a 10  /b 50  /c 90
@@ -187,6 +193,9 @@ Command `koshu DATA.k unnest.k` produces:
 **  INPUT
 **    DATA.k
 **    unnest.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- R0  /g {| /b : /c | 50 : 90 | 40 : 80 |}  /a 10

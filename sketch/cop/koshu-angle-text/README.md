@@ -29,6 +29,9 @@ Command `koshu koshu-angle-text.k` produces:
 **  INPUT
 **    koshu-angle-text.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- ANGLE  /name '<colon>  /text ":"  /code [ 58 ]
 |-- ANGLE  /name '<comma>  /text ","  /code [ 44 ]

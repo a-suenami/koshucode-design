@@ -70,6 +70,9 @@ Command `koshu boolean.k` produces:
 **  INPUT
 **    boolean.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- BOOLEAN  /a 'true  /b 'false
 

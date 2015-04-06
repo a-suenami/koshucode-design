@@ -47,6 +47,9 @@ Command `koshu join-up.k` produces:
 **  INPUT
 **    join-up.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- S  /a 1  /b 10  /g {| /b : /c | 10 : 45 | 10 : 40 |}  /h {| /a : /c | 1 : 55 | 1 : 50 |}
 |-- S  /a 1  /b 12  /g {| /b : /c | 12 : 50 |}  /h {| /a : /c | 1 : 55 | 1 : 50 |}

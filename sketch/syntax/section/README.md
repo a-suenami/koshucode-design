@@ -78,6 +78,9 @@ Command `koshu section.k` produces:
 **  INPUT
 **    section.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /x 12
 |-- Q  /x 14

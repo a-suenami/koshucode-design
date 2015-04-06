@@ -55,6 +55,9 @@ Command `koshu DATA.k maybe.k` produces:
 **    DATA.k
 **    maybe.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- MAYBE  /a 10  /b 40
 |-- MAYBE  /a 10  /b 50  /c 80
@@ -87,6 +90,9 @@ Command `koshu DATA.k maybe-liner.k` produces:
 **  INPUT
 **    DATA.k
 **    maybe-liner.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- MAYBE-LINER  /a 10  /b 40
@@ -121,6 +127,9 @@ Command `koshu DATA.k copy-maybe.k` produces:
 **    DATA.k
 **    copy-maybe.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- COPY-MAYBE  /a 10  /b 40
 |-- COPY-MAYBE  /a 10  /b 50  /c 80
@@ -154,6 +163,9 @@ Command `koshu DATA.k once.k` produces:
 **    DATA.k
 **    once.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- ONCE  /a 10  /b 40
 |-- ONCE  /a 10  /b 50  /c 80
@@ -186,6 +198,9 @@ Command `koshu DATA.k both.k` produces:
 **  INPUT
 **    DATA.k
 **    both.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- BOTH  /a 10  /b 40

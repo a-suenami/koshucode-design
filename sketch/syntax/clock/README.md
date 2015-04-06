@@ -39,6 +39,9 @@ Command `koshu notation.k` produces:
 **  INPUT
 **    notation.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- Q  /clock |00:00:10|
 |-- Q  /clock |00:00:20|

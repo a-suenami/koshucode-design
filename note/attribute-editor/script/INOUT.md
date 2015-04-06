@@ -59,6 +59,9 @@ Command `koshu DATA.k add.k` produces:
 **    DATA.k
 **    add.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- OP-1  /a 1  /b 30  /c 120
 
@@ -97,6 +100,9 @@ Command `koshu DATA.k fill.k` produces:
 **  INPUT
 **    DATA.k
 **    fill.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- POS-1  /a 1  /b 20  /c 100
@@ -148,6 +154,9 @@ Command `koshu DATA.k opt.k` produces:
 **    DATA.k
 **    opt.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- KEY-1  /a 1  /b 30  /c 120
 
@@ -194,6 +203,9 @@ Command `koshu DATA.k slot.k` produces:
 **  INPUT
 **    DATA.k
 **    slot.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- AB-1  /a 1  /b 30  /c 120

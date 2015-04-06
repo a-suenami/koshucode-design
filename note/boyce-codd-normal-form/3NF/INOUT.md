@@ -81,6 +81,9 @@ Command `koshu 3nf-output.k 3NF-DATA.k` produces:
 **    3nf-output.k
 **    3NF-DATA.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- SHOP-NEAR-PERSON  /person 'Davidson  /nearest-shop "Eagle Eye"
 |-- SHOP-NEAR-PERSON  /person 'Davidson  /nearest-shop 'Snippets
@@ -141,6 +144,9 @@ Command `koshu 3nf-output.k 3NF-VIOLATED.k` exits with 1 and produces:
 **  INPUT
 **    3nf-output.k
 **    3NF-VIOLATED.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-V FD-OF-SHOP-TYPE  /shop "Doughy's"  /shop-type 'Hairdresser

@@ -45,6 +45,9 @@ Command `koshu foo.k` produces:
 **  INPUT
 **    foo.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- BAR  /z 120  /x 1  /y 20
 |-- BAR  /z 110  /x 1  /y 20

@@ -73,6 +73,9 @@ Command `koshu eqqq.k` produces:
 **  INPUT
 **    eqqq.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 **
 **  SUMMARY

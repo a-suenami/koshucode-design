@@ -28,6 +28,9 @@ Command `koshu judge.k` produces:
 **  INPUT
 **    judge.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- B  /x 1  /y 10
 |-- B  /x 1  /y 20
@@ -77,6 +80,9 @@ Command `koshu maybe.k` produces:
 **
 **  INPUT
 **    maybe.k
+**
+**  OUTPUT
+**    <stdout>
 **
 
 |-- C  /z 60  /x 1  /y 20

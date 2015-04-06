@@ -58,6 +58,9 @@ Command `koshu bar.k koshu-source.k foo.k` produces:
 **    koshu-source.k
 **    foo.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- P  /x 3  /y 30
 |-- P  /x 1  /y 10
