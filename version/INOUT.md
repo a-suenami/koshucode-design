@@ -134,6 +134,7 @@ about /major 0
 |-- VERSION  /minor 103  /date 2015-03-15  /summary "表明属性を二重ハイフンに変更"
 |-- VERSION  /minor 104  /date 2015-03-23  /summary "資源全体に対するオプションを導入"
 |-- VERSION  /minor 105  /date 2015-04-02  /summary "甲州記法のフィルタ・コマンドを実装"
+|-- VERSION  /minor 106  /date 2015-04-08  /summary "output 節を導入"
 
 ```
 
@@ -280,12 +281,14 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 104  /date 2015-03-23  /summary '資源全体に対するオプションを導入
 |-- VERSION  /major 0  /minor 105  /date 2015-04-02  /summary "甲州記法のフィルタ・コマンドを実装"
 
-*** 105 judges
+|-- VERSION  /major 0  /minor 106  /date 2015-04-08  /summary "output 節を導入"
+
+*** 106 judges
 
 **
 **  SUMMARY
-**     105 judges on VERSION
-**     105 judges in total
+**     106 judges on VERSION
+**     106 judges in total
 **
 ```
 
