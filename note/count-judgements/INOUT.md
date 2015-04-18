@@ -276,6 +276,7 @@ Command `koshu count.k` produces:
 
 **
 **  SUMMARY
+**      no judges on C-0
 **       1 judge  on C-1
 **     135 judges on C-135
 **      15 judges on C-15

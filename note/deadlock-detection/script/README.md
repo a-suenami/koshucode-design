@@ -104,6 +104,8 @@ Command `koshu deadlock.k fine.k` produces:
 
 **
 **  SUMMARY
+**      no judges on NODE
+**      no judges on NODE-SET
 **      no judges in total
 **
 ```

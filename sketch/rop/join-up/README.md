@@ -97,6 +97,7 @@ TABLE : S
 **
 **  SUMMARY
 **       3 judges on S
+**      no judges on T
 **       3 judges on U
 **       4 judges on V
 **      10 judges in total

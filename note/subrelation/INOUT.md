@@ -88,6 +88,7 @@ Command `koshu sub.k` produces:
 **       1 judge  on B-SUB-A
 **       2 judges on C-SUB-A
 **       2 judges on CY-SOME-A
+**      no judges on CY-SUB-A
 **       7 judges in total
 **
 ```

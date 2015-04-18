@@ -105,6 +105,8 @@ Command `koshu 3nf-output.k 3NF-DATA.k` produces:
 
 **
 **  SUMMARY
+**      no judges on FD-OF-NEAREST-SHOP
+**      no judges on FD-OF-SHOP-TYPE
 **       6 judges on SHOP-NEAR-PERSON
 **       5 judges on SHOP-TYPE
 **      11 judges in total
@@ -156,7 +158,10 @@ Command `koshu 3nf-output.k 3NF-VIOLATED.k` exits with 1 and produces:
 
 **
 **  SUMMARY (VIOLATED)
+**      no judges on FD-OF-NEAREST-SHOP
 **       2 judges on FD-OF-SHOP-TYPE
+**      no judges on SHOP-NEAR-PERSON
+**      no judges on SHOP-TYPE
 **       2 judges in total
 **
 ```

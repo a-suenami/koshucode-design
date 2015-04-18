@@ -129,6 +129,7 @@ Command `koshu calc.k C.k` produces:
 
 **
 **  SUMMARY
+**      no judges on R
 **      no judges in total
 **
 ```

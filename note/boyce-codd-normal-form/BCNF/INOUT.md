@@ -118,6 +118,8 @@ Command `koshu bcnf-output.k BCNF-DATA.k` produces:
 
 **
 **  SUMMARY
+**      no judges on FD-OF-NEAREST-SHOP
+**      no judges on FD-OF-SHOP-TYPE
 **       6 judges on NEAREST-SHOP
 **       6 judges in total
 **
@@ -223,6 +225,8 @@ Command `koshu bcnf-output.k BCNF-DATA.k BCNF-VIOLATED.k` exits with 1 and produ
 **
 **  SUMMARY (VIOLATED)
 **       2 judges on FD-OF-NEAREST-SHOP
+**      no judges on FD-OF-SHOP-TYPE
+**      no judges on NEAREST-SHOP
 **       2 judges in total
 **
 ```

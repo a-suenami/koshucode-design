@@ -156,7 +156,9 @@ Command `koshu exclude.k XY.k` exits with 1 and produces:
 
 **
 **  SUMMARY (VIOLATED)
+**      no judges on MY-P-EXCLUDE-X
 **       1 judge  on MY-P-EXCLUDE-Y
+**      no judges on P-EXCLUDE-X
 **       1 judge  on P-EXCLUDE-Y
 **       2 judges in total
 **
@@ -230,6 +232,10 @@ Command `koshu exclude.k XY.k Y40.k` produces:
 
 **
 **  SUMMARY
+**      no judges on MY-P-EXCLUDE-X
+**      no judges on MY-P-EXCLUDE-Y
+**      no judges on P-EXCLUDE-X
+**      no judges on P-EXCLUDE-Y
 **      no judges in total
 **
 ```
