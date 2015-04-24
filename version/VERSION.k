@@ -116,4 +116,5 @@ about /major 0
 |-- VERSION  /minor 104  /date 2015-03-23  /summary "資源全体に対するオプションを導入"
 |-- VERSION  /minor 105  /date 2015-04-02  /summary "甲州記法のフィルタ・コマンドを実装"
 |-- VERSION  /minor 106  /date 2015-04-08  /summary "output 節を導入"
+|-- VERSION  /minor 107  /date 2015-04-23  /summary "交わりや結びの実装を修正"
 
