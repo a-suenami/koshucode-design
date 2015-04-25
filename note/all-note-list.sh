@@ -1,2 +1,2 @@
 #!/bin/sh
-koshu all-note-list.k */NOTE.k > ALL-NOTE.k
+koshu all-note-list.k */NOTE.k
