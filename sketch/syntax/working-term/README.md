@@ -52,8 +52,8 @@ Command `koshu working-term.k` produces:
 
 *** 3 judges
 
-|-- R  /x 1  /ys [ 20 : 10 ]  /1= {| /y | 20 | 10 |}
-|-- R  /x 2  /ys [ 30 ]  /1= {| /y | 30 |}
+|-- R  /x 1  /ys [ 20 : 10 ]  /1= {| /y [ 20 ] [ 10 ] |}
+|-- R  /x 2  /ys [ 30 ]  /1= {| /y [ 30 ] |}
 
 *** 2 judges
 

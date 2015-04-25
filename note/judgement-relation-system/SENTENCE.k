@@ -56,6 +56,6 @@
 **    <<< 第 /sect 節は段落集合 /par-set に属す番号の段落から構成される。>>>
 
 |-- SECTION-PARAGRAPH  /sect 1  /par-set { 1 }
-|-- SECTION-PARAGRAPH  /sect 2  /par-set { 2 : 3 : 4 : 5 }
-|-- SECTION-PARAGRAPH  /sect 3  /par-set { 6 : 7 : 8 }
-|-- SECTION-PARAGRAPH  /sect 4  /par-set { 9 : 10 }
+|-- SECTION-PARAGRAPH  /sect 2  /par-set { 2 | 3 | 4 | 5 }
+|-- SECTION-PARAGRAPH  /sect 3  /par-set { 6 | 7 | 8 }
+|-- SECTION-PARAGRAPH  /sect 4  /par-set { 9 | 10 }

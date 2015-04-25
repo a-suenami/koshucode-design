@@ -48,18 +48,18 @@ Command `koshu slice.k` produces:
 **    <stdout>
 **
 
-|-- GROUP  /a 10  /b 40  /g {| /b : /c | 40 : 80 | 40 : 70 |}
-|-- GROUP  /a 10  /b 50  /g {| /b : /c | 50 : 90 |}
+|-- GROUP  /a 10  /b 40  /g {| /b /c [ 40 | 80 ] [ 40 | 70 ] |}
+|-- GROUP  /a 10  /b 50  /g {| /b /c [ 50 | 90 ] |}
 
 *** 2 judges
 
-|-- GROUP2  /a 10  /b 40  /r {| /b : /c | 40 : 80 | 40 : 70 |}
-|-- GROUP2  /a 10  /b 50  /r {| /b : /c | 50 : 90 |}
+|-- GROUP2  /a 10  /b 40  /r {| /b /c [ 40 | 80 ] [ 40 | 70 ] |}
+|-- GROUP2  /a 10  /b 50  /r {| /b /c [ 50 | 90 ] |}
 
 *** 2 judges
 
-|-- SLICE  /a 10  /b 40  /r {| /a : /b | 10 : 40 |}
-|-- SLICE  /a 10  /b 50  /r {| /a : /b | 10 : 50 |}
+|-- SLICE  /a 10  /b 40  /r {| /a /b [ 10 | 40 ] |}
+|-- SLICE  /a 10  /b 50  /r {| /a /b [ 10 | 50 ] |}
 
 *** 2 judges
 
