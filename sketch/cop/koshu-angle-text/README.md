@@ -36,7 +36,7 @@ Command `koshu koshu-angle-text.k` produces:
 |-- ANGLE  /name '<colon>  /text ":"  /code [ 58 ]
 |-- ANGLE  /name '<comma>  /text ","  /code [ 44 ]
 |-- ANGLE  /name '<cr>  /text <cr>  /code [ 13 ]
-|-- ANGLE  /name '<crlf>  /text <crlf>  /code [ 13 : 10 ]
+|-- ANGLE  /name '<crlf>  /text <crlf>  /code [ 13 | 10 ]
 |-- ANGLE  /name '<dot>  /text '.  /code [ 46 ]
 
 |-- ANGLE  /name '<lf>  /text <lf>  /code [ 10 ]
@@ -58,7 +58,7 @@ TABLE : ANGLE
   '<colon>       ":"      [ 58 ]
   '<comma>       ","      [ 44 ]
   '<cr>          <cr>     [ 13 ]
-  '<crlf>        <crlf>   [ 13 : 10 ]
+  '<crlf>        <crlf>   [ 13 | 10 ]
   '<dot>         '.       [ 46 ]
   '<lf>          <lf>     [ 10 ]
   '<q>           "'"      [ 39 ]

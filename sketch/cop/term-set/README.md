@@ -66,9 +66,9 @@ Command `koshu term-set.k` produces:
 
 *** 3 judges
 
-|-- TERMS  /judge 'S  /terms { '/sno : '/sname : '/status : '/city }
-|-- TERMS  /judge 'P  /terms { '/pno : '/pname : '/color : '/weight : '/city }
-|-- TERMS  /judge 'SP  /terms { '/sno : '/pno : '/qty }
+|-- TERMS  /judge 'S  /terms { '/sno | '/sname | '/status | '/city }
+|-- TERMS  /judge 'P  /terms { '/pno | '/pname | '/color | '/weight | '/city }
+|-- TERMS  /judge 'SP  /terms { '/sno | '/pno | '/qty }
 
 *** 3 judges
 

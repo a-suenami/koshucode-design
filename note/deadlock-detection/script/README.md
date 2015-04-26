@@ -143,9 +143,9 @@ Command `koshu deadlock.k many.k` produces:
 **    <stdout>
 **
 
-|-- NODE-SET  /node-set { 'A : 'D : 'B }
-|-- NODE-SET  /node-set { 'A : 'D : 'C }
-|-- NODE-SET  /node-set { 'A : 'D : 'C : 'B }
+|-- NODE-SET  /node-set { 'A | 'D | 'B }
+|-- NODE-SET  /node-set { 'A | 'D | 'C }
+|-- NODE-SET  /node-set { 'A | 'D | 'C | 'B }
 
 *** 3 judges
 
@@ -196,7 +196,7 @@ Command `koshu deadlock.k one.k` produces:
 **    <stdout>
 **
 
-|-- NODE-SET  /node-set { 'B : 'E : 'D }
+|-- NODE-SET  /node-set { 'B | 'E | 'D }
 
 *** 1 judge 
 
