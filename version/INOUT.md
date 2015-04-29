@@ -136,6 +136,7 @@ about /major 0
 |-- VERSION  /minor 105  /date 2015-04-02  /summary "甲州記法のフィルタ・コマンドを実装"
 |-- VERSION  /minor 106  /date 2015-04-08  /summary "output 節を導入"
 |-- VERSION  /minor 107  /date 2015-04-23  /summary "交わりや結びの実装を修正"
+|-- VERSION  /minor 108  /date 2015-04-28  /summary "項目内容リストの構文を変更"
 
 ```
 
@@ -284,13 +285,14 @@ Command `koshu list-version.k VERSION.k` produces:
 
 |-- VERSION  /major 0  /minor 106  /date 2015-04-08  /summary "output 節を導入"
 |-- VERSION  /major 0  /minor 107  /date 2015-04-23  /summary '交わりや結びの実装を修正
+|-- VERSION  /major 0  /minor 108  /date 2015-04-28  /summary '項目内容リストの構文を変更
 
-*** 107 judges
+*** 108 judges
 
 **
 **  SUMMARY
-**     107 judges on VERSION
-**     107 judges in total
+**     108 judges on VERSION
+**     108 judges in total
 **
 ```
 
