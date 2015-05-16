@@ -26,7 +26,7 @@
 p : source P /a /b
 q : source Q /b /c
 
-|== GROUP : p | group /g q
+|== GROUP : p | group q -to /g
   --forward /a /b
 
 |== GROUP2 : p | slice /r ( meet q | pick-term q )

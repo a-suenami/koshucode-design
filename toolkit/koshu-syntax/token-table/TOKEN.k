@@ -87,9 +87,9 @@
 
 *** |== TOKEN
 ***   : clause
-***   | group /line line
+***   | group line -to /line
 ***   | for /line ( cut /clause
-***         | group /token token
+***         | group token -to /token
 ***         | for /token ( cut /line )
 ***         | fore-line )
 ***   --order --table --forward /clause /clause-type
@@ -118,9 +118,11 @@
 |-- TOKEN  /line 16  /column 3  /token-type 'space  /cont " "
 |-- TOKEN  /line 16  /column 4  /token-type 'text  /token-subtype 'raw  /cont 'group
 |-- TOKEN  /line 16  /column 9  /token-type 'space  /cont " "
-|-- TOKEN  /line 16  /column 10  /token-type 'term  /cont "/line"
-|-- TOKEN  /line 16  /column 15  /token-type 'space  /cont " "
-|-- TOKEN  /line 16  /column 16  /token-type 'text  /token-subtype 'raw  /cont 'line
+|-- TOKEN  /line 16  /column 10  /token-type 'text  /token-subtype 'raw  /cont 'line
+|-- TOKEN  /line 16  /column 14  /token-type 'space  /cont " "
+|-- TOKEN  /line 16  /column 15  /token-type 'text  /token-subtype 'raw  /cont '-to
+|-- TOKEN  /line 16  /column 18  /token-type 'space  /cont " "
+|-- TOKEN  /line 16  /column 19  /token-type 'term  /cont "/line"
 
 |-- TOKEN  /line 17  /column 0  /token-type 'space  /cont "  "
 |-- TOKEN  /line 17  /column 2  /token-type 'text  /token-subtype 'raw  /cont "|"
@@ -140,9 +142,11 @@
 |-- TOKEN  /line 18  /column 9  /token-type 'space  /cont " "
 |-- TOKEN  /line 18  /column 10  /token-type 'text  /token-subtype 'raw  /cont 'group
 |-- TOKEN  /line 18  /column 15  /token-type 'space  /cont " "
-|-- TOKEN  /line 18  /column 16  /token-type 'term  /cont "/token"
-|-- TOKEN  /line 18  /column 22  /token-type 'space  /cont " "
-|-- TOKEN  /line 18  /column 23  /token-type 'text  /token-subtype 'raw  /cont 'token
+|-- TOKEN  /line 18  /column 16  /token-type 'text  /token-subtype 'raw  /cont 'token
+|-- TOKEN  /line 18  /column 21  /token-type 'space  /cont " "
+|-- TOKEN  /line 18  /column 22  /token-type 'text  /token-subtype 'raw  /cont '-to
+|-- TOKEN  /line 18  /column 25  /token-type 'space  /cont " "
+|-- TOKEN  /line 18  /column 26  /token-type 'term  /cont "/token"
 
 |-- TOKEN  /line 19  /column 0  /token-type 'space  /cont "        "
 |-- TOKEN  /line 19  /column 8  /token-type 'text  /token-subtype 'raw  /cont "|"

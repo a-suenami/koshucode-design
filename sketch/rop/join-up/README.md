@@ -29,8 +29,8 @@ p : source P /a /b
 q : source Q /b /c
 r : source R /a /c
 
-s : p | group /g q
-      | group /h r
+s : p | group q -to /g
+      | group r -to /h
 
 |== S : s  --table --forward /a /b /g /h
 

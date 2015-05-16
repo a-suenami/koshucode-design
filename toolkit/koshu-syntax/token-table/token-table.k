@@ -13,9 +13,9 @@ token   : source TOKEN /line /column /token-type /cont
 
 |== TOKEN
   : clause
-  | group /line line
+  | group line -to /line
   | for /line ( cut /clause
-        | group /token token
+        | group token -to /token
         | for /token ( cut /line )
         | fore-line )
   --order --table --forward /clause /clause-type

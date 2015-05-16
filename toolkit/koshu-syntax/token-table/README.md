@@ -24,9 +24,9 @@ token   : source TOKEN /line /column /token-type /cont
 
 |== TOKEN
   : clause
-  | group /line line
+  | group line -to /line
   | for /line ( cut /clause
-        | group /token token
+        | group token -to /token
         | for /token ( cut /line )
         | fore-line )
   --order --table --forward /clause /clause-type
@@ -128,9 +128,9 @@ fore-line : pick /line /token
 
 *** |== TOKEN
 ***   : clause
-***   | group /line line
+***   | group line -to /line
 ***   | for /line ( cut /clause
-***         | group /token token
+***         | group token -to /token
 ***         | for /token ( cut /line )
 ***         | fore-line )
 ***   --order --table --forward /clause /clause-type
@@ -159,9 +159,11 @@ fore-line : pick /line /token
 |-- TOKEN  /line 16  /column 3  /token-type 'space  /cont " "
 |-- TOKEN  /line 16  /column 4  /token-type 'text  /token-subtype 'raw  /cont 'group
 |-- TOKEN  /line 16  /column 9  /token-type 'space  /cont " "
-|-- TOKEN  /line 16  /column 10  /token-type 'term  /cont "/line"
-|-- TOKEN  /line 16  /column 15  /token-type 'space  /cont " "
-|-- TOKEN  /line 16  /column 16  /token-type 'text  /token-subtype 'raw  /cont 'line
+|-- TOKEN  /line 16  /column 10  /token-type 'text  /token-subtype 'raw  /cont 'line
+|-- TOKEN  /line 16  /column 14  /token-type 'space  /cont " "
+|-- TOKEN  /line 16  /column 15  /token-type 'text  /token-subtype 'raw  /cont '-to
+|-- TOKEN  /line 16  /column 18  /token-type 'space  /cont " "
+|-- TOKEN  /line 16  /column 19  /token-type 'term  /cont "/line"
 
 |-- TOKEN  /line 17  /column 0  /token-type 'space  /cont "  "
 |-- TOKEN  /line 17  /column 2  /token-type 'text  /token-subtype 'raw  /cont "|"
@@ -181,9 +183,11 @@ fore-line : pick /line /token
 |-- TOKEN  /line 18  /column 9  /token-type 'space  /cont " "
 |-- TOKEN  /line 18  /column 10  /token-type 'text  /token-subtype 'raw  /cont 'group
 |-- TOKEN  /line 18  /column 15  /token-type 'space  /cont " "
-|-- TOKEN  /line 18  /column 16  /token-type 'term  /cont "/token"
-|-- TOKEN  /line 18  /column 22  /token-type 'space  /cont " "
-|-- TOKEN  /line 18  /column 23  /token-type 'text  /token-subtype 'raw  /cont 'token
+|-- TOKEN  /line 18  /column 16  /token-type 'text  /token-subtype 'raw  /cont 'token
+|-- TOKEN  /line 18  /column 21  /token-type 'space  /cont " "
+|-- TOKEN  /line 18  /column 22  /token-type 'text  /token-subtype 'raw  /cont '-to
+|-- TOKEN  /line 18  /column 25  /token-type 'space  /cont " "
+|-- TOKEN  /line 18  /column 26  /token-type 'term  /cont "/token"
 
 |-- TOKEN  /line 19  /column 0  /token-type 'space  /cont "        "
 |-- TOKEN  /line 19  /column 8  /token-type 'text  /token-subtype 'raw  /cont "|"
@@ -256,7 +260,7 @@ Command `koshu token-table.k TOKEN.k` produces:
 |-- TOKEN  /clause 1  /clause-type 'relmap  /line {| /line /token [ 9 | {| /column /token-type /cont [ 0 | 'text | 'clause ] [ 8 | 'text | ":" ] [ 10 | 'text | 'source ] [ 17 | 'text | 'CLAUSE ] [ 24 | 'term | "/clause" ] [ 32 | 'term | "/clause-type" ] |} ] |}
 |-- TOKEN  /clause 2  /clause-type 'relmap  /line {| /line /token [ 10 | {| /column /token-type /cont [ 0 | 'text | 'line ] [ 8 | 'text | ":" ] [ 10 | 'text | 'source ] [ 17 | 'text | 'LINE ] [ 22 | 'term | "/clause" ] [ 30 | 'term | "/line" ] |} ] |}
 |-- TOKEN  /clause 3  /clause-type 'relmap  /line {| /line /token [ 11 | {| /column /token-type /cont [ 0 | 'text | 'token ] [ 8 | 'text | ":" ] [ 10 | 'text | 'source ] [ 17 | 'text | 'TOKEN ] [ 23 | 'term | "/line" ] [ 29 | 'term | "/column" ] [ 37 | 'term | "/token-type" ] [ 49 | 'term | "/cont" ] |} ] [ 12 | {| /column /token-type /cont [ 8 | 'text | "|" ] [ 10 | 'text | 'omit ] [ 15 | 'term | "/token-type" ] [ 27 | 'text | '= ] [ 29 | 'text | 'space ] |} ] |}
-|-- TOKEN  /clause 4  /clause-type 'assert  /line {| /line /token [ 14 | {| /column /token-type /cont [ 0 | 'text | "|==" ] [ 4 | 'text | 'TOKEN ] |} ] [ 15 | {| /column /token-type /cont [ 2 | 'text | ":" ] [ 4 | 'text | 'clause ] |} ] [ 16 | {| /column /token-type /cont [ 2 | 'text | "|" ] [ 4 | 'text | 'group ] [ 10 | 'term | "/line" ] [ 16 | 'text | 'line ] |} ] [ 17 | {| /column /token-type /cont [ 2 | 'text | "|" ] [ 4 | 'text | 'for ] [ 8 | 'term | "/line" ] [ 14 | 'open | "(" ] [ 16 | 'text | 'cut ] [ 20 | 'term | "/clause" ] |} ] [ 18 | {| /column /token-type /cont [ 8 | 'text | "|" ] [ 10 | 'text | 'group ] [ 16 | 'term | "/token" ] [ 23 | 'text | 'token ] |} ] [ 19 | {| /column /token-type /cont [ 8 | 'text | "|" ] [ 10 | 'text | 'for ] [ 14 | 'term | "/token" ] [ 21 | 'open | "(" ] [ 23 | 'text | 'cut ] [ 27 | 'term | "/line" ] [ 33 | 'close | ")" ] |} ] [ 20 | {| /column /token-type /cont [ 8 | 'text | "|" ] [ 10 | 'text | 'fore-line ] [ 20 | 'close | ")" ] |} ] [ 21 | {| /column /token-type /cont [ 2 | 'text | '--order ] [ 10 | 'text | '--table ] [ 18 | 'text | '--forward ] [ 28 | 'term | "/clause" ] [ 36 | 'term | "/clause-type" ] |} ] |}
+|-- TOKEN  /clause 4  /clause-type 'assert  /line {| /line /token [ 14 | {| /column /token-type /cont [ 0 | 'text | "|==" ] [ 4 | 'text | 'TOKEN ] |} ] [ 15 | {| /column /token-type /cont [ 2 | 'text | ":" ] [ 4 | 'text | 'clause ] |} ] [ 16 | {| /column /token-type /cont [ 2 | 'text | "|" ] [ 4 | 'text | 'group ] [ 10 | 'text | 'line ] [ 15 | 'text | '-to ] [ 19 | 'term | "/line" ] |} ] [ 17 | {| /column /token-type /cont [ 2 | 'text | "|" ] [ 4 | 'text | 'for ] [ 8 | 'term | "/line" ] [ 14 | 'open | "(" ] [ 16 | 'text | 'cut ] [ 20 | 'term | "/clause" ] |} ] [ 18 | {| /column /token-type /cont [ 8 | 'text | "|" ] [ 10 | 'text | 'group ] [ 16 | 'text | 'token ] [ 22 | 'text | '-to ] [ 26 | 'term | "/token" ] |} ] [ 19 | {| /column /token-type /cont [ 8 | 'text | "|" ] [ 10 | 'text | 'for ] [ 14 | 'term | "/token" ] [ 21 | 'open | "(" ] [ 23 | 'text | 'cut ] [ 27 | 'term | "/line" ] [ 33 | 'close | ")" ] |} ] [ 20 | {| /column /token-type /cont [ 8 | 'text | "|" ] [ 10 | 'text | 'fore-line ] [ 20 | 'close | ")" ] |} ] [ 21 | {| /column /token-type /cont [ 2 | 'text | '--order ] [ 10 | 'text | '--table ] [ 18 | 'text | '--forward ] [ 28 | 'term | "/clause" ] [ 36 | 'term | "/clause-type" ] |} ] |}
 |-- TOKEN  /clause 5  /clause-type 'relmap  /line {| /line /token [ 23 | {| /column /token-type /cont [ 0 | 'text | 'fore-line ] [ 10 | 'text | ":" ] [ 12 | 'text | 'pick ] [ 17 | 'term | "/line" ] [ 23 | 'term | "/token" ] |} ] |}
 
 *** 5 judges
@@ -326,8 +330,9 @@ TABLE : TOKEN
                              ------- ----------- ----------------
                              2       'text       "|"
                              4       'text       'group
-                             10      'term       "/line"
-                             16      'text       'line
+                             10      'text       'line
+                             15      'text       '-to
+                             19      'term       "/line"
                              
                        17    /column /token-type /cont
                              ------- ----------- ----------------
@@ -342,8 +347,9 @@ TABLE : TOKEN
                              ------- ----------- ----------------
                              8       'text       "|"
                              10      'text       'group
-                             16      'term       "/token"
-                             23      'text       'token
+                             16      'text       'token
+                             22      'text       '-to
+                             26      'term       "/token"
                              
                        19    /column /token-type /cont
                              ------- ----------- ----------------
