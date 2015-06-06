@@ -1,0 +1,3 @@
+-*- koshu -*-
+
+input "call.k"
