@@ -1,0 +1,15 @@
+./koshu-rts-stat.sh 0
+./koshu-rts-stat.sh 1
+./koshu-rts-stat.sh 2
+./koshu-rts-stat.sh 4
+./koshu-rts-stat.sh 8
+./koshu-rts-stat.sh 16
+./koshu-rts-stat.sh 32
+./koshu-rts-stat.sh 64
+./koshu-rts-stat.sh 128
+./koshu-rts-stat.sh 256
+./koshu-rts-stat.sh 512
+./koshu-rts-stat.sh 1024
+./koshu-rts-stat.sh 2048
+./koshu-rts-stat.sh 4096
+./koshu-rts-stat.sh 8192
