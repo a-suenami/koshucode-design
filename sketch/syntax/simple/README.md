@@ -79,18 +79,18 @@ Command `koshu slot.k` exits with 2 and produces:
 **  ABORTED  Dump token trees
 **  -------- ------------------------------------------------------ ---------
 **  Detail   TreeB BracketGroup : 10.4 TOpen "(" 10.16 TClose ")"
-**             TreeL : 10.6 TTerm TermTypePath ["x"]
+**             TreeL : 10.6 TTermN "x"
 **             TreeL : 10.9 TText TextRaw "+"
-**             TreeL : 13.5 TTerm TermTypePath ["y"]
+**             TreeL : 13.5 TTermN "y"
 **             TreeL : 13.8 TText TextRaw "+"
-**             TreeL : 13.10 TTerm TermTypePath ["z"]
+**             TreeL : 13.10 TTermN "z"
 **           TreeB BracketGroup : 11.4 TOpen "(" 11.17 TClose ")"
-**             TreeL : 11.6 TTerm TermTypePath ["x"]
+**             TreeL : 11.6 TTermN "x"
 **             TreeL : 11.9 TText TextRaw "+"
 **             TreeB BracketGroup : 14.6 TOpen "(" 14.16 TClose ")"
-**               TreeL : 14.8 TTerm TermTypePath ["y"]
+**               TreeL : 14.8 TTermN "y"
 **               TreeL : 14.11 TText TextRaw "+"
-**               TreeL : 14.13 TTerm TermTypePath ["z"]
+**               TreeL : 14.13 TTermN "z"
 **  Source   8 11 slot.k
 **           > dump-tree                                            .. relmap
 **           8 0 slot.k
@@ -130,14 +130,14 @@ Command `koshu term.k` exits with 2 and produces:
 **
 **  ABORTED  Dump token trees
 **  -------- ---------------------------------------------------- ---------
-**  Detail   TreeL : 11.4 TTerm TermTypePath ["a"]
+**  Detail   TreeL : 11.4 TTermN "a"
 **           TreeL : 12.4 TTerm TermTypePath ["b","c"]
 **           TreeL : 13.4 TTerm TermTypePath ["d","e","f"]
-**           TreeL : 15.4 TTerm TermTypePath ["z"]
+**           TreeL : 15.4 TTermN "z"
 **           TreeB BracketGroup : 15.7 TOpen "(" 15.17 TClose ")"
-**             TreeL : 15.9 TTerm TermTypePath ["x"]
+**             TreeL : 15.9 TTermN "x"
 **             TreeL : 15.12 TText TextRaw "+"
-**             TreeL : 15.14 TTerm TermTypePath ["y"]
+**             TreeL : 15.14 TTermN "y"
 **  Source   9 11 term.k
 **           > dump-tree                                          .. relmap
 **           9 0 term.k

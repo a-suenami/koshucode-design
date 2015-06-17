@@ -29,14 +29,14 @@ Command `koshu assn.k` exits with 2 and produces:
 **  -------- --------------------------------------------------- ---------
 **  Detail   TreeB BracketAssn : 5.4 TOpen "<<" 5.7 TClose ">>"
 **           TreeB BracketAssn : 6.4 TOpen "<<" 6.17 TClose ">>"
-**             TreeL : 6.7 TTerm TermTypePath ["a"]
+**             TreeL : 6.7 TTermN "a"
 **             TreeL : 6.10 TText TextRaw "1"
-**             TreeL : 6.12 TTerm TermTypePath ["b"]
+**             TreeL : 6.12 TTermN "b"
 **             TreeL : 6.15 TText TextRaw "2"
 **           TreeB BracketAssn : 7.4 TOpen "<<" 7.25 TClose ">>"
-**             TreeL : 7.7 TTerm TermTypePath ["a"]
+**             TreeL : 7.7 TTermN "a"
 **             TreeL : 7.10 TText TextRaw "1"
-**             TreeL : 7.12 TTerm TermTypePath ["b"]
+**             TreeL : 7.12 TTermN "b"
 **             TreeB BracketSet : 7.15 TOpen "{" 7.23 TClose "}"
 **               TreeL : 7.17 TText TextRaw "2"
 **               TreeL : 7.19 TText TextRaw ":"
@@ -228,9 +228,9 @@ Command `koshu rel.k` exits with 2 and produces:
 **           TreeB BracketRel : 6.4 TOpen "{|" 6.9 TClose "|}"
 **             TreeL : 6.7 TText TextRaw "|"
 **           TreeB BracketRel : 7.4 TOpen "{|" 7.31 TClose "|}"
-**             TreeL : 7.7 TTerm TermTypePath ["a"]
+**             TreeL : 7.7 TTermN "a"
 **             TreeL : 7.10 TText TextRaw ":"
-**             TreeL : 7.12 TTerm TermTypePath ["b"]
+**             TreeL : 7.12 TTermN "b"
 **             TreeL : 7.15 TText TextRaw "|"
 **             TreeL : 7.17 TText TextRaw "0"
 **             TreeL : 7.19 TText TextRaw ":"
@@ -240,14 +240,14 @@ Command `koshu rel.k` exits with 2 and produces:
 **             TreeL : 7.27 TText TextRaw ":"
 **             TreeL : 7.29 TText TextRaw "3"
 **           TreeB BracketRel : 8.4 TOpen "{|" 8.61 TClose "|}"
-**             TreeL : 8.7 TTerm TermTypePath ["a"]
+**             TreeL : 8.7 TTermN "a"
 **             TreeL : 8.10 TText TextRaw ":"
-**             TreeL : 8.12 TTerm TermTypePath ["b"]
+**             TreeL : 8.12 TTermN "b"
 **             TreeL : 8.15 TText TextRaw "|"
 **             TreeL : 8.17 TText TextRaw "0"
 **             TreeL : 8.19 TText TextRaw ":"
 **             TreeB BracketRel : 8.21 TOpen "{|" 8.35 TClose "|}"
-**               TreeL : 8.24 TTerm TermTypePath ["x"]
+**               TreeL : 8.24 TTermN "x"
 **               TreeL : 8.27 TText TextRaw "|"
 **               TreeL : 8.29 TText TextRaw "1"
 **               TreeL : 8.31 TText TextRaw ":"
@@ -256,7 +256,7 @@ Command `koshu rel.k` exits with 2 and produces:
 **             TreeL : 8.40 TText TextRaw "2"
 **             TreeL : 8.42 TText TextRaw ":"
 **             TreeB BracketRel : 8.44 TOpen "{|" 8.58 TClose "|}"
-**               TreeL : 8.47 TTerm TermTypePath ["x"]
+**               TreeL : 8.47 TTermN "x"
 **               TreeL : 8.50 TText TextRaw "|"
 **               TreeL : 8.52 TText TextRaw "3"
 **               TreeL : 8.54 TText TextRaw ":"
