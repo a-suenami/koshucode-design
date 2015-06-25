@@ -138,6 +138,7 @@ about /major 0
 |-- VERSION  /minor 107  /date 2015-04-23  /summary "交わりや結びの実装を修正"
 |-- VERSION  /minor 108  /date 2015-04-28  /summary "項目内容リストの構文を変更"
 |-- VERSION  /minor 109  /date 2015-05-24  /summary "甲州計算機に -x オプションを追加"
+|-- VERSION  /minor 110  /date 2015-06-18  /summary "メモリの使用量を改善"
 
 ```
 
@@ -288,13 +289,14 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 107  /date 2015-04-23  /summary '交わりや結びの実装を修正
 |-- VERSION  /major 0  /minor 108  /date 2015-04-28  /summary '項目内容リストの構文を変更
 |-- VERSION  /major 0  /minor 109  /date 2015-05-24  /summary "甲州計算機に -x オプションを追加"
+|-- VERSION  /major 0  /minor 110  /date 2015-06-18  /summary 'メモリの使用量を改善
 
-*** 109 judges
+*** 110 judges
 
 **
 **  SUMMARY
-**     109 judges on VERSION
-**     109 judges in total
+**     110 judges on VERSION
+**     110 judges in total
 **
 ```
 
