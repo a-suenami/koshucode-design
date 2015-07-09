@@ -120,4 +120,5 @@ about /major 0
 |-- VERSION  /minor 108  /date 2015-04-28  /summary "項目内容リストの構文を変更"
 |-- VERSION  /minor 109  /date 2015-05-24  /summary "甲州計算機に -x オプションを追加"
 |-- VERSION  /minor 110  /date 2015-06-18  /summary "メモリの使用量を改善"
+|-- VERSION  /minor 111  /date 2015-07-01  /summary "--about オプションつきの入力を実装"
 
