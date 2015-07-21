@@ -140,6 +140,7 @@ about /major 0
 |-- VERSION  /minor 109  /date 2015-05-24  /summary "甲州計算機に -x オプションを追加"
 |-- VERSION  /minor 110  /date 2015-06-18  /summary "メモリの使用量を改善"
 |-- VERSION  /minor 111  /date 2015-07-01  /summary "--about オプションつきの入力を実装"
+|-- VERSION  /minor 112  /date 2015-07-14  /summary "計算結果をあらわす Result 型を導入"
 
 ```
 
@@ -293,13 +294,14 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 110  /date 2015-06-18  /summary 'メモリの使用量を改善
 
 |-- VERSION  /major 0  /minor 111  /date 2015-07-01  /summary "--about オプションつきの入力を実装"
+|-- VERSION  /major 0  /minor 112  /date 2015-07-14  /summary "計算結果をあらわす Result 型を導入"
 
-*** 111 judges
+*** 112 judges
 
 **
 **  SUMMARY
-**     111 judges on VERSION
-**     111 judges in total
+**     112 judges on VERSION
+**     112 judges in total
 **
 ```
 
