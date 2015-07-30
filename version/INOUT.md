@@ -141,6 +141,8 @@ about /major 0
 |-- VERSION  /minor 110  /date 2015-06-18  /summary "メモリの使用量を改善"
 |-- VERSION  /minor 111  /date 2015-07-01  /summary "--about オプションつきの入力を実装"
 |-- VERSION  /minor 112  /date 2015-07-14  /summary "計算結果をあらわす Result 型を導入"
+|-- VERSION  /minor 113  /date 2015-07-24  /summary "版権表示のための区を導入"
+|-- VERSION  /minor 114  /date 2015-07-30  /summary "HTML での表形式出力を実装"
 
 ```
 
@@ -295,13 +297,15 @@ Command `koshu list-version.k VERSION.k` produces:
 
 |-- VERSION  /major 0  /minor 111  /date 2015-07-01  /summary "--about オプションつきの入力を実装"
 |-- VERSION  /major 0  /minor 112  /date 2015-07-14  /summary "計算結果をあらわす Result 型を導入"
+|-- VERSION  /major 0  /minor 113  /date 2015-07-24  /summary '版権表示のための区を導入
+|-- VERSION  /major 0  /minor 114  /date 2015-07-30  /summary "HTML での表形式出力を実装"
 
-*** 112 judges
+*** 114 judges
 
 **
 **  SUMMARY
-**     112 judges on VERSION
-**     112 judges in total
+**     114 judges on VERSION
+**     114 judges in total
 **
 ```
 
