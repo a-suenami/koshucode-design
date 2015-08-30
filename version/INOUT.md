@@ -143,6 +143,8 @@ about /major 0
 |-- VERSION  /minor 112  /date 2015-07-14  /summary "計算結果をあらわす Result 型を導入"
 |-- VERSION  /minor 113  /date 2015-07-24  /summary "版権表示のための区を導入"
 |-- VERSION  /minor 114  /date 2015-07-30  /summary "HTML での表形式出力を実装"
+|-- VERSION  /minor 115  /date 2015-08-04  /summary "甲州記法以外の出力形式を扱えるように変更"
+|-- VERSION  /minor 116  /date 2015-08-29  /summary "JSON 出力を実装"
 
 ```
 
@@ -299,13 +301,16 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 112  /date 2015-07-14  /summary "計算結果をあらわす Result 型を導入"
 |-- VERSION  /major 0  /minor 113  /date 2015-07-24  /summary '版権表示のための区を導入
 |-- VERSION  /major 0  /minor 114  /date 2015-07-30  /summary "HTML での表形式出力を実装"
+|-- VERSION  /major 0  /minor 115  /date 2015-08-04  /summary '甲州記法以外の出力形式を扱えるように変更
 
-*** 114 judges
+|-- VERSION  /major 0  /minor 116  /date 2015-08-29  /summary "JSON 出力を実装"
+
+*** 116 judges
 
 **
 **  SUMMARY
-**     114 judges on VERSION
-**     114 judges in total
+**     116 judges on VERSION
+**     116 judges in total
 **
 ```
 

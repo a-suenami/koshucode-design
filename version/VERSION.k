@@ -124,4 +124,6 @@ about /major 0
 |-- VERSION  /minor 112  /date 2015-07-14  /summary "計算結果をあらわす Result 型を導入"
 |-- VERSION  /minor 113  /date 2015-07-24  /summary "版権表示のための区を導入"
 |-- VERSION  /minor 114  /date 2015-07-30  /summary "HTML での表形式出力を実装"
+|-- VERSION  /minor 115  /date 2015-08-04  /summary "甲州記法以外の出力形式を扱えるように変更"
+|-- VERSION  /minor 116  /date 2015-08-29  /summary "JSON 出力を実装"
 
