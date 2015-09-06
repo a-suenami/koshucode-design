@@ -145,6 +145,7 @@ about /major 0
 |-- VERSION  /minor 114  /date 2015-07-30  /summary "HTML での表形式出力を実装"
 |-- VERSION  /minor 115  /date 2015-08-04  /summary "甲州記法以外の出力形式を扱えるように変更"
 |-- VERSION  /minor 116  /date 2015-08-29  /summary "JSON 出力を実装"
+|-- VERSION  /minor 117  /date 2015-09-04  /summary "出力形式をモジュール化"
 
 ```
 
@@ -304,13 +305,14 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 115  /date 2015-08-04  /summary '甲州記法以外の出力形式を扱えるように変更
 
 |-- VERSION  /major 0  /minor 116  /date 2015-08-29  /summary "JSON 出力を実装"
+|-- VERSION  /major 0  /minor 117  /date 2015-09-04  /summary '出力形式をモジュール化
 
-*** 116 judges
+*** 117 judges
 
 **
 **  SUMMARY
-**     116 judges on VERSION
-**     116 judges in total
+**     117 judges on VERSION
+**     117 judges in total
 **
 ```
 
