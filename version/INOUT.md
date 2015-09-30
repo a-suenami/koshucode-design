@@ -147,6 +147,7 @@ about /major 0
 |-- VERSION  /minor 116  /date 2015-08-29  /summary "JSON 出力を実装"
 |-- VERSION  /minor 117  /date 2015-09-04  /summary "出力形式をモジュール化"
 |-- VERSION  /minor 118  /date 2015-09-09  /summary "writer パッケージを作成"
+|-- VERSION  /minor 119  /date 2015-09-26  /summary "項目計算式を独立したモジュールに変更"
 
 ```
 
@@ -308,13 +309,14 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 116  /date 2015-08-29  /summary "JSON 出力を実装"
 |-- VERSION  /major 0  /minor 117  /date 2015-09-04  /summary '出力形式をモジュール化
 |-- VERSION  /major 0  /minor 118  /date 2015-09-09  /summary "writer パッケージを作成"
+|-- VERSION  /major 0  /minor 119  /date 2015-09-26  /summary '項目計算式を独立したモジュールに変更
 
-*** 118 judges
+*** 119 judges
 
 **
 **  SUMMARY
-**     118 judges on VERSION
-**     118 judges in total
+**     119 judges on VERSION
+**     119 judges in total
 **
 ```
 
