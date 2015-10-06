@@ -130,4 +130,5 @@ about /major 0
 |-- VERSION  /minor 118  /date 2015-09-09  /summary "writer パッケージを作成"
 |-- VERSION  /minor 119  /date 2015-09-26  /summary "項目計算式を独立したモジュールに変更"
 |-- VERSION  /minor 120  /date 2015-09-29  /summary "data パッケージを作成"
+|-- VERSION  /minor 121  /date 2015-10-05  /summary "メッセージ・モジュールを整理"
 
