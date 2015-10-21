@@ -132,4 +132,5 @@ about /major 0
 |-- VERSION  /minor 120  /date 2015-09-29  /summary "data パッケージを作成"
 |-- VERSION  /minor 121  /date 2015-10-05  /summary "メッセージ・モジュールを整理"
 |-- VERSION  /minor 122  /date 2015-10-15  /summary "cop パッケージを作成"
+|-- VERSION  /minor 123  /date 2015-10-17  /summary "operator パッケージをふたつに分割"
 
