@@ -152,6 +152,7 @@ about /major 0
 |-- VERSION  /minor 121  /date 2015-10-05  /summary "メッセージ・モジュールを整理"
 |-- VERSION  /minor 122  /date 2015-10-15  /summary "cop パッケージを作成"
 |-- VERSION  /minor 123  /date 2015-10-17  /summary "operator パッケージをふたつに分割"
+|-- VERSION  /minor 124  /date 2015-10-22  /summary "演算子モジュールの名前を変更"
 
 ```
 
@@ -319,13 +320,14 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 121  /date 2015-10-05  /summary "メッセージ・モジュールを整理"
 |-- VERSION  /major 0  /minor 122  /date 2015-10-15  /summary "cop パッケージを作成"
 |-- VERSION  /major 0  /minor 123  /date 2015-10-17  /summary "operator パッケージをふたつに分割"
+|-- VERSION  /major 0  /minor 124  /date 2015-10-22  /summary '演算子モジュールの名前を変更
 
-*** 123 judges
+*** 124 judges
 
 **
 **  SUMMARY
-**     123 judges on VERSION
-**     123 judges in total
+**     124 judges on VERSION
+**     124 judges in total
 **
 ```
 

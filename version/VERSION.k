@@ -133,4 +133,5 @@ about /major 0
 |-- VERSION  /minor 121  /date 2015-10-05  /summary "メッセージ・モジュールを整理"
 |-- VERSION  /minor 122  /date 2015-10-15  /summary "cop パッケージを作成"
 |-- VERSION  /minor 123  /date 2015-10-17  /summary "operator パッケージをふたつに分割"
+|-- VERSION  /minor 124  /date 2015-10-22  /summary "演算子モジュールの名前を変更"
 
