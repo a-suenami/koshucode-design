@@ -86,13 +86,13 @@ one-letter :
   {}
 
 two-letters :
-  << >>
   (| |)
   {| |}
 
 knob :
   (- -)
   [- -]
+  {- -}
 ```
 
 Command `koshu-syntax -b paren.k` produces:
@@ -141,7 +141,6 @@ Command `koshu-syntax -b paren.k` produces:
 |-- TOKEN  /line 6  /column 3  /token-type "close"  /cont "}"
 
 *** two-letters :
-***   << >>
 ***   (| |)
 ***   {| |}
 
@@ -149,38 +148,39 @@ Command `koshu-syntax -b paren.k` produces:
 |-- LINE  /line 8  /clause 2
 |-- LINE  /line 9  /clause 2
 |-- LINE  /line 10  /clause 2
-|-- LINE  /line 11  /clause 2
 
 |-- TOKEN  /line 8  /column 0  /token-type "text"  /token-subtype "raw"  /cont "two-letters"
 |-- TOKEN  /line 8  /column 12  /token-type "text"  /token-subtype "raw"  /cont ":"
 
-|-- TOKEN  /line 9  /column 2  /token-type "open"  /cont "<<"
-|-- TOKEN  /line 9  /column 5  /token-type "close"  /cont ">>"
+|-- TOKEN  /line 9  /column 2  /token-type "open"  /cont "(|"
+|-- TOKEN  /line 9  /column 5  /token-type "close"  /cont "|)"
 
-|-- TOKEN  /line 10  /column 2  /token-type "open"  /cont "(|"
-|-- TOKEN  /line 10  /column 5  /token-type "close"  /cont "|)"
-
-|-- TOKEN  /line 11  /column 2  /token-type "open"  /cont "{|"
-|-- TOKEN  /line 11  /column 5  /token-type "text"  /token-subtype "raw"  /cont ""
-|-- TOKEN  /line 11  /column 5  /token-type "close"  /cont "|}"
+|-- TOKEN  /line 10  /column 2  /token-type "open"  /cont "{|"
+|-- TOKEN  /line 10  /column 5  /token-type "text"  /token-subtype "raw"  /cont ""
+|-- TOKEN  /line 10  /column 5  /token-type "close"  /cont "|}"
 
 *** knob :
 ***   (- -)
 ***   [- -]
+***   {- -}
 
 |-- CLAUSE  /clause 3  /clause-type "relmap"
+|-- LINE  /line 12  /clause 3
 |-- LINE  /line 13  /clause 3
 |-- LINE  /line 14  /clause 3
 |-- LINE  /line 15  /clause 3
 
-|-- TOKEN  /line 13  /column 0  /token-type "text"  /token-subtype "raw"  /cont "knob"
-|-- TOKEN  /line 13  /column 5  /token-type "text"  /token-subtype "raw"  /cont ":"
+|-- TOKEN  /line 12  /column 0  /token-type "text"  /token-subtype "raw"  /cont "knob"
+|-- TOKEN  /line 12  /column 5  /token-type "text"  /token-subtype "raw"  /cont ":"
 
-|-- TOKEN  /line 14  /column 2  /token-type "open"  /cont "(-"
-|-- TOKEN  /line 14  /column 5  /token-type "close"  /cont "-)"
+|-- TOKEN  /line 13  /column 2  /token-type "open"  /cont "(-"
+|-- TOKEN  /line 13  /column 5  /token-type "close"  /cont "-)"
 
-|-- TOKEN  /line 15  /column 2  /token-type "open"  /cont "[-"
-|-- TOKEN  /line 15  /column 5  /token-type "close"  /cont "-]"
+|-- TOKEN  /line 14  /column 2  /token-type "open"  /cont "[-"
+|-- TOKEN  /line 14  /column 5  /token-type "close"  /cont "-]"
+
+|-- TOKEN  /line 15  /column 2  /token-type "open"  /cont "{-"
+|-- TOKEN  /line 15  /column 5  /token-type "close"  /cont "-}"
 
 ```
 

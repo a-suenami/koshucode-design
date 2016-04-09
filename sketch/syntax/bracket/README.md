@@ -16,9 +16,9 @@
 
 |== TREE : dump-tree
 
-    << >>
-    << /a 1 /b 2 >>
-    << /a 1 /b { 2 : 3 } >>
+    {- -}
+    {- /a 1 /b 2 -}
+    {- /a 1 /b { 2 | 3 } -}
 ```
 
 Command `koshu assn.k` exits with 2 and produces:
@@ -27,19 +27,19 @@ Command `koshu assn.k` exits with 2 and produces:
 **
 **  ABORTED  Dump token trees
 **  -------- --------------------------------------------------- ---------
-**  Detail   TreeB BracketAssn : 5.4 TOpen "<<" 5.7 TClose ">>"
-**           TreeB BracketAssn : 6.4 TOpen "<<" 6.17 TClose ">>"
+**  Detail   TreeB BracketTie : 5.4 TOpen "{-" 5.7 TClose "-}"
+**           TreeB BracketTie : 6.4 TOpen "{-" 6.17 TClose "-}"
 **             TreeL : 6.7 TTermN "a"
 **             TreeL : 6.10 TText TextRaw "1"
 **             TreeL : 6.12 TTermN "b"
 **             TreeL : 6.15 TText TextRaw "2"
-**           TreeB BracketAssn : 7.4 TOpen "<<" 7.25 TClose ">>"
+**           TreeB BracketTie : 7.4 TOpen "{-" 7.25 TClose "-}"
 **             TreeL : 7.7 TTermN "a"
 **             TreeL : 7.10 TText TextRaw "1"
 **             TreeL : 7.12 TTermN "b"
 **             TreeB BracketSet : 7.15 TOpen "{" 7.23 TClose "}"
 **               TreeL : 7.17 TText TextRaw "2"
-**               TreeL : 7.19 TText TextRaw ":"
+**               TreeL : 7.19 TText TextRaw "|"
 **               TreeL : 7.21 TText TextRaw "3"
 **  Source   3 11 assn.k
 **           > dump-tree                                         .. relmap

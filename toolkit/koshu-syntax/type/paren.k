@@ -6,10 +6,10 @@ one-letter :
   {}
 
 two-letters :
-  << >>
   (| |)
   {| |}
 
 knob :
   (- -)
   [- -]
+  {- -}
