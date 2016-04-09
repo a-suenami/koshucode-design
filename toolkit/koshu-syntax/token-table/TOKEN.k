@@ -10,11 +10,11 @@
 **    |-- LINE    /line -> /clause
 **    |-- TOKEN   /line /column -> /token-type [/token-subtype] /cont
 **
-**    <<< There is a clause numbered /clause on /line .
-**        Type of the clause is /clause-type .
-**        There is a token of content /cont at /line and /column .
-**        Type of the token is /token-type .
-**        Some tokens are classified into /token-subtype . >>>
+**    {| There is a clause numbered /clause on /line .
+**       Type of the clause is /clause-type .
+**       There is a token of content /cont at /line and /column .
+**       Type of the token is /token-type .
+**       Some tokens are classified into /token-subtype . |}
 **
 
 *** clause  : source CLAUSE /clause /clause-type

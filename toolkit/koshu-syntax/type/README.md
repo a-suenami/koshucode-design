@@ -34,11 +34,11 @@ Command `koshu-syntax -b name.k` produces:
 **    |-- LINE    /line -> /clause
 **    |-- TOKEN   /line /column -> /token-type [/token-subtype] /cont
 **
-**    <<< There is a clause numbered /clause on /line .
-**        Type of the clause is /clause-type .
-**        There is a token of content /cont at /line and /column .
-**        Type of the token is /token-type .
-**        Some tokens are classified into /token-subtype . >>>
+**    {| There is a clause numbered /clause on /line .
+**       Type of the clause is /clause-type .
+**       There is a token of content /cont at /line and /column .
+**       Type of the token is /token-type .
+**       Some tokens are classified into /token-subtype . |}
 **
 
 *** term :
@@ -110,11 +110,11 @@ Command `koshu-syntax -b paren.k` produces:
 **    |-- LINE    /line -> /clause
 **    |-- TOKEN   /line /column -> /token-type [/token-subtype] /cont
 **
-**    <<< There is a clause numbered /clause on /line .
-**        Type of the clause is /clause-type .
-**        There is a token of content /cont at /line and /column .
-**        Type of the token is /token-type .
-**        Some tokens are classified into /token-subtype . >>>
+**    {| There is a clause numbered /clause on /line .
+**       Type of the clause is /clause-type .
+**       There is a token of content /cont at /line and /column .
+**       Type of the token is /token-type .
+**       Some tokens are classified into /token-subtype . |}
 **
 
 *** one-letter :
@@ -161,6 +161,7 @@ Command `koshu-syntax -b paren.k` produces:
 |-- TOKEN  /line 10  /column 5  /token-type "close"  /cont "|)"
 
 |-- TOKEN  /line 11  /column 2  /token-type "open"  /cont "{|"
+|-- TOKEN  /line 11  /column 5  /token-type "text"  /token-subtype "raw"  /cont ""
 |-- TOKEN  /line 11  /column 5  /token-type "close"  /cont "|}"
 
 *** knob :
@@ -218,11 +219,11 @@ Command `koshu-syntax -b text.k` produces:
 **    |-- LINE    /line -> /clause
 **    |-- TOKEN   /line /column -> /token-type [/token-subtype] /cont
 **
-**    <<< There is a clause numbered /clause on /line .
-**        Type of the clause is /clause-type .
-**        There is a token of content /cont at /line and /column .
-**        Type of the token is /token-type .
-**        Some tokens are classified into /token-subtype . >>>
+**    {| There is a clause numbered /clause on /line .
+**       Type of the clause is /clause-type .
+**       There is a token of content /cont at /line and /column .
+**       Type of the token is /token-type .
+**       Some tokens are classified into /token-subtype . |}
 **
 
 *** text :
