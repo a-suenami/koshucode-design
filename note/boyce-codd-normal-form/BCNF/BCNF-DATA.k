@@ -25,7 +25,7 @@
 **
 
 |-- SHOP-TYPE  /shop "Eagle Eye"       /shop-type 'Optician
-|-- SHOP-TYPE  /shop 'Snippets         /shop-type 'Hairdresser
+|-- SHOP-TYPE  /shop "Snippets"        /shop-type 'Hairdresser
 |-- SHOP-TYPE  /shop "Merlin Books"    /shop-type 'Bookshop
 |-- SHOP-TYPE  /shop "Doughy's"        /shop-type 'Bakery
 |-- SHOP-TYPE  /shop "Sweeney Todd's"  /shop-type 'Hairdresser

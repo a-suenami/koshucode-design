@@ -74,27 +74,27 @@ Command `koshu boolean.k` produces:
 **    <stdout>
 **
 
-|-- BOOLEAN  /a 'true  /b 'false
+|-- BOOLEAN  /a "true"  /b "false"
 
 *** 1 judge 
 
-|-- NOT  /a 'false  /b 'true
+|-- NOT  /a "false"  /b "true"
 
 *** 1 judge 
 
-|-- CONJ  /a 'true  /b 'false  /c 'false  /d 'false
+|-- CONJ  /a "true"  /b "false"  /c "false"  /d "false"
 
 *** 1 judge 
 
-|-- DISJ  /a 'true  /b 'true  /c 'true  /d 'false
+|-- DISJ  /a "true"  /b "true"  /c "true"  /d "false"
 
 *** 1 judge 
 
-|-- TAUT-CONT  /a 'true  /b 'true  /c 'false  /d 'false
+|-- TAUT-CONT  /a "true"  /b "true"  /c "false"  /d "false"
 
 *** 1 judge 
 
-|-- HALF-ADDER  /sum 'true  /carry 'false
+|-- HALF-ADDER  /sum "true"  /carry "false"
 
 *** 1 judge 
 

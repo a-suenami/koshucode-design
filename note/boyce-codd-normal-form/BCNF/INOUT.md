@@ -64,7 +64,7 @@ nearest-shop     : shop-type
 **
 
 |-- SHOP-TYPE  /shop "Eagle Eye"       /shop-type 'Optician
-|-- SHOP-TYPE  /shop 'Snippets         /shop-type 'Hairdresser
+|-- SHOP-TYPE  /shop "Snippets"        /shop-type 'Hairdresser
 |-- SHOP-TYPE  /shop "Merlin Books"    /shop-type 'Bookshop
 |-- SHOP-TYPE  /shop "Doughy's"        /shop-type 'Bakery
 |-- SHOP-TYPE  /shop "Sweeney Todd's"  /shop-type 'Hairdresser
@@ -108,7 +108,7 @@ Command `koshu bcnf-output.k BCNF-DATA.k` produces:
 
 |-- NEAREST-SHOP  /person 'Fuller  /shop-type 'Optician  /nearest-shop "Eagle Eye"
 |-- NEAREST-SHOP  /person 'Davidson  /shop-type 'Optician  /nearest-shop "Eagle Eye"
-|-- NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop 'Snippets
+|-- NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop "Snippets"
 |-- NEAREST-SHOP  /person 'Wright  /shop-type 'Bookshop  /nearest-shop "Merlin Books"
 |-- NEAREST-SHOP  /person 'Fuller  /shop-type 'Bakery  /nearest-shop "Doughy's"
 
@@ -157,7 +157,7 @@ Command `koshu bcnf-output.k BCNF-DATA.k` produces:
 **
 
 |-- SHOP-TYPE  /shop "Eagle Eye"       /shop-type 'Optician
-|-- SHOP-TYPE  /shop 'Snippets         /shop-type 'Hairdresser
+|-- SHOP-TYPE  /shop "Snippets"        /shop-type 'Hairdresser
 |-- SHOP-TYPE  /shop "Merlin Books"    /shop-type 'Bookshop
 |-- SHOP-TYPE  /shop "Doughy's"        /shop-type 'Bakery
 |-- SHOP-TYPE  /shop "Sweeney Todd's"  /shop-type 'Hairdresser
@@ -218,7 +218,7 @@ Command `koshu bcnf-output.k BCNF-DATA.k BCNF-VIOLATED.k` exits with 1 and produ
 **
 
 |-V FD-OF-NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop "Sweeney Todd's"
-|-V FD-OF-NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop 'Snippets
+|-V FD-OF-NEAREST-SHOP  /person 'Davidson  /shop-type 'Hairdresser  /nearest-shop "Snippets"
 
 *** 2 judges
 

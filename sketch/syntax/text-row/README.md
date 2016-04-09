@@ -44,17 +44,17 @@ Command `koshu text-row.k` produces:
 **    <stdout>
 **
 
-|-- ROW  /n 3  /x 'aaa
-|-- ROW  /n 5  /x 'aaabb
-|-- ROW  /n 6  /x 'aaabbc
+|-- ROW  /n 3  /x "aaa"
+|-- ROW  /n 5  /x "aaabb"
+|-- ROW  /n 6  /x "aaabbc"
 |-- ROW  /n 6  /x "aaa" <tab> "bb"
 |-- ROW  /n 8  /x "aaa" <tab> "bb's"
 
 *** 5 judges
 
-|-- CALC  /n 3  /x 'aaa
-|-- CALC  /n 5  /x 'aaabb
-|-- CALC  /n 6  /x 'aaabbc
+|-- CALC  /n 3  /x "aaa"
+|-- CALC  /n 5  /x "aaabb"
+|-- CALC  /n 6  /x "aaabbc"
 |-- CALC  /n 6  /x "aaa" <tab> "bb"
 |-- CALC  /n 8  /x "aaa" <tab> "bb's"
 

@@ -82,7 +82,7 @@ short
 short
   a "apple-"
 
-|-- E  /z 'cocoa-zzz  /x a.xxx  /y 'banana-yyy
+|-- E  /z 'cocoa-zzz  /x a.xxx  /y "banana-yyy"
 
 *** 1 judge 
 
@@ -114,8 +114,8 @@ short
 ** -*- koshu -*-
 
 short
-  a abcdef
-  b abcde
+  a "abcdef"
+  b "abcde"
 
 |-- A  /text a.g
 |-- A  /text b.f
@@ -123,7 +123,7 @@ short
 
 |== B : source A /text
   | add /n ( length /text )
-        /q ( /text = 'abcdefg )
+        /q ( /text = "abcdefg" )
 
 ```
 

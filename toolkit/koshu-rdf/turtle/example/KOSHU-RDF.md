@@ -41,8 +41,8 @@ short
   rdfs "http://www.w3.org/2000/01/rdf-schema#"
   rel "http://www.perceive.net/schemas/relationship/"
 
-|-- RDF  /s "http://example.org/#spiderman"  /p foaf.name  /o 'Spiderman
-|-- RDF  /s "http://example.org/#spiderman"  /p foaf.name  /o 'Человек-паук
+|-- RDF  /s "http://example.org/#spiderman"  /p foaf.name  /o "Spiderman"
+|-- RDF  /s "http://example.org/#spiderman"  /p foaf.name  /o "Человек-паук"
 |-- RDF  /s "http://example.org/#spiderman"  /p rel.enemyOf  /o "http://example.org/#green-goblin"
 |-- RDF  /s "http://example.org/#spiderman"  /p rdf.type  /o foaf.Person
 |-- RDF  /s "http://example.org/#green-goblin"  /p foaf.name  /o "Green Goblin"

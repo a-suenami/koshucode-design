@@ -69,9 +69,9 @@ Command `koshu foo.k bar.k koshu-source.k` produces:
 
 *** 4 judges
 
-|-- SOURCE  /num 3  /type 'file  /name 'foo.k
-|-- SOURCE  /num 2  /type 'file  /name 'bar.k
-|-- SOURCE  /num 1  /type 'file  /name 'koshu-source.k
+|-- SOURCE  /num 3  /type "file"  /name "foo.k"
+|-- SOURCE  /num 2  /type "file"  /name "bar.k"
+|-- SOURCE  /num 1  /type "file"  /name "koshu-source.k"
 
 *** 3 judges
 

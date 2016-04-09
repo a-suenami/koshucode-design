@@ -86,7 +86,7 @@ Command `koshu 3nf-output.k 3NF-DATA.k` produces:
 **
 
 |-- SHOP-NEAR-PERSON  /person 'Davidson  /nearest-shop "Eagle Eye"
-|-- SHOP-NEAR-PERSON  /person 'Davidson  /nearest-shop 'Snippets
+|-- SHOP-NEAR-PERSON  /person 'Davidson  /nearest-shop "Snippets"
 |-- SHOP-NEAR-PERSON  /person 'Wright  /nearest-shop "Merlin Books"
 |-- SHOP-NEAR-PERSON  /person 'Fuller  /nearest-shop "Doughy's"
 |-- SHOP-NEAR-PERSON  /person 'Fuller  /nearest-shop "Sweeney Todd's"
@@ -96,7 +96,7 @@ Command `koshu 3nf-output.k 3NF-DATA.k` produces:
 *** 6 judges
 
 |-- SHOP-TYPE  /shop "Eagle Eye"  /shop-type 'Optician
-|-- SHOP-TYPE  /shop 'Snippets  /shop-type 'Hairdresser
+|-- SHOP-TYPE  /shop "Snippets"  /shop-type 'Hairdresser
 |-- SHOP-TYPE  /shop "Merlin Books"  /shop-type 'Bookshop
 |-- SHOP-TYPE  /shop "Doughy's"  /shop-type 'Bakery
 |-- SHOP-TYPE  /shop "Sweeney Todd's"  /shop-type 'Hairdresser

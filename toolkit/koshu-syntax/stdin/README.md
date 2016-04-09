@@ -47,30 +47,30 @@ Command `./stdin.sh` produces:
 *** |-- P  /x 0
 ***        /y 1
 
-|-- CLAUSE  /clause 1  /clause-type 'judge
+|-- CLAUSE  /clause 1  /clause-type "judge"
 |-- LINE  /line 1  /clause 1
 |-- LINE  /line 2  /clause 1
 
-|-- TOKEN  /line 1  /column 0  /token-type 'text  /token-subtype 'bar  /cont "|--"
-|-- TOKEN  /line 1  /column 4  /token-type 'text  /token-subtype 'raw  /cont 'P
-|-- TOKEN  /line 1  /column 7  /token-type 'term  /cont "/x"
-|-- TOKEN  /line 1  /column 10  /token-type 'text  /token-subtype 'raw  /cont '0
+|-- TOKEN  /line 1  /column 0  /token-type "text"  /token-subtype "bar"  /cont "|--"
+|-- TOKEN  /line 1  /column 4  /token-type "text"  /token-subtype "raw"  /cont "P"
+|-- TOKEN  /line 1  /column 7  /token-type "term"  /cont "/x"
+|-- TOKEN  /line 1  /column 10  /token-type "text"  /token-subtype "raw"  /cont "0"
 
-|-- TOKEN  /line 2  /column 7  /token-type 'term  /cont "/y"
-|-- TOKEN  /line 2  /column 10  /token-type 'text  /token-subtype 'raw  /cont '1
+|-- TOKEN  /line 2  /column 7  /token-type "term"  /cont "/y"
+|-- TOKEN  /line 2  /column 10  /token-type "text"  /token-subtype "raw"  /cont "1"
 
 *** |== Q : source P /x /y
 
-|-- CLAUSE  /clause 2  /clause-type 'assert
+|-- CLAUSE  /clause 2  /clause-type "assert"
 |-- LINE  /line 3  /clause 2
 
-|-- TOKEN  /line 3  /column 0  /token-type 'text  /token-subtype 'bar  /cont "|=="
-|-- TOKEN  /line 3  /column 4  /token-type 'text  /token-subtype 'raw  /cont 'Q
-|-- TOKEN  /line 3  /column 6  /token-type 'text  /token-subtype 'raw  /cont ":"
-|-- TOKEN  /line 3  /column 8  /token-type 'text  /token-subtype 'raw  /cont 'source
-|-- TOKEN  /line 3  /column 15  /token-type 'text  /token-subtype 'raw  /cont 'P
-|-- TOKEN  /line 3  /column 17  /token-type 'term  /cont "/x"
-|-- TOKEN  /line 3  /column 20  /token-type 'term  /cont "/y"
+|-- TOKEN  /line 3  /column 0  /token-type "text"  /token-subtype "bar"  /cont "|=="
+|-- TOKEN  /line 3  /column 4  /token-type "text"  /token-subtype "raw"  /cont "Q"
+|-- TOKEN  /line 3  /column 6  /token-type "text"  /token-subtype "raw"  /cont ":"
+|-- TOKEN  /line 3  /column 8  /token-type "text"  /token-subtype "raw"  /cont "source"
+|-- TOKEN  /line 3  /column 15  /token-type "text"  /token-subtype "raw"  /cont "P"
+|-- TOKEN  /line 3  /column 17  /token-type "term"  /cont "/x"
+|-- TOKEN  /line 3  /column 20  /token-type "term"  /cont "/y"
 
 ```
 
