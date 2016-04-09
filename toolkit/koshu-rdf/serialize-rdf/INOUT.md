@@ -150,7 +150,7 @@ short
   foaf    "http://xmlns.com/foaf/0.1/"
   biglynx "http://biglynx.co.uk/"
 
-|-- TURTLE  /s biglynx."people/dave-smith"  /po {| /p /o [ foaf.name | "Dave Smith" ] [ rdf.type | foaf.Person ] |}
+|-- TURTLE  /s biglynx."people/dave-smith"  /po {= /p /o [ foaf.name | "Dave Smith" ] [ rdf.type | foaf.Person ] =}
 
 *** 1 judge 
 

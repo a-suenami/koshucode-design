@@ -158,7 +158,7 @@ Command `koshu dee.k` produces:
 
 *** 1 judge 
 
-|-- Q  /r {| [ ] |}
+|-- Q  /r {= [ ] =}
 
 *** 1 judge 
 
@@ -205,7 +205,7 @@ Command `koshu dum.k` produces:
 
 *** no judges
 
-|-- Q  /r {| |}
+|-- Q  /r {= =}
 
 *** 1 judge 
 
@@ -506,6 +506,7 @@ Command `koshu rename.k` produces:
 **
 **  source X /N ... は、判断種 X の判断集合を
 **  項目 /N ... をもつ関係として読み出します。
+**
 **  判断が /N 以外の項目をもっているときは、それらの項目は無視されます。
 **  判断が項目 /N をもっていない場合は、項目内容は空 () になります。
 **  --empty オプションをつけると空の項目も表示されます。

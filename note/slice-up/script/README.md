@@ -45,8 +45,8 @@ Command `koshu DATA.k nest.k` produces:
 **    <stdout>
 **
 
-|-- Q1  /g {| /b /c [ 50 | 90 ] [ 40 | 80 ] |}  /a 10
-|-- Q1  /g {| /b /c [ 60 | 70 ] |}  /a 20
+|-- Q1  /g {= /b /c [ 50 | 90 ] [ 40 | 80 ] =}  /a 10
+|-- Q1  /g {= /b /c [ 60 | 70 ] =}  /a 20
 
 *** 2 judges
 
@@ -68,8 +68,8 @@ TABLE : Q1
 
 === rel
 
-|-- Q2  /g {| /b /c [ 50 | 90 ] [ 40 | 80 ] |}  /a 10
-|-- Q2  /g {| /b /c [ 60 | 70 ] |}  /a 20
+|-- Q2  /g {= /b /c [ 50 | 90 ] [ 40 | 80 ] =}  /a 10
+|-- Q2  /g {= /b /c [ 60 | 70 ] =}  /a 20
 
 *** 2 judges
 
@@ -125,9 +125,9 @@ Command `koshu DATA.k slice.k` produces:
 **    <stdout>
 **
 
-|-- SLICE-1  /r {| /a /b /c [ 10 | 40 | 80 ] |}  /a 10  /b 40  /c 80
-|-- SLICE-1  /r {| /a /b /c [ 10 | 50 | 90 ] |}  /a 10  /b 50  /c 90
-|-- SLICE-1  /r {| /a /b /c [ 20 | 60 | 70 ] |}  /a 20  /b 60  /c 70
+|-- SLICE-1  /r {= /a /b /c [ 10 | 40 | 80 ] =}  /a 10  /b 40  /c 80
+|-- SLICE-1  /r {= /a /b /c [ 10 | 50 | 90 ] =}  /a 10  /b 50  /c 90
+|-- SLICE-1  /r {= /a /b /c [ 20 | 60 | 70 ] =}  /a 20  /b 60  /c 70
 
 *** 3 judges
 
@@ -198,8 +198,8 @@ Command `koshu DATA.k ungroup.k` produces:
 **    <stdout>
 **
 
-|-- R0  /g {| /b /c [ 50 | 90 ] [ 40 | 80 ] |}  /a 10
-|-- R0  /g {| /b /c [ 60 | 70 ] |}  /a 20
+|-- R0  /g {= /b /c [ 50 | 90 ] [ 40 | 80 ] =}  /a 10
+|-- R0  /g {= /b /c [ 60 | 70 ] =}  /a 20
 
 *** 2 judges
 

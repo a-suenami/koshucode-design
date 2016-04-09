@@ -38,7 +38,7 @@ Command `koshu binary.k` produces:
 **    <stdout>
 **
 
-|-- CALL-DOWN  /caller 'a  /call {| /n /caller [ 0 | 'a ] [ 1 | 'b ] [ 1 | 'c ] [ 2 | 'd ] [ 2 | 'e ] [ 2 | 'f ] [ 2 | 'g ] |}
+|-- CALL-DOWN  /caller 'a  /call {= /n /caller [ 0 | 'a ] [ 1 | 'b ] [ 1 | 'c ] [ 2 | 'd ] [ 2 | 'e ] [ 2 | 'f ] [ 2 | 'g ] =}
 
 *** 1 judge 
 
@@ -61,7 +61,7 @@ TABLE : CALL-DOWN
 
 === rel
 
-|-- CALL-UP  /callee 'd  /call {| /n /callee [ 0 | 'd ] [ 1 | 'b ] [ 2 | 'a ] |}
+|-- CALL-UP  /callee 'd  /call {= /n /callee [ 0 | 'd ] [ 1 | 'b ] [ 2 | 'a ] =}
 
 *** 1 judge 
 
@@ -118,7 +118,7 @@ Command `koshu call.k` produces:
 **    <stdout>
 **
 
-|-- CALL-DOWN  /caller 'a  /call {| /n /caller [ 0 | 'a ] |}
+|-- CALL-DOWN  /caller 'a  /call {= /n /caller [ 0 | 'a ] =}
 
 *** 1 judge 
 
@@ -135,7 +135,7 @@ TABLE : CALL-DOWN
 
 === rel
 
-|-- CALL-UP  /callee 'd  /call {| /n /callee [ 0 | 'd ] |}
+|-- CALL-UP  /callee 'd  /call {= /n /callee [ 0 | 'd ] =}
 
 *** 1 judge 
 
@@ -188,7 +188,7 @@ Command `koshu diamond.k` produces:
 **    <stdout>
 **
 
-|-- CALL-DOWN  /caller 'a  /call {| /n /caller [ 0 | 'a ] [ 1 | 'b ] [ 1 | 'c ] [ 2 | 'd ] |}
+|-- CALL-DOWN  /caller 'a  /call {= /n /caller [ 0 | 'a ] [ 1 | 'b ] [ 1 | 'c ] [ 2 | 'd ] =}
 
 *** 1 judge 
 
@@ -208,7 +208,7 @@ TABLE : CALL-DOWN
 
 === rel
 
-|-- CALL-UP  /callee 'd  /call {| /n /callee [ 0 | 'd ] [ 1 | 'b ] [ 1 | 'c ] [ 2 | 'a ] |}
+|-- CALL-UP  /callee 'd  /call {= /n /callee [ 0 | 'd ] [ 1 | 'b ] [ 1 | 'c ] [ 2 | 'a ] =}
 
 *** 1 judge 
 
@@ -259,7 +259,7 @@ Command `koshu empty.k` produces:
 **    <stdout>
 **
 
-|-- CALL-DOWN  /caller 'a  /call {| /n /caller [ 0 | 'a ] |}
+|-- CALL-DOWN  /caller 'a  /call {= /n /caller [ 0 | 'a ] =}
 
 *** 1 judge 
 
@@ -276,7 +276,7 @@ TABLE : CALL-DOWN
 
 === rel
 
-|-- CALL-UP  /callee 'd  /call {| /n /callee [ 0 | 'd ] |}
+|-- CALL-UP  /callee 'd  /call {= /n /callee [ 0 | 'd ] =}
 
 *** 1 judge 
 
@@ -328,7 +328,7 @@ Command `koshu linear.k` produces:
 **    <stdout>
 **
 
-|-- CALL-DOWN  /caller 'a  /call {| /n /caller [ 0 | 'a ] [ 1 | 'b ] [ 2 | 'c ] [ 3 | 'd ] |}
+|-- CALL-DOWN  /caller 'a  /call {= /n /caller [ 0 | 'a ] [ 1 | 'b ] [ 2 | 'c ] [ 3 | 'd ] =}
 
 *** 1 judge 
 
@@ -348,7 +348,7 @@ TABLE : CALL-DOWN
 
 === rel
 
-|-- CALL-UP  /callee 'd  /call {| /n /callee [ 0 | 'd ] [ 1 | 'c ] [ 2 | 'b ] [ 3 | 'a ] |}
+|-- CALL-UP  /callee 'd  /call {= /n /callee [ 0 | 'd ] [ 1 | 'c ] [ 2 | 'b ] [ 3 | 'a ] =}
 
 *** 1 judge 
 
@@ -402,7 +402,7 @@ Command `koshu mutual.k` produces:
 **    <stdout>
 **
 
-|-- CALL-DOWN  /caller 'a  /call {| /n /caller [ 0 | 'a ] [ 1 | 'd ] |}
+|-- CALL-DOWN  /caller 'a  /call {= /n /caller [ 0 | 'a ] [ 1 | 'd ] =}
 
 *** 1 judge 
 
@@ -420,7 +420,7 @@ TABLE : CALL-DOWN
 
 === rel
 
-|-- CALL-UP  /callee 'd  /call {| /n /callee [ 0 | 'd ] [ 1 | 'a ] |}
+|-- CALL-UP  /callee 'd  /call {= /n /callee [ 0 | 'd ] [ 1 | 'a ] =}
 
 *** 1 judge 
 
@@ -471,7 +471,7 @@ Command `koshu self.k` produces:
 **    <stdout>
 **
 
-|-- CALL-DOWN  /caller 'a  /call {| /n /caller [ 0 | 'a ] |}
+|-- CALL-DOWN  /caller 'a  /call {= /n /caller [ 0 | 'a ] =}
 
 *** 1 judge 
 
@@ -488,7 +488,7 @@ TABLE : CALL-DOWN
 
 === rel
 
-|-- CALL-UP  /callee 'd  /call {| /n /callee [ 0 | 'd ] |}
+|-- CALL-UP  /callee 'd  /call {= /n /callee [ 0 | 'd ] =}
 
 *** 1 judge 
 

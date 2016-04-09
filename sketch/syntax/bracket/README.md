@@ -212,10 +212,11 @@ Command `koshu list.k` exits with 2 and produces:
 
 |== TREE : dump-tree
 
-    {| |}    ** dum
-    {| | |}  ** dee
-    {| /a : /b | 0 : 1 | 2 : 3 |}
-    {| /a : /b | 0 : {| /x | 1 : 2 |} | 2 : {| /x | 3 : 4 |} |}
+    {= =}    ** dum
+    {= | =}  ** dee
+    {= /a /b [ 0 | 1 ][ 2 | 3 ] =}
+    {= /a /b [ 0 | {= /x [ 1 ][ 2 ] =} ]
+             [ 2 | {= /x [ 3 ][ 4 ] =} ] =}
 ```
 
 Command `koshu rel.k` exits with 2 and produces:
@@ -223,48 +224,46 @@ Command `koshu rel.k` exits with 2 and produces:
 ```
 **
 **  ABORTED  Dump token trees
-**  -------- ----------------------------------------------------- ---------
-**  Detail   TreeB BracketRel : 5.4 TOpen "{|" 5.7 TClose "|}"
-**           TreeB BracketRel : 6.4 TOpen "{|" 6.9 TClose "|}"
+**  -------- -------------------------------------------------------- ---------
+**  Detail   TreeB BracketRel : 5.4 TOpen "{=" 5.7 TClose "=}"
+**           TreeB BracketRel : 6.4 TOpen "{=" 6.9 TClose "=}"
 **             TreeL : 6.7 TText TextRaw "|"
-**           TreeB BracketRel : 7.4 TOpen "{|" 7.31 TClose "|}"
+**           TreeB BracketRel : 7.4 TOpen "{=" 7.32 TClose "=}"
 **             TreeL : 7.7 TTermN "a"
-**             TreeL : 7.10 TText TextRaw ":"
-**             TreeL : 7.12 TTermN "b"
-**             TreeL : 7.15 TText TextRaw "|"
-**             TreeL : 7.17 TText TextRaw "0"
-**             TreeL : 7.19 TText TextRaw ":"
-**             TreeL : 7.21 TText TextRaw "1"
-**             TreeL : 7.23 TText TextRaw "|"
-**             TreeL : 7.25 TText TextRaw "2"
-**             TreeL : 7.27 TText TextRaw ":"
-**             TreeL : 7.29 TText TextRaw "3"
-**           TreeB BracketRel : 8.4 TOpen "{|" 8.61 TClose "|}"
+**             TreeL : 7.10 TTermN "b"
+**             TreeB BracketList : 7.13 TOpen "[" 7.21 TClose "]"
+**               TreeL : 7.15 TText TextRaw "0"
+**               TreeL : 7.17 TText TextRaw "|"
+**               TreeL : 7.19 TText TextRaw "1"
+**             TreeB BracketList : 7.22 TOpen "[" 7.30 TClose "]"
+**               TreeL : 7.24 TText TextRaw "2"
+**               TreeL : 7.26 TText TextRaw "|"
+**               TreeL : 7.28 TText TextRaw "3"
+**           TreeB BracketRel : 8.4 TOpen "{=" 9.41 TClose "=}"
 **             TreeL : 8.7 TTermN "a"
-**             TreeL : 8.10 TText TextRaw ":"
-**             TreeL : 8.12 TTermN "b"
-**             TreeL : 8.15 TText TextRaw "|"
-**             TreeL : 8.17 TText TextRaw "0"
-**             TreeL : 8.19 TText TextRaw ":"
-**             TreeB BracketRel : 8.21 TOpen "{|" 8.35 TClose "|}"
-**               TreeL : 8.24 TTermN "x"
-**               TreeL : 8.27 TText TextRaw "|"
-**               TreeL : 8.29 TText TextRaw "1"
-**               TreeL : 8.31 TText TextRaw ":"
-**               TreeL : 8.33 TText TextRaw "2"
-**             TreeL : 8.38 TText TextRaw "|"
-**             TreeL : 8.40 TText TextRaw "2"
-**             TreeL : 8.42 TText TextRaw ":"
-**             TreeB BracketRel : 8.44 TOpen "{|" 8.58 TClose "|}"
-**               TreeL : 8.47 TTermN "x"
-**               TreeL : 8.50 TText TextRaw "|"
-**               TreeL : 8.52 TText TextRaw "3"
-**               TreeL : 8.54 TText TextRaw ":"
-**               TreeL : 8.56 TText TextRaw "4"
+**             TreeL : 8.10 TTermN "b"
+**             TreeB BracketList : 8.13 TOpen "[" 8.39 TClose "]"
+**               TreeL : 8.15 TText TextRaw "0"
+**               TreeL : 8.17 TText TextRaw "|"
+**               TreeB BracketRel : 8.19 TOpen "{=" 8.36 TClose "=}"
+**                 TreeL : 8.22 TTermN "x"
+**                 TreeB BracketList : 8.25 TOpen "[" 8.29 TClose "]"
+**                   TreeL : 8.27 TText TextRaw "1"
+**                 TreeB BracketList : 8.30 TOpen "[" 8.34 TClose "]"
+**                   TreeL : 8.32 TText TextRaw "2"
+**             TreeB BracketList : 9.13 TOpen "[" 9.39 TClose "]"
+**               TreeL : 9.15 TText TextRaw "2"
+**               TreeL : 9.17 TText TextRaw "|"
+**               TreeB BracketRel : 9.19 TOpen "{=" 9.36 TClose "=}"
+**                 TreeL : 9.22 TTermN "x"
+**                 TreeB BracketList : 9.25 TOpen "[" 9.29 TClose "]"
+**                   TreeL : 9.27 TText TextRaw "3"
+**                 TreeB BracketList : 9.30 TOpen "[" 9.34 TClose "]"
+**                   TreeL : 9.32 TText TextRaw "4"
 **  Source   3 11 rel.k
-**           > dump-tree                                           .. relmap
+**           > dump-tree                                              .. relmap
 **           3 0 rel.k
-**           > |== TREE : dump-tree                                .. assert
+**           > |== TREE : dump-tree                                   .. assert
 **  Command  koshu
 **           rel.k
 **

@@ -49,8 +49,8 @@ Command `koshu lexical.k data.k` produces:
 **    <stdout>
 **
 
-|-- A2  /x 0  /g {| /y [ 15 ] |}
-|-- A2  /x 1  /g {| /y [ 20 ] |}
+|-- A2  /x 0  /g {= /y [ 15 ] =}
+|-- A2  /x 1  /g {= /y [ 20 ] =}
 
 *** 2 judges
 
@@ -71,8 +71,8 @@ TABLE : A2
 
 === rel
 
-|-- A3  /y 15  /g {| /x [ 0 ] |}
-|-- A3  /y 20  /g {| /x [ 1 ] |}
+|-- A3  /y 15  /g {= /x [ 0 ] =}
+|-- A3  /y 20  /g {= /x [ 1 ] =}
 
 *** 2 judges
 
@@ -129,8 +129,8 @@ Command `koshu lexical.k nest.k` produces:
 **    <stdout>
 **
 
-|-- NEST  /x 0  /g {| /y [ 15 ] |}  /h {| /x [ 0 ] [ 1 ] |}
-|-- NEST  /x 1  /g {| /y [ 20 ] |}  /h {| /x [ 0 ] [ 1 ] |}
+|-- NEST  /x 0  /g {= /y [ 15 ] =}  /h {= /x [ 0 ] [ 1 ] =}
+|-- NEST  /x 1  /g {= /y [ 20 ] =}  /h {= /x [ 0 ] [ 1 ] =}
 
 *** 2 judges
 
@@ -189,8 +189,8 @@ Command `koshu lexical.k pass.k` produces:
 **    <stdout>
 **
 
-|-- PASS  /x 0  /g {| /y [ 15 ] |}  /h {| /y [ 15 ] |}
-|-- PASS  /x 1  /g {| /y [ 20 ] |}  /h {| /y [ 20 ] |}
+|-- PASS  /x 0  /g {= /y [ 15 ] =}  /h {= /y [ 15 ] =}
+|-- PASS  /x 1  /g {= /y [ 20 ] =}  /h {= /y [ 20 ] =}
 
 *** 2 judges
 
@@ -247,8 +247,8 @@ Command `koshu lexical.k seperate.k` produces:
 **    <stdout>
 **
 
-|-- SEPARATE  /x 0  /g {| /y [ 15 ] |}  /h {| /x [ 0 ] [ 1 ] |}
-|-- SEPARATE  /x 1  /g {| /y [ 20 ] |}  /h {| /x [ 0 ] [ 1 ] |}
+|-- SEPARATE  /x 0  /g {= /y [ 15 ] =}  /h {= /x [ 0 ] [ 1 ] =}
+|-- SEPARATE  /x 1  /g {= /y [ 20 ] =}  /h {= /x [ 0 ] [ 1 ] =}
 
 *** 2 judges
 
