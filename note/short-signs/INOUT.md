@@ -143,8 +143,8 @@ short
   a "abcdef"
   b "abcde"
 
-|-- B  /n 7  /q <1>  /text a.g
-|-- B  /n 6  /q <0>  /text a.
+|-- B  /n 7  /q (+)  /text a.g
+|-- B  /n 6  /q (-)  /text a.
 
 *** 2 judges
 
