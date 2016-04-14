@@ -153,6 +153,9 @@ about /major 0
 |-- VERSION  /minor 122  /date 2015-10-15  /summary "cop パッケージを作成"
 |-- VERSION  /minor 123  /date 2015-10-17  /summary "operator パッケージをふたつに分割"
 |-- VERSION  /minor 124  /date 2015-10-22  /summary "演算子モジュールの名前を変更"
+|-- VERSION  /minor 125  /date 2015-10-25  /summary "Rop.Flat モジュールを導入"
+|-- VERSION  /minor 126  /date 2016-03-02  /summary "小数型の桁数関連の演算子を追加"
+|-- VERSION  /minor 127  /date 2016-04-10  /summary "関係型などの表記法を変更"
 
 ```
 
@@ -321,13 +324,18 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 122  /date 2015-10-15  /summary "cop パッケージを作成"
 |-- VERSION  /major 0  /minor 123  /date 2015-10-17  /summary "operator パッケージをふたつに分割"
 |-- VERSION  /major 0  /minor 124  /date 2015-10-22  /summary "演算子モジュールの名前を変更"
+|-- VERSION  /major 0  /minor 125  /date 2015-10-25  /summary "Rop.Flat モジュールを導入"
+*** 125
 
-*** 124 judges
+|-- VERSION  /major 0  /minor 126  /date 2016-03-02  /summary "小数型の桁数関連の演算子を追加"
+|-- VERSION  /major 0  /minor 127  /date 2016-04-10  /summary "関係型などの表記法を変更"
+
+*** 127 judges
 
 **
 **  SUMMARY
-**     124 judges on VERSION
-**     124 judges in total
+**     127 judges on VERSION
+**     127 judges in total
 **
 ```
 
