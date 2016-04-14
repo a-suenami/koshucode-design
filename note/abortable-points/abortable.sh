@@ -3,8 +3,7 @@
 #  List abortable tags
 #
 
-
-# * * * *   Directory
+# ----------------------  Directory
 
 ab_cd () {
     ab_ghci=`which koshu-ghci.sh`
@@ -20,12 +19,12 @@ ab_cd () {
 }
 
 
-# * * * *   List
+# ----------------------  List
 
 ab_list_all () {
-    ab_list_in base
-    ab_list_in core
-    ab_list_in operator
+    for d in `koshu-pkg.sh dir`; do
+        ab_list_in $d
+    done
 }
 
 ab_list_in () {(
@@ -40,13 +39,13 @@ ab_list_for () {
 
         if grep -q B.abortable $ab_hs; then
             cat -n $ab_hs | sed -n \
-                's:^ *\([0-9]*\).*B.abortable.*"\([a-z]*\)".*:\2 \1 '"$ab_base $ab_dir $1"':p'
+                's:^ *\([0-9]*\).*B.abortable.*"\([-a-z]*\)".*:\2 \1 '"$ab_base $ab_dir $1"':p'
         fi
     done
 }
 
 
-# * * * *   Koshu
+# ----------------------  Koshu
 
 ab_koshu () {
     ab_data
@@ -61,13 +60,13 @@ ab_data () {
 
 ab_script () {
     cat <<EOF
-|== ABORTABLE -with-table
-  : source ABORTABLE /tag /pkg /dir /file /line
+|== ABORTABLE : source ABORTABLE /tag /pkg /dir /file /line
+  --table
 EOF
 }
 
 
-# * * * *   Main
+# ----------------------  Main
 
 ab_cd
 
