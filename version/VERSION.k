@@ -138,4 +138,5 @@ about /major 0
 |-- VERSION  /minor 126  /date 2016-03-02  /summary "小数型の桁数関連の演算子を追加"
 |-- VERSION  /minor 127  /date 2016-04-10  /summary "関係型などの表記法を変更"
 |-- VERSION  /minor 128  /date 2016-04-15  /summary "肯定項目と否定項目を導入"
+|-- VERSION  /minor 129  /date 2016-04-23  /summary "記号型を導入"
 
