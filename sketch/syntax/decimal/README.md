@@ -78,9 +78,8 @@ Command `koshu decimal.k` produces:
 |-- D  /n 0.0
 |-- D  /n 123.45
 |-- D  /n 12 345.6
-|-- D  /n 12 345.600
 
-*** 4 judges
+*** 3 judges
 
 |-- C  /n 7
 |-- C  /n 25
@@ -90,11 +89,11 @@ Command `koshu decimal.k` produces:
 **
 **  SUMMARY
 **       2 judges on C
-**       4 judges on D
+**       3 judges on D
 **       5 judges on L
 **       3 judges on N
 **       3 judges on P
-**      17 judges in total
+**      16 judges in total
 **
 ```
 
