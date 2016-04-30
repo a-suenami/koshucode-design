@@ -159,6 +159,8 @@ about /major 0
 |-- VERSION  /minor 128  /date 2016-04-15  /summary "肯定項目と否定項目を導入"
 |-- VERSION  /minor 129  /date 2016-04-23  /summary "記号型を導入"
 |-- VERSION  /minor 130  /date 2016-04-27  /summary "属性モジュールを整理"
+|-- VERSION  /minor 131  /date 2016-04-27  /summary "syntax パッケージを作成"
+|-- VERSION  /minor 132  /date 2016-04-28  /summary "小数を有利数で再実装"
 
 ```
 
@@ -336,12 +338,15 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 129  /date 2016-04-23  /summary "記号型を導入"
 |-- VERSION  /major 0  /minor 130  /date 2016-04-27  /summary "属性モジュールを整理"
 
-*** 130 judges
+|-- VERSION  /major 0  /minor 131  /date 2016-04-27  /summary "syntax パッケージを作成"
+|-- VERSION  /major 0  /minor 132  /date 2016-04-28  /summary "小数を有利数で再実装"
+
+*** 132 judges
 
 **
 **  SUMMARY
-**     130 judges on VERSION
-**     130 judges in total
+**     132 judges on VERSION
+**     132 judges in total
 **
 ```
 
