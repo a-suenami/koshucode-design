@@ -53,26 +53,26 @@ Command `koshu round-out.k` produces:
 
 |-- ROUND  /n -1.00  /in -1.00  /out -1.00  /error (-)  /at [ -1 | -1.0 | -1.00 ]  /per -1.00
 |-- ROUND  /n -0.50  /in -0.50  /out -0.50  /error (-)  /at [ -1 | -0.5 | -0.50 ]  /per -0.50
-|-- ROUND  /n -0.33  /in -0.33  /out -0.34  /error (+)  /at [ -1 | -0.4 | -0.34 ]  /per -0.34
+|-- ROUND  /n -0.34  /in -0.33  /out -0.34  /error (+)  /at [ -1 | -0.4 | -0.34 ]  /per -0.34
 |-- ROUND  /n -0.25  /in -0.25  /out -0.25  /error (-)  /at [ -1 | -0.3 | -0.25 ]  /per -0.25
 |-- ROUND  /n -0.20  /in -0.20  /out -0.20  /error (-)  /at [ -1 | -0.2 | -0.20 ]  /per -0.20
 
-|-- ROUND  /n -0.16  /in -0.16  /out -0.17  /error (+)  /at [ -1 | -0.2 | -0.17 ]  /per -0.17
-|-- ROUND  /n -0.14  /in -0.14  /out -0.15  /error (+)  /at [ -1 | -0.2 | -0.15 ]  /per -0.15
-|-- ROUND  /n -0.12  /in -0.12  /out -0.13  /error (+)  /at [ -1 | -0.2 | -0.13 ]  /per -0.13
-|-- ROUND  /n -0.11  /in -0.11  /out -0.12  /error (+)  /at [ -1 | -0.2 | -0.12 ]  /per -0.12
+|-- ROUND  /n -0.17  /in -0.16  /out -0.17  /error (+)  /at [ -1 | -0.2 | -0.17 ]  /per -0.17
+|-- ROUND  /n -0.15  /in -0.14  /out -0.15  /error (+)  /at [ -1 | -0.2 | -0.15 ]  /per -0.15
+|-- ROUND  /n -0.13  /in -0.12  /out -0.13  /error (+)  /at [ -1 | -0.2 | -0.13 ]  /per -0.13
+|-- ROUND  /n -0.12  /in -0.11  /out -0.12  /error (+)  /at [ -1 | -0.2 | -0.12 ]  /per -0.12
 |-- ROUND  /n -0.10  /in -0.10  /out -0.10  /error (-)  /at [ -1 | -0.1 | -0.10 ]  /per -0.10
 
 |-- ROUND  /n 0.00  /in 0.00  /out 0.00  /error (-)  /at [ 0 | 0.0 | 0.00 ]  /per 0.00
 |-- ROUND  /n 0.10  /in 0.10  /out 0.10  /error (-)  /at [ 1 | 0.1 | 0.10 ]  /per 0.10
-|-- ROUND  /n 0.11  /in 0.11  /out 0.12  /error (+)  /at [ 1 | 0.2 | 0.12 ]  /per 0.12
-|-- ROUND  /n 0.12  /in 0.12  /out 0.13  /error (+)  /at [ 1 | 0.2 | 0.13 ]  /per 0.13
-|-- ROUND  /n 0.14  /in 0.14  /out 0.15  /error (+)  /at [ 1 | 0.2 | 0.15 ]  /per 0.15
+|-- ROUND  /n 0.12  /in 0.11  /out 0.12  /error (+)  /at [ 1 | 0.2 | 0.12 ]  /per 0.12
+|-- ROUND  /n 0.13  /in 0.12  /out 0.13  /error (+)  /at [ 1 | 0.2 | 0.13 ]  /per 0.13
+|-- ROUND  /n 0.15  /in 0.14  /out 0.15  /error (+)  /at [ 1 | 0.2 | 0.15 ]  /per 0.15
 
-|-- ROUND  /n 0.16  /in 0.16  /out 0.17  /error (+)  /at [ 1 | 0.2 | 0.17 ]  /per 0.17
+|-- ROUND  /n 0.17  /in 0.16  /out 0.17  /error (+)  /at [ 1 | 0.2 | 0.17 ]  /per 0.17
 |-- ROUND  /n 0.20  /in 0.20  /out 0.20  /error (-)  /at [ 1 | 0.2 | 0.20 ]  /per 0.20
 |-- ROUND  /n 0.25  /in 0.25  /out 0.25  /error (-)  /at [ 1 | 0.3 | 0.25 ]  /per 0.25
-|-- ROUND  /n 0.33  /in 0.33  /out 0.34  /error (+)  /at [ 1 | 0.4 | 0.34 ]  /per 0.34
+|-- ROUND  /n 0.34  /in 0.33  /out 0.34  /error (+)  /at [ 1 | 0.4 | 0.34 ]  /per 0.34
 |-- ROUND  /n 0.50  /in 0.50  /out 0.50  /error (-)  /at [ 1 | 0.5 | 0.50 ]  /per 0.50
 
 |-- ROUND  /n 1.00  /in 1.00  /out 1.00  /error (-)  /at [ 1 | 1.0 | 1.00 ]  /per 1.00
