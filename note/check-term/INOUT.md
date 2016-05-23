@@ -1,11 +1,77 @@
-# Koshu I/O Listing
+# I/O List
 
+- koshu [attr-multi.k](#attr-multik)
+- koshu [attr-none.k](#attr-nonek)
 - koshu [but-abort.k](#but-abortk)
 - koshu [but-normal.k](#but-normalk)
 - koshu [has-abort.k](#has-abortk)
 - koshu [has-normal.k](#has-normalk)
 - koshu [just-abort.k](#just-abortk)
 - koshu [just-normal.k](#just-normalk)
+
+
+
+## [attr-multi.k](attr-multi.k)
+
+```
+** -*- koshu -*-
+|-- A  /x 10  /y 20
+|== B : source A /x /y | check-term -has /x -but /z
+```
+
+Command `koshu attr-multi.k` exits with 2 and produces:
+
+```
+**
+**  ABORTED  Unmatch any patterns
+**  -------- -------------------------------------------------- ---------
+**  Detail   Unknown -but -has
+**           Unknown -but
+**           Unknown -has
+**  Source   3 25 attr-multi.k
+**           > check-term -has /x -but /z                       .. lexmap
+**           3 8 attr-multi.k
+**           > source A /x /y | check-term -has /x -but /z      .. lexmap
+**           3 0 attr-multi.k
+**           > |== B : source A /x /y | check-term -has /x -... .. assert
+**  Command  koshu
+**           attr-multi.k
+**
+**  Exit with status 2
+**
+```
+
+
+
+## [attr-none.k](attr-none.k)
+
+```
+** -*- koshu -*-
+|-- A  /x 10  /y 20
+|== B : source A /x /y | check-term
+```
+
+Command `koshu attr-none.k` exits with 2 and produces:
+
+```
+**
+**  ABORTED  Unmatch any patterns
+**  -------- ------------------------------------- ---------
+**  Detail   Missing -just
+**           Missing -has
+**           Missing -but
+**  Source   3 25 attr-none.k
+**           > check-term                          .. lexmap
+**           3 8 attr-none.k
+**           > source A /x /y | check-term         .. lexmap
+**           3 0 attr-none.k
+**           > |== B : source A /x /y | check-term .. assert
+**  Command  koshu
+**           attr-none.k
+**
+**  Exit with status 2
+**
+```
 
 
 
@@ -16,23 +82,18 @@
 |-- A  /x 10  /y 20
 |== B : source A /x /y | check-term -but /x
 ```
-Command `koshu but-abort.k` exits at 2 and produces:
+
+Command `koshu but-abort.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    but-abort.k
-**
-
 **
 **  ABORTED  check-term failed
 **  -------- --------------------------------------------- -------------
 **  Detail   But
 **             /x
-**           Relation
-**             /x
-**             /y
+**           Input relation
+**             rel /x any
+**                 /y any
 **  Source   3 25 but-abort.k
 **           > check-term -but /x                          .. specialize
 **           3 0 but-abort.k
@@ -53,6 +114,7 @@ Command `koshu but-abort.k` exits at 2 and produces:
 |-- A  /x 10  /y 20
 |== B : source A /x /y | check-term -but /z
 ```
+
 Command `koshu but-normal.k` produces:
 
 ```
@@ -61,8 +123,13 @@ Command `koshu but-normal.k` produces:
 **  INPUT
 **    but-normal.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- B  /x 10  /y 20
+
+*** 1 judge 
 
 **
 **  SUMMARY
@@ -80,23 +147,18 @@ Command `koshu but-normal.k` produces:
 |-- A  /x 10  /y 20
 |== B : source A /x /y | check-term -has /z
 ```
-Command `koshu has-abort.k` exits at 2 and produces:
+
+Command `koshu has-abort.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    has-abort.k
-**
-
 **
 **  ABORTED  check-term failed
 **  -------- --------------------------------------------- -------------
 **  Detail   Has
 **             /z
-**           Relation
-**             /x
-**             /y
+**           Input relation
+**             rel /x any
+**                 /y any
 **  Source   3 25 has-abort.k
 **           > check-term -has /z                          .. specialize
 **           3 0 has-abort.k
@@ -117,6 +179,7 @@ Command `koshu has-abort.k` exits at 2 and produces:
 |-- A  /x 10  /y 20
 |== B : source A /x /y | check-term -has /x
 ```
+
 Command `koshu has-normal.k` produces:
 
 ```
@@ -125,8 +188,13 @@ Command `koshu has-normal.k` produces:
 **  INPUT
 **    has-normal.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- B  /x 10  /y 20
+
+*** 1 judge 
 
 **
 **  SUMMARY
@@ -144,23 +212,18 @@ Command `koshu has-normal.k` produces:
 |-- A  /x 10  /y 20
 |== B : source A /x /y | check-term -just /x
 ```
-Command `koshu just-abort.k` exits at 2 and produces:
+
+Command `koshu just-abort.k` exits with 2 and produces:
 
 ```
-** -*- koshu -*-
-**
-**  INPUT
-**    just-abort.k
-**
-
 **
 **  ABORTED  check-term failed
 **  -------- ---------------------------------------------- -------------
 **  Detail   Just
 **             /x
-**           Relation
-**             /x
-**             /y
+**           Input relation
+**             rel /x any
+**                 /y any
 **  Source   3 25 just-abort.k
 **           > check-term -just /x                          .. specialize
 **           3 0 just-abort.k
@@ -181,6 +244,7 @@ Command `koshu just-abort.k` exits at 2 and produces:
 |-- A  /x 10  /y 20
 |== B : source A /x /y | check-term -just /x /y
 ```
+
 Command `koshu just-normal.k` produces:
 
 ```
@@ -189,12 +253,27 @@ Command `koshu just-normal.k` produces:
 **  INPUT
 **    just-normal.k
 **
+**  OUTPUT
+**    <stdout>
+**
 
 |-- B  /x 10  /y 20
+
+*** 1 judge 
 
 **
 **  SUMMARY
 **       1 judge  on B
 **       1 judge  in total
 **
+```
+
+
+
+## command
+
+This document is produced by the command:
+
+```
+koshu-inout.sh -s -g koshu
 ```
