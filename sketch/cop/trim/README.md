@@ -97,7 +97,6 @@ TABLE : TRIM
 |-- TEXT  /text "123.321"
 |-- TEXT  /text "1234.4321"
 |-- TEXT  /text "12345.54321"
-
 ```
 
 Command `koshu trim-text.k` produces:

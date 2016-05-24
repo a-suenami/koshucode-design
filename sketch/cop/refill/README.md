@@ -10,17 +10,13 @@
 ** -*- koshu -*-
 **
 **  DESCRIPTION
-**    F of X  ==  F X
-**    X to F  ==  F X
+**    G of F of X  ==  G ( F X )
+**    X to F to G  ==  G ( F X )
 **
 
-|== P : add /x ( times ( 1 + 2 )( 3 + 4 ))
-            /y ( double ( double ( double ( 5 + 6 ))))
-        -where times x y = x * y
-             : double x  = 2 * x
-
-|== Q : add /x ( times of 1 + 2 of 3 + 4 )
-            /y ( 5 + 6 to double to double to double )
+|== P : add /of ( double of double of double of 5 + 6 )
+            /to ( 5 + 6 to double to double to double )
+            /paren ( double ( double ( double ( 5 + 6 ))))
         -where times x y = x * y
              : double x  = 2 * x
 ```
@@ -37,19 +33,14 @@ Command `koshu refill.k` produces:
 **    <stdout>
 **
 
-|-- P  /x 21  /y 88
-
-*** 1 judge 
-
-|-- Q  /x 21  /y 88
+|-- P  /of 88  /to 88  /paren 88
 
 *** 1 judge 
 
 **
 **  SUMMARY
 **       1 judge  on P
-**       1 judge  on Q
-**       2 judges in total
+**       1 judge  in total
 **
 ```
 
