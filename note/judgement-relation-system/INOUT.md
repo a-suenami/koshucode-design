@@ -155,9 +155,16 @@ Command `koshu SENTENCE.k structure.k` produces:
 **
 
 |-- STRUCTURE  /sect 1  /par-start {= /par /start [ 1 | "関係モデル (リレーショナル・モデル) は、どのような形式で" ] =}
-|-- STRUCTURE  /sect 2  /sect-name "関係"  /par-start {= /par /start [ 2 | "判断 (judgement) は、なにかが正しいか間違っているか" ] [ 3 | "命題と判断の違いに注意しておくと、命題自体は判断ではなく" ] [ 4 | "上の判断の「この段落」を「第 2 段落」と置き換え" ] [ 5 | "これが判断関係系における、一方の構成要素である判断の" ] =}
-|-- STRUCTURE  /sect 3  /sect-name "判断"  /par-start {= /par /start [ 6 | "関係 (relation) は、判断集合を計算するための記号と" ] [ 7 | "この例が示唆しているように、関係は、項目の集合としての" ] [ 8 | "上の例のように関係を経由して計算する方法は、一見したところ" ] =}
-|-- STRUCTURE  /sect 4  /sect-name "まとめ"  /par-start {= /par /start [ 9 | "このノートでは、関係モデルにもとづくデータが" ] [ 10 | "判断は The Third Manifesto の用語でいうところの" ] =}
+|-- STRUCTURE  /sect 2  /sect-name "関係"  /par-start {= /par /start [ 2 |
+    "判断 (judgement) は、なにかが正しいか間違っているか" ] [ 3 |
+    "命題と判断の違いに注意しておくと、命題自体は判断ではなく" ] [ 4 | "上の判断の「この段落」を「第 2 段落」と置き換え"
+    ] [ 5 | "これが判断関係系における、一方の構成要素である判断の" ] =}
+|-- STRUCTURE  /sect 3  /sect-name "判断"  /par-start {= /par /start [ 6 |
+    "関係 (relation) は、判断集合を計算するための記号と" ] [ 7 |
+    "この例が示唆しているように、関係は、項目の集合としての" ] [ 8 |
+    "上の例のように関係を経由して計算する方法は、一見したところ" ] =}
+|-- STRUCTURE  /sect 4  /sect-name "まとめ"  /par-start {= /par /start [ 9 |
+    "このノートでは、関係モデルにもとづくデータが" ] [ 10 | "判断は The Third Manifesto の用語でいうところの" ] =}
 
 *** 4 judges
 

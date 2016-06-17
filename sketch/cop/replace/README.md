@@ -45,13 +45,19 @@ Command `koshu replace.k` produces:
 **    <stdout>
 **
 
-|-- REPLACE  /from "br"  /to "BR"  /text "abracadabra"  /all "aBRacadaBRa"  /first "aBRacadabra"  /last "abracadaBRa"  /begin "abracadabra"  /end "abracadabra"
-|-- REPLACE  /from "ab"  /to "AB"  /text "abracadabra"  /all "ABracadABra"  /first "ABracadabra"  /last "abracadABra"  /begin "ABracadabra"  /end "abracadabra"
-|-- REPLACE  /from "ra"  /to "RA"  /text "abracadabra"  /all "abRAcadabRA"  /first "abRAcadabra"  /last "abracadabRA"  /begin "abracadabra"  /end "abracadabRA"
-|-- REPLACE  /from ""  /to "BR"  /text "abracadabra"  /all "abracadabra"  /first "abracadabra"  /last "abracadabra"  /begin "abracadabra"  /end "abracadabra"
-|-- REPLACE  /from "br"  /to ""  /text "abracadabra"  /all "aacadaa"  /first "aacadabra"  /last "abracadaa"  /begin "abracadabra"  /end "abracadabra"
+|-- REPLACE  /from "br"  /to "BR"  /text "abracadabra"  /all "aBRacadaBRa"  /first "aBRacadabra"  /last "abracadaBRa"
+    /begin "abracadabra"  /end "abracadabra"
+|-- REPLACE  /from "ab"  /to "AB"  /text "abracadabra"  /all "ABracadABra"  /first "ABracadabra"  /last "abracadABra"
+    /begin "ABracadabra"  /end "abracadabra"
+|-- REPLACE  /from "ra"  /to "RA"  /text "abracadabra"  /all "abRAcadabRA"  /first "abRAcadabra"  /last "abracadabRA"
+    /begin "abracadabra"  /end "abracadabRA"
+|-- REPLACE  /from ""  /to "BR"  /text "abracadabra"  /all "abracadabra"  /first "abracadabra"  /last "abracadabra"
+    /begin "abracadabra"  /end "abracadabra"
+|-- REPLACE  /from "br"  /to ""  /text "abracadabra"  /all "aacadaa"  /first "aacadabra"  /last "abracadaa"  /begin
+    "abracadabra"  /end "abracadabra"
 
-|-- REPLACE  /from "a"  /to "a"  /text "abracadabra"  /all "abracadabra"  /first "abracadabra"  /last "abracadabra"  /begin "abracadabra"  /end "abracadabra"
+|-- REPLACE  /from "a"  /to "a"  /text "abracadabra"  /all "abracadabra"  /first "abracadabra"  /last "abracadabra"
+    /begin "abracadabra"  /end "abracadabra"
 
 *** 6 judges
 

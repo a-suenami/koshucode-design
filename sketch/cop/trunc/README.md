@@ -56,7 +56,8 @@ Command `koshu trunc.k` produces:
 
 |-- ROUND  /trunc -2  /at -2  /per -2  /from -2.0  /to -2.0  /ns [ -2.0 ]
 |-- ROUND  /trunc -1  /at -1  /per -1  /from -1.9  /to -1.0  /ns [ -1.9 | -1.8 | -1.6 | -1.4 | -1.2 | -1.0 ]
-|-- ROUND  /trunc 0  /at 0  /per 0  /from -0.9  /to 0.8  /ns [ -0.9 | -0.8 | -0.6 | -0.4 | -0.2 | 0.0 | 0.1 | 0.2 | 0.4 | 0.6 | 0.8 ]
+|-- ROUND  /trunc 0  /at 0  /per 0  /from -0.9  /to 0.8  /ns [ -0.9 | -0.8 | -0.6 | -0.4 | -0.2 | 0.0 | 0.1 | 0.2 | 0.4
+    | 0.6 | 0.8 ]
 |-- ROUND  /trunc 1  /at 1  /per 1  /from 1.0  /to 1.8  /ns [ 1.0 | 1.1 | 1.2 | 1.4 | 1.6 | 1.8 ]
 |-- ROUND  /trunc 2  /at 2  /per 2  /from 2.0  /to 2.8  /ns [ 2.0 | 2.1 | 2.2 | 2.4 | 2.6 | 2.8 ]
 

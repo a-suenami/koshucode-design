@@ -79,8 +79,13 @@ Command `koshu DATA.k client.k` produces:
 **    <stdout>
 **
 
-|-- CLIENT-ADDRESS  /name "John Smith"  /address "311 Eash 2nd. St..."  /investments {= /shares /company [ {= /purchase-price /date /no [ 89.75 | "06/20/83" | 200 ] [ 96.50 | "11/10/84" | 100 ] =} | 'IBM ] [ {= /purchase-price /date /no [ 64.50 | "02/10/83" | 100 ] [ 92.50 | "08/10/87" | 500 ] =} | 'XEROX ] =}
-|-- CLIENT-ADDRESS  /name "Jill Brody"  /address "41 North Main St..."  /investments {= /shares /company [ {= /purchase-price /date /no [ 35.75 | "12/25/87" | 100 ] =} | 'SEARS ] [ {= /purchase-price /date /no [ 35.50 | "02/10/83" | 200 ] =} | 'FORD ] [ {= /purchase-price /date /no [ 35.00 | "01/30/81" | 100 ] [ 64.50 | "01/30/82" | 100 ] [ 59.50 | "02/10/83" | 200 ] =} | 'EXXON ] =}
+|-- CLIENT-ADDRESS  /name "John Smith"  /address "311 Eash 2nd. St..."  /investments {= /shares /company [ {=
+    /purchase-price /date /no [ 89.75 | "06/20/83" | 200 ] [ 96.50 | "11/10/84" | 100 ] =} | 'IBM ] [ {= /purchase-price
+    /date /no [ 64.50 | "02/10/83" | 100 ] [ 92.50 | "08/10/87" | 500 ] =} | 'XEROX ] =}
+|-- CLIENT-ADDRESS  /name "Jill Brody"  /address "41 North Main St..."  /investments {= /shares /company [ {=
+    /purchase-price /date /no [ 35.75 | "12/25/87" | 100 ] =} | 'SEARS ] [ {= /purchase-price /date /no [ 35.50 |
+    "02/10/83" | 200 ] =} | 'FORD ] [ {= /purchase-price /date /no [ 35.00 | "01/30/81" | 100 ] [ 64.50 | "01/30/82" |
+    100 ] [ 59.50 | "02/10/83" | 200 ] =} | 'EXXON ] =}
 
 *** 2 judges
 
@@ -158,11 +163,16 @@ Command `koshu DATA.k stock.k` produces:
 **    <stdout>
 **
 
-|-- STOCK-EXCHANGE  /company 'XEROX  /current-price 52.25  /exchanges-traded {= /exchanges [ "NEW YORK" ] =}  /last-dividend 0.44
-|-- STOCK-EXCHANGE  /company 'IBM  /current-price 97.50  /exchanges-traded {= /exchanges [ "NEW YORK" ] [ "LONDON" ] [ "HONG KONG" ] [ "TOKYO" ] =}  /last-dividend 1.25
-|-- STOCK-EXCHANGE  /company 'EXXON  /current-price 90.00  /exchanges-traded {= /exchanges [ "NEW YORK" ] [ "LONDON" ] [ "TOKYO" ] =}  /last-dividend 0.82
-|-- STOCK-EXCHANGE  /company 'FORD  /current-price 41.75  /exchanges-traded {= /exchanges [ "NEW YORK" ] =}  /last-dividend 0.20
-|-- STOCK-EXCHANGE  /company 'SEARS  /current-price 77.50  /exchanges-traded {= /exchanges [ "NEW YORK" ] =}  /last-dividend 0.34
+|-- STOCK-EXCHANGE  /company 'XEROX  /current-price 52.25  /exchanges-traded {= /exchanges [ "NEW YORK" ] =}
+    /last-dividend 0.44
+|-- STOCK-EXCHANGE  /company 'IBM  /current-price 97.50  /exchanges-traded {= /exchanges [ "NEW YORK" ] [ "LONDON" ] [
+    "HONG KONG" ] [ "TOKYO" ] =}  /last-dividend 1.25
+|-- STOCK-EXCHANGE  /company 'EXXON  /current-price 90.00  /exchanges-traded {= /exchanges [ "NEW YORK" ] [ "LONDON" ] [
+    "TOKYO" ] =}  /last-dividend 0.82
+|-- STOCK-EXCHANGE  /company 'FORD  /current-price 41.75  /exchanges-traded {= /exchanges [ "NEW YORK" ] =}
+    /last-dividend 0.20
+|-- STOCK-EXCHANGE  /company 'SEARS  /current-price 77.50  /exchanges-traded {= /exchanges [ "NEW YORK" ] =}
+    /last-dividend 0.34
 
 *** 5 judges
 

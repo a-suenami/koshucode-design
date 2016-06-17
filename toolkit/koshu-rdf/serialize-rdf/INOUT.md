@@ -56,7 +56,8 @@ Command `koshu DATA.k n-triples.k` produces:
 **    <stdout>
 **
 
-|-- N-TRIPLES  /s "http://biglynx.co.uk/people/dave-smith"  /p "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"  /o "http://xmlns.com/foaf/0.1/Person"
+|-- N-TRIPLES  /s "http://biglynx.co.uk/people/dave-smith"  /p "http://www.w3.org/1999/02/22-rdf-syntax-ns#type"  /o
+    "http://xmlns.com/foaf/0.1/Person"
 |-- N-TRIPLES  /s "http://biglynx.co.uk/people/dave-smith"  /p "http://xmlns.com/foaf/0.1/name"  /o "Dave Smith"
 
 *** 2 judges

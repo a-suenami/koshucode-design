@@ -38,7 +38,8 @@ Command `koshu binary.k` produces:
 **    <stdout>
 **
 
-|-- CALL-DOWN  /caller 'a  /call {= /n /caller [ 0 | 'a ] [ 1 | 'b ] [ 1 | 'c ] [ 2 | 'd ] [ 2 | 'e ] [ 2 | 'f ] [ 2 | 'g ] =}
+|-- CALL-DOWN  /caller 'a  /call {= /n /caller [ 0 | 'a ] [ 1 | 'b ] [ 1 | 'c ] [ 2 | 'd ] [ 2 | 'e ] [ 2 | 'f ] [ 2 |
+    'g ] =}
 
 *** 1 judge 
 

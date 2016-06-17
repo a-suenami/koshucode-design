@@ -179,7 +179,8 @@ Command `koshu list-version.k VERSION.k` produces:
 **
 
 |-- VERSION  /major 0  /minor 0  /date 2013-04-18  /summary "生まれました"
-|-- VERSION  /major 0  /minor 1  /date 2013-05-03  /summary "標準入出力間でデータ編集を行う koshu コマンドをパッケージ化"
+|-- VERSION  /major 0  /minor 1  /date 2013-05-03  /summary
+    "標準入出力間でデータ編集を行う koshu コマンドをパッケージ化"
 |-- VERSION  /major 0  /minor 2  /date 2013-05-14  /summary "プログラムのなかに甲州記法を埋め込む [koshu| ... |] を実装"
 |-- VERSION  /major 0  /minor 3  /date 2013-05-20  /summary "ライブラリとコマンドを別パッケージに分割"
 |-- VERSION  /major 0  /minor 4  /date 2013-05-22  /summary "RDF を甲州記法に変換するプログラム koshu-rdf を追加"

@@ -58,7 +58,8 @@ Command `koshu take-and-drop.k` produces:
 **    <stdout>
 **
 
-|-- Q  /text "ABCDEFG"  /take "ABC"  /drop "DEFG"  /take-tail "EFG"  /drop-tail "ABCD"  /drop-take "DE"  /drop-take-tail "CD"
+|-- Q  /text "ABCDEFG"  /take "ABC"  /drop "DEFG"  /take-tail "EFG"  /drop-tail "ABCD"  /drop-take "DE"  /drop-take-tail
+    "CD"
 |-- Q  /text "ABCD"  /take "ABC"  /drop "D"  /take-tail "BCD"  /drop-tail "A"  /drop-take "D"  /drop-take-tail "A"
 |-- Q  /text "ABC"  /take "ABC"  /drop ""  /take-tail "ABC"  /drop-tail ""  /drop-take ""  /drop-take-tail ""
 |-- Q  /text "AB"  /take "AB"  /drop ""  /take-tail "AB"  /drop-tail ""  /drop-take ""  /drop-take-tail ""
