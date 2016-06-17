@@ -18,10 +18,10 @@
 
  - [`add /N E ...`] は、式 `E` を使って項目の内容を計算し、新しい項目 `/N` として追加します。
  - [`cut /P ...`] は、指定された項目 `/P ...` を取り除きます。
- - [`join R`] は、関係 `R` との結びを計算します。
+ - [`join R`] は、関係 `R` との [結び] を計算します。
  - [`keep E`] は、式 `E` の計算結果が真になる組を残します。
  - [`maybe R`] は関係 `R` との交わりを計算します。ただし、`R` が成立しない組み合わせも許します。
- - [`meet R`] は、関係 `R` との交わりを計算します。
+ - [`meet R`] は、関係 `R` との [交わり] を計算します。
  - [`move /P ... -to /N ...`] は、項目 `/P` の名称を `/N` に変更します。
  - [`omit E`] は、式 `E` の計算結果が真になる組を除きます。
  - [`pick /P ...`] は、指定された項目 `/P ...` を選び出します。
@@ -73,7 +73,7 @@
 [`omit E`]: omit.k
 [`pick /P ...`]: pick.k
 [`rename /N /P ...`]: rename.k
-[`source X /N ...`]: source
+[`source X /N ...`]: source.k
 
 [交わり]: https://en.wikipedia.org/wiki/Join_and_meet
 [結び]: https://en.wikipedia.org/wiki/Join_and_meet
