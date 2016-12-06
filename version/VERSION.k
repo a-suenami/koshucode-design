@@ -4,8 +4,8 @@
 **    甲州計算機の版数
 **  
 **  VERSION
-**    <<< 甲州計算機の /major . /minor の版を /date にリリースした。
-**        その版のおもな変更内容は /summary である。 >>>
+**    {| 甲州計算機の /major . /minor の版を /date にリリースした。
+**        その版のおもな変更内容は /summary である。 |}
 **
 
 about /major 0
@@ -143,4 +143,33 @@ about /major 0
 |-- VERSION  /minor 131  /date 2016-04-27  /summary "syntax パッケージを作成"
 |-- VERSION  /minor 132  /date 2016-04-28  /summary "小数を有理数で再実装"
 |-- VERSION  /minor 133  /date 2016-05-02  /summary "有理数の追加の関数"
+
+|-- VERSION  /minor 153  /date 2016-07-03  /summary "エンコード処理を整理"
+|-- VERSION  /minor 154  /date 2016-07-04  /summary "トークン化をモジュール分割"
+|-- VERSION  /minor 155  /date 2016-07-05  /summary "トークン化をニッパとスキャナに整理"
+|-- VERSION  /minor 156  /date 2016-07-09  /summary "項目集合をもつデータの扱い方を改善"
+|-- VERSION  /minor 157  /date 2016-09-19  /summary "subtext パッケージを開発"
+|-- VERSION  /minor 158  /date 2016-09-21  /summary "関係写像演算子 subtext を実装"
+|-- VERSION  /minor 159  /date 2016-09-26  /summary "subtext にテキストを収集する機能を追加"
+|-- VERSION  /minor 160  /date 2016-10-08  /summary "subtext のキーワードを追加"
+|-- VERSION  /minor 161  /date 2016-10-11  /summary "隣接テキストを連結する処理方法を変更"
+|-- VERSION  /minor 162  /date 2016-10-15  /summary "overture パッケージを作成"
+|-- VERSION  /minor 163  /date 2016-10-16  /summary "overture パッケージにコードを移動"
+|-- VERSION  /minor 164  /date 2016-10-23  /summary "時刻と経過時間の計算モジュールを分離"
+|-- VERSION  /minor 165  /date 2016-11-01  /summary "時刻を取得する演算子を追加"
+|-- VERSION  /minor 166  /date 2016-11-04  /summary "項目内容と混在テキストをモジュール分割"
+|-- VERSION  /minor 167  /date 2016-11-07  /summary "項目選択器を再定式化"
+|-- VERSION  /minor 168  /date 2016-11-09  /summary "Unicode 符号位置によるテキストを導入"
+|-- VERSION  /minor 169  /date 2016-11-11  /summary "data-plus モジュールを作成"
+|-- VERSION  /minor 170  /date 2016-11-13  /summary "項目内容のデコード方法を整理"
+|-- VERSION  /minor 171  /date 2016-11-16  /summary "項目内容の具象型を改善"
+|-- VERSION  /minor 172  /date 2016-11-19  /summary "項目名のデータ型を導入するための準備"
+|-- VERSION  /minor 173  /date 2016-11-20  /summary "項目名のデータ型を導入"
+|-- VERSION  /minor 174  /date 2016-11-21  /summary "項目パスの括弧を導入"
+|-- VERSION  /minor 175  /date 2016-11-24  /summary "関係写像演算子のエイリアスを導入"
+|-- VERSION  /minor 176  /date 2016-11-26  /summary "エラーメッセージの処理を改善"
+|-- VERSION  /minor 177  /date 2016-11-27  /summary "構文パターンを整理"
+|-- VERSION  /minor 178  /date 2016-12-01  /summary "タブ区切りの判断出力を実装"
+|-- VERSION  /minor 179  /date 2016-12-03  /summary "整数索引を導入"
+|-- VERSION  /minor 180  /date 2016-12-06  /summary "入出力パスを導入"
 
