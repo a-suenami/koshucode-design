@@ -32,10 +32,14 @@ Command `koshu amb-inside.k` exits with 2 and produces:
 **  ABORTED  Ambiguous relmaps
 **  -------- ----------------- ---------
 **  Detail   p (2)
-**  Source   10 8 amb-inside.k
-**           > p               .. lexmap
-**           10 0 amb-inside.k
-**           > |== P : p       .. assert
+**
+**  Source   10.8 amb-inside.k
+**             |== P :
+**                 p           .. lexmap
+**
+**           10.0 amb-inside.k
+**             |== P : p       .. assert
+**
 **  Command  koshu
 **           amb-inside.k
 **
@@ -80,10 +84,14 @@ Command `koshu amb-outside.k` exits with 2 and produces:
 **  ABORTED  Ambiguous relmaps
 **  -------- ------------------ ---------
 **  Detail   p (3)
-**  Source   11 8 amb-outside.k
-**           > p                .. lexmap
-**           11 0 amb-outside.k
-**           > |== P : p        .. assert
+**
+**  Source   11.8 amb-outside.k
+**             |== P :
+**                 p            .. lexmap
+**
+**           11.0 amb-outside.k
+**             |== P : p        .. assert
+**
 **  Command  koshu
 **           amb-outside.k
 **

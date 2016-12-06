@@ -25,8 +25,10 @@ Command `koshu dup-prefix.k` exits with 2 and produces:
 **  ABORTED  Duplicate prefix
 **  -------- ---------------- ---------
 **  Detail   a
-**  Source   1 0 dup-prefix.k
-**           > short          .. clause
+**
+**  Source   1.0 dup-prefix.k
+**             short          .. clause
+**
 **  Command  koshu
 **           dup-prefix.k
 **
@@ -51,8 +53,10 @@ Command `koshu dup-replace.k` exits with 2 and produces:
 **  ABORTED  Duplicate replacement
 **  -------- --------------------- ---------
 **  Detail   apple-
-**  Source   1 0 dup-replace.k
-**           > short               .. clause
+**
+**  Source   1.0 dup-replace.k
+**             short               .. clause
+**
 **  Command  koshu
 **           dup-replace.k
 **
@@ -77,8 +81,10 @@ Command `koshu unk-clause-frege.k` exits with 2 and produces:
 **  Detail   Expect |--, |-x, |-xx, |-c, |-cc, |-v,
 **                    or |=x, |=xx, |=c, |=cc, |=v
 **           Actual |-s
-**  Source   1 0 unk-clause-frege.k
-**           > |-s P /a 0                           .. clause
+**
+**  Source   1.0 unk-clause-frege.k
+**             |-s P /a 0                           .. clause
+**
 **  Command  koshu
 **           unk-clause-frege.k
 **
@@ -101,8 +107,10 @@ Command `koshu unk-clause-judge.k` exits with 2 and produces:
 **  ABORTED  Unknown clause
 **  -------- ------------------------ ---------
 **  Detail   Give a judgement pattern
-**  Source   1 0 unk-clause-judge.k
-**           > |--                    .. clause
+**
+**  Source   1.0 unk-clause-judge.k
+**             |--                    .. clause
+**
 **  Command  koshu
 **           unk-clause-judge.k
 **
@@ -125,8 +133,11 @@ Command `koshu unk-clause-pattern.k` exits with 2 and produces:
 **  ABORTED  Unknown clause
 **  -------- ----------------------------- ---------
 **  Detail   Use text in judgement pattern
-**  Source   1 4 unk-clause-pattern.k
-**           > []                          .. clause
+**
+**  Source   1.4 unk-clause-pattern.k
+**             |--
+**                 []                      .. clause
+**
 **  Command  koshu
 **           unk-clause-pattern.k
 **
@@ -148,8 +159,9 @@ Command `koshu unk-clause.k` exits with 2 and produces:
 **
 **  ABORTED  Unknown clause
 **  -------- ---------------- ---------
-**  Source   1 0 unk-clause.k
-**           > xxx            .. clause
+**  Source   1.0 unk-clause.k
+**             xxx            .. clause
+**
 **  Command  koshu
 **           unk-clause.k
 **
@@ -172,8 +184,11 @@ Command `koshu unres-prefix.k` exits with 2 and produces:
 **  ABORTED  Unresolved prefix
 **  -------- -------------------------------------- ---------
 **  Detail   Require short definition : short a ...
-**  Source   1 9 unres-prefix.k
-**           > a.xxx                                .. clause
+**
+**  Source   1.9 unres-prefix.k
+**             |-- P /a
+**                 a.xxx                            .. clause
+**
 **  Command  koshu
 **           unres-prefix.k
 **

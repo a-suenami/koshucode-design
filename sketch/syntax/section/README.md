@@ -16,12 +16,15 @@ Command `koshu hello.k` exits with 2 and produces:
 ```
 **
 **  ABORTED  Unexpedted section delimiter
-**  -------- ------------------------------------- --------
-**  Detail   === rel    for relational calculation
-**           === note   for commentary section
-**           === end    for ending of input
-**  Source   1 0 hello.k
-**           > === hello                           .. token
+**  -------- --------------------------------------- ---------
+**  Detail   === rel      for relational calculation
+**           === note     for commentary section
+**           === license  for license section
+**           === end      for ending of input
+**
+**  Source   1.0 hello.k
+**             === hello                             .. clause
+**
 **  Command  koshu
 **           hello.k
 **

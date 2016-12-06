@@ -27,10 +27,14 @@ Command `koshu dump-cox.k` exits with 2 and produces:
 **              - >> global + (infix)
 **                   - /x
 **                   - lit 1
-**  Source   3 11 dump-cox.k
-**           > dump-cox                         .. relmap
-**           3 0 dump-cox.k
-**           > |== DUMP : dump-cox              .. assert
+**
+**  Source   3.11 dump-cox.k
+**             |== DUMP :
+**                 dump-cox                     .. relmap
+**
+**           3.0 dump-cox.k
+**             |== DUMP : dump-cox              .. assert
+**
 **  Command  koshu
 **           dump-cox.k
 **

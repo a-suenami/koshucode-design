@@ -18,12 +18,15 @@ Command `koshu eq.k` exits with 2 and produces:
 ```
 **
 **  ABORTED  Unexpedted section delimiter
-**  -------- ------------------------------------- --------
-**  Detail   === rel    for relational calculation
-**           === note   for commentary section
-**           === end    for ending of input
-**  Source   1 0 eq.k
-**           > = rel                               .. token
+**  -------- --------------------------------------- ---------
+**  Detail   === rel      for relational calculation
+**           === note     for commentary section
+**           === license  for license section
+**           === end      for ending of input
+**
+**  Source   1.0 eq.k
+**             = rel                                 .. clause
+**
 **  Command  koshu
 **           eq.k
 **
@@ -44,12 +47,15 @@ Command `koshu eqq.k` exits with 2 and produces:
 ```
 **
 **  ABORTED  Unexpedted section delimiter
-**  -------- ------------------------------------- --------
-**  Detail   === rel    for relational calculation
-**           === note   for commentary section
-**           === end    for ending of input
-**  Source   1 0 eqq.k
-**           > == rel                              .. token
+**  -------- --------------------------------------- ---------
+**  Detail   === rel      for relational calculation
+**           === note     for commentary section
+**           === license  for license section
+**           === end      for ending of input
+**
+**  Source   1.0 eqq.k
+**             == rel                                .. clause
+**
 **  Command  koshu
 **           eqq.k
 **
@@ -96,12 +102,15 @@ Command `koshu eqqqq.k` exits with 2 and produces:
 ```
 **
 **  ABORTED  Unexpedted section delimiter
-**  -------- ------------------------------------- --------
-**  Detail   === rel    for relational calculation
-**           === note   for commentary section
-**           === end    for ending of input
-**  Source   1 0 eqqqq.k
-**           > ==== rel                            .. token
+**  -------- --------------------------------------- ---------
+**  Detail   === rel      for relational calculation
+**           === note     for commentary section
+**           === license  for license section
+**           === end      for ending of input
+**
+**  Source   1.0 eqqqq.k
+**             ==== rel                              .. clause
+**
 **  Command  koshu
 **           eqqqq.k
 **

@@ -28,12 +28,18 @@ Command `koshu attr-multi.k` exits with 2 and produces:
 **  Detail   Unknown -but -has
 **           Unknown -but
 **           Unknown -has
-**  Source   3 25 attr-multi.k
-**           > check-term -has /x -but /z                       .. lexmap
-**           3 8 attr-multi.k
-**           > source A /x /y | check-term -has /x -but /z      .. lexmap
-**           3 0 attr-multi.k
-**           > |== B : source A /x /y | check-term -has /x -... .. assert
+**
+**  Source   3.25 attr-multi.k
+**             |== B : source A /x /y |
+**                 check-term -has /x -but /z                   .. lexmap
+**
+**           3.8 attr-multi.k
+**             |== B :
+**                 source A /x /y | check-term -has /x -but /z  .. lexmap
+**
+**           3.0 attr-multi.k
+**             |== B : source A /x /y | check-term -has /x -... .. assert
+**
 **  Command  koshu
 **           attr-multi.k
 **
@@ -60,12 +66,18 @@ Command `koshu attr-none.k` exits with 2 and produces:
 **  Detail   Missing -just
 **           Missing -has
 **           Missing -but
-**  Source   3 25 attr-none.k
-**           > check-term                          .. lexmap
-**           3 8 attr-none.k
-**           > source A /x /y | check-term         .. lexmap
-**           3 0 attr-none.k
-**           > |== B : source A /x /y | check-term .. assert
+**
+**  Source   3.25 attr-none.k
+**             |== B : source A /x /y |
+**                 check-term                      .. lexmap
+**
+**           3.8 attr-none.k
+**             |== B :
+**                 source A /x /y | check-term     .. lexmap
+**
+**           3.0 attr-none.k
+**             |== B : source A /x /y | check-term .. assert
+**
 **  Command  koshu
 **           attr-none.k
 **
@@ -94,10 +106,14 @@ Command `koshu but-abort.k` exits with 2 and produces:
 **           Input relation
 **             rel /x any
 **                 /y any
-**  Source   3 25 but-abort.k
-**           > check-term -but /x                          .. specialize
-**           3 0 but-abort.k
-**           > |== B : source A /x /y | check-term -but /x .. assert
+**
+**  Source   3.25 but-abort.k
+**             |== B : source A /x /y |
+**                 check-term -but /x                      .. specialize
+**
+**           3.0 but-abort.k
+**             |== B : source A /x /y | check-term -but /x .. assert
+**
 **  Command  koshu
 **           but-abort.k
 **
@@ -159,10 +175,14 @@ Command `koshu has-abort.k` exits with 2 and produces:
 **           Input relation
 **             rel /x any
 **                 /y any
-**  Source   3 25 has-abort.k
-**           > check-term -has /z                          .. specialize
-**           3 0 has-abort.k
-**           > |== B : source A /x /y | check-term -has /z .. assert
+**
+**  Source   3.25 has-abort.k
+**             |== B : source A /x /y |
+**                 check-term -has /z                      .. specialize
+**
+**           3.0 has-abort.k
+**             |== B : source A /x /y | check-term -has /z .. assert
+**
 **  Command  koshu
 **           has-abort.k
 **
@@ -224,10 +244,14 @@ Command `koshu just-abort.k` exits with 2 and produces:
 **           Input relation
 **             rel /x any
 **                 /y any
-**  Source   3 25 just-abort.k
-**           > check-term -just /x                          .. specialize
-**           3 0 just-abort.k
-**           > |== B : source A /x /y | check-term -just /x .. assert
+**
+**  Source   3.25 just-abort.k
+**             |== B : source A /x /y |
+**                 check-term -just /x                      .. specialize
+**
+**           3.0 just-abort.k
+**             |== B : source A /x /y | check-term -just /x .. assert
+**
 **  Command  koshu
 **           just-abort.k
 **
