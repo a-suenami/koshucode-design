@@ -172,4 +172,8 @@ about /major 0
 |-- VERSION  /minor 178  /date 2016-12-01  /summary "タブ区切りの判断出力を実装"
 |-- VERSION  /minor 179  /date 2016-12-03  /summary "整数索引を導入"
 |-- VERSION  /minor 180  /date 2016-12-06  /summary "入出力パスを導入"
+|-- VERSION  /minor 181  /date 2016-12-07  /summary "エラーメッセージの出力方法を変更"
+|-- VERSION  /minor 182  /date 2016-12-08  /summary "データセットの読み込み機能を実装"
+|-- VERSION  /minor 183  /date 2016-12-10  /summary "時刻データを改善"
+|-- VERSION  /minor 184  /date 2016-12-13  /summary "トークン化を uncons 方式に変更"
 
