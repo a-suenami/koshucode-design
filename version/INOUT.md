@@ -195,6 +195,13 @@ about /major 0
 |-- VERSION  /minor 182  /date 2016-12-08  /summary "データセットの読み込み機能を実装"
 |-- VERSION  /minor 183  /date 2016-12-10  /summary "時刻データを改善"
 |-- VERSION  /minor 184  /date 2016-12-13  /summary "トークン化を uncons 方式に変更"
+|-- VERSION  /minor 185  /date 2016-12-16  /summary "type パッケージを作成"
+|-- VERSION  /minor 186  /date 2016-12-19  /summary "関係写像演算子のパラメータを改善"
+|-- VERSION  /minor 187  /date 2016-12-20  /summary "中断理由の報告内容を改善"
+|-- VERSION  /minor 188  /date 2016-12-21  /summary "rop パッケージ作成の準備"
+|-- VERSION  /minor 189  /date 2016-12-21  /summary "項目の取り出し方法を改善"
+|-- VERSION  /minor 190  /date 2016-12-22  /summary "関係写像演算子のエラーを一部改善"
+|-- VERSION  /minor 191  /date 2016-12-23  /summary "特定関係写像を組み立てる関数を整備"
 
 ```
 
@@ -416,12 +423,21 @@ Command `koshu list-version.k VERSION.k` produces:
 |-- VERSION  /major 0  /minor 183  /date 2016-12-10  /summary "時刻データを改善"
 |-- VERSION  /major 0  /minor 184  /date 2016-12-13  /summary "トークン化を uncons 方式に変更"
 
-*** 165 judges
+|-- VERSION  /major 0  /minor 185  /date 2016-12-16  /summary "type パッケージを作成"
+|-- VERSION  /major 0  /minor 186  /date 2016-12-19  /summary "関係写像演算子のパラメータを改善"
+|-- VERSION  /major 0  /minor 187  /date 2016-12-20  /summary "中断理由の報告内容を改善"
+|-- VERSION  /major 0  /minor 188  /date 2016-12-21  /summary "rop パッケージ作成の準備"
+|-- VERSION  /major 0  /minor 189  /date 2016-12-21  /summary "項目の取り出し方法を改善"
+
+|-- VERSION  /major 0  /minor 190  /date 2016-12-22  /summary "関係写像演算子のエラーを一部改善"
+|-- VERSION  /major 0  /minor 191  /date 2016-12-23  /summary "特定関係写像を組み立てる関数を整備"
+
+*** 172 judges
 
 **
 **  SUMMARY
-**     165 judges on VERSION
-**     165 judges in total
+**     172 judges on VERSION
+**     172 judges in total
 **
 ```
 
