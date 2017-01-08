@@ -183,4 +183,12 @@ about /major 0
 |-- VERSION  /minor 189  /date 2016-12-21  /summary "項目の取り出し方法を改善"
 |-- VERSION  /minor 190  /date 2016-12-22  /summary "関係写像演算子のエラーを一部改善"
 |-- VERSION  /minor 191  /date 2016-12-23  /summary "特定関係写像を組み立てる関数を整備"
+|-- VERSION  /minor 192  /date 2016-12-24  /summary "関係写像のパラメータの取得方法を改善"
+|-- VERSION  /minor 193  /date 2016-12-26  /summary "項目列を変換する関係写像演算子を実装"
+|-- VERSION  /minor 194  /date 2016-12-27  /summary "-where パラメータを -let へ変更"
+|-- VERSION  /minor 195  /date 2017-01-02  /summary "部分木を取り出す機能を実装"
+|-- VERSION  /minor 196  /date 2017-01-04  /summary "部分木パターンのデコード"
+|-- VERSION  /minor 197  /date 2017-01-05  /summary "XML からデータ抽出する機能を実装"
+|-- VERSION  /minor 198  /date 2017-01-06  /summary "XML ノードの採番機能を追加"
+|-- VERSION  /minor 199  /date 2017-01-08  /summary "制限つき maybe を実装"
 
