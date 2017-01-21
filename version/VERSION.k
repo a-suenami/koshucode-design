@@ -191,4 +191,12 @@ about /major 0
 |-- VERSION  /minor 197  /date 2017-01-05  /summary "XML からデータ抽出する機能を実装"
 |-- VERSION  /minor 198  /date 2017-01-06  /summary "XML ノードの採番機能を追加"
 |-- VERSION  /minor 199  /date 2017-01-08  /summary "制限つき maybe を実装"
+|-- VERSION  /minor 200  /date 2017-01-10  /summary "HTTP get を改善"
+|-- VERSION  /minor 201  /date 2017-01-11  /summary "多重引用符によるテキスト"
+|-- VERSION  /minor 202  /date 2017-01-13  /summary "Siv パターンを導入"
+|-- VERSION  /minor 203  /date 2017-01-15  /summary "Some クラスを導入"
+|-- VERSION  /minor 204  /date 2017-01-18  /summary "Sivmap を導入"
+|-- VERSION  /minor 205  /date 2017-01-19  /summary "String を Textual へ変更"
+|-- VERSION  /minor 206  /date 2017-01-20  /summary "コード位置を Textual に変更"
+|-- VERSION  /minor 207  /date 2017-01-21  /summary "改行分割処理を改善"
 
